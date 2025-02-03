@@ -1,0 +1,164 @@
+% Created 2025-02-03 lun. 20:07
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\author{Cyprien PIERRE}
+\date{\today}
+\title{Méthode de sélection et de configuration des représentations graphiques des corpus d'informations}
+\hypersetup{
+ pdfauthor={Cyprien PIERRE},
+ pdftitle={Méthode de sélection et de configuration des représentations graphiques des corpus d'informations},
+ pdfkeywords={Visualisation de données, Méthode de sélection, Charte graphique, Bonnes pratiques},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.7.19)}, 
+ pdflang={French}}
+\usepackage{biblatex}
+\addbibresource{data-viz.bib}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+\label{sec:org20b1c0c}
+La visualization de donnée est une discipline ancienne à la littérature riche et précise. Cependant, il n'existe, à ce jour pas de synthèse opérationnelle ni de méthode harmonisée dans la conception des représentations graphiques des informations. Ce rapport vise à fournir un point de départ cohérent à de futurs travaux en représentation visuelle d'informations. Il est basé sur une revue de littérature rigoureuse et les recommendations qu'il porte sont issues des lectures réalisées.
+
+L'origine de ces travaux prend place dans un besoin grandissant de solution de visualization d'information dans le secteur de la construction. Les technologies de Big Data, BIM, VDC et les disciplines de la science des données ont fortement pénétré ce secteur sur l'ensemble du cycle de vie des ouvrages. \autocite{asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020} L'utilisation renforcée de l'IoT, l'émèrgence des BIS et BOS et l'intégration des solutions d'intelligences artificielles renforcent d'autant plus la nécessité pour ce secteur de se doter de moyens robuste en exploration et en communication des informations.
+
+Le secteur de la construction est historiquement peu digitalisé en comparaison avec les autres industries. Pour adresser ce retard, il est important de publier des études opérationnelle claires et industrialisables dont chaque acteur de l'industrie de la construction puisse bénéficier immédiatement. Ce rapport s'inscrit dans cette démarche.
+
+Il existe de multiples manières d'interargir avec un graphique. \autocite{schwabish1CenteringAccessibility2022,frankelavsky2RightTools2022}
+
+Ce rapport aborde :
+\begin{itemize}
+\item L'exploration visuelle
+\item La lecture des tables
+\item L'écoute des descriptions
+\item La sonification des données
+\item L'interractivité avec les commandes de clavier
+\end{itemize}
+Ces éléments impliquent la mise en oeuvre de solution programmatique d'accessibilité pouvant intégrer une logique globale de préparation de graphiques numériques.
+
+Ce rapport n'aborde pas :
+\begin{itemize}
+\item L'exploration en réalité mixte
+\item Les retours haptiques
+\item L'emploi d'écran à relief (braille)
+\end{itemize}
+Ces éléments nécessitant l'emploi de matériels spécifiques.
+\section{Démarche}
+\label{sec:orgd69da69}
+La conduite de cette revue s'est déroulé de la manière suivante :
+Nous avons commencé par dresser un panorama des types de graphiques existant en nous appuyant sur les travaux de \og From Data to Viz\fg{} \autocite{yanholtzDataViz2018}, \og The Graphic Continuum\fg{} \autocite{jonathanschwabishGraphicContinuum2014}, \og Lexique Visuel\fg{} \autocite{alansmithLexiqueVisuel}, \og Insights for ArcGis\fg{} \autocite{lindabealeInsightsArcGIS2017}.
+Cette première action nous a permis de pré-catégoriser les graphiques selon leurs utilisation.
+
+Ensuite, nous avons étudié les livres de divers auteurs et en avons tirés un ensemble de rêgles générales quant à la préparation des graphiques. Cela concerne les aspects visuels (couleurs, polices\ldots{}), des conseils sur la pertinence dans le choix des types graphiques suivant les objectifs attendus, quelques éléments d'accessibilités et des retours d'expériences. Sur cette base, nous avons affiné la catégorisation préétablies et commencé à regrouper les recommendations.
+
+Pour compléter les dispositions propres à l'accessibilité, nous avons étudié le rapport \og Centering accessibility in data visualization\fg{} \autocite{schwabishCenteringAccessibilityData2022}. Nous en avons tiré un apperçu global des approches possibles pour améliorer l'accessibilité des graphiques ainsi que de nombreux conseils et bonnes pratiques.
+
+En parallele, nous avons étudié diverses chartes de publications issues de divers médias et institutions. Ces lectures nous ont permis de nourrir les reccommendations en matière de conception visuelle des graphiques ainsi que de dresser une liste d'éléments standardisables et d'autres pouvant être laisser libre de personnalisation avec quelques conseils.
+
+Pour finir, nous avons étudié les articles scientifiques publiés sur ces sujets avec une profondeur de recherche à 5 ans. Ce choix de profondeur résulte d'une évolution conséquente depuis le début de la décenie des sciences de l'information. Cetains papiers étudiés sont plus anciens mais ont été très régulièrement cités par d'autres publications et nous avons choisis de les considérer. De cette étape, nous avons affiné les recommendations en identifiant les résultats d'expérimentations.
+\section{Sémantique}
+\label{sec:orgd8cf427}
+
+\section{Eléments généraux}
+\label{sec:org3ca2e71}
+\subsection{Polices}
+\label{sec:orgb13dc52}
+Le choix d'une police de texte a de multiples impacts sur la perception des graphiques. Il convient de selectionner une police accessible et de préférence sans sérif pour un usage informatique (Arial, Calibri, Source Sans Pro, Verdana\ldots{}).\autocite{andreaskrauseBestPracticesData2024} Les polices avec serif peuvent être considérés pour la production d'éléments imprimés. Il n'y a pas de consensus clair sur l'impact des sérifs sur l'accessibilité des polices.\autocite{stephenfew8TableDesign2012} Il n'y a pas non plus de consensus clair sur l'efficacité des polices conçues pour adresser des problématiques d'accessibilités telles que la dyslexie. Il convient d'utiliser une police utilisant une hauteur fixe pour les chiffres.\autocite{stephenfew8TableDesign2012}
+
+Il est conseillé de restreindre l'utilisation de l'italique car les textes affichés de la sorte sont plus difficiles à lire. Il est égalemenbt conseiller de limiter l'utilisation de la graisse et du soulignement à des cas spécifiques pour ne pas surcharger les présentations.
+
+La taille de la police joue un role majeur dans l'accessibilité du texte. Il est recommendé d'utiliser une hauteur de police de 12 points.\autocite{andreaskrauseBestPracticesData2024} Le nombre de tailles et de type de police doit être limité en nombre.\autocite{andreaskrauseBestPracticesData2024}
+
+Certaines polices peuvent être utilisés pour projeter des icones (NerdFont, StateFace\ldots{}).\autocite{jonathanschwabish10Qualitative2021} L'intérêt des icones est discuté plus tard dans ce rapport.
+
+Il est important de prévoir le chargement de toutes polices non standard (eg. Source Sans Pro, NerdFont\ldots{}) dans l'interface utilisateur si celles-ci sont utilisées puisqu'elles ne sont probablement pas installées dans le système d'exploitation de l'utilisateur. Prévoir leurs chargement vise à assurer la bonne expérience des utilisateurs.
+\subsection{Tables}
+\label{sec:org8a2488d}
+Une table ou tableur permet d'exposer des données brutes organisées en lignes ou en colonnes.
+
+Sauf mention contraire, les recommendations sur les tables sont issues du livre \og Show me the numbers\fg{} de Stephen Few.\autocite{stephenfew8TableDesign2012} L'auteur y rentre très en détails sur chaque point de paramétrage. Il y indique notamment les orientations en matière de construction de tableur lorsqu'il s'agit du choix premier d'affichage de données. Ce rapport s'intéresse à la conception de graphique. Dans ce cadre, les tableurs sont des éléments complémentaires pouvant être affichés par l'utilisateur pour explorer plus précisement les données préalablement affichées.
+
+Pour composer une table de donnée lisible, il est recommendé de :
+\begin{itemize}
+\item Séparer les entrées avec un espace vide,
+\begin{itemize}
+\item Lorsque les données sont présentées en colonnes, l'espace entre deux colonnes doit être plus grand qu'entre deux lignes,
+\item Lorsque les données sont présentées en ligne, l'espace entre deux ligne doit être plus grand qu'entre deux colonnes,
+\item Insérer une ligne vide toutes les 5 lignes pour faciliter le balayage visuel \autocite[9241-125:2018]{ISO}
+\end{itemize}
+\item Utiliser une ligne horizontale pour séparer les entêtes de colonnes des données,
+\item Utiliser une ligne horizontale pour séparer les catégories lorsque les données sont triées par catégories,
+\begin{itemize}
+\item Dans ce cas de figure, ne pas répéter le nom de la catégorie sur toutes les lignes,
+\item Les noms des catégories doivent être dans la première colonne, les sous-catégorie dans la seconde colonne, etc. S'il y a plusieurs subdivisions, les noms des catégories doivent être apposées sur la même ligne,
+\item Rappeler le nom de la catégorie en cas de changement de page,
+\item Maintenir la structure du tableur sur toutes les catégories,
+\end{itemize}
+\item Rappeler les titres des colones en cas de changement de page,
+\item Les catégories doivent être ordonnées suivant un ordre logique (eg. chronologique, alphabetique, par classement, etc.)
+\item Valeurs sommairisées
+\begin{itemize}
+\item Utiliser une ligne verticale pour séparer les valeurs placées en colonne à droite de toutes les valeurs
+\item Utiliser une ligne horizontale si ces valeurs sont placées en une ligne en bas du tableau,
+\item Si ces valeurs sont le message important de votre tableur, il convient de les affichés imédiatement à droite des colonnes de catégories ou immédiatement en dessous des entêtes de colonnes, suivant la nature du sommaire.
+\end{itemize}
+\item Ne pas effectuer de rotation sur un tableur, son orientation doit respecter celle du texte du document,
+\item Les produits d'un calcul doivent être affichés dans la colonne imédiatement à droite de la colonne source de données
+\item Uniformiser les aligmnements
+\begin{itemize}
+\item Les titres des colonnes suivent les alignements des données
+\item Aligner les chiffres à droite,
+\begin{itemize}
+\item Homogénéiser les décimales (généralement 2 ou 3 décimales suffisent suivant le contexte),
+\item Indiquer les valeurs négatives avec le symbole \og moins\fg{} (-), ici la notion de valeur symbolique est importante. Certains choisissent d'identifier les valeurs négatives entre parenthèses, cependant il ne s'agit pas d'une représentation naturelle répendue pour une telle identification.
+\item Séparer les digit d'un nombre par un espace tous les 3 charactères. Dans le cas de grands nombres, il convient de les arrondir à la précision utile (dixaine, centaine\ldots{}). Par défaut, la précision affichée doit correspondre à celle de la source d'information.
+\item Si une valeur numérique réfère à une information de catégorie elle doit être traitée comme un texte.
+\end{itemize}
+\item Aligner les textes à gauche,
+\item Centrer les dates et utiliser une convention stricte d'écriture de ces données telles que \og YYYY-MM-DD\fg{}.\autocite[8601]{ISO} La composition de la date doit être indiqué à l'utilisateur. Le choix du format doit respecter le niveau de précision associée à la mesure. Implicitement, le choix d'un formatage de plus haut niveau que la précision de la mesure induit une agrégation des valeurs.
+\item Centrer les données dont la largeur de charactère est fixe
+\end{itemize}
+\end{itemize}
+
+Si des valeurs spécifiques doivent être mises en avant, il est possible d'utiliser l'une ou l'autre de ces solutions :
+\begin{itemize}
+\item mettre le texte en gras,
+\item remplir la cellule d'une couleur.
+\end{itemize}
+Il est recommandé de limiter cette opération à un nombre réduit de valeur. Si cela n'est pas possible, il convient de sélectionner un autre mode de visualisation.
+
+Des prescriptions spécifiques à la préparation de tableurs pour certains graphiques sont apportés le cas échéant dans la suite de ce rapport.
+\section{Graphiques}
+\label{sec:org94822d2}
+\subsection{Séries temporelles}
+\label{sec:org3bd2fe6}
+La table de donnée sous-jacente doit être organisée par colonne de valeur temporelle croissante.
+\subsection{Classement}
+\label{sec:orgc0f4006}
+La table de données sous-jacente doit être organisée par ligne de classement croissante (du pemier au dernier en partant de la première ligne).
+\section{Méthode de sélection}
+\label{sec:orgf850443}
+
+\section{Etudes futures}
+\label{sec:org9f876d8}
+Des études complémentaires pourraient être menées sur les sujets suivants :
+\begin{itemize}
+\item La conception de librairies de graphiques accessibles fonctionnant aussi bien dans un usage web que dans les PDF,
+\end{itemize}
+\end{document}
