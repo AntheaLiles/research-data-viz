@@ -1,0 +1,2 @@
+* Visualisation de données
+Projet de recherche visant à établir un cadre formel et une méthode de sélection et de préparation des représentations graphiques des informations issues de bases de données.
