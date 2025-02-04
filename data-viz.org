@@ -65,7 +65,7 @@ Pour composer une table de donnée lisible, il est recommendé de :
 - Séparer les entrées avec un espace vide,
   - Lorsque les données sont présentées en colonnes, l'espace entre deux colonnes doit être plus grand qu'entre deux lignes,
   - Lorsque les données sont présentées en ligne, l'espace entre deux ligne doit être plus grand qu'entre deux colonnes,
-  - Insérer une ligne vide toutes les 5 lignes pour faciliter le balayage visuel [cite:@ISO 9241-125:2018]
+  - Insérer une ligne vide toutes les 5 lignes pour faciliter le balayage visuel[cite:@NFENISO9241-125ErgonomieLinteractionHommesysteme2017]
 - Utiliser une ligne horizontale pour séparer les entêtes de colonnes des données,
 - Utiliser une ligne horizontale pour séparer les catégories lorsque les données sont triées par catégories,
   - Dans ce cas de figure, ne pas répéter le nom de la catégorie sur toutes les lignes,
@@ -88,7 +88,7 @@ Pour composer une table de donnée lisible, il est recommendé de :
     - Séparer les digit d'un nombre par un espace tous les 3 charactères. Dans le cas de grands nombres, il convient de les arrondir à la précision utile (dixaine, centaine...). Par défaut, la précision affichée doit correspondre à celle de la source d'information.
     - Si une valeur numérique réfère à une information de catégorie elle doit être traitée comme un texte.
   - Aligner les textes à gauche,
-  - Centrer les dates et utiliser une convention stricte d'écriture de ces données telles que "YYYY-MM-DD".[cite:@ISO 8601] La composition de la date doit être indiqué à l'utilisateur. Le choix du format doit respecter le niveau de précision associée à la mesure. Implicitement, le choix d'un formatage de plus haut niveau que la précision de la mesure induit une agrégation des valeurs.
+  - Centrer les dates et utiliser une convention stricte d'écriture de ces données telles que "YYYY-MM-DD".[cite:@ISO8601-1DateHeureRepresentations2019] La composition de la date doit être indiqué à l'utilisateur. Le choix du format doit respecter le niveau de précision associée à la mesure. Implicitement, le choix d'un formatage de plus haut niveau que la précision de la mesure induit une agrégation des valeurs.
   - Centrer les données dont la largeur de charactère est fixe
 
 Si des valeurs spécifiques doivent être mises en avant, il est possible d'utiliser l'une ou l'autre de ces solutions :
@@ -120,10 +120,10 @@ Utilisé pour afficher la quantité de réponses négatives et positives à une 
 Permet de vérifier un équilibre entre deux borne par rapport à une base. Utilisé pour suivre l'évolution d'une variable dans le temps et devant respecter un écart-type (eg. tension à 230V +/- 5%). L'information la plus importante est le dépassement de l'écart-type. Pour correctement mettre en évidence ces phénomènes, il est recommendé d'utiliser une palette de couleur de
 
 ** Cascade #deviation #evolution
-Affiche les gains et pertes entres deux états d'un système. [cite:@JSchwabish 2021 p130]
+Affiche les gains et pertes entres deux états d'un système. [cite:@jonathanschwabish4ComparingCategories2021]
 
 ** Bougies #deviation #evolution
-Illustre les évolutions d'un stock sur une temporalité donnée. La ligne indique l'état le plus haut et l'état le plus bas de la journée. La barre indique l'état de l'ouverture et de la cloture de la période.[cite:@JSchwabish 2021 p199] Il convient d'utiliser une palette de couleur binaire pour contraster les périodes aux soldes positifs des périodes aux soldes négatifs.
+Illustre les évolutions d'un stock sur une temporalité donnée. La ligne indique l'état le plus haut et l'état le plus bas de la journée. La barre indique l'état de l'ouverture et de la cloture de la période.[cite:@jonathanschwabish6Distribution2021] Il convient d'utiliser une palette de couleur binaire pour contraster les périodes aux soldes positifs des périodes aux soldes négatifs.
 
 ** Nuage de point #correlation
 Représente la relation entres deux variables continues.
@@ -132,23 +132,23 @@ Si des milliers de point de données sont à afficher, il est préférable d'uti
 - des cercles ouverts
 - des petits cercles
 - des cercles avec une transparence
-  Cela permet de limiter le masquage des points de données par surimposition. [cite:@AKrause 2024 p12]
+  Cela permet de limiter le masquage des points de données par surimposition.[cite:@andreaskrauseBestPracticesData2024]
 
 ** Nuage de bulle #correlation
 Il s'agit d'un nuage de point dont la taille des bules est utilisé pour représenter la valeur quantitative.
 
 ** Matrice de température #correlation
-Représentation graphique d'une table de valeur homogène. [cite:@Sosulski 2019 p52]
+Représentation graphique d'une table de valeur homogène.[cite:@sosulskiIIIGraphics2019]
 Intéressante pour afficher une tendance lorsqu'un très grand nombre d'information est impliqué.
 
 En utilisant une palette de couleur séquentielle, un lecteur aura tendance à considérer une couleur sombre comme une valeur haute. En utilisant une palette de couleur divergente (eg. basée sur la température de la couleur), ce phénomène s'estompe.
 
-L'organisation des catégories changeant la forme de la matrice de température, il convient de retenir une organisation par valeur croissante ou décroissante à une colonne donnée. Il convient de signaler cette configuration au lecteur.[cite:@Wilke 2019 p57]
+L'organisation des catégories changeant la forme de la matrice de température, il convient de retenir une organisation par valeur croissante ou décroissante à une colonne donnée. Il convient de signaler cette configuration au lecteur.[cite:@wilke6VisualizingAmounts2019]
 
 ** Matrice de bulle #correlation
 Ce graphique est une version aggrégée du nuage de bulle et le la matrice de température.
 
-Il simplifie la visualisation des relations entre un couple de variable. A réserver pour un usage d'exploration de donées.[cite:@Sosulski 2019 p51] La taille des bules représente la force de la corrélation. Cette force est la représentation du coefficient de Pearson.[cite:@JSchwabish 2021 p.275]
+Il simplifie la visualisation des relations entre un couple de variable. A réserver pour un usage d'exploration de donées.[cite:@sosulskiIIIGraphics2019] La taille des bules représente la force de la corrélation. Cette force est la représentation du coefficient de Pearson.[cite:@jonathanschwabish8Relationship2021]
 
 La couleur peut être utilisée pour distinguer les catégories (à vérifier). Elle peut être également utilisée comme double encodage de la correlation (à vérifier).
 
@@ -158,7 +158,7 @@ Le tableur associée est une matrice de correlation organisant les valeurs de co
 Ce type de graphique montre la relation entre les valeurs quantitatives de catégories organisées en colonne ordonnée et la valeur cumulée affichée en ligne brisée. Le premier point de la ligne vérifiant $$\tau\geq80\%Total$$ est affichée. Est utilisé pour illustrer les éléments important dans un système qualité.
 
 ** Arbre de mot #correlation
-Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegas 2007) La taille des mots représente la fréquence de leurs usages.[cite:@JSchwabish 2021 p.316]
+Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegas 2007) La taille des mots représente la fréquence de leurs usages.[cite:@jonathanschwabish10Qualitative2021]
 
 ** Histogramme #distribution
 Utilisé pour afficher une seule distribution de donnée. Il n'y a pas d'espace entre deux barres ce qui permet de favoriser la forme de la distribution. La nature du graphique (barre) implique un calcul d'agrégat pour chaque barre. La largeur de l'agrégat est à évaluer au regard du niveau de détail souhaité. L'histogramme n'est pas adapté à l'affichage de l'ensemble des valeurs, pour cela il convient d'utiliser une courbe de densité.
@@ -167,13 +167,13 @@ Utilisé pour afficher une seule distribution de donnée. Il n'y a pas d'espace 
 Utilisé pour afficher simultanément plusieurs distributions de données. Fonctionne comme un histogramme. Chaque agrégat est représenté par un point et ils sont reliés entres eux par un segment droit. Pour faciliter la lécture, il convient de limiter le nombre de distributions affichées à 4 ce qui correspondant notamment au nombre de symboles aisément discriminables.
 
 ** Courbe de densité #distribution
-La densité représente la probabilité de distribution des variables. [cite:@Sosulski 2019 p48] Pertinent lorsque le nombre de données est très grand, autrement il convient d'utiliser un histogramme.[cite:@Wilke 2019 p62] En cas d'affichage de plusieurs courbe, utiliser  des remplissages transparents pour faciliter la distinctions. L'air de la courbe est usuellement égal à 1 et de ce fait, l'échelle de l'axe des ordonnées dépend de l'axe des absisses.[cite:@Wilke 2019 p63]
+La densité représente la probabilité de distribution des variables.[cite:@sosulskiIIIGraphics2019] Pertinent lorsque le nombre de données est très grand, autrement il convient d'utiliser un histogramme.[cite:@wilke9VisualizingMany2019] En cas d'affichage de plusieurs courbe, utiliser  des remplissages transparents pour faciliter la distinctions. L'air de la courbe est usuellement égal à 1 et de ce fait, l'échelle de l'axe des ordonnées dépend de l'axe des absisses.[cite:@wilke9VisualizingMany2019]
 
 ** Courbe cumulative #distribution
 Utilisé pour représenter une distribution inégale. L'axe des ordonnées est toujours la fréquence cumulative et l'axe des absisses est toujours une mesure.
 
 ** Bande de valeur (strip plot) #distribution
-Affiche les points de données d'une catégorie. Les points sont légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce type de graphique peut être associé à un graphique en violon ou en lignes de crêtes lorsque l'on veut exposer graphiquement les données sources des tracés. [cite:@Wilke 2019 p85]
+Affiche les points de données d'une catégorie. Les points sont légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce type de graphique peut être associé à un graphique en violon ou en lignes de crêtes lorsque l'on veut exposer graphiquement les données sources des tracés.[cite:@wilke9VisualizingMany2019]
 
 ** Boite à moustache #distribution
 
@@ -181,13 +181,13 @@ Affiche les points de données d'une catégorie. Les points sont légèrement d�
 Représente chaque découpage statistique ($$x\sigma$$) par une boite distincte. Convient en remplacement des boites à moustache lorsqu'il y a un très grand nombre de données disponibles. Permet de faire des estimations fiables. [cite:@hofmannLetterValuePlotsBoxplots2017]
 
 ** Violon #distribution
-Représente fidèlement les distributions d'un très grand nombre de données. Utilisé pour faire des comparaisons entre des catégories. Très pertinent pour représenter les distributions bimodales.[cite:@Wilke 2019 p84] Le tracé du demi-violon est identique au tracé d'une courbe de densité. Celui-ci commence à la valeur la plus petite et termine à la valeur la plus grande.
+Représente fidèlement les distributions d'un très grand nombre de données. Utilisé pour faire des comparaisons entre des catégories. Très pertinent pour représenter les distributions bimodales.[cite:@wilke9VisualizingMany2019] Le tracé du demi-violon est identique au tracé d'une courbe de densité. Celui-ci commence à la valeur la plus petite et termine à la valeur la plus grande.
 
 ** Mini-graphe (spark line) #evolution
-Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. N'affiche aucun autre élément que la courbe et un point symbolisant l'état actuel. Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise. [cite:@JSchwabish 2021 p204]
+Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. N'affiche aucun autre élément que la courbe et un point symbolisant l'état actuel. Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise.[cite:@jonathanschwabish6Distribution2021]
 
 ** Bulle proportionnelle ordonnée #classement
-Utilisé pour illustrer les grandes variations de quantité pour différentes catégories et lorsque la distinction des nuances n'est pas primordiale. Les bulles doivent être dimensionnés par leurs surface pour éviter d'éxagérer les différences.[cite:@Schwabish 2021 p123] Ce type de graphique utilise un double encodage de la quantité : la position et la taille. [cite:@Wilke 2019 p120] Bien que ce type de représentation soit considéré comme engageant, il convient d'utiliser un graphique en barre ordonnée à la place lorsque l'évaluation des différences entre catégories est importante.[cite:@Schwabish 2021 p122]
+Utilisé pour illustrer les grandes variations de quantité pour différentes catégories et lorsque la distinction des nuances n'est pas primordiale. Les bulles doivent être dimensionnés par leurs surface pour éviter d'éxagérer les différences.[cite:@jonathanschwabish4ComparingCategories2021] Ce type de graphique utilise un double encodage de la quantité : la position et la taille.[cite:@wilke12VisualizingAssociations2019] Bien que ce type de représentation soit considéré comme engageant, il convient d'utiliser un graphique en barre ordonnée à la place lorsque l'évaluation des différences entre catégories est importante.[cite:@jonathanschwabish4ComparingCategories2021]
 
 ** Barre ordonnée #classement
 
@@ -207,7 +207,7 @@ Les haltères sont toujours affichés à l'horizontal.
 Affiche la variation des valeurs ou ratios des catégories entre deux états donnés.
 
 ** Bosses #classement
-Affiche l'évolution d'un classement entre différents jalons. Ce graphique n'affiche pas les valeurs sous-jacente mais uniquement le positionnement de la catégorie dans le classement.[cite:@Schwabish 2021 p154] Si la valeur source est également à représenter, ce graphique peut se transformer en graphique en ruban, combinant les disposition du graphique en bosse avec celles du graphique de Sankey.[cite:@Schwabish 2021 p154]
+Affiche l'évolution d'un classement entre différents jalons. Ce graphique n'affiche pas les valeurs sous-jacente mais uniquement le positionnement de la catégorie dans le classement.[cite:@jonathanschwabish5Time2021] Si la valeur source est également à représenter, ce graphique peut se transformer en graphique en ruban, combinant les disposition du graphique en bosse avec celles du graphique de Sankey.[cite:@jonathanschwabish5Time2021]
 
 * Méthode de sélection
 
