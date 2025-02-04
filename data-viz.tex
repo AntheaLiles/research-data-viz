@@ -1,40 +1,69 @@
-% Created 2025-02-03 lun. 20:07
-% Intended LaTeX compiler: pdflatex
-\documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+% Created 2025-02-04 mar. 23:48
+% Intended LaTeX compiler: xelatex
+\documentclass[a4paper,12pt]{article}
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{wrapfig}
 \usepackage{rotating}
 \usepackage[normalem]{ulem}
-\usepackage{amsmath}
-\usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{mathtools}
-\author{Cyprien PIERRE}
-\date{\today}
+\usepackage{fontspec}
+\usepackage[french]{babel}
+\usepackage{amsfonts,amssymb,amsmath,mathrsfs,stmaryrd}
+\usepackage[default]{sourcesanspro}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.25cm, right=2.25cm]{geometry}
+\usepackage{setspace,fancyhdr,indentfirst,adjustbox,caption,multicol,lastpage,datetime,authblk,ifthen}
+\usepackage[toc,page]{appendix}
+\usepackage{array,booktabs,multirow,tabularx,colortbl,diagbox,makecell,ltablex}
+\usepackage{enumitem}
+\usepackage{graphicx,xcolor,pgf,tikz,pgfplots,pgfplotstable}
+\usepackage[table]{xcolor}
+\usepackage{algorithm2e,algorithm,arydshln,subcaption}
+\usepackage{forest}
+\usepackage[acronym]{glossaries}
+\usepackage{fvextra,csquotes}
+\definecolor{wikipediablue}{HTML}{0645AD}
+\usepackage[backend=biber, style=iso-numeric, doi=true, isbn=true, autocite=superscript]{biblatex}
+\addbibresource{data-viz.bib}
+\let\cite\autocite
+\hypersetup{colorlinks=true, linkcolor=wikipediablue, citecolor=wikipediablue, urlcolor=wikipediablue}
+\usepackage{listings}
+\usepackage{microtype}
+\usepackage[colorinlistoftodos]{todonotes}
+\usetikzlibrary{calc,positioning,shapes,arrows,arrows.meta,fit,automata,quotes}
+\pgfplotsset{compat=1.18}
+\makenoidxglossaries
+\addbibresource{data-viz.bib}
+\setcounter{page}{1}
+\setlength{\marginparwidth}{2cm}
+\setcounter{secnumdepth}{0}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{microtype}
+\usepackage{orcidlink}
+\lstdefinestyle{SQL}{language=SQL,basicstyle=\ttfamily\small,breaklines=true,breakatwhitespace=true,columns=fullflexible,keepspaces=true,showstringspaces=false,commentstyle=\color{green!60!black},keywordstyle=\color{blue},stringstyle=\color{red},identifierstyle=\color{purple},numbers=left,numberstyle=\tiny\color{gray},frame=single,framesep=5pt,xleftmargin=15pt,tabsize=2}
+\setlength{\marginparwidth}{2cm}
+\usepackage{url,hyperref}
+\author{Cyprien PIERRE \orcidlink{0009-0009-9040-6795}}
+\date{2025-02-04}
 \title{Méthode de sélection et de configuration des représentations graphiques des corpus d'informations}
 \hypersetup{
- pdfauthor={Cyprien PIERRE},
+ pdfauthor={Cyprien PIERRE \orcidlink{0009-0009-9040-6795}},
  pdftitle={Méthode de sélection et de configuration des représentations graphiques des corpus d'informations},
- pdfkeywords={Visualisation de données, Méthode de sélection, Charte graphique, Bonnes pratiques},
+ pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 29.4 (Org mode 9.7.19)}, 
  pdflang={French}}
-\usepackage{biblatex}
-\addbibresource{data-viz.bib}
 \begin{document}
 
 \maketitle
-\tableofcontents
+\renewcommand\{\abstractname\{\textbf{Abstract : }\abstract{Rédiger l'abstract ici}
+\renewcommand\{\keywordsname\{\textbf{Mots clés : }\keywords{Visualisation de données, Graphique, Méthode}
 
-\section{Introduction}
-\label{sec:org20b1c0c}
-La visualization de donnée est une discipline ancienne à la littérature riche et précise. Cependant, il n'existe, à ce jour pas de synthèse opérationnelle ni de méthode harmonisée dans la conception des représentations graphiques des informations. Ce rapport vise à fournir un point de départ cohérent à de futurs travaux en représentation visuelle d'informations. Il est basé sur une revue de littérature rigoureuse et les recommendations qu'il porte sont issues des lectures réalisées.
+\begin{multicols}{2}
+\section*{Introduction}
+\label{sec:org636916f}
+La visualization de donnée est une discipline ancienne à la littérature riche et précise. Cependant, il n'existe, à ce jour pas de synthèse opérationnelle ni de méthode harmonisée dans la conception des représentations graphiques des informations. Ce rapport vise à fournir un point de départ cohérent à de futurs travaux en représentation visuelle d'informations. Il est basé sur une revue de littérature rigoureuse et les recommendations qu'il porte sont issues des lectures réalisées. Une tentative est réalisée d'objectiver les usages des diverses représentations.
 
 L'origine de ces travaux prend place dans un besoin grandissant de solution de visualization d'information dans le secteur de la construction. Les technologies de Big Data, BIM, VDC et les disciplines de la science des données ont fortement pénétré ce secteur sur l'ensemble du cycle de vie des ouvrages. \autocite{asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020} L'utilisation renforcée de l'IoT, l'émèrgence des BIS et BOS et l'intégration des solutions d'intelligences artificielles renforcent d'autant plus la nécessité pour ce secteur de se doter de moyens robuste en exploration et en communication des informations.
 
@@ -59,8 +88,8 @@ Ce rapport n'aborde pas :
 \item L'emploi d'écran à relief (braille)
 \end{itemize}
 Ces éléments nécessitant l'emploi de matériels spécifiques.
-\section{Démarche}
-\label{sec:orgd69da69}
+\section*{Démarche}
+\label{sec:orgbc206b6}
 La conduite de cette revue s'est déroulé de la manière suivante :
 Nous avons commencé par dresser un panorama des types de graphiques existant en nous appuyant sur les travaux de \og From Data to Viz\fg{} \autocite{yanholtzDataViz2018}, \og The Graphic Continuum\fg{} \autocite{jonathanschwabishGraphicContinuum2014}, \og Lexique Visuel\fg{} \autocite{alansmithLexiqueVisuel}, \og Insights for ArcGis\fg{} \autocite{lindabealeInsightsArcGIS2017}.
 Cette première action nous a permis de pré-catégoriser les graphiques selon leurs utilisation.
@@ -72,13 +101,13 @@ Pour compléter les dispositions propres à l'accessibilité, nous avons étudi�
 En parallele, nous avons étudié diverses chartes de publications issues de divers médias et institutions. Ces lectures nous ont permis de nourrir les reccommendations en matière de conception visuelle des graphiques ainsi que de dresser une liste d'éléments standardisables et d'autres pouvant être laisser libre de personnalisation avec quelques conseils.
 
 Pour finir, nous avons étudié les articles scientifiques publiés sur ces sujets avec une profondeur de recherche à 5 ans. Ce choix de profondeur résulte d'une évolution conséquente depuis le début de la décenie des sciences de l'information. Cetains papiers étudiés sont plus anciens mais ont été très régulièrement cités par d'autres publications et nous avons choisis de les considérer. De cette étape, nous avons affiné les recommendations en identifiant les résultats d'expérimentations.
-\section{Sémantique}
-\label{sec:orgd8cf427}
+\section*{Sémantique}
+\label{sec:org5959dc5}
 
-\section{Eléments généraux}
-\label{sec:org3ca2e71}
-\subsection{Polices}
-\label{sec:orgb13dc52}
+\section*{Eléments généraux}
+\label{sec:org7b6c5d3}
+\subsection*{Polices}
+\label{sec:orgaa022b5}
 Le choix d'une police de texte a de multiples impacts sur la perception des graphiques. Il convient de selectionner une police accessible et de préférence sans sérif pour un usage informatique (Arial, Calibri, Source Sans Pro, Verdana\ldots{}).\autocite{andreaskrauseBestPracticesData2024} Les polices avec serif peuvent être considérés pour la production d'éléments imprimés. Il n'y a pas de consensus clair sur l'impact des sérifs sur l'accessibilité des polices.\autocite{stephenfew8TableDesign2012} Il n'y a pas non plus de consensus clair sur l'efficacité des polices conçues pour adresser des problématiques d'accessibilités telles que la dyslexie. Il convient d'utiliser une police utilisant une hauteur fixe pour les chiffres.\autocite{stephenfew8TableDesign2012}
 
 Il est conseillé de restreindre l'utilisation de l'italique car les textes affichés de la sorte sont plus difficiles à lire. Il est égalemenbt conseiller de limiter l'utilisation de la graisse et du soulignement à des cas spécifiques pour ne pas surcharger les présentations.
@@ -88,8 +117,8 @@ La taille de la police joue un role majeur dans l'accessibilité du texte. Il es
 Certaines polices peuvent être utilisés pour projeter des icones (NerdFont, StateFace\ldots{}).\autocite{jonathanschwabish10Qualitative2021} L'intérêt des icones est discuté plus tard dans ce rapport.
 
 Il est important de prévoir le chargement de toutes polices non standard (eg. Source Sans Pro, NerdFont\ldots{}) dans l'interface utilisateur si celles-ci sont utilisées puisqu'elles ne sont probablement pas installées dans le système d'exploitation de l'utilisateur. Prévoir leurs chargement vise à assurer la bonne expérience des utilisateurs.
-\subsection{Tables}
-\label{sec:org8a2488d}
+\subsection*{Tables}
+\label{sec:org7325331}
 Une table ou tableur permet d'exposer des données brutes organisées en lignes ou en colonnes.
 
 Sauf mention contraire, les recommendations sur les tables sont issues du livre \og Show me the numbers\fg{} de Stephen Few.\autocite{stephenfew8TableDesign2012} L'auteur y rentre très en détails sur chaque point de paramétrage. Il y indique notamment les orientations en matière de construction de tableur lorsqu'il s'agit du choix premier d'affichage de données. Ce rapport s'intéresse à la conception de graphique. Dans ce cadre, les tableurs sont des éléments complémentaires pouvant être affichés par l'utilisateur pour explorer plus précisement les données préalablement affichées.
@@ -100,7 +129,7 @@ Pour composer une table de donnée lisible, il est recommendé de :
 \begin{itemize}
 \item Lorsque les données sont présentées en colonnes, l'espace entre deux colonnes doit être plus grand qu'entre deux lignes,
 \item Lorsque les données sont présentées en ligne, l'espace entre deux ligne doit être plus grand qu'entre deux colonnes,
-\item Insérer une ligne vide toutes les 5 lignes pour faciliter le balayage visuel \autocite[9241-125:2018]{ISO}
+\item Insérer une ligne vide toutes les 5 lignes pour faciliter le balayage visuel\autocite{NFENISO9241-125ErgonomieLinteractionHommesysteme2017}
 \end{itemize}
 \item Utiliser une ligne horizontale pour séparer les entêtes de colonnes des données,
 \item Utiliser une ligne horizontale pour séparer les catégories lorsque les données sont triées par catégories,
@@ -131,7 +160,7 @@ Pour composer une table de donnée lisible, il est recommendé de :
 \item Si une valeur numérique réfère à une information de catégorie elle doit être traitée comme un texte.
 \end{itemize}
 \item Aligner les textes à gauche,
-\item Centrer les dates et utiliser une convention stricte d'écriture de ces données telles que \og YYYY-MM-DD\fg{}.\autocite[8601]{ISO} La composition de la date doit être indiqué à l'utilisateur. Le choix du format doit respecter le niveau de précision associée à la mesure. Implicitement, le choix d'un formatage de plus haut niveau que la précision de la mesure induit une agrégation des valeurs.
+\item Centrer les dates et utiliser une convention stricte d'écriture de ces données telles que \og YYYY-MM-DD\fg{}.\autocite{ISO8601-1DateHeureRepresentations2019} La composition de la date doit être indiqué à l'utilisateur. Le choix du format doit respecter le niveau de précision associée à la mesure. Implicitement, le choix d'un formatage de plus haut niveau que la précision de la mesure induit une agrégation des valeurs.
 \item Centrer les données dont la largeur de charactère est fixe
 \end{itemize}
 \end{itemize}
@@ -144,21 +173,143 @@ Si des valeurs spécifiques doivent être mises en avant, il est possible d'util
 Il est recommandé de limiter cette opération à un nombre réduit de valeur. Si cela n'est pas possible, il convient de sélectionner un autre mode de visualisation.
 
 Des prescriptions spécifiques à la préparation de tableurs pour certains graphiques sont apportés le cas échéant dans la suite de ce rapport.
-\section{Graphiques}
-\label{sec:org94822d2}
-\subsection{Séries temporelles}
-\label{sec:org3bd2fe6}
-La table de donnée sous-jacente doit être organisée par colonne de valeur temporelle croissante.
-\subsection{Classement}
-\label{sec:orgc0f4006}
-La table de données sous-jacente doit être organisée par ligne de classement croissante (du pemier au dernier en partant de la première ligne).
-\section{Méthode de sélection}
-\label{sec:orgf850443}
+\section*{Graphiques}
+\label{sec:org645b55e}
+\subsection*{Marqueur}
+\label{sec:org3fad42b}
+Affiche une valeur simple, plus pertinent lorsqu'associé à une tendance sur une période donnée.
+\subsection*{Jauge}
+\label{sec:org788c3cb}
+Représentation métaphorique  la vitesse d'un système.
+\subsection*{Tiret}
+\label{sec:orgbc13e24}
+Présentation d'une valeur mesurée ou calculée au regard d'une valeur cible et \ldots{} . Pertinent lors de la réalisation d'un benchmark.
+\subsection*{Barres divergentes}
+\label{sec:org8f92aae}
 
-\section{Etudes futures}
-\label{sec:org9f876d8}
+\subsection*{Barres divergentes empilées}
+\label{sec:org32dbbf3}
+Utilisé pour illustrer les résultats d'enquêtes impliquant un sentiment. Les barres doivent être calculées en pourcentage et alignées à 100\% comme pour une partie d'un ensemble. Les réponses sont affichées de façon ordonée et du plus négatif au plus positif. Il convient d'utiliser une palette de couleur divergente. Lors de la préparation d'une enquête impliquant des sentiment, il est conseiller de proposer un choix de valeur paires pour éviter les votes neutres sauf si la représentation de l'indiférence est une volontée de l'étude. De plus, \textbf{expliquer la limite de nombre de zones facile à visualiser} (max 6?)
+\subsection*{Spine}
+\label{sec:org9d1c35c}
+Utilisé pour afficher la quantité de réponses négatives et positives à une question. Le spine divise une valeure quantitative unique en deux ccomposants distinct contrasté par un déterminent binaire.Utilisé pour afficher la quantité de réponses négatives et positives à une question.
+\subsection*{Horizon}
+\label{sec:org00e594a}
+Permet de vérifier un équilibre entre deux borne par rapport à une base. Utilisé pour suivre l'évolution d'une variable dans le temps et devant respecter un écart-type (eg. tension à 230V +/- 5\%). L'information la plus importante est le dépassement de l'écart-type. Pour correctement mettre en évidence ces phénomènes, il est recommendé d'utiliser une palette de couleur de
+\subsection*{Cascade}
+\label{sec:orgccba60a}
+Affiche les gains et pertes entres deux états d'un système. \autocite{jonathanschwabish4ComparingCategories2021}
+\subsection*{Bougies}
+\label{sec:org18231d4}
+Illustre les évolutions d'un stock sur une temporalité donnée. La ligne indique l'état le plus haut et l'état le plus bas de la journée. La barre indique l'état de l'ouverture et de la cloture de la période.\autocite{jonathanschwabish6Distribution2021} Il convient d'utiliser une palette de couleur binaire pour contraster les périodes aux soldes positifs des périodes aux soldes négatifs.
+\subsection*{Nuage de point}
+\label{sec:org9b9b7a1}
+Représente la relation entres deux variables continues.
+La couleur est utilisée pour distinguer les catégories.
+Si des milliers de point de données sont à afficher, il est préférable d'utiliser soit :
+\begin{itemize}
+\item des cercles ouverts
+\item des petits cercles
+\item des cercles avec une transparence
+Cela permet de limiter le masquage des points de données par surimposition.\autocite{andreaskrauseBestPracticesData2024}
+\end{itemize}
+\subsection*{Nuage de bulle}
+\label{sec:org6dd344e}
+Il s'agit d'un nuage de point dont la taille des bules est utilisé pour représenter la valeur quantitative.
+\subsection*{Matrice de température}
+\label{sec:orgaa4163b}
+Représentation graphique d'une table de valeur homogène.\autocite{sosulskiIIIGraphics2019}
+Intéressante pour afficher une tendance lorsqu'un très grand nombre d'information est impliqué.
+
+En utilisant une palette de couleur séquentielle, un lecteur aura tendance à considérer une couleur sombre comme une valeur haute. En utilisant une palette de couleur divergente (eg. basée sur la température de la couleur), ce phénomène s'estompe.
+
+L'organisation des catégories changeant la forme de la matrice de température, il convient de retenir une organisation par valeur croissante ou décroissante à une colonne donnée. Il convient de signaler cette configuration au lecteur.\autocite{wilke6VisualizingAmounts2019}
+\subsection*{Matrice de bulle}
+\label{sec:org8681523}
+Ce graphique est une version aggrégée du nuage de bulle et le la matrice de température.
+
+Il simplifie la visualisation des relations entre un couple de variable. A réserver pour un usage d'exploration de donées.\autocite{sosulskiIIIGraphics2019} La taille des bules représente la force de la corrélation. Cette force est la représentation du coefficient de Pearson.\autocite{jonathanschwabish8Relationship2021}
+
+La couleur peut être utilisée pour distinguer les catégories (à vérifier). Elle peut être également utilisée comme double encodage de la correlation (à vérifier).
+
+Le tableur associée est une matrice de correlation organisant les valeurs de coefficient de Pearson.
+\subsection*{Pareto}
+\label{sec:org5ee5d7c}
+Ce type de graphique montre la relation entre les valeurs quantitatives de catégories organisées en colonne ordonnée et la valeur cumulée affichée en ligne brisée. Le premier point de la ligne vérifiant (\(\tau\geq80\%Total\)) est affichée. Est utilisé pour illustrer les éléments important dans un système qualité.
+\subsection*{Arbre de mot}
+\label{sec:org039e953}
+Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg \& Fernanda Viegas 2007) La taille des mots représente la fréquence de leurs usages.\autocite{jonathanschwabish10Qualitative2021}
+\subsection*{Histogramme}
+\label{sec:orgc6d5c0c}
+Utilisé pour afficher une seule distribution de donnée. Il n'y a pas d'espace entre deux barres ce qui permet de favoriser la forme de la distribution. La nature du graphique (barre) implique un calcul d'agrégat pour chaque barre. La largeur de l'agrégat est à évaluer au regard du niveau de détail souhaité. L'histogramme n'est pas adapté à l'affichage de l'ensemble des valeurs, pour cela il convient d'utiliser une courbe de densité.
+\subsection*{Polygone de fréquence}
+\label{sec:org6dd48cd}
+Utilisé pour afficher simultanément plusieurs distributions de données. Fonctionne comme un histogramme. Chaque agrégat est représenté par un point et ils sont reliés entres eux par un segment droit. Pour faciliter la lécture, il convient de limiter le nombre de distributions affichées à 4 ce qui correspondant notamment au nombre de symboles aisément discriminables.
+\subsection*{Courbe de densité}
+\label{sec:orgffad9a8}
+La densité représente la probabilité de distribution des variables.\autocite{sosulskiIIIGraphics2019} Pertinent lorsque le nombre de données est très grand, autrement il convient d'utiliser un histogramme.\autocite{wilke9VisualizingMany2019} En cas d'affichage de plusieurs courbe, utiliser  des remplissages transparents pour faciliter la distinctions. L'air de la courbe est usuellement égal à 1 et de ce fait, l'échelle de l'axe des ordonnées dépend de l'axe des absisses.\autocite{wilke9VisualizingMany2019}
+\subsection*{Courbe cumulative}
+\label{sec:org3897805}
+Utilisé pour représenter une distribution inégale. L'axe des ordonnées est toujours la fréquence cumulative et l'axe des absisses est toujours une mesure.
+\subsection*{Bande de valeur (strip plot)}
+\label{sec:org49805aa}
+Affiche les points de données d'une catégorie. Les points sont légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce type de graphique peut être associé à un graphique en violon ou en lignes de crêtes lorsque l'on veut exposer graphiquement les données sources des tracés.\autocite{wilke9VisualizingMany2019}
+\subsection*{Boite à moustache}
+\label{sec:org9e7e60d}
+
+\subsection*{Valeur lettrée}
+\label{sec:org1873b4b}
+Représente chaque découpage statistique (\(x\sigma\)) par une boite distincte. Convient en remplacement des boites à moustache lorsqu'il y a un très grand nombre de données disponibles. Permet de faire des estimations fiables.\autocite{hofmannLettervaluePlotsBoxplots2017}
+\subsection*{Violon}
+\label{sec:org9e02f1d}
+Représente fidèlement les distributions d'un très grand nombre de données. Utilisé pour faire des comparaisons entre des catégories. Très pertinent pour représenter les distributions bimodales.\autocite{wilke9VisualizingMany2019} Le tracé du demi-violon est identique au tracé d'une courbe de densité. Celui-ci commence à la valeur la plus petite et termine à la valeur la plus grande.
+\subsection*{Mini-graphe (spark line)}
+\label{sec:org92bd031}
+Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. N'affiche aucun autre élément que la courbe et un point symbolisant l'état actuel. Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise.\autocite{jonathanschwabish6Distribution2021}
+\subsection*{Bulle proportionnelle ordonnée}
+\label{sec:org4b3bc22}
+Utilisé pour illustrer les grandes variations de quantité pour différentes catégories et lorsque la distinction des nuances n'est pas primordiale. Les bulles doivent être dimensionnés par leurs surface pour éviter d'éxagérer les différences.\autocite{jonathanschwabish4ComparingCategories2021} Ce type de graphique utilise un double encodage de la quantité : la position et la taille.\autocite{wilke12VisualizingAssociations2019} Bien que ce type de représentation soit considéré comme engageant, il convient d'utiliser un graphique en barre ordonnée à la place lorsque l'évaluation des différences entre catégories est importante.\autocite{jonathanschwabish4ComparingCategories2021}
+\subsection*{Barre ordonnée}
+\label{sec:org3b79eb8}
+
+\subsection*{Lollipop}
+\label{sec:org07abb6d}
+Utilisé pour afficher la position dans une liste ordonnée lorsque l'affichage de la valeur est moins important que la position. Egalement très efficace comparé aux barres hordonnées lorsqu'il y a un grand nombre de catégorie dans le classement. Si une ligne connecte le point de la valeur à laxe des ordonnées, l'axe des absisse doit commencer à 0, autrement cela n'est pas obligatoire.
+\subsection*{Haltères}
+\label{sec:org35d097f}
+Utilisé pour comparer un minimum et un maximum de plusieurs catégories. La relation entre le maximum et le minimum d'une catégorie est représenté par la barre reliant les deux valeurs.
+
+Peut être utilisé pour illustrer le changement d'une valeur entre deux état données. Dans ce cas, il convient de flécher le sens du changement de l'état antérieur vers l'état final.
+
+Dans ces deux cas de figures, les catégories doivent êtres ordonnées de la plus grande valeur à la plus petite.
+
+Les haltères sont toujours affichés à l'horizontal.
+\subsection*{Pente}
+\label{sec:org45ad9fe}
+Affiche la variation des valeurs ou ratios des catégories entre deux états donnés.
+\subsection*{Bosses}
+\label{sec:org368ac73}
+Affiche l'évolution d'un classement entre différents jalons. Ce graphique n'affiche pas les valeurs sous-jacente mais uniquement le positionnement de la catégorie dans le classement.\autocite{jonathanschwabish5Time2021} Si la valeur source est également à représenter, ce graphique peut se transformer en graphique en ruban, combinant les disposition du graphique en bosse avec celles du graphique de Sankey.\autocite{jonathanschwabish5Time2021}
+\section*{Méthode de sélection}
+\label{sec:orga912275}
+
+\section*{Etudes futures}
+\label{sec:orgb0b31a2}
 Des études complémentaires pourraient être menées sur les sujets suivants :
 \begin{itemize}
 \item La conception de librairies de graphiques accessibles fonctionnant aussi bien dans un usage web que dans les PDF,
 \end{itemize}
+\section*{Evolution}
+\label{sec:orgc3c7282}
+La table de donnée sous-jacente doit être organisée par colonne de valeur temporelle croissante.
+\section*{Classement}
+\label{sec:org99af522}
+La table de données sous-jacente doit être organisée par ligne de classement croissante (du pemier au dernier en partant de la première ligne).
+
+
+\end{multicols}
+
+\newpage
+
+\printbibliography
 \end{document}

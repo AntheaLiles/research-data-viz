@@ -1,10 +1,16 @@
 #+title: Méthode de sélection et de configuration des représentations graphiques des corpus d'informations
+#+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
+#+EMAIL: cyprien.pierre@eiffage.com
+#+DATE: {{{time(%Y-%m-%d)}}}
 #+bibliography: "data-viz.bib"
-#+author: Cyprien PIERRE
-#+language: fr
-#+Abstract: Add abstract here
-#+keywords: Visualisation de données, Méthode de sélection, Charte graphique, Bonnes pratiques
+#+setupfile: "config.org"
 
+\begin{abstract}
+
+\end{abstract}
+\renewcommand{\keywordsname{\textbf{Mots clés : }\keywords{Visualisation de données, Graphique, Méthode}
+
+#+LaTeX: \begin{multicols}{2}
 
 * Introduction
 La visualization de donnée est une discipline ancienne à la littérature riche et précise. Cependant, il n'existe, à ce jour pas de synthèse opérationnelle ni de méthode harmonisée dans la conception des représentations graphiques des informations. Ce rapport vise à fournir un point de départ cohérent à de futurs travaux en représentation visuelle d'informations. Il est basé sur une revue de littérature rigoureuse et les recommendations qu'il porte sont issues des lectures réalisées. Une tentative est réalisée d'objectiver les usages des diverses représentations.
@@ -99,33 +105,33 @@ Il est recommandé de limiter cette opération à un nombre réduit de valeur. S
 Des prescriptions spécifiques à la préparation de tableurs pour certains graphiques sont apportés le cas échéant dans la suite de ce rapport.
 
 * Graphiques
-** Marqueur #indicateur
+** Marqueur :indicateur:
 Affiche une valeur simple, plus pertinent lorsqu'associé à une tendance sur une période donnée.
 
-** Jauge #indicateur
+** Jauge :indicateur:
 Représentation métaphorique  la vitesse d'un système.
 
-** Tiret #indicateur
+** Tiret :indicateur:
 Présentation d'une valeur mesurée ou calculée au regard d'une valeur cible et ... . Pertinent lors de la réalisation d'un benchmark.
 
-** Barres divergentes #deviation
+** Barres divergentes :deviation:
 
-** Barres divergentes empilées #deviation
+** Barres divergentes empilées :deviation:
 Utilisé pour illustrer les résultats d'enquêtes impliquant un sentiment. Les barres doivent être calculées en pourcentage et alignées à 100% comme pour une partie d'un ensemble. Les réponses sont affichées de façon ordonée et du plus négatif au plus positif. Il convient d'utiliser une palette de couleur divergente. Lors de la préparation d'une enquête impliquant des sentiment, il est conseiller de proposer un choix de valeur paires pour éviter les votes neutres sauf si la représentation de l'indiférence est une volontée de l'étude. De plus, *expliquer la limite de nombre de zones facile à visualiser* (max 6?)
 
-** Spine #deviation
+** Spine :deviation:
 Utilisé pour afficher la quantité de réponses négatives et positives à une question. Le spine divise une valeure quantitative unique en deux ccomposants distinct contrasté par un déterminent binaire.Utilisé pour afficher la quantité de réponses négatives et positives à une question.
 
-** Horizon #evolution
+** Horizon :evolution:
 Permet de vérifier un équilibre entre deux borne par rapport à une base. Utilisé pour suivre l'évolution d'une variable dans le temps et devant respecter un écart-type (eg. tension à 230V +/- 5%). L'information la plus importante est le dépassement de l'écart-type. Pour correctement mettre en évidence ces phénomènes, il est recommendé d'utiliser une palette de couleur de
 
-** Cascade #deviation #evolution
+** Cascade :deviation::evolution:
 Affiche les gains et pertes entres deux états d'un système. [cite:@jonathanschwabish4ComparingCategories2021]
 
-** Bougies #deviation #evolution
+** Bougies :deviation::evolution:
 Illustre les évolutions d'un stock sur une temporalité donnée. La ligne indique l'état le plus haut et l'état le plus bas de la journée. La barre indique l'état de l'ouverture et de la cloture de la période.[cite:@jonathanschwabish6Distribution2021] Il convient d'utiliser une palette de couleur binaire pour contraster les périodes aux soldes positifs des périodes aux soldes négatifs.
 
-** Nuage de point #correlation
+** Nuage de point :correlation:
 Représente la relation entres deux variables continues.
 La couleur est utilisée pour distinguer les catégories.
 Si des milliers de point de données sont à afficher, il est préférable d'utiliser soit :
@@ -134,10 +140,10 @@ Si des milliers de point de données sont à afficher, il est préférable d'uti
 - des cercles avec une transparence
   Cela permet de limiter le masquage des points de données par surimposition.[cite:@andreaskrauseBestPracticesData2024]
 
-** Nuage de bulle #correlation
+** Nuage de bulle :correlation:
 Il s'agit d'un nuage de point dont la taille des bules est utilisé pour représenter la valeur quantitative.
 
-** Matrice de température #correlation
+** Matrice de température :correlation:
 Représentation graphique d'une table de valeur homogène.[cite:@sosulskiIIIGraphics2019]
 Intéressante pour afficher une tendance lorsqu'un très grand nombre d'information est impliqué.
 
@@ -145,7 +151,7 @@ En utilisant une palette de couleur séquentielle, un lecteur aura tendance à c
 
 L'organisation des catégories changeant la forme de la matrice de température, il convient de retenir une organisation par valeur croissante ou décroissante à une colonne donnée. Il convient de signaler cette configuration au lecteur.[cite:@wilke6VisualizingAmounts2019]
 
-** Matrice de bulle #correlation
+** Matrice de bulle :correlation:
 Ce graphique est une version aggrégée du nuage de bulle et le la matrice de température.
 
 Il simplifie la visualisation des relations entre un couple de variable. A réserver pour un usage d'exploration de donées.[cite:@sosulskiIIIGraphics2019] La taille des bules représente la force de la corrélation. Cette force est la représentation du coefficient de Pearson.[cite:@jonathanschwabish8Relationship2021]
@@ -154,47 +160,47 @@ La couleur peut être utilisée pour distinguer les catégories (à vérifier). 
 
 Le tableur associée est une matrice de correlation organisant les valeurs de coefficient de Pearson.
 
-** Pareto #correlation
-Ce type de graphique montre la relation entre les valeurs quantitatives de catégories organisées en colonne ordonnée et la valeur cumulée affichée en ligne brisée. Le premier point de la ligne vérifiant $$\tau\geq80\%Total$$ est affichée. Est utilisé pour illustrer les éléments important dans un système qualité.
+** Pareto :correlation:
+Ce type de graphique montre la relation entre les valeurs quantitatives de catégories organisées en colonne ordonnée et la valeur cumulée affichée en ligne brisée. Le premier point de la ligne vérifiant (\(\tau\geq80\%Total\)) est affichée. Est utilisé pour illustrer les éléments important dans un système qualité.
 
-** Arbre de mot #correlation
+** Arbre de mot :correlation:
 Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegas 2007) La taille des mots représente la fréquence de leurs usages.[cite:@jonathanschwabish10Qualitative2021]
 
-** Histogramme #distribution
+** Histogramme :distribution:
 Utilisé pour afficher une seule distribution de donnée. Il n'y a pas d'espace entre deux barres ce qui permet de favoriser la forme de la distribution. La nature du graphique (barre) implique un calcul d'agrégat pour chaque barre. La largeur de l'agrégat est à évaluer au regard du niveau de détail souhaité. L'histogramme n'est pas adapté à l'affichage de l'ensemble des valeurs, pour cela il convient d'utiliser une courbe de densité.
 
-** Polygone de fréquence #distribution
+** Polygone de fréquence :distribution:
 Utilisé pour afficher simultanément plusieurs distributions de données. Fonctionne comme un histogramme. Chaque agrégat est représenté par un point et ils sont reliés entres eux par un segment droit. Pour faciliter la lécture, il convient de limiter le nombre de distributions affichées à 4 ce qui correspondant notamment au nombre de symboles aisément discriminables.
 
-** Courbe de densité #distribution
+** Courbe de densité :distribution:
 La densité représente la probabilité de distribution des variables.[cite:@sosulskiIIIGraphics2019] Pertinent lorsque le nombre de données est très grand, autrement il convient d'utiliser un histogramme.[cite:@wilke9VisualizingMany2019] En cas d'affichage de plusieurs courbe, utiliser  des remplissages transparents pour faciliter la distinctions. L'air de la courbe est usuellement égal à 1 et de ce fait, l'échelle de l'axe des ordonnées dépend de l'axe des absisses.[cite:@wilke9VisualizingMany2019]
 
-** Courbe cumulative #distribution
+** Courbe cumulative :distribution:
 Utilisé pour représenter une distribution inégale. L'axe des ordonnées est toujours la fréquence cumulative et l'axe des absisses est toujours une mesure.
 
-** Bande de valeur (strip plot) #distribution
+** Bande de valeur (strip plot) :distribution:
 Affiche les points de données d'une catégorie. Les points sont légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce type de graphique peut être associé à un graphique en violon ou en lignes de crêtes lorsque l'on veut exposer graphiquement les données sources des tracés.[cite:@wilke9VisualizingMany2019]
 
-** Boite à moustache #distribution
+** Boite à moustache :distribution:
 
-** Valeur lettrée #distribution
-Représente chaque découpage statistique ($$x\sigma$$) par une boite distincte. Convient en remplacement des boites à moustache lorsqu'il y a un très grand nombre de données disponibles. Permet de faire des estimations fiables. [cite:@hofmannLetterValuePlotsBoxplots2017]
+** Valeur lettrée :distribution:
+Représente chaque découpage statistique (\(x\sigma\)) par une boite distincte. Convient en remplacement des boites à moustache lorsqu'il y a un très grand nombre de données disponibles. Permet de faire des estimations fiables.[cite:@hofmannLettervaluePlotsBoxplots2017]
 
-** Violon #distribution
+** Violon :distribution:
 Représente fidèlement les distributions d'un très grand nombre de données. Utilisé pour faire des comparaisons entre des catégories. Très pertinent pour représenter les distributions bimodales.[cite:@wilke9VisualizingMany2019] Le tracé du demi-violon est identique au tracé d'une courbe de densité. Celui-ci commence à la valeur la plus petite et termine à la valeur la plus grande.
 
-** Mini-graphe (spark line) #evolution
+** Mini-graphe (spark line) :evolution:
 Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. N'affiche aucun autre élément que la courbe et un point symbolisant l'état actuel. Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise.[cite:@jonathanschwabish6Distribution2021]
 
-** Bulle proportionnelle ordonnée #classement
+** Bulle proportionnelle ordonnée :classement:
 Utilisé pour illustrer les grandes variations de quantité pour différentes catégories et lorsque la distinction des nuances n'est pas primordiale. Les bulles doivent être dimensionnés par leurs surface pour éviter d'éxagérer les différences.[cite:@jonathanschwabish4ComparingCategories2021] Ce type de graphique utilise un double encodage de la quantité : la position et la taille.[cite:@wilke12VisualizingAssociations2019] Bien que ce type de représentation soit considéré comme engageant, il convient d'utiliser un graphique en barre ordonnée à la place lorsque l'évaluation des différences entre catégories est importante.[cite:@jonathanschwabish4ComparingCategories2021]
 
-** Barre ordonnée #classement
+** Barre ordonnée :classement:
 
-** Lollipop #classement
+** Lollipop :classement:
 Utilisé pour afficher la position dans une liste ordonnée lorsque l'affichage de la valeur est moins important que la position. Egalement très efficace comparé aux barres hordonnées lorsqu'il y a un grand nombre de catégorie dans le classement. Si une ligne connecte le point de la valeur à laxe des ordonnées, l'axe des absisse doit commencer à 0, autrement cela n'est pas obligatoire.
 
-** Haltères #classement
+** Haltères :classement:
 Utilisé pour comparer un minimum et un maximum de plusieurs catégories. La relation entre le maximum et le minimum d'une catégorie est représenté par la barre reliant les deux valeurs.
 
 Peut être utilisé pour illustrer le changement d'une valeur entre deux état données. Dans ce cas, il convient de flécher le sens du changement de l'état antérieur vers l'état final.
@@ -203,10 +209,10 @@ Dans ces deux cas de figures, les catégories doivent êtres ordonnées de la pl
 
 Les haltères sont toujours affichés à l'horizontal.
 
-** Pente #classement
+** Pente :classement:
 Affiche la variation des valeurs ou ratios des catégories entre deux états donnés.
 
-** Bosses #classement
+** Bosses :classement:
 Affiche l'évolution d'un classement entre différents jalons. Ce graphique n'affiche pas les valeurs sous-jacente mais uniquement le positionnement de la catégorie dans le classement.[cite:@jonathanschwabish5Time2021] Si la valeur source est également à représenter, ce graphique peut se transformer en graphique en ruban, combinant les disposition du graphique en bosse avec celles du graphique de Sankey.[cite:@jonathanschwabish5Time2021]
 
 * Méthode de sélection
@@ -220,3 +226,14 @@ La table de donnée sous-jacente doit être organisée par colonne de valeur tem
 
 * Classement
 La table de données sous-jacente doit être organisée par ligne de classement croissante (du pemier au dernier en partant de la première ligne).
+
+
+#+LaTeX: \end{multicols}
+
+\newpage
+
+#+BEGIN_COMMENT
+References
+#+END_COMMENT
+
+\printbibliography

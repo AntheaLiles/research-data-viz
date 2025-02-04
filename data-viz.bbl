@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
+% This file may safely be deleted. It will be recreated as
+% required.
 %
 \begingroup
 \makeatletter
@@ -16,53 +16,726 @@
   {}
 \endgroup
 
+\datalist[entry]{none/global//global/global}
+  \entry{asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020}{article}{}
+    \name{author}{2}{}{%
+      {{hash=A}{%
+         family={{Asia University, Taichung, Taiwan}},
+         familyi={A\bibinitperiod},
+      }}%
+      {{hash=CCH}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Chiung-Hui},
+         giveni={C\bibinithyphendelim H\bibinitperiod},
+      }}%
+    }
+    \keyw{,/done,imprime}
+    \strng{namehash}{ACCH1}
+    \strng{fullhash}{ACCH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Data visualization is the combination of design aesthetics and rigorous
+  science, and the selection on visual representations is ultimately determined
+  by the integration of aesthetics and design information. For the design
+  knowledge and experience on this aspect is rather deficient, designers often
+  cannot keep the balance between design and functions. This study is aim at
+  developing a data visualization design method targeted to design on design
+  education, to enable students to have specific methods to follow when
+  engaging in information design and to provide reference to designers for
+  design. The content analysis method is employed to discuss relevant
+  literature and to summarize the data visualization design cases, and the data
+  visualization design patterns are established to facilitate learning and
+  knowledge inheritance of data visualization design.%
+    }
+    \verb{doi}
+    \verb 10.12720/jait.11.1.10-14
+    \endverb
+    \field{issn}{17982340}
+    \field{pages}{10\bibrangedash 14}
+    \field{title}{Research on the Application of Function-Technology-Aesthetics
+  Framework in the Design Knowledge Modelling of Data Visualization}
+    \verb{url}
+    \verb http://www.jait.us/index.php?m=content&c=index&a=show&catid=197&id=10
+    \verb 84
+    \endverb
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/LF3KZDGK/Asia University, Taichung, Taiwa
+    \verb n et Chen - 2020 - Research on the application of function-technology
+    \verb -aesthetics framework in the design knowledge mode.pdf
+    \endverb
+    \field{journaltitle}{Journal of Advances in Information Technology}
+    \field{annotation}{%
+    TLDR: This study aims at developing a data visualization design method
+  targeted to design on design education, to enable students to have specific
+  methods to follow when engaging in information design and to provide
+  reference to designers for design.%
+    }
+    \field{year}{2020}
+    \field{urlday}{22}
+    \field{urlmonth}{01}
+    \field{urlyear}{2025}
+  \endentry
 
-\refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{schwabish1CenteringAccessibility2022}{inbook}{}
-      \name{bookauthor}{3}{}{%
-        {{hash=4297ecd0035e3a6b6674b79bad127077}{%
-           family={Schwabish},
-           familyi={S\bibinitperiod},
-           given={Jonathan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=df7aee528996b0f6ed9c00a2584dbd54}{%
-           family={Popkin},
-           familyi={P\bibinitperiod},
-           given={Sue},
-           giveni={S\bibinitperiod}}}%
-        {{hash=13e654605fe51932c7fb071c2a43d80a}{%
-           family={Feng},
-           familyi={F\bibinitperiod},
-           given={Alice},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Urban Institute}%
-      }
-      \strng{bookauthorbibnamehash}{ebbe9d2ebc5f596043750b769650aff2}
-      \strng{bookauthornamehash}{ebbe9d2ebc5f596043750b769650aff2}
-      \strng{bookauthorfullhash}{ebbe9d2ebc5f596043750b769650aff2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Centering Accessibility in Data Visualization}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{3}
-      \field{series}{Do {{Not Harm Guide}}}
-      \field{title}{1. {{Centering}} Accessibility in Data Visualization}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \field{pages}{4\bibrangedash 8}
-      \range{pages}{5}
-      \keyw{/done,nosource}
-    \endentry
-  \enddatalist
-  \missing{Andrea}
-  \missing{Andreas}
-  \missing{Jonathan}
-  \missing{Taichuing}
-\endrefsection
+  \entry{schwabish1CenteringAccessibility2022}{inbook}{}
+    \list{publisher}{1}{%
+      {Urban Institute}%
+    }
+    \keyw{/done,nosource}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Centering Accessibility in Data Visualization}
+    \field{number}{3}
+    \field{pages}{4\bibrangedash 8}
+    \field{series}{Do {{Not Harm Guide}}}
+    \field{title}{1. {{Centering}} Accessibility in Data Visualization}
+    \field{langid}{english}
+    \field{month}{12}
+    \field{year}{2022}
+  \endentry
+
+  \entry{frankelavsky2RightTools2022}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={{Frank Elavsky}},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Urban Institute}%
+    }
+    \keyw{/done,nosource}
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Centering Accessibility in Data Visualization}
+    \field{number}{3}
+    \field{pages}{10\bibrangedash 18}
+    \field{series}{Do {{Not Harm Guide}}}
+    \field{title}{2. {{The}} Right Tools for the Job: Learning and Building for
+  Data Visualization and Accessibility}
+    \field{langid}{english}
+    \field{month}{12}
+    \field{year}{2022}
+  \endentry
+
+  \entry{yanholtzDataViz2018}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=Y}{%
+         family={{Yan Holtz}},
+         familyi={Y\bibinitperiod},
+      }}%
+      {{hash=C}{%
+         family={{Conor Healy}},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \keyw{,/done,imprime}
+    \strng{namehash}{YC1}
+    \strng{fullhash}{YC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    "From Data to Viz" is a classification of chart types based on input data
+  format. It will help you find the perfect chart in three simple steps : 1.
+  Identify what type of data you have, 2. Go to the corresponding decision tree
+  and follow it down to a set of possible charts, 3. Choose the chart from the
+  set that will suit your data and your needs best. Dataviz is a world with
+  endless possibilities ans this project does not claim to be exhaustive.
+  However it should provide you with good starting point. For an interactive
+  version and much more, visit : data-to-viz.com%
+    }
+    \field{title}{From Data to Viz}
+    \verb{url}
+    \verb data-to-viz.com
+    \endverb
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/8HRDTZXG/poster-big.png
+    \endverb
+    \field{year}{2018}
+  \endentry
+
+  \entry{jonathanschwabishGraphicContinuum2014}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=J}{%
+         family={{Jonathan Schwabish}},
+         familyi={J\bibinitperiod},
+      }}%
+      {{hash=S}{%
+         family={{Severino Ribecca}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \keyw{,/done,imprime}
+    \strng{namehash}{JS1}
+    \strng{fullhash}{JS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The Graphic Continuum is our view of the many different types of
+  visualizations available to us when we encode and present data. We've plotted
+  nearly 90 different graphics across five main categories: Distribution, Time,
+  Comparing Categories, Geospatial, Part-to-Whole, and Relationships. The space
+  does not include every type of graphic, nor does it display every link
+  between visualizations, but we view it as a thought-starter. We hope readers
+  will use it to develop ideas, consider different options, or simply as a
+  piece of art.%
+    }
+    \field{title}{The Graphic Continuum}
+    \verb{url}
+    \verb https://www.informationisbeautifulawards.com/showcase/611-the-graphic
+    \verb -continuum
+    \endverb
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/SGQBX9T4/Jonathan Schwabish et Severino R
+    \verb ibecca - 2014 - The Graphic Continuum.jpg
+    \endverb
+    \field{year}{2014}
+    \field{urlday}{18}
+    \field{urlmonth}{07}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{alansmithLexiqueVisuel}{misc}{}
+    \keyw{,/done,imprime}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    Il existe un tr{\`e}s grand nombre de mani{\`e}res de visualiser les
+  donn{\'e}es - comment savoir laquelle choisir ? Utilisez les cat{\'e}gories
+  en haut de la page pour d{\'e}cider quelle est la relation entre les
+  donn{\'e}es la plus pertinente par rapport {\`a} l'histoire que vous
+  souhaitez raconter. Passez ensuite en revue les diff{\'e}rents types de
+  graphiques de la cat{\'e}gorie : vous aurez ainsi quelques id{\'e}es
+  pr{\'e}liminaires sur le type de repr{\'e}sentation le plus appropri{\'e}.
+  Cette liste n'est pas exhaustive, elle ne constitue pas non plus un assistant
+  automatique : elle vous aidera en revanche {\`a} r{\'e}aliser des
+  visualisations de donn{\'e}es informatives et {\'e}loquentes.%
+    }
+    \field{shorttitle}{Lexique Visuel}
+    \field{title}{Lexique Visuel}
+    \verb{url}
+    \verb https://github.com/Financial-Times/chart-doctor/tree/main
+    \endverb
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/ZZ8VEAKU/Alan Smith et al. - Lexique visu
+    \verb el.pdf
+    \endverb
+    \field{annotation}{%
+    Financial Times%
+    }
+  \endentry
+
+  \entry{lindabealeInsightsArcGIS2017}{misc}{}
+    \keyw{,/done,imprime}
+    \field{labeltitlesource}{title}
+    \field{title}{Insights for {{ArcGIS}}}
+    \verb{url}
+    \verb https://www.esri.com/content/dam/esrisites/fr-fr/media/pdf/data-visua
+    \verb lization-options-in-insights-3.0.pdf
+    \endverb
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/EKKXWFIU/Linda Beale - 2017 - Insights fo
+    \verb r ArcGIS.pdf
+    \endverb
+    \field{annotation}{%
+    Esri%
+    }
+    \field{year}{2017}
+    \field{urlday}{18}
+    \field{urlmonth}{07}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{schwabishCenteringAccessibilityData2022}{book}{}
+    \list{publisher}{1}{%
+      {Urban Institute}%
+    }
+    \keyw{,/done,imprime}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{series}{Do {{Not Harm Guide}}}
+    \field{title}{Centering Accessibility in Data Visualization}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/7MXHRVTT/Schwabish et al. - 2022 - Center
+    \verb ing accessibility in data visualization.pdf
+    \endverb
+    \field{month}{12}
+    \field{year}{2022}
+  \endentry
+
+  \entry{andreaskrauseBestPracticesData2024}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KA}{%
+         family={Krause},
+         familyi={K\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RN}{%
+         family={Rennie},
+         familyi={R\bibinitperiod},
+         given={Nicola},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=TB}{%
+         family={Tarran},
+         familyi={T\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Royal Statistical Society}%
+    }
+    \keyw{,/done,imprime}
+    \strng{namehash}{KARNTB1}
+    \strng{fullhash}{KARNTB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Introductory guide to the art and science of data visualisation. Insights,
+  advice, and examples (with code) to make data outputs more readable,
+  accessible, and
+  impactful:~https://royal-statistical-society.github.io/datavisguide/ What's
+  changed in v1.0.1 DOI info added by @brtarran in
+  https://github.com/royal-statistical-society/datavisguide/pull/44 Full
+  Changelog:
+  https://github.com/royal-statistical-society/datavisguide/compare/v1...v1.0.1%
+    }
+    \verb{doi}
+    \verb 10.5281/ZENODO.10600718
+    \endverb
+    \field{pages}{1\bibrangedash 72}
+    \field{title}{Best Practices for Data Visualisation}
+    \verb{url}
+    \verb https://zenodo.org/doi/10.5281/zenodo.10600718
+    \endverb
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/QVACFZC9/Andreas Krause et al. - 2024 - B
+    \verb est practices for data visualisation.pdf
+    \endverb
+    \field{month}{02}
+    \field{year}{2024}
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{stephenfew8TableDesign2012}{inbook}{}
+    \list{publisher}{1}{%
+      {Analytics Press}%
+    }
+    \keyw{/done,nosource}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Show Me the Numbers - {{Designing}} Tables and Graphs to
+  Enlighten}
+    \field{edition}{Seconde Edition}
+    \field{isbn}{978-0-9706019-7-1}
+    \field{pages}{155\bibrangedash 190}
+    \field{title}{8. {{Table}} Design}
+    \field{langid}{english}
+    \list{location}{1}{%
+      {Burlingame, California}%
+    }
+    \field{year}{2012}
+  \endentry
+
+  \entry{jonathanschwabish10Qualitative2021}{inbook}{}
+    \list{publisher}{1}{%
+      {Columbia University Press}%
+    }
+    \keyw{/done}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Better {{Data Visualizations}}: {{A Guide}} for
+  {{Scholars}}, {{Researchers}}, and {{Wonks}}}
+    \verb{doi}
+    \verb 10.7312/schw19310
+    \endverb
+    \field{isbn}{978-0-231-55015-4}
+    \field{pages}{311\bibrangedash 326}
+    \field{title}{10. {{Qualitative}}}
+    \verb{url}
+    \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
+    \endverb
+    \field{langid}{english}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/F75J95VX/2021 - 10. Qualitative.pdf
+    \endverb
+    \field{month}{12}
+    \field{year}{2021}
+    \field{urlday}{09}
+    \field{urlmonth}{01}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{NFENISO9241-125ErgonomieLinteractionHommesysteme2017}{misc}{}
+    \list{publisher}{1}{%
+      {AFNOR}%
+    }
+    \keyw{/unread,broken,imprime}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Le pr{\'e}sent document fournit un document d'orientation pour la
+  pr{\'e}sentation visuelle d'informations sous le contr{\^o}le d'un logiciel,
+  ind{\'e}pendamment du support. Il inclut des propri{\'e}t{\'e}s
+  sp{\'e}cifiques telles que les aspects syntaxiques ou s{\'e}mantiques des
+  informations, par exemple les techniques de codage, et fournit des
+  dispositions relatives {\`a} l'organisation des informations en tenant compte
+  des capacit{\'e}s humaines de perception et de m{\'e}morisation. Les
+  dispositions qui ne s'appliquent pas {\`a} des types sp{\'e}cifiques
+  d'interfaces visuelles indiquent clairement les {\'e}ventuelles limites de
+  leur applicabilit{\'e}. Ne sont pas concern{\'e}s les d{\'e}tails
+  sp{\'e}cifiques des tableaux, des graphiques ou ceux de la visualisation des
+  informations. Le pr{\'e}sent document ne concerne pas la pr{\'e}sentation
+  auditive ou tactile/haptique des informations, ni le transfert de
+  modalit{\'e} {\`a} une fin de pr{\'e}sentation d'informations visuelles dans
+  d'autres modalit{\'e}s.%
+    }
+    \field{number}{NF EN ISO 9241-125}
+    \field{title}{Ergonomie de l'interaction Homme-Syst{\`e}me - Partie 125 :
+  Recommandations Relatives {\`a} La Pr{\'e}sentation Visuelle d'informations}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/HAC78V3J/NF EN ISO 9241-125.pdf;/home/ant
+    \verb hea/Zotero/storage/IE5P3KBH/2017 - Ergonomie de l'interaction homme-s
+    \verb ystème - partie 125 recommandations relatives à la présentation.pd
+    \verb f
+    \endverb
+    \field{type}{Norme {{Fran{\c c}aise}}}
+    \field{month}{10}
+    \field{year}{2017}
+  \endentry
+
+  \entry{ISO8601-1DateHeureRepresentations2019}{misc}{}
+    \keyw{/unread,nosource}
+    \field{labeltitlesource}{title}
+    \field{number}{ISO 8601-1}
+    \field{title}{Date et Heure - {{Repr{\'e}sentations}} Pour l'{\'e}change
+  d'information -- {{Partie}} 1: {{R{\`e}gles}} de Base}
+    \field{type}{Norme {{Internationale}}}
+    \field{year}{2019}
+  \endentry
+
+  \entry{jonathanschwabish4ComparingCategories2021}{inbook}{}
+    \list{publisher}{1}{%
+      {Columbia University Press}%
+    }
+    \keyw{/done}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Better {{Data Visualizations}}: {{A Guide}} for
+  {{Scholars}}, {{Researchers}}, and {{Wonks}}}
+    \verb{doi}
+    \verb 10.7312/schw19310
+    \endverb
+    \field{isbn}{978-0-231-55015-4}
+    \field{pages}{68\bibrangedash 132}
+    \field{title}{4. {{Comparing}} Categories}
+    \verb{url}
+    \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
+    \endverb
+    \field{langid}{english}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/ULAFMWJC/2021 - 4. Comparing categories.p
+    \verb df
+    \endverb
+    \field{month}{12}
+    \field{year}{2021}
+    \field{urlday}{09}
+    \field{urlmonth}{01}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{jonathanschwabish6Distribution2021}{inbook}{}
+    \list{publisher}{1}{%
+      {Columbia University Press}%
+    }
+    \keyw{/done}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Better {{Data Visualizations}}: {{A Guide}} for
+  {{Scholars}}, {{Researchers}}, and {{Wonks}}}
+    \verb{doi}
+    \verb 10.7312/schw19310
+    \endverb
+    \field{isbn}{978-0-231-55015-4}
+    \field{pages}{179\bibrangedash 216}
+    \field{title}{6. {{Distribution}}}
+    \verb{url}
+    \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
+    \endverb
+    \field{langid}{english}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/DFIH9F7K/2021 - 6. Distribution.pdf
+    \endverb
+    \field{month}{12}
+    \field{year}{2021}
+    \field{urlday}{09}
+    \field{urlmonth}{01}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{sosulskiIIIGraphics2019}{inbook}{}
+    \list{publisher}{1}{%
+      {Routledge, Taylor \& Francis Group}%
+    }
+    \keyw{/done,nosource}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Data Visualization Made Simple: Insights into Becoming
+  Visual}
+    \field{isbn}{978-1-138-50387-8 978-1-138-50391-5}
+    \field{pages}{43\bibrangedash 70}
+    \field{title}{{{III}}. {{The}} Graphics}
+    \field{langid}{english}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{2019}
+  \endentry
+
+  \entry{wilke6VisualizingAmounts2019}{inbook}{}
+    \list{publisher}{1}{%
+      {O'Reilly Media}%
+    }
+    \keyw{/done,nosource}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    "Effective visualization is the best way to communicate information from
+  the increasingly large and complex datasets in the natural and social
+  sciences. But with the increasing power of visualization software today,
+  scientists, engineers, and business analysts often have to navigate a
+  bewildering array of visualization choices and options. This practical book
+  takes you through many commonly encountered visualization problems, and it
+  provides guidelines on how to turn large datasets into clear and compelling
+  figures. What visualization type is best for the story you want to tell? How
+  do you make informative figures that are visually pleasing? Author Claus O.
+  Wilke teaches you the elements most critical to successful data
+  visualization."--Provided by publisher%
+    }
+    \field{booktitle}{Fundamentals of {{Data Visualization}}}
+    \field{edition}{1st}
+    \field{isbn}{978-1-4920-3108-6}
+    \field{pages}{45\bibrangedash 58}
+    \field{title}{6. {{Visualizing}} Amounts}
+    \verb{url}
+    \verb https://clauswilke.com/dataviz/
+    \endverb
+    \field{langid}{english}
+    \field{month}{05}
+    \field{year}{2019}
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{jonathanschwabish8Relationship2021}{inbook}{}
+    \list{publisher}{1}{%
+      {Columbia University Press}%
+    }
+    \keyw{/done}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Better {{Data Visualizations}}: {{A Guide}} for
+  {{Scholars}}, {{Researchers}}, and {{Wonks}}}
+    \verb{doi}
+    \verb 10.7312/schw19310
+    \endverb
+    \field{isbn}{978-0-231-55015-4}
+    \field{pages}{249\bibrangedash 288}
+    \field{title}{8. {{Relationship}}}
+    \verb{url}
+    \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
+    \endverb
+    \field{langid}{english}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/MFNELCRJ/2021 - 8. Relationship.pdf
+    \endverb
+    \field{month}{12}
+    \field{year}{2021}
+    \field{urlday}{09}
+    \field{urlmonth}{01}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{wilke9VisualizingMany2019}{inbook}{}
+    \list{publisher}{1}{%
+      {O'Reilly Media}%
+    }
+    \keyw{/done,nosource}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    "Effective visualization is the best way to communicate information from
+  the increasingly large and complex datasets in the natural and social
+  sciences. But with the increasing power of visualization software today,
+  scientists, engineers, and business analysts often have to navigate a
+  bewildering array of visualization choices and options. This practical book
+  takes you through many commonly encountered visualization problems, and it
+  provides guidelines on how to turn large datasets into clear and compelling
+  figures. What visualization type is best for the story you want to tell? How
+  do you make informative figures that are visually pleasing? Author Claus O.
+  Wilke teaches you the elements most critical to successful data
+  visualization."--Provided by publisher%
+    }
+    \field{booktitle}{Fundamentals of {{Data Visualization}}}
+    \field{edition}{1st}
+    \field{isbn}{978-1-4920-3108-6}
+    \field{pages}{81\bibrangedash 92}
+    \field{title}{9. {{Visualizing}} Many Distributions at Once}
+    \verb{url}
+    \verb https://clauswilke.com/dataviz/
+    \endverb
+    \field{langid}{english}
+    \field{month}{05}
+    \field{year}{2019}
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{hofmannLetterValuePlotsBoxplots2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HH}{%
+         family={Hofmann},
+         familyi={H\bibinitperiod},
+         given={Heike},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wickham},
+         familyi={W\bibinitperiod},
+         given={Hadley},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kafadar},
+         familyi={K\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HHWHKK1}
+    \strng{fullhash}{HHWHKK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    Conventional boxplots (Tukey, 1977) are useful displays for conveying rough
+  information about the central 50\% and the extent of data. For small-sized
+  data sets (n {$<$} 200), detailed estimates of tail behavior beyond the
+  quartiles may not be trustworthy, so the information provided by boxplots is
+  appropriately somewhat vague beyond the quartiles, and the expected number of
+  ``outliers'' of size n is often less than 10 (Hoaglin et al., 1986). Larger
+  data sets (n {$\approx$} 10, 000--100, 000) afford more precise estimates of
+  quantiles beyond the quartiles, but conventional boxplots do not show this
+  information about the tails, and, in addition, show large numbers of extreme,
+  but not unexpected, observations.%
+    }
+    \verb{doi}
+    \verb 10.1080/10618600.2017.1305277
+    \endverb
+    \field{issn}{1061-8600, 1537-2715}
+    \field{number}{3}
+    \field{pages}{469\bibrangedash 477}
+    \field{shorttitle}{Letter-{{Value Plots}}}
+    \field{title}{Letter-{{Value Plots}}: {{Boxplots}} for {{Large Data}}}
+    \verb{url}
+    \verb https://www.tandfonline.com/doi/full/10.1080/10618600.2017.1305277
+    \endverb
+    \field{volume}{26}
+    \field{langid}{english}
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/7NZ65JNF/Hofmann et al. - 2017 - Letter-V
+    \verb alue Plots Boxplots for Large Data.pdf
+    \endverb
+    \field{journaltitle}{Journal of Computational and Graphical Statistics}
+    \field{month}{07}
+    \field{year}{2017}
+    \field{urlday}{04}
+    \field{urlmonth}{02}
+    \field{urlyear}{2025}
+  \endentry
+
+  \entry{wilke12VisualizingAssociations2019}{inbook}{}
+    \list{publisher}{1}{%
+      {O'Reilly Media}%
+    }
+    \keyw{/done,nosource}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    "Effective visualization is the best way to communicate information from
+  the increasingly large and complex datasets in the natural and social
+  sciences. But with the increasing power of visualization software today,
+  scientists, engineers, and business analysts often have to navigate a
+  bewildering array of visualization choices and options. This practical book
+  takes you through many commonly encountered visualization problems, and it
+  provides guidelines on how to turn large datasets into clear and compelling
+  figures. What visualization type is best for the story you want to tell? How
+  do you make informative figures that are visually pleasing? Author Claus O.
+  Wilke teaches you the elements most critical to successful data
+  visualization."--Provided by publisher%
+    }
+    \field{booktitle}{Fundamentals of {{Data Visualization}}}
+    \field{edition}{1st}
+    \field{isbn}{978-1-4920-3108-6}
+    \field{pages}{117\bibrangedash 130}
+    \field{title}{12. {{Visualizing}} Associations among Two or More
+  Quantitative Variables}
+    \verb{url}
+    \verb https://clauswilke.com/dataviz/
+    \endverb
+    \field{langid}{english}
+    \field{month}{05}
+    \field{year}{2019}
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{jonathanschwabish5Time2021}{inbook}{}
+    \list{publisher}{1}{%
+      {Columbia University Press}%
+    }
+    \keyw{/done}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Better {{Data Visualizations}}: {{A Guide}} for
+  {{Scholars}}, {{Researchers}}, and {{Wonks}}}
+    \verb{doi}
+    \verb 10.7312/schw19310
+    \endverb
+    \field{isbn}{978-0-231-55015-4}
+    \field{pages}{133\bibrangedash 178}
+    \field{title}{5. {{Time}}}
+    \verb{url}
+    \verb https://www.degruyter.com/document/doi/10.7312/schw19310/html
+    \endverb
+    \field{langid}{english}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \verb{file}
+    \verb /home/anthea/Zotero/storage/3TJDEGMC/2021 - 5. Time.pdf
+    \endverb
+    \field{month}{12}
+    \field{year}{2021}
+    \field{urlday}{09}
+    \field{urlmonth}{01}
+    \field{urlyear}{2025}
+  \endentry
+\enddatalist
 \endinput
-
