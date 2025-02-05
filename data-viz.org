@@ -48,9 +48,7 @@ En parallele, nous avons étudié diverses chartes de publications issues de div
 Pour finir, nous avons étudié les articles scientifiques publiés sur ces sujets avec une profondeur de recherche à 5 ans. Ce choix de profondeur résulte d'une évolution conséquente depuis le début de la décenie des sciences de l'information. Cetains papiers étudiés sont plus anciens mais ont été très régulièrement cités par d'autres publications et nous avons choisis de les considérer. De cette étape, nous avons affiné les recommendations en identifiant les résultats d'expérimentations.
 
 * Sémantique
-
-* Eléments généraux
-** Polices
+* Polices
 Le choix d'une police de texte a de multiples impacts sur la perception des graphiques. Il convient de selectionner une police accessible et de préférence sans sérif pour un usage informatique (Arial, Calibri, Source Sans Pro, Verdana...). [cite:@andreaskrauseBestPracticesData2024] Les polices avec serif peuvent être considérés pour la production d'éléments imprimés. Il n'y a pas de consensus clair sur l'impact des sérifs sur l'accessibilité des polices. [cite:@stephenfewTableDesign2012] Il n'y a pas non plus de consensus clair sur l'efficacité des polices conçues pour adresser des problématiques d'accessibilités telles que la dyslexie. Il convient d'utiliser une police utilisant une hauteur fixe pour les chiffres. [cite:@stephenfewTableDesign2012]
 
 Il est conseillé de restreindre l'utilisation de l'italique car les textes affichés de la sorte sont plus difficiles à lire. Il est égalemenbt conseiller de limiter l'utilisation de la graisse et du soulignement à des cas spécifiques pour ne pas surcharger les présentations.
@@ -61,16 +59,16 @@ Certaines polices peuvent être utilisés pour projeter des icones (NerdFont, St
 
 Il est important de prévoir le chargement de toutes polices non standard (eg. Source Sans Pro, NerdFont...) dans l'interface utilisateur si celles-ci sont utilisées puisqu'elles ne sont probablement pas installées dans le système d'exploitation de l'utilisateur. Prévoir leurs chargement vise à assurer la bonne expérience des utilisateurs.
 
-** Couleurs
+* Couleurs
 
-** Tables
+* Tables
 Une table ou tableur permet d'exposer des données brutes organisées en lignes ou en colonnes. [cite:@mikeyiHowChooseRight2020]
 
 Sauf mention contraire, les recommendations sur les tables sont issues du livre "Show me the numbers" de Stephen Few.[cite:@stephenfewTableDesign2012] L'auteur y rentre très en détails sur chaque point de paramétrage. Il y indique notamment les orientations en matière de construction de tableur lorsqu'il s'agit du choix premier d'affichage de données. Ce rapport s'intéresse à la conception de graphique. Dans ce cadre, les tableurs sont des éléments complémentaires pouvant être affichés par l'utilisateur pour explorer plus précisement les données préalablement affichées.
 
 Des prescriptions spécifiques à la préparation de tableurs pour certains graphiques sont apportés le cas échéant dans la suite de ce rapport.
 
-*** Composition
+** Composition
 Il est recommendé de séparer les entrées avec un espace vide.
 Lorsque les données sont présentées en colonnes, l'espace entre deux colonnes doit être plus grand qu'entre deux lignes,
 Lorsque les données sont présentées en ligne, l'espace entre deux ligne doit être plus grand qu'entre deux colonnes,
@@ -88,30 +86,32 @@ Ne pas effectuer de rotation sur un tableur, son orientation doit respecter cell
 
 Maintenir les aligmnements les titres avecc celui des données en colonnes.
 
-*** Chiffres
+** Chiffres
 Aligner les chiffres à droite.
 Homogénéiser les décimales (généralement 2 ou 3 décimales suffisent suivant le contexte).
 Indiquer les valeurs négatives avec le symbole "moins" (-), ici la notion de valeur symbolique est importante. Certains choisissent d'identifier les valeurs négatives entre parenthèses, cependant il ne s'agit pas d'une représentation naturelle répendue pour une telle identification.
 Séparer les digit d'un nombre par un espace tous les 3 charactères. Dans le cas de grands nombres, il convient de les arrondir à la précision utile (dixaine, centaine...). Par défaut, la précision affichée doit correspondre à celle de la source d'information.
 Si une valeur numérique réfère à une information de catégorie elle doit être traitée comme un texte.
 
-*** Texte
+** Texte
 Aligner les textes à gauche.
 Centrer les dates et utiliser une convention stricte d'écriture de ces données telles que "YYYY-MM-DD". [cite:@ISO8601-1DateHeureRepresentations2019] La composition de la date doit être indiqué à l'utilisateur. Le choix du format doit respecter le niveau de précision associée à la mesure. Implicitement, le choix d'un formatage de plus haut niveau que la précision de la mesure induit une agrégation des valeurs.
 Centrer les données dont la largeur de charactère est fixe.
 
-*** Sommaire et agrégats
+** Sommaire et agrégats
 Utiliser une ligne verticale pour séparer les valeurs placées en colonne à droite de toutes les valeurs.
 Utiliser une ligne horizontale si ces valeurs sont placées en une ligne en bas du tableau.
 Si ces valeurs sont le message important de votre tableur, il convient de les affichés imédiatement à droite des colonnes de catégories ou immédiatement en dessous des entêtes de colonnes, suivant la nature du sommaire.
 
 Les produits d'un calcul doivent être affichés dans la colonne imédiatement à droite de la colonne source de données.
 
-*** Mise en évidence
+** Mise en évidence
 Si des valeurs spécifiques doivent être mises en avant, il est possible d'utiliser l'une ou l'autre de ces solutions :
 - mettre le texte en gras,
 - remplir la cellule d'une couleur.
 Il est recommandé de limiter cette opération à un nombre réduit de valeur. Si cela n'est pas possible, il convient de sélectionner un autre mode de visualisation.
+
+* Méthode de sélection
 
 * Graphiques
 ** Marqueur :indicateur:
@@ -328,9 +328,6 @@ Illustre les flux bidirectionnels et le gagnant net dans une matrice. [cite:@ala
 ** Tunnel :flux:
 Utilisé pour suivre l'engagement d'une population (taille) à chaque étape d'un processus (barre). [cite:@mikeyiHowChooseRight2020]
 
-
-* Méthode de sélection
-
 * Etudes futures
 Des études complémentaires pourraient être menées sur les sujets suivants :
 - La conception de librairies de graphiques accessibles fonctionnant aussi bien dans un usage web que dans les PDF,
@@ -338,10 +335,8 @@ Des études complémentaires pourraient être menées sur les sujets suivants :
 * Evolution
 La table de donnée sous-jacente doit être organisée par colonne de valeur temporelle croissante.
 
-* Classement
-La table de données sous-jacente doit être organisée par ligne de classement croissante (du pemier au dernier en partant de la première ligne).
 
-
+*
 
 \newpage
 

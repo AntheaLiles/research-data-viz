@@ -9,8 +9,10 @@
 #+LATEX_HEADER: \usepackage{amsfonts,amssymb,amsmath,mathrsfs,stmaryrd}
 #+LATEX_HEADER: \usepackage[default]{sourcesanspro}
 
-#+LATEX_HEADER: \usepackage[top=2.5cm, bottom=2.5cm, left=2.25cm, right=2.25cm]{geometry}
+#+LATEX_HEADER: \usepackage[top=2.4cm, bottom=2.4cm, left=2.16cm, right=2.16cm]{geometry}
 #+LATEX_HEADER: \usepackage{setspace,fancyhdr,indentfirst,adjustbox,caption,multicol,lastpage,datetime,authblk,ifthen}
+#+LaTeX_HEADER: \setlength{\columnsep}{0.8cm}
+
 #+LATEX_HEADER: \usepackage[toc,page]{appendix}
 #+LATEX_HEADER: \usepackage{array,booktabs,multirow,tabularx,colortbl,diagbox,makecell,ltablex}
 #+LATEX_HEADER: \usepackage{enumitem}
@@ -23,6 +25,7 @@
 
 #+LATEX_HEADER: \definecolor{wikipediablue}{HTML}{0645AD}
 #+LATEX_HEADER: \usepackage[backend=biber, style=iso-numeric, doi=true, isbn=true, autocite=superscript]{biblatex}
+#+LATEX_HEADER: \addbibresource{data-viz.bib}
 #+LATEX_HEADER: \let\cite\autocite
 #+LATEX_HEADER: \hypersetup{colorlinks=true, linkcolor=wikipediablue, citecolor=wikipediablue, urlcolor=wikipediablue}
 
@@ -32,15 +35,11 @@
 #+LATEX_HEADER: \usetikzlibrary{calc,positioning,shapes,arrows,arrows.meta,fit,automata,quotes}
 #+LATEX_HEADER: \pgfplotsset{compat=1.18}
 #+LATEX_HEADER: \makenoidxglossaries
-#+LATEX_HEADER: \addbibresource{data-viz.bib}
 #+LATEX_HEADER: \setcounter{page}{1}
-#+LATEX_HEADER: \setlength{\marginparwidth}{2cm}
+#+LaTeX_HEADER: \setlength{\marginparwidth}{1.6cm}
 #+LATEX_HEADER: \setcounter{secnumdepth}{0}
 #+LaTeX_HEADER: \usepackage[colorinlistoftodos]{todonotes}
 #+LaTeX_HEADER: \usepackage{microtype}
 #+LaTeX_HEADER: \usepackage{orcidlink}
-
-#+LaTeX_HEADER: \lstdefinestyle{SQL}{language=SQL,basicstyle=\ttfamily\small,breaklines=true,breakatwhitespace=true,columns=fullflexible,keepspaces=true,showstringspaces=false,commentstyle=\color{green!60!black},keywordstyle=\color{blue},stringstyle=\color{red},identifierstyle=\color{purple},numbers=left,numberstyle=\tiny\color{gray},frame=single,framesep=5pt,xleftmargin=15pt,tabsize=2}
-#+LaTeX_HEADER: \setlength{\marginparwidth}{2cm}
 
 #+LaTeX_HEADER: \usepackage{url,hyperref}
