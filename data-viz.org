@@ -4,8 +4,7 @@
 #+DATE: {{{time(%Y-%m-%d)}}}
 #+bibliography: "data-viz.bib"
 #+setupfile: "config.org"
-
-\begin{abstract}
+{abstract}
 
 \end{abstract}
 \renewcommand{\keywordsname{\textbf{Mots clés : }\keywords{Visualisation de données, Graphique, Méthode}
@@ -19,7 +18,7 @@ L'origine de ces travaux prend place dans un besoin grandissant de solution de v
 
 Le secteur de la construction est historiquement peu digitalisé en comparaison avec les autres industries. Pour adresser ce retard, il est important de publier des études opérationnelle claires et industrialisables dont chaque acteur de l'industrie de la construction puisse bénéficier immédiatement. Ce rapport s'inscrit dans cette démarche.
 
-Il existe de multiples manières d'interargir avec un graphique. [cite:@schwabish1CenteringAccessibility2022;@frankelavsky2RightTools2022;]
+Il existe de multiples manières d'interargir avec un graphique. [cite:@schwabishCenteringAccessibilityData2022a;@frankelavskyRightToolsJob2022]
 
 Ce rapport aborde :
 - L'exploration visuelle
@@ -42,7 +41,7 @@ Cette première action nous a permis de pré-catégoriser les graphiques selon l
 
 Ensuite, nous avons étudié les livres de divers auteurs et en avons tirés un ensemble de rêgles générales quant à la préparation des graphiques. Cela concerne les aspects visuels (couleurs, polices...), des conseils sur la pertinence dans le choix des types graphiques suivant les objectifs attendus, quelques éléments d'accessibilités et des retours d'expériences. Sur cette base, nous avons affiné la catégorisation préétablies et commencé à regrouper les recommendations.
 
-Pour compléter les dispositions propres à l'accessibilité, nous avons étudié le rapport "Centering accessibility in data visualization"[cite:@schwabishCenteringAccessibilityData2022]. Nous en avons tiré un apperçu global des approches possibles pour améliorer l'accessibilité des graphiques ainsi que de nombreux conseils et bonnes pratiques.
+Pour compléter les dispositions propres à l'accessibilité, nous avons étudié le rapport "Centering accessibility in data visualization". [cite:@schwabishCenteringAccessibilityData2022] Nous en avons tiré un apperçu global des approches possibles pour améliorer l'accessibilité des graphiques ainsi que de nombreux conseils et bonnes pratiques.
 
 En parallele, nous avons étudié diverses chartes de publications issues de divers médias et institutions. Ces lectures nous ont permis de nourrir les reccommendations en matière de conception visuelle des graphiques ainsi que de dresser une liste d'éléments standardisables et d'autres pouvant être laisser libre de personnalisation avec quelques conseils.
 
@@ -52,109 +51,120 @@ Pour finir, nous avons étudié les articles scientifiques publiés sur ces suje
 
 * Eléments généraux
 ** Polices
-Le choix d'une police de texte a de multiples impacts sur la perception des graphiques. Il convient de selectionner une police accessible et de préférence sans sérif pour un usage informatique (Arial, Calibri, Source Sans Pro, Verdana...).[cite:@andreaskrauseBestPracticesData2024] Les polices avec serif peuvent être considérés pour la production d'éléments imprimés. Il n'y a pas de consensus clair sur l'impact des sérifs sur l'accessibilité des polices.[cite:@stephenfew8TableDesign2012] Il n'y a pas non plus de consensus clair sur l'efficacité des polices conçues pour adresser des problématiques d'accessibilités telles que la dyslexie. Il convient d'utiliser une police utilisant une hauteur fixe pour les chiffres.[cite:@stephenfew8TableDesign2012]
+Le choix d'une police de texte a de multiples impacts sur la perception des graphiques. Il convient de selectionner une police accessible et de préférence sans sérif pour un usage informatique (Arial, Calibri, Source Sans Pro, Verdana...). [cite:@andreaskrauseBestPracticesData2024] Les polices avec serif peuvent être considérés pour la production d'éléments imprimés. Il n'y a pas de consensus clair sur l'impact des sérifs sur l'accessibilité des polices. [cite:@stephenfewTableDesign2012] Il n'y a pas non plus de consensus clair sur l'efficacité des polices conçues pour adresser des problématiques d'accessibilités telles que la dyslexie. Il convient d'utiliser une police utilisant une hauteur fixe pour les chiffres. [cite:@stephenfewTableDesign2012]
 
 Il est conseillé de restreindre l'utilisation de l'italique car les textes affichés de la sorte sont plus difficiles à lire. Il est égalemenbt conseiller de limiter l'utilisation de la graisse et du soulignement à des cas spécifiques pour ne pas surcharger les présentations.
 
 La taille de la police joue un role majeur dans l'accessibilité du texte. Il est recommendé d'utiliser une hauteur de police de 12 points.[cite:@andreaskrauseBestPracticesData2024] Le nombre de tailles et de type de police doit être limité en nombre.[cite:@andreaskrauseBestPracticesData2024]
 
-Certaines polices peuvent être utilisés pour projeter des icones (NerdFont, StateFace...).[cite:@jonathanschwabish10Qualitative2021] L'intérêt des icones est discuté plus tard dans ce rapport.
+Certaines polices peuvent être utilisés pour projeter des icones (NerdFont, StateFace...).[cite:@jonathanschwabishQualitative2021] L'intérêt des icones est discuté plus tard dans ce rapport.
 
 Il est important de prévoir le chargement de toutes polices non standard (eg. Source Sans Pro, NerdFont...) dans l'interface utilisateur si celles-ci sont utilisées puisqu'elles ne sont probablement pas installées dans le système d'exploitation de l'utilisateur. Prévoir leurs chargement vise à assurer la bonne expérience des utilisateurs.
 
+** Couleurs
+
 ** Tables
-Une table ou tableur permet d'exposer des données brutes organisées en lignes ou en colonnes.
+Une table ou tableur permet d'exposer des données brutes organisées en lignes ou en colonnes. [cite:@mikeyiHowChooseRight2020]
 
-Sauf mention contraire, les recommendations sur les tables sont issues du livre "Show me the numbers" de Stephen Few.[cite:@stephenfew8TableDesign2012] L'auteur y rentre très en détails sur chaque point de paramétrage. Il y indique notamment les orientations en matière de construction de tableur lorsqu'il s'agit du choix premier d'affichage de données. Ce rapport s'intéresse à la conception de graphique. Dans ce cadre, les tableurs sont des éléments complémentaires pouvant être affichés par l'utilisateur pour explorer plus précisement les données préalablement affichées.
+Sauf mention contraire, les recommendations sur les tables sont issues du livre "Show me the numbers" de Stephen Few.[cite:@stephenfewTableDesign2012] L'auteur y rentre très en détails sur chaque point de paramétrage. Il y indique notamment les orientations en matière de construction de tableur lorsqu'il s'agit du choix premier d'affichage de données. Ce rapport s'intéresse à la conception de graphique. Dans ce cadre, les tableurs sont des éléments complémentaires pouvant être affichés par l'utilisateur pour explorer plus précisement les données préalablement affichées.
 
-Pour composer une table de donnée lisible, il est recommendé de :
-- Séparer les entrées avec un espace vide,
-  - Lorsque les données sont présentées en colonnes, l'espace entre deux colonnes doit être plus grand qu'entre deux lignes,
-  - Lorsque les données sont présentées en ligne, l'espace entre deux ligne doit être plus grand qu'entre deux colonnes,
-  - Insérer une ligne vide toutes les 5 lignes pour faciliter le balayage visuel[cite:@NFENISO9241-125ErgonomieLinteractionHommesysteme2017]
-- Utiliser une ligne horizontale pour séparer les entêtes de colonnes des données,
-- Utiliser une ligne horizontale pour séparer les catégories lorsque les données sont triées par catégories,
-  - Dans ce cas de figure, ne pas répéter le nom de la catégorie sur toutes les lignes,
-  - Les noms des catégories doivent être dans la première colonne, les sous-catégorie dans la seconde colonne, etc. S'il y a plusieurs subdivisions, les noms des catégories doivent être apposées sur la même ligne,
-  - Rappeler le nom de la catégorie en cas de changement de page,
-  - Maintenir la structure du tableur sur toutes les catégories,
-- Rappeler les titres des colones en cas de changement de page,
-- Les catégories doivent être ordonnées suivant un ordre logique (eg. chronologique, alphabetique, par classement, etc.)
-- Valeurs sommairisées
-  - Utiliser une ligne verticale pour séparer les valeurs placées en colonne à droite de toutes les valeurs
-  - Utiliser une ligne horizontale si ces valeurs sont placées en une ligne en bas du tableau,
-  - Si ces valeurs sont le message important de votre tableur, il convient de les affichés imédiatement à droite des colonnes de catégories ou immédiatement en dessous des entêtes de colonnes, suivant la nature du sommaire.
-- Ne pas effectuer de rotation sur un tableur, son orientation doit respecter celle du texte du document,
-- Les produits d'un calcul doivent être affichés dans la colonne imédiatement à droite de la colonne source de données
-- Uniformiser les aligmnements
-  - Les titres des colonnes suivent les alignements des données
-  - Aligner les chiffres à droite,
-    - Homogénéiser les décimales (généralement 2 ou 3 décimales suffisent suivant le contexte),
-    - Indiquer les valeurs négatives avec le symbole "moins" (-), ici la notion de valeur symbolique est importante. Certains choisissent d'identifier les valeurs négatives entre parenthèses, cependant il ne s'agit pas d'une représentation naturelle répendue pour une telle identification.
-    - Séparer les digit d'un nombre par un espace tous les 3 charactères. Dans le cas de grands nombres, il convient de les arrondir à la précision utile (dixaine, centaine...). Par défaut, la précision affichée doit correspondre à celle de la source d'information.
-    - Si une valeur numérique réfère à une information de catégorie elle doit être traitée comme un texte.
-  - Aligner les textes à gauche,
-  - Centrer les dates et utiliser une convention stricte d'écriture de ces données telles que "YYYY-MM-DD".[cite:@ISO8601-1DateHeureRepresentations2019] La composition de la date doit être indiqué à l'utilisateur. Le choix du format doit respecter le niveau de précision associée à la mesure. Implicitement, le choix d'un formatage de plus haut niveau que la précision de la mesure induit une agrégation des valeurs.
-  - Centrer les données dont la largeur de charactère est fixe
+Des prescriptions spécifiques à la préparation de tableurs pour certains graphiques sont apportés le cas échéant dans la suite de ce rapport.
 
+*** Composition
+Il est recommendé de séparer les entrées avec un espace vide.
+Lorsque les données sont présentées en colonnes, l'espace entre deux colonnes doit être plus grand qu'entre deux lignes,
+Lorsque les données sont présentées en ligne, l'espace entre deux ligne doit être plus grand qu'entre deux colonnes,
+
+Insérer une ligne vide toutes les 5 lignes pour faciliter le balayage visuel. [cite:@NFENISO9241-125ErgonomieLinteractionHommesysteme2017]
+
+Utiliser une ligne horizontale pour séparer les entêtes de colonnes des données,
+
+Utiliser une ligne horizontale pour séparer les catégories lorsque les données sont triées par catégories et, ne pas répéter le nom de la catégorie sur toutes les lignes. Les noms des catégories doivent être dans la première colonne, les sous-catégorie dans la seconde colonne, etc. S'il y a plusieurs subdivisions, les noms des catégories doivent être apposées sur la même ligne.
+
+Il convient de rappeler le nom de la catégorie en cas de changement de page et de maintenir la structure du tableur sur toutes les catégories et de rappeler les titres des colones en cas de changement de page.
+Les catégories doivent être ordonnées suivant un ordre logique (eg. chronologique, alphabetique, par classement, etc.)
+
+Ne pas effectuer de rotation sur un tableur, son orientation doit respecter celle du texte du document.
+
+Maintenir les aligmnements les titres avecc celui des données en colonnes.
+
+*** Chiffres
+Aligner les chiffres à droite.
+Homogénéiser les décimales (généralement 2 ou 3 décimales suffisent suivant le contexte).
+Indiquer les valeurs négatives avec le symbole "moins" (-), ici la notion de valeur symbolique est importante. Certains choisissent d'identifier les valeurs négatives entre parenthèses, cependant il ne s'agit pas d'une représentation naturelle répendue pour une telle identification.
+Séparer les digit d'un nombre par un espace tous les 3 charactères. Dans le cas de grands nombres, il convient de les arrondir à la précision utile (dixaine, centaine...). Par défaut, la précision affichée doit correspondre à celle de la source d'information.
+Si une valeur numérique réfère à une information de catégorie elle doit être traitée comme un texte.
+
+*** Texte
+Aligner les textes à gauche.
+Centrer les dates et utiliser une convention stricte d'écriture de ces données telles que "YYYY-MM-DD". [cite:@ISO8601-1DateHeureRepresentations2019] La composition de la date doit être indiqué à l'utilisateur. Le choix du format doit respecter le niveau de précision associée à la mesure. Implicitement, le choix d'un formatage de plus haut niveau que la précision de la mesure induit une agrégation des valeurs.
+Centrer les données dont la largeur de charactère est fixe.
+
+*** Sommaire et agrégats
+Utiliser une ligne verticale pour séparer les valeurs placées en colonne à droite de toutes les valeurs.
+Utiliser une ligne horizontale si ces valeurs sont placées en une ligne en bas du tableau.
+Si ces valeurs sont le message important de votre tableur, il convient de les affichés imédiatement à droite des colonnes de catégories ou immédiatement en dessous des entêtes de colonnes, suivant la nature du sommaire.
+
+Les produits d'un calcul doivent être affichés dans la colonne imédiatement à droite de la colonne source de données.
+
+*** Mise en évidence
 Si des valeurs spécifiques doivent être mises en avant, il est possible d'utiliser l'une ou l'autre de ces solutions :
 - mettre le texte en gras,
 - remplir la cellule d'une couleur.
 Il est recommandé de limiter cette opération à un nombre réduit de valeur. Si cela n'est pas possible, il convient de sélectionner un autre mode de visualisation.
 
-Des prescriptions spécifiques à la préparation de tableurs pour certains graphiques sont apportés le cas échéant dans la suite de ce rapport.
-
 * Graphiques
 ** Marqueur :indicateur:
-Affiche une valeur simple, plus pertinent lorsqu'associé à une tendance sur une période donnée.
+Affiche une valeur simple, plus pertinent lorsqu'associé à une tendance sur une période donnée. [cite:@mikeyiHowChooseRight2020]
 
 ** Jauge :indicateur:
-Représentation métaphorique  la vitesse d'un système.
+Représentation métaphorique la vitesse d'un système.
 
 ** Tiret :indicateur:
-Présentation d'une valeur mesurée ou calculée au regard d'une valeur cible et ... . Pertinent lors de la réalisation d'un benchmark.
+Présentation d'une valeur mesurée ou calculée au regard d'une valeur cible. [cite:@alansmithLexiqueVisuel] Pertinent lors de la réalisation d'un benchmark. [cite:@mikeyiHowChooseRight2020]
 
-** Barres divergentes :deviation:
+** Barre divergente :deviation:
+Affiche correctement un ensemble de valeur quantitative triées par catégories lorsque des valeurs négatives sont utilisées. [cite:@alansmithLexiqueVisuel] L'axe des absysse doit être égal à 0 et toutes les barres doivent être projetées depuis cet axe.
 
 ** Barres divergentes empilées :deviation:
-Utilisé pour illustrer les résultats d'enquêtes impliquant un sentiment. Les barres doivent être calculées en pourcentage et alignées à 100% comme pour une partie d'un ensemble. Les réponses sont affichées de façon ordonée et du plus négatif au plus positif. Il convient d'utiliser une palette de couleur divergente. Lors de la préparation d'une enquête impliquant des sentiment, il est conseiller de proposer un choix de valeur paires pour éviter les votes neutres sauf si la représentation de l'indiférence est une volontée de l'étude. De plus, *expliquer la limite de nombre de zones facile à visualiser* (max 6?)
+Utilisé pour illustrer les résultats d'enquêtes impliquant un sentiment. [cite:@alansmithLexiqueVisuel] Les barres doivent être calculées en pourcentage et alignées à 100% comme pour une partie d'un ensemble. Les réponses sont affichées de façon ordonée et du plus négatif au plus positif. Il convient d'utiliser une palette de couleur divergente. Lors de la préparation d'une enquête impliquant des sentiment, il est conseiller de proposer un choix de valeur paires pour éviter les votes neutres sauf si la représentation de l'indiférence est une volontée de l'étude. De plus, *expliquer la limite de nombre de zones facile à visualiser* (max 6?)
 
 ** Spine :deviation:
-Utilisé pour afficher la quantité de réponses négatives et positives à une question. Le spine divise une valeure quantitative unique en deux ccomposants distinct contrasté par un déterminent binaire.Utilisé pour afficher la quantité de réponses négatives et positives à une question.
+Utilisé pour afficher la quantité de réponses négatives et positives à une question. Le spine divise une valeure quantitative unique en deux ccomposants distinct contrasté par un déterminent binaire. [cite:@alansmithLexiqueVisuel] Utilisé pour afficher la quantité de réponses négatives et positives à une question.
 
 ** Horizon :evolution:
-Permet de vérifier un équilibre entre deux borne par rapport à une base. Utilisé pour suivre l'évolution d'une variable dans le temps et devant respecter un écart-type (eg. tension à 230V +/- 5%). L'information la plus importante est le dépassement de l'écart-type. Pour correctement mettre en évidence ces phénomènes, il est recommendé d'utiliser une palette de couleur de
+Permet de vérifier un équilibre entre deux borne par rapport à une base. [cite:@alansmithLexiqueVisuel]  Utilisé pour suivre l'évolution d'une variable dans le temps et devant respecter un écart-type (eg. tension à 230V +/- 5%). L'information la plus importante est le dépassement de l'écart-type. Pour correctement mettre en évidence ces phénomènes, il est recommendé d'utiliser une palette de couleur de
 
 ** Cascade :deviation::evolution:
-Affiche les gains et pertes entres deux états d'un système. [cite:@jonathanschwabish4ComparingCategories2021]
+Affiche les gains et pertes entres deux états d'un système. [cite:@jonathanschwabishComparingCategories2021] Utilisé principalement pour les analyses financières. [cite:@alansmithLexiqueVisuel]
 
 ** Bougies :deviation::evolution:
-Illustre les évolutions d'un stock sur une temporalité donnée. La ligne indique l'état le plus haut et l'état le plus bas de la journée. La barre indique l'état de l'ouverture et de la cloture de la période.[cite:@jonathanschwabish6Distribution2021] Il convient d'utiliser une palette de couleur binaire pour contraster les périodes aux soldes positifs des périodes aux soldes négatifs.
+Illustre les évolutions d'un stock sur une temporalité donnée. La ligne indique l'état le plus haut et l'état le plus bas de la journée. La barre indique l'état de l'ouverture et de la cloture de la période. [cite:@jonathanschwabishDistribution2021] Il convient d'utiliser une palette de couleur binaire pour contraster les périodes aux soldes positifs des périodes aux soldes négatifs.
 
 ** Nuage de point :correlation:
-Représente la relation entres deux variables continues.
+Représente la relation entres deux variables continues. [cite:@alansmithLexiqueVisuel]
 La couleur est utilisée pour distinguer les catégories.
 Si des milliers de point de données sont à afficher, il est préférable d'utiliser soit :
 - des cercles ouverts
 - des petits cercles
 - des cercles avec une transparence
-  Cela permet de limiter le masquage des points de données par surimposition.[cite:@andreaskrauseBestPracticesData2024]
+  Cela permet de limiter le masquage des points de données par surimposition. [cite:@andreaskrauseBestPracticesData2024]
 
 ** Nuage de bulle :correlation:
-Il s'agit d'un nuage de point dont la taille des bules est utilisé pour représenter la valeur quantitative.
+Il s'agit d'un nuage de point dont la taille des bules est utilisé pour représenter une troisieme valeur quantitative. [cite:@alansmithLexiqueVisuel]
 
 ** Matrice de température :correlation:
-Représentation graphique d'une table de valeur homogène.[cite:@sosulskiIIIGraphics2019]
+Représentation graphique d'une table de valeur homogène. [cite:@sosulskiGraphics2019]
 Intéressante pour afficher une tendance lorsqu'un très grand nombre d'information est impliqué.
 
 En utilisant une palette de couleur séquentielle, un lecteur aura tendance à considérer une couleur sombre comme une valeur haute. En utilisant une palette de couleur divergente (eg. basée sur la température de la couleur), ce phénomène s'estompe.
 
-L'organisation des catégories changeant la forme de la matrice de température, il convient de retenir une organisation par valeur croissante ou décroissante à une colonne donnée. Il convient de signaler cette configuration au lecteur.[cite:@wilke6VisualizingAmounts2019]
+L'organisation des catégories changeant la forme de la matrice de température, il convient de retenir une organisation par valeur croissante ou décroissante à une colonne donnée. Il convient de signaler cette configuration au lecteur. [cite:@wilkeVisualizingAmounts2019]
 
 ** Matrice de bulle :correlation:
 Ce graphique est une version aggrégée du nuage de bulle et le la matrice de température.
 
-Il simplifie la visualisation des relations entre un couple de variable. A réserver pour un usage d'exploration de donées.[cite:@sosulskiIIIGraphics2019] La taille des bules représente la force de la corrélation. Cette force est la représentation du coefficient de Pearson.[cite:@jonathanschwabish8Relationship2021]
+Il simplifie la visualisation des relations entre un couple de variable. A réserver pour un usage d'exploration de donées. [cite:@sosulskiGraphics2019] La taille des bules représente la force de la corrélation. Cette force est la représentation du coefficient de Pearson. [cite:@jonathanschwabishRelationship2021]
 
 La couleur peut être utilisée pour distinguer les catégories (à vérifier). Elle peut être également utilisée comme double encodage de la correlation (à vérifier).
 
@@ -164,44 +174,47 @@ Le tableur associée est une matrice de correlation organisant les valeurs de co
 Ce type de graphique montre la relation entre les valeurs quantitatives de catégories organisées en colonne ordonnée et la valeur cumulée affichée en ligne brisée. Le premier point de la ligne vérifiant (\(\tau\geq80\%Total\)) est affichée. Est utilisé pour illustrer les éléments important dans un système qualité.
 
 ** Arbre de mot :correlation:
-Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegas 2007) La taille des mots représente la fréquence de leurs usages.[cite:@jonathanschwabish10Qualitative2021]
+Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegas 2007) La taille des mots représente la fréquence de leurs usages. [cite:@jonathanschwabishQualitative2021]
 
 ** Histogramme :distribution:
-Utilisé pour afficher une seule distribution de donnée. Il n'y a pas d'espace entre deux barres ce qui permet de favoriser la forme de la distribution. La nature du graphique (barre) implique un calcul d'agrégat pour chaque barre. La largeur de l'agrégat est à évaluer au regard du niveau de détail souhaité. L'histogramme n'est pas adapté à l'affichage de l'ensemble des valeurs, pour cela il convient d'utiliser une courbe de densité.
+Utilisé pour afficher une seule distribution statistique de donnée. Il n'y a pas d'espace entre deux barres ce qui permet de favoriser la forme de la distribution. [cite:@alansmithLexiqueVisuel] La nature du graphique (barre) implique un calcul d'agrégat pour chaque barre. La largeur de l'agrégat est à évaluer au regard du niveau de détail souhaité. L'histogramme n'est pas adapté à l'affichage de l'ensemble des valeurs, pour cela il convient d'utiliser une courbe de densité.
 
 ** Polygone de fréquence :distribution:
-Utilisé pour afficher simultanément plusieurs distributions de données. Fonctionne comme un histogramme. Chaque agrégat est représenté par un point et ils sont reliés entres eux par un segment droit. Pour faciliter la lécture, il convient de limiter le nombre de distributions affichées à 4 ce qui correspondant notamment au nombre de symboles aisément discriminables.
+Utilisé pour afficher simultanément plusieurs distributions de données. Fonctionne comme un histogramme. Chaque agrégat est représenté par un point et ils sont reliés entres eux par un segment droit. Pour faciliter la lécture, il convient de limiter le nombre de distributions affichées à 4 [cite:@alansmithLexiqueVisuel] ce qui correspondant notamment au nombre de symboles aisément discriminables.
 
 ** Courbe de densité :distribution:
-La densité représente la probabilité de distribution des variables.[cite:@sosulskiIIIGraphics2019] Pertinent lorsque le nombre de données est très grand, autrement il convient d'utiliser un histogramme.[cite:@wilke9VisualizingMany2019] En cas d'affichage de plusieurs courbe, utiliser  des remplissages transparents pour faciliter la distinctions. L'air de la courbe est usuellement égal à 1 et de ce fait, l'échelle de l'axe des ordonnées dépend de l'axe des absisses.[cite:@wilke9VisualizingMany2019]
+La densité représente la probabilité de distribution des variables. [cite:@sosulskiGraphics2019] Pertinent lorsque le nombre de données est très grand, autrement il convient d'utiliser un histogramme. [cite:@wilkeVisualizingManyDistributions2019] En cas d'affichage de plusieurs courbe, utiliser  des remplissages transparents pour faciliter la distinctions. L'air de la courbe est usuellement égal à 1 et de ce fait, l'échelle de l'axe des ordonnées dépend de l'axe des absisses. [cite:@wilkeVisualizingManyDistributions2019]
 
 ** Courbe cumulative :distribution:
-Utilisé pour représenter une distribution inégale. L'axe des ordonnées est toujours la fréquence cumulative et l'axe des absisses est toujours une mesure.
+Utilisé pour représenter une distribution inégale. L'axe des ordonnées est toujours la fréquence cumulative et l'axe des absisses est toujours une mesure. [cite:@alansmithLexiqueVisuel]
 
 ** Bande de valeur (strip plot) :distribution:
-Affiche les points de données d'une catégorie. Les points sont légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce type de graphique peut être associé à un graphique en violon ou en lignes de crêtes lorsque l'on veut exposer graphiquement les données sources des tracés.[cite:@wilke9VisualizingMany2019]
+Affiche les points de données d'une catégorie. Les points sont légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce type de graphique peut être associé à un graphique en violon ou en lignes de crêtes lorsque l'on veut exposer graphiquement les données sources des tracés. [cite:@wilkeVisualizingManyDistributions2019]
 
 ** Boite à moustache :distribution:
+Résume les distributions multiples en montrant la médiane et l'étendue des données. [cite:@alansmithLexiqueVisuel]
+Est plus efficace lorsqu'il y a de nombreuses mesures pour une entrée et que leur distribution doit être représentée (eg : mesure médiane, basse, haute, incertitude...). [cite:@mikeyiHowChooseRight2020]
 
 ** Valeur lettrée :distribution:
-Représente chaque découpage statistique (\(x\sigma\)) par une boite distincte. Convient en remplacement des boites à moustache lorsqu'il y a un très grand nombre de données disponibles. Permet de faire des estimations fiables.[cite:@hofmannLettervaluePlotsBoxplots2017]
+Représente chaque découpage statistique (\(x\sigma\)) par une boite distincte. Convient en remplacement des boites à moustache lorsqu'il y a un très grand nombre de données disponibles. Permet de faire des estimations fiables. [cite:@hofmannLettervaluePlotsBoxplots2017;@mikeyiHowChooseRight2020 ]
 
 ** Violon :distribution:
-Représente fidèlement les distributions d'un très grand nombre de données. Utilisé pour faire des comparaisons entre des catégories. Très pertinent pour représenter les distributions bimodales.[cite:@wilke9VisualizingMany2019] Le tracé du demi-violon est identique au tracé d'une courbe de densité. Celui-ci commence à la valeur la plus petite et termine à la valeur la plus grande.
+Représente fidèlement les distributions d'un très grand nombre de données. [cite:@alansmithLexiqueVisuel] Utilisé pour faire des comparaisons entre des catégories. [cite:@mikeyiHowChooseRight2020]  Très pertinent pour représenter les distributions bimodales. [cite:@wilkeVisualizingManyDistributions2019] Le tracé du demi-violon est identique au tracé d'une courbe de densité. Celui-ci commence à la valeur la plus petite et termine à la valeur la plus grande.
 
 ** Mini-graphe (spark line) :evolution:
-Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. N'affiche aucun autre élément que la courbe et un point symbolisant l'état actuel. Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise.[cite:@jonathanschwabish6Distribution2021]
+Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. N'affiche aucun autre élément que la courbe et un point symbolisant l'état actuel. Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise. [cite:@jonathanschwabishDistribution2021]
 
 ** Bulle proportionnelle ordonnée :classement:
-Utilisé pour illustrer les grandes variations de quantité pour différentes catégories et lorsque la distinction des nuances n'est pas primordiale. Les bulles doivent être dimensionnés par leurs surface pour éviter d'éxagérer les différences.[cite:@jonathanschwabish4ComparingCategories2021] Ce type de graphique utilise un double encodage de la quantité : la position et la taille.[cite:@wilke12VisualizingAssociations2019] Bien que ce type de représentation soit considéré comme engageant, il convient d'utiliser un graphique en barre ordonnée à la place lorsque l'évaluation des différences entre catégories est importante.[cite:@jonathanschwabish4ComparingCategories2021]
+Utilisé pour illustrer les grandes variations de quantité pour différentes catégories et lorsque la distinction des nuances n'est pas primordiale. Les bulles doivent être dimensionnés par leurs surface pour éviter d'éxagérer les différences. [cite:@jonathanschwabishComparingCategories2021] Ce type de graphique utilise un double encodage de la quantité : la position et la taille. [cite:@wilkeVisualizingAssociationsTwo2019] Bien que ce type de représentation soit considéré comme engageant, il convient d'utiliser un graphique en barre ordonnée à la place lorsque l'évaluation des différences entre catégories est importante. [cite:@jonathanschwabishComparingCategories2021]
 
 ** Barre ordonnée :classement:
+Doit être affiché à l'horizontal s'il y a beaucoup de valeur à afficher ou si les labes des catégories s'entrevêchent. [cite:@alansmithLexiqueVisuel] Est plus lisible pour un nombre limité d'entrées. [cite:@mikeyiHowChooseRight2020]
 
 ** Lollipop :classement:
-Utilisé pour afficher la position dans une liste ordonnée lorsque l'affichage de la valeur est moins important que la position. Egalement très efficace comparé aux barres hordonnées lorsqu'il y a un grand nombre de catégorie dans le classement. Si une ligne connecte le point de la valeur à laxe des ordonnées, l'axe des absisse doit commencer à 0, autrement cela n'est pas obligatoire.
+Utilisé pour afficher la position dans une liste ordonnée lorsque l'affichage de la valeur est moins important que la position. [cite:@alansmithLexiqueVisuel] Egalement très efficace comparé aux barres hordonnées lorsqu'il y a un grand nombre de catégorie dans le classement. [cite:@mikeyiHowChooseRight2020]  Si une ligne connecte le point de la valeur à laxe des ordonnées, l'axe des absisse doit commencer à 0, autrement cela n'est pas obligatoire.
 
 ** Haltères :classement:
-Utilisé pour comparer un minimum et un maximum de plusieurs catégories. La relation entre le maximum et le minimum d'une catégorie est représenté par la barre reliant les deux valeurs.
+Utilisé pour comparer un minimum et un maximum de plusieurs catégories. [cite:@alansmithLexiqueVisuel] La relation entre le maximum et le minimum d'une catégorie est représenté par la barre reliant les deux valeurs. [cite:@mikeyiHowChooseRight2020]
 
 Peut être utilisé pour illustrer le changement d'une valeur entre deux état données. Dans ce cas, il convient de flécher le sens du changement de l'état antérieur vers l'état final.
 
@@ -210,10 +223,111 @@ Dans ces deux cas de figures, les catégories doivent êtres ordonnées de la pl
 Les haltères sont toujours affichés à l'horizontal.
 
 ** Pente :classement:
-Affiche la variation des valeurs ou ratios des catégories entre deux états donnés.
+Affiche la variation des valeurs ou ratios des catégories entre deux états donnés. [cite:@alansmithLexiqueVisuel]
 
 ** Bosses :classement:
-Affiche l'évolution d'un classement entre différents jalons. Ce graphique n'affiche pas les valeurs sous-jacente mais uniquement le positionnement de la catégorie dans le classement.[cite:@jonathanschwabish5Time2021] Si la valeur source est également à représenter, ce graphique peut se transformer en graphique en ruban, combinant les disposition du graphique en bosse avec celles du graphique de Sankey.[cite:@jonathanschwabish5Time2021]
+Affiche l'évolution d'un classement entre différents jalons. [cite:@mikeyiHowChooseRight2020;@alansmithLexiqueVisuel]  Ce graphique n'affiche pas les valeurs sous-jacente mais uniquement le positionnement de la catégorie dans le classement. [cite:@jonathanschwabishTime2021] Si la valeur source est également à représenter, ce graphique peut se transformer en graphique en ruban, combinant les disposition du graphique en bosse avec celles du graphique de Sankey. [cite:@jonathanschwabishTime2021]
+
+** Barre jumelée :comparaison:
+Permet d'afficher plusieurs séries devient plus difficile à lire avec plus de deux séries. [cite:@alansmithLexiqueVisuel]
+
+** Barre empilées :comparaison:
+Représente le total de chaque catégorie et la proportion de leurs composantes, les composantes doivent être homogènes si les proportions sont plus importantes que les totaux, considérer l'utilisation de barres assemblées à 100%. [cite:@mikeyiHowChooseRight2020]
+
+** Ligne de crête :comparaison:
+Lignes de densités séparées par un offset et utilisé pour comparer la distribution entre les groupes. Parfait lorsque les schémas de distributions sont bien distincts entre les groupes. [cite:@mikeyiHowChooseRight2020]
+
+** Ligne :evolution:
+Façon standard de montrer une série temporelle. [cite:@alansmithLexiqueVisuel]
+Mieux lorsqu'il y a moins de 5 lignes. [cite:@mikeyiHowChooseRight2020]  Ne pas hésiter à séparer les graphiques lorsqu'il y a plus de 4 séries de données simultanées (ref?)
+
+** Eventail :evolution:
+Utilisé pour montrer l'incertitude des projections futures. [cite:@alansmithLexiqueVisuel]
+
+** Nuage de point connecté :evolution:
+Montre l'évolution des données pour deux variables pertinentes si le modèle de progression est clair. [cite:@alansmithLexiqueVisuel]
+
+** Stemgraph :evolution:
+A privilégier lorsque la visualisation des changements en proportions au fil du temps est plus importante que les valeurs individuelles. [cite:@alansmithLexiqueVisuel]
+
+** Chandelier :evolution:
+Affiche des bilans quotidiens (eg. ouverture, fermeture, point haut, point bas). [cite:@alansmithLexiqueVisuel]
+La couleur est utilisée pour représenter la direction de l'évolution de la valeur (augmente, descend).
+
+** Chronologie verticale :evolution:
+Affiche le temps sur l'axe Y. Particulièrement adapté à l'affichage sur mobile. [cite:@alansmithLexiqueVisuel]
+
+** Sismographe :evolution:
+Pour montrer des séries à grandes variation dans les données. [cite:@alansmithLexiqueVisuel]
+
+** Chronologie circulaire :evolution:
+Pour l'affichage des valeurs discrètes de taille variable à travers de multiples catégories. [cite:@alansmithLexiqueVisuel]
+
+** Frise de Priestley :evolution:
+Parfait lorsque la date et la durée sont des éléments clés dans l'histoire de la donnée. [cite:@alansmithLexiqueVisuel]
+
+** Carte de fréquentation :evolution:
+Excellente visualisation pour suivre la fréquence d'une activité. Favorise la quantité à la qualité (exemple : github). [cite:@alansmithLexiqueVisuel]
+
+** Diagramme circulaire :partieDunEnsemble:
+Diagramme standard, difficile à lire. [cite:@alansmithLexiqueVisuel]
+Limiter à 5 entrées maximum [cite:@mikeyiHowChooseRight2020]
+
+** Donut :partieDunEnsemble:
+Comme le diagramme circulaire, le centre peut être utilisé pour afficher un total ou encore une icone. [cite:@alansmithLexiqueVisuel]
+
+** Treemap :partieDunEnsemble:
+Utilisé pour les relations hiérarchiques d'une partie vers l'ensemble. Difficile à lire s'il y a trop d'éléments affichés. [cite:@alansmithLexiqueVisuel]
+Le découpage des boites n'a pas besoin d'être ordonné, il peut y avoir plus de 2 niveaux de hiérarchie. [cite:@mikeyiHowChooseRight2020]
+
+** Arc :partieDunEnsemble:
+Hémicycle, souvent utilisé pour visualiser la composition d'un effectif. [cite:@alansmithLexiqueVisuel]
+
+** Voronoi :partieDunEnsemble:
+Semblable à un diagramme de bulle mais transformées en zones dont l'ensemble des points de chacune est plus proche du centre de sa zone que de tout autre centroïde. [cite:@alansmithLexiqueVisuel]
+
+** Quadrillage :partieDunEnsemble:
+Adapté à l'affichage des informations en pourcentages. Fonctionne mieux avec des entiers naturels. [cite:@alansmithLexiqueVisuel] Généralement en grille de 10 x 10 carrés (pour un total de 100). Chaque carré représente 1% d'un tout. Les carrés sont colorés sur la base de la taille d'une catégorie dans un groupe. [cite:@mikeyiHowChooseRight2020]
+
+** Symbole groupé :ordreDeGrandeur:
+Utile lorsqu'il est utile de compter ou de mettre en évidence des éléments individuels organisés en barre ou en colonne. [cite:@alansmithLexiqueVisuel] Cependant, ce type de graphique n'est pas efficace dans cette action car il incite le lecteur à compter chaque point, ce qui peut s'avérer décourageant. [cite:@stephenfewSillyGraphsThat2012] Un certain usage peut être imaginé à des fins décoratives visant à illustrer un élément déjà explicité dans un texte. Un graphique en barre ordonné est à privilégier aux symboles groupés.
+
+** Pictographe :ordreDeGrandeur:
+Utilisation hautement contextuelle limiter strictement à l'affichage d'entiers naturels. [cite:@alansmithLexiqueVisuel]
+Les pictographes peuvent augmenter significativement la précision d'acquisition d'un écart de ratio ainsi que la rapidité de la visualisation d'un minimum ou d'un maximum entre des catégories. [cite:@tranDiscoveringAccessibleData2024] A la manière des symboles groupées, si la transmission de valeurs précise est importante, il convient d'utiliser un graphique en barre ordonnée à la place. [cite:@tranDiscoveringAccessibleData2024]
+
+** Marimeko :ordreDeGrandeur:
+Visualisation de la taille et des proportions d'un ensemble homogène de données. [cite:@alansmithLexiqueVisuel]
+Exemple : répartition des parts de marché de 3 entreprises sur un axe et taux dans 3 catégories de marché pour chacune
+
+La couleur peut être utilisée pour mettre en évidence une valeur. [cite:@jonathanschwabishComparingCategories2021] Attention au biais de correlation lorsque ce graphique est utilisé pour représenter plusieurs variables. [cite:@jonathanschwabishComparingCategories2021]
+
+** Radar :ordreDeGrandeur:
+Représentation compacte de la valeur de variables hétérogènes pour un seul système. [cite:@alansmithLexiqueVisuel]
+
+** Coordonnées parallèles :ordreDeGrandeur:
+Montre en simultané la valeur de variables hétérogènes pour plusieurs systèmes. Permet de valoriser la valeur. [cite:@alansmithLexiqueVisuel]
+Pratique pour observer les schémas et relations entre les systèmes. [cite:@mikeyiHowChooseRight2020]
+
+** Groupes de mots :ordreDeGrandeur:
+Affiche des nuages de mots organisés en groupes sémantiques. La taille des mots indique leur fréquence d'utilisation dans le corpus étudié. La couleur des groupes peut représenter un choix de données qualitative (catégorisation). [cite:@sosulskiGraphics2019] Cette visualisation est une méthode d'exploration de texte utile pour réaliser une synthèse macroscopique.
+Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la composition des nuages. [cite:@jonathanschwabishQualitative2021] Des listes de mots vides peuvent être trouvées à l'adresse <https://github.com/stopwords-iso/>.
+
+** Etats parallèles :flux:
+Montre les changements sur un flux entre un état et au moins un autre. Adapté au traçage d'un processus complexe. [cite:@alansmithLexiqueVisuel]
+
+** Sankey :flux:
+L'épaisseur représente la part d'un évènement. Chaque flèche représente l'entrée ou la sortie d'élément sur le système étudié. [cite:@mikeyiHowChooseRight2020]  Parfait pour suivre un flux physique (ref?)
+
+** Réseau :flux:
+Utilisé pour montrer la force et l'interconnectivité des relations de types différents. [cite:@alansmithLexiqueVisuel] La position des nœuds n’a pas de fonction logique. Elle vise à rendre le diagramme le plus lisible possible. [cite:@mikeyiHowChooseRight2020]
+
+** Corde :flux:
+Illustre les flux bidirectionnels et le gagnant net dans une matrice. [cite:@alansmithLexiqueVisuel]
+
+** Tunnel :flux:
+Utilisé pour suivre l'engagement d'une population (taille) à chaque étape d'un processus (barre). [cite:@mikeyiHowChooseRight2020]
+
 
 * Méthode de sélection
 
@@ -228,7 +342,6 @@ La table de donnée sous-jacente doit être organisée par colonne de valeur tem
 La table de données sous-jacente doit être organisée par ligne de classement croissante (du pemier au dernier en partant de la première ligne).
 
 
-#+LaTeX: \end{multicols}
 
 \newpage
 
@@ -237,3 +350,4 @@ References
 #+END_COMMENT
 
 \printbibliography
+#+LaTeX_HEADER: \end{multicols}
