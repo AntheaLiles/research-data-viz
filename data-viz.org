@@ -4,9 +4,11 @@
 #+DATE: {{{time(%Y-%m-%d)}}}
 #+bibliography: "data-viz.bib"
 #+setupfile: "config.org"
-{abstract}
 
+\begin{abstract}
+Rédiger l'abstract ici
 \end{abstract}
+
 \renewcommand{\keywordsname{\textbf{Mots clés : }\keywords{Visualisation de données, Graphique, Méthode}
 
 #+LaTeX: \begin{multicols}{2}
@@ -20,19 +22,17 @@ Le secteur de la construction est historiquement peu digitalisé en comparaison 
 
 Il existe de multiples manières d'interargir avec un graphique. [cite:@schwabishCenteringAccessibilityData2022a;@frankelavskyRightToolsJob2022]
 
-Ce rapport aborde :
+Ce rapport aborde les éléments impliquant la mise en oeuvre de solution programmatique d'accessibilité et pouvant intégrer une logique globale de préparation de graphiques numériques tels que:
 - L'exploration visuelle
 - La lecture des tables
 - L'écoute des descriptions
 - La sonification des données
 - L'interractivité avec les commandes de clavier
-Ces éléments impliquent la mise en oeuvre de solution programmatique d'accessibilité pouvant intégrer une logique globale de préparation de graphiques numériques.
 
-Ce rapport n'aborde pas :
+Ce rapport n'aborde pas les éléments nécessitant l'emploi de matériels spécifiques tels que :
 - L'exploration en réalité mixte
 - Les retours haptiques
 - L'emploi d'écran à relief (braille)
-Ces éléments nécessitant l'emploi de matériels spécifiques.
 
 * Démarche
 La conduite de cette revue s'est déroulé de la manière suivante :
@@ -336,13 +336,10 @@ Des études complémentaires pourraient être menées sur les sujets suivants :
 La table de donnée sous-jacente doit être organisée par colonne de valeur temporelle croissante.
 
 
-*
 
 \newpage
 
-#+BEGIN_COMMENT
-References
-#+END_COMMENT
+* References
 
 \printbibliography
 #+LaTeX_HEADER: \end{multicols}
