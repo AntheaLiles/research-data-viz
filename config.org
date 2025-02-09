@@ -23,12 +23,6 @@
 #+LATEX_HEADER: \usepackage[acronym]{glossaries}
 #+LATEX_HEADER: \usepackage{fvextra,csquotes}
 
-#+LATEX_HEADER: \definecolor{wikipediablue}{HTML}{0645AD}
-#+LATEX_HEADER: \usepackage[backend=biber, style=iso-numeric, doi=true, isbn=true, autocite=superscript]{biblatex}
-#+LATEX_HEADER: \addbibresource{data-viz.bib}
-#+LATEX_HEADER: \let\cite\autocite
-#+LATEX_HEADER: \hypersetup{colorlinks=true, linkcolor=wikipediablue, citecolor=wikipediablue, urlcolor=wikipediablue}
-
 #+LATEX_HEADER: \usepackage{listings}
 #+LATEX_HEADER: \usepackage{microtype}
 #+LATEX_HEADER: \usepackage[colorinlistoftodos]{todonotes}
@@ -41,5 +35,10 @@
 #+LaTeX_HEADER: \usepackage[colorinlistoftodos]{todonotes}
 #+LaTeX_HEADER: \usepackage{microtype}
 #+LaTeX_HEADER: \usepackage{orcidlink}
+
+#+cite_export: biblatex backend=biber,style=iso-numeric,doi=true,isbn=true,autocite=superscript
+#+latex_header: \definecolor{wikipediablue}{HTML}{0645AD}
+#+latex_header: \let\cite\autocite
+#+latex_header: \hypersetup{colorlinks=true, linkcolor=wikipediablue, citecolor=wikipediablue, urlcolor=wikipediablue}
 
 #+LaTeX_HEADER: \usepackage{url,hyperref}

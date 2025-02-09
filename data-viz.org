@@ -2,12 +2,11 @@
 #+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
 #+EMAIL: cyprien.pierre@eiffage.com
 #+DATE: {{{time(%Y-%m-%d)}}}
-#+bibliography: "data-viz.bib"
 #+setupfile: "config.org"
 
-\begin{abstract}
+#+begin_abstract
 Rédiger l'abstract ici
-\end{abstract}
+#+end_abstract
 
 \renewcommand{\keywordsname{\textbf{Mots clés : }\keywords{Visualisation de données, Graphique, Méthode}
 
@@ -64,7 +63,7 @@ Il est important de prévoir le chargement de toutes polices non standard (eg. S
 * Tables
 Une table ou tableur permet d'exposer des données brutes organisées en lignes ou en colonnes. [cite:@mikeyiHowChooseRight2020]
 
-Sauf mention contraire, les recommendations sur les tables sont issues du livre "Show me the numbers" de Stephen Few.[cite:@stephenfewTableDesign2012] L'auteur y rentre très en détails sur chaque point de paramétrage. Il y indique notamment les orientations en matière de construction de tableur lorsqu'il s'agit du choix premier d'affichage de données. Ce rapport s'intéresse à la conception de graphique. Dans ce cadre, les tableurs sont des éléments complémentaires pouvant être affichés par l'utilisateur pour explorer plus précisement les données préalablement affichées.
+Sauf mention contraire, les recommendations sur les tables sont issues du livre "Show me the numbers" de Stephen Few.[cite:@stephenfewShowMeNumbers2012] L'auteur y rentre très en détails sur chaque point de paramétrage. Il y indique notamment les orientations en matière de construction de tableur lorsqu'il s'agit du choix premier d'affichage de données. Ce rapport s'intéresse à la conception de graphique. Dans ce cadre, les tableurs sont des éléments complémentaires pouvant être affichés par l'utilisateur pour explorer plus précisement les données préalablement affichées.
 
 Des prescriptions spécifiques à la préparation de tableurs pour certains graphiques sont apportés le cas échéant dans la suite de ce rapport.
 
@@ -136,41 +135,42 @@ Représente le total de chaque catégorie et la proportion de leurs composantes,
 Permet d'afficher plusieurs séries. Devient plus difficile à lire avec plus de deux séries. [cite:@alansmithLexiqueVisuel]
 Les barres d'une même catégories sont collées les unes aux autres pour souligner leurs appartenance à une même catégorie (ratio 1:0). Espacer les jeux de barres jumelées d'une largeur égale à une barre (ratio n:1).
 
-Les barres sont colorées avec une palette de couleur de catégories. Les couleurs sont utilisées pour distinguées chaques barres dans une catégories, les couleurs doivent être homogènes pour chaque catégorie. Si les différentes valeurs affichées sont d'importances similaires, il convient d'utiliser une palette de couleurs à faibles contrastes. N'utiliser qu'une seule couleur par ensemble de données apparentées. [cite:@SFew 2012 p215]
+Les barres sont colorées avec une palette de couleur de catégories. Les couleurs sont utilisées pour distinguées chaques barres dans une catégories, les couleurs doivent être homogènes pour chaque catégorie. Si les différentes valeurs affichées sont d'importances similaires, il convient d'utiliser une palette de couleurs à faibles contrastes. N'utiliser qu'une seule couleur par ensemble de données apparentées. [cite:@stephenfewComponentlevelGraphDesign2012]
 
 ** Barre ordonnée :classement:
-Les catégories sont ordonnées par décroissance de leurs valeurs de quantité[cite:@Schwabish2021p69] sauf si les catégories on un autre ordre logique (eg. temporel). Dans ce second cas, cet ordre doit être utilisé pour la construction du graphique. [cite:@Wilke2019p48]
+Les catégories sont ordonnées par décroissance de leurs valeurs de quantité[cite:@jonathanschwabishComparingCategories2021] sauf si les catégories on un autre ordre logique (eg. temporel). Dans ce second cas, cet ordre doit être utilisé pour la construction du graphique. [cite:@wilkeVisualizingAmounts2019]
+
 *Note: si catégories temporelles, utiliser un histogramme?*
 
-Lorsqu'un ordre de classement est à afficher, l'utilisation d'un graphique horizontal est à privilégier. [AndreasKrause2024p18]
+Lorsqu'un ordre de classement est à afficher, l'utilisation d'un graphique horizontal est à privilégier. [cite:@andreaskrauseBestPracticesData2024]
 
 *William Playfair (1786) pionnier de l'utilisation de ce type de graph ?*
 
-Les barres doivent être affichées à l'horizontal s'il y a beaucoup de valeurs à afficher ou si les labels des catégories s'entrevêchent. [cite:@alansmithLexiqueVisuel,Schwabish2021p79,SFew2012p210,Wilke2019p49,Sosulski2019p47]
+Les barres doivent être affichées à l'horizontal s'il y a beaucoup de valeurs à afficher ou si les labels des catégories s'entrevêchent. [cite:@alansmithLexiqueVisuel;@sosulskiGraphics2019;@wilkeVisualizingAmounts2019;@stephenfewComponentlevelGraphDesign2012;@jonathanschwabishComparingCategories2021]
 
-Il convient de maintenir l'affichage vertical du graphique si les catégories affichées sont des unitées temporelles. [cite:@SFew2012p212]
+Il convient de maintenir l'affichage vertical du graphique si les catégories affichées sont des unitées temporelles. [cite:@stephenfewComponentlevelGraphDesign2012]
 
 Ce graphique est plus lisible pour un nombre limité d'entrées. [cite:@mikeyiHowChooseRight2020]
 
-L'espace entre deux barres est égal à la moitié de la largeur d'une barre (ratio 1:0.5). Les barres ont toutes la même largeur. [cite:@SFew2012p212]
+L'espace entre deux barres est égal à la moitié de la largeur d'une barre (ratio 1:0.5). Les barres ont toutes la même largeur. [cite:@stephenfewComponentlevelGraphDesign2012]
 
 Utiliser une couleur homogène à l'ensemble des barres. Une couleur de contraste peut être utilisée pour mettre en évidence certaines catégories.
 
-Ne pas utiliser de motifs de remplissage. Les barres doivent être remplies par un solide coloré. [SFew2012p215]
+Ne pas utiliser de motifs de remplissage. Les barres doivent être remplies par un solide coloré. [cite:@stephenfewComponentlevelGraphDesign2012]
 
 Ne pas utiliser de bordures de barres. Ces dernières doivent naturellement contraster avec l'arrière plan.
 
-Si de grands écarts de valeurs empêchent la bonne visualisation des écarts sur une partie du graphique, il est recommendé d'ajouter un second graphique en barre ordonnée n'affichant pas les catégories aux grandes valeurs. [cite:@Schwabish2021p72]
+Si de grands écarts de valeurs empêchent la bonne visualisation des écarts sur une partie du graphique, il est recommendé d'ajouter un second graphique en barre ordonnée n'affichant pas les catégories aux grandes valeurs. [cite:@jonathanschwabishComparingCategories2021]
 
-Ne pas afficher de séparateurs au niveau des catégories, les barres remplissent elles même ce rôle, associées aux espaces entres elles. [cite:@Schwabish2021p76]
+Ne pas afficher de séparateurs au niveau des catégories, les barres remplissent elles même ce rôle, associées aux espaces entres elles. [cite:@jonathanschwabishComparingCategories2021]
 
-Pour les petits graphiques statiques, il convient d'apposer directement un label à chaque barre contenant la valeur de celles-ci. Par cette action, il convient également de masquer l'axe des absysses. [cite:@Schwabish2021p78]
+Pour les petits graphiques statiques, il convient d'apposer directement un label à chaque barre contenant la valeur de celles-ci. Par cette action, il convient également de masquer l'axe des absysses. [cite:@jonathanschwabishComparingCategories2021]
 
-Pour les graphiques dynamiques, interractifs ou de grande largeur, il convient d'afficher des lignes d'aide à la lecture en projection des repères de l'axe des valeurs. Ces lignes doivent être faiblement contrastées et être tracées en arrière plan des barres. [cite:Schwabish2021p77]
+Pour les graphiques dynamiques, interractifs ou de grande largeur, il convient d'afficher des lignes d'aide à la lecture en projection des repères de l'axe des valeurs. Ces lignes doivent être faiblement contrastées et être tracées en arrière plan des barres. [cite:@jonathanschwabishComparingCategories2021]
 
-Ne pas segmenter les barres. [cite:@Schwabish2021p72]
+Ne pas segmenter les barres. [cite:@jonathanschwabishComparingCategories2021]
 
-Ne pas ajouter d'iconographie aux barres. [cite:@Tran e al.2024p15]
+Ne pas ajouter d'iconographie aux barres. [cite:@tranDiscoveringAccessibleData2024]
 
 ** Bulle proportionnelle ordonnée :classement:
 Utilisé pour illustrer les grandes variations de quantité pour différentes catégories et lorsque la distinction des nuances n'est pas primordiale. Les bulles doivent être dimensionnés par leurs surface pour éviter d'éxagérer les différences. [cite:@jonathanschwabishComparingCategories2021] Ce type de graphique utilise un double encodage de la quantité : la position et la taille. [cite:@wilkeVisualizingAssociationsTwo2019] Bien que ce type de représentation soit considéré comme engageant, il convient d'utiliser un graphique en barre ordonnée à la place lorsque l'évaluation des différences entre catégories est importante. [cite:@jonathanschwabishComparingCategories2021]
@@ -180,13 +180,13 @@ Résume les distributions multiples en montrant la médiane et l'étendue des do
 
 Ce graphique est plus efficace lorsqu'il y a de nombreuses mesures pour une entrée et que leur distribution doit être représentée (eg : mesure médiane, basse, haute, incertitude...). [cite:@mikeyiHowChooseRight2020]
 
-Les lignes s'étendant au dessus et en dessous sont appelées les moustaches. [Wilke2019p83]
+Les lignes s'étendant au dessus et en dessous sont appelées les moustaches. [cite:@wilkeVisualizingManyDistributions2019]
 
 *Voir trx de son inventeur : John W. Tukey*
 
 Il est possible d'afficher la position d'un point précis du jeu de donnée sous-jacent. (couleurs mise en évidence ?)
 
-Les boites à moustaches suivent les dispositions graphiques des barres ordonnées. [cite:@SFew2012p221]
+Les boites à moustaches suivent les dispositions graphiques des barres ordonnées. [cite:@stephenfewComponentlevelGraphDesign2012]
 
 ** Bosses :classement:
 Affiche l'évolution d'un classement entre différents jalons. [cite:@mikeyiHowChooseRight2020;@alansmithLexiqueVisuel]  Ce graphique n'affiche pas les valeurs sous-jacente mais uniquement le positionnement de la catégorie dans le classement. [cite:@jonathanschwabishTime2021] Si la valeur source est également à représenter, ce graphique peut se transformer en graphique en ruban, combinant les disposition du graphique en bosse avec celles du graphique de Sankey. [cite:@jonathanschwabishTime2021]
@@ -294,7 +294,7 @@ En utilisant une palette de couleur séquentielle, un lecteur aura tendance à c
 L'organisation des catégories changeant la forme de la matrice de température, il convient de retenir une organisation par valeur croissante ou décroissante à une colonne donnée. Il convient de signaler cette configuration au lecteur. [cite:@wilkeVisualizingAmounts2019]
 
 ** Mini-graphe (spark line) :evolution:
-Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. Un mini-graphe ne possède pas d'axes ni d'autres détails et est composé uniquement d'une courbe et d'un point indiquant la dernière valeur du jeu de donnée.[Sosulski2019p55] Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise. [cite:@jonathanschwabishDistribution2021]
+Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. Un mini-graphe ne possède pas d'axes ni d'autres détails et est composé uniquement d'une courbe et d'un point indiquant la dernière valeur du jeu de donnée. [cite:@sosulskiGraphics2019] Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise. [cite:@jonathanschwabishDistribution2021]
 
 Un mini-graphe ne possède pas d'axes ni d'autres détails.
 
@@ -382,16 +382,13 @@ La table de donnée sous-jacente doit être organisée par colonne de valeur tem
 
 * Glossaire
 - Médiane :: définition
+  
+* Acronymes
+- ML :: Machine Learning
 
+#+latex: \newpage
 
-* Index
+* Références
+#+print_bibliography: :heading none
 
-\newpage
-
-
-#+begin_comment
-Références
-#+END_COMMENT
-
-\printbibliography
 #+LaTeX_HEADER: \end{multicols}
