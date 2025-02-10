@@ -139,9 +139,9 @@ Représente les liens sémantiques. Utilisé pour classifier les réponses textu
 :data-type-y:
 :END:
 
-Utilisé pour illustré les connexions des catégories à travers le temps. L'ordre des données influence la percéption de l'importance des connexions. [cite:Schwabish2021p272]
+Utilisé pour illustré les connexions des catégories à travers le temps. L'ordre des données influence la percéption de l'importance des connexions. [cite:@jonathanschwabishRelationship2021]
 
-Peut être utilisé pour illustrer les distances entre deux points. Cet usage met bien en évidence l'augmentation des disances. [cite:@Schwabish2021p275]
+Peut être utilisé pour illustrer les distances entre deux points. Cet usage met bien en évidence l'augmentation des disances. [cite:@jonathanschwabishRelationship2021]
 
 ** Bande de valeur
 :PROPERTIES:
@@ -150,14 +150,14 @@ Peut être utilisé pour illustrer les distances entre deux points. Cet usage me
 :data-type-x:
 :data-type-y:
 :END:
-Affiche les points de données d'une catégorie.[cite:@Schwabish2021p204] Les valeurs peuvent être affichés par des lignes ou des cercles pleins mais les cercles sont à privilégier lorsqu'il est nécessaire de déagglomérer les données.
+Affiche les points de données d'une catégorie.[cite:@jonathanschwabishDistribution2021] Les valeurs peuvent être affichés par des lignes ou des cercles pleins mais les cercles sont à privilégier lorsqu'il est nécessaire de déagglomérer les données.
 
-Il est possible d'utiliser de la trensparence pour illustrer les zones de valeurs compactes. [cite:@schwabish2021p205] Utiliser une palette de couleur divergente met en évidence la répartition des valeurs mesurées et souligner la séparation de celles ci par rapport à un axe de référence. [cite@Schabish2021p205]
+Il est possible d'utiliser de la trensparence pour illustrer les zones de valeurs compactes. [cite:@jonathanschwabishDistribution2021] Utiliser une palette de couleur divergente met en évidence la répartition des valeurs mesurées et souligner la séparation de celles ci par rapport à un axe de référence.[cite:@jonathanschwabishDistribution2021]
 
-Les points peuvent être légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce mode de représentation est appelé "essaim d'abeille" (beeswarm). [cite:@Schwabish2021p206]
+Les points peuvent être légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce mode de représentation est appelé "essaim d'abeille" (beeswarm). [cite:@jonathanschwabishDistribution2021]
 
 # -----à creuser-----
-Histopoint : Wilkinson dot plot (Leland Wilkinson) Affichage des bandes de valeurs pour chaque agrégat d'un histogramme. [cite:@Schwabish2021p209]
+Histopoint : Wilkinson dot plot (Leland Wilkinson) Affichage des bandes de valeurs pour chaque agrégat d'un histogramme.[cite:@jonathanschwabishDistribution2021]
 
 Epis de blé : Wheat plot (SFew)
 
@@ -188,7 +188,7 @@ Utilisé pour illustrer les résultats d'enquêtes impliquant un sentiment. [cit
 :END:
 Représente le total de chaque catégorie et la proportion de leurs composantes. Les composantes doivent être homogènes. Si les proportions sont plus importantes que les totaux, considérer d'utiliser l'affichage empilée à 100%. [cite:@mikeyiHowChooseRight2020]
 
-Seule la catégorie ayant sa base à 0 sera facile à comparer pour le lecteur car les autres ne partagent pas la même base. [cite:@Schwabish2021p88] Il est préférable de tracer chaque diagramme de barre dans un grapgique distinct et des les disposer en [[matrice de graphique]]. [cite:@Schwabish2021p89]
+Seule la catégorie ayant sa base à 0 sera facile à comparer pour le lecteur car les autres ne partagent pas la même base.[cite:@jonathanschwabishComparingCategories2021] Il est préférable de tracer chaque diagramme de barre dans un grapgique distinct et des les disposer en [[matrice de graphique]]. [cite:@jonathanschwabishComparingCategories2021]
 
 ** Barre jumelée
 :PROPERTIES:
@@ -290,30 +290,30 @@ Affiche l'évolution d'un classement entre différents jalons. [cite:@mikeyiHowC
 Diagramme standard, difficile à lire. [cite:@alansmithLexiqueVisuel]
 Limiter à 5 (4?) entrées maximum [cite:@mikeyiHowChooseRight2020]
 
-Ce graphique doit être limité à l'illustration d'un état donnée. Il est important de garder à l'esprit que ce graphique ne donne qu'une représentation et n'est pas adapté à l'affichage de valeurs précises. [cite:@Schwabish2021p295]
+Ce graphique doit être limité à l'illustration d'un état donnée. Il est important de garder à l'esprit que ce graphique ne donne qu'une représentation et n'est pas adapté à l'affichage de valeurs précises. [cite:@jonathanschwabishParttowhole2021]
 
-Le camembert permet d'accentuer l'appartenance d'une partie individuelle à un ensemble homogène et complet. Il illustre parfaitement des fractions simples. [cite:@Wilke2019p39] Les quantités n'ont pas leurs place dans un camembert, ce sont les fractions (taux, pourcentages) qui y sont illustrés. Ainsi, l'ensemble des valeurs constituante sont strictement égale à 100% du total. [cite:@Wilke2019p50] Il représente plus efficacement les parts dont les angles sont familiers aux lecteurs soit respectivement 90°, 180° et 240° pour les taux 25%, 50% et 75%.
+Le camembert permet d'accentuer l'appartenance d'une partie individuelle à un ensemble homogène et complet. Il illustre parfaitement des fractions simples.[cite:@wilkeDirectoryVisualizations2019] Les quantités n'ont pas leurs place dans un camembert, ce sont les fractions (taux, pourcentages) qui y sont illustrés. Ainsi, l'ensemble des valeurs constituante sont strictement égale à 100% du total.[cite:@wilkeVisualizingAmounts2019] Il représente plus efficacement les parts dont les angles sont familiers aux lecteurs soit respectivement 90°, 180° et 240° pour les taux 25%, 50% et 75%.
 
 Ce graphine n'est pas adapté à ces cas de figure :
-- les parts sont de tailles similaires, [cite:@Sosulski2019p50]
+- les parts sont de tailles similaires,[cite:@sosulskiGraphics2019]
 - Il y a beaucoup de catégories à afficher pour atteindre l'objectif du message,
-- il y a une comparaison entre deux graphiques à réaliser, [cite:@Schwabish2021p292]
-- il y a un changement entre plusieurs états. [cite:@Wilke2019p40]
+- il y a une comparaison entre deux graphiques à réaliser,[cite:@jonathanschwabishParttowhole2021]
+- il y a un changement entre plusieurs états.[cite:@wilkeDirectoryVisualizations2019]
 
 Il convient de :
-- Arranger les parts par orgre de valeur croissant en commençant à '12h'. [cite:@Schwabish2021p290]
-- Utiliser un espace vide entre chaque part pour les faire resortir, [cite:@Sosulski2019p50]
+- Arranger les parts par orgre de valeur croissant en commençant à '12h'. [cite:@jonathanschwabishParttowhole2021]
+- Utiliser un espace vide entre chaque part pour les faire resortir, [cite:@sosulskiGraphics2019]
 - Utiliser une palette de couleur de mise en évidence pour faire ressortir une seule part ou,
 - Utiliser une palette de couleur pour faire resortir deux parts,
-- Apposer les labels directement sur les parts au moyen d'étiquette. [cite:@Sosulski2019p50]
+- Apposer les labels directement sur les parts au moyen d'étiquette. [cite:@sosulskiGraphics2019]
 
-Les parties n'étant pas mises en avant peuvent être agrégée en une catégories "autres". Leurs informations ne servant pas à appuyer le message du graphique. [cite:@Schwabish2021p295]
+Les parties n'étant pas mises en avant peuvent être agrégée en une catégories "autres". Leurs informations ne servant pas à appuyer le message du graphique. [cite:@jonathanschwabishParttowhole2021]
 
 Dans le cas ou une seule partie de l'ensemble est mise en avant, il est à considérer l'utilisation d'un [[marqueur]]. Le camembert n'apportant aucune information particulière à votre propos.
 
-Il n'est pas encore clairement établis si la comparaison des valeurs est réalisé par la perception des angles ou par la perception des longueurs d'arcs des différentes parties. [cite:@Schwabish2021p291]
+Il n'est pas encore clairement établis si la comparaison des valeurs est réalisé par la perception des angles ou par la perception des longueurs d'arcs des différentes parties.[cite:@jonathanschwabishParttowhole2021]
 
-Ce diagramme possède un avantage majeur au regard des autres modes de représentation des parties d'un ensemble, il est très populaire et ainsi accessible à usager. [cite:@Schwabish2021p294] Il est également reconnu que les formes circulaires attirent l'intéret des utilisateurs. [cite:@Schwabish2021p290]
+Ce diagramme possède un avantage majeur au regard des autres modes de représentation des parties d'un ensemble, il est très populaire et ainsi accessible à usager. [cite:@jonathanschwabishParttowhole2021] Il est également reconnu que les formes circulaires attirent l'intéret des utilisateurs.[cite:@jonathanschwabishParttowhole2021]
 
 ** Carte de fréquentation
 :PROPERTIES:
@@ -379,15 +379,15 @@ Utilisé pour afficher la quantité de réponses négatives et positives à une 
 :data-type-x:
 :data-type-y:
 :END:
-Montre en simultané la valeur et la relation de catégories hétérogènes pour plusieurs systèmes. [cite:@Schwabish2021p264] Permet de valoriser la valeur. [cite:@alansmithLexiqueVisuel]
+Montre en simultané la valeur et la relation de catégories hétérogènes pour plusieurs systèmes. [cite:@jonathanschwabishRelationship2021] Permet de valoriser la valeur. [cite:@alansmithLexiqueVisuel]
 
-Pratique pour observer les schémas et relations entre les systèmes. [cite:@mikeyiHowChooseRight2020] Ce graphique est plus efficace pour explorer des jeux de données que pour les présenter à un audimat. [cite:@Sosulski2019p51]
+Pratique pour observer les schémas et relations entre les systèmes. [cite:@mikeyiHowChooseRight2020] Ce graphique est plus efficace pour explorer des jeux de données que pour les présenter à un audimat. [cite:@sosulskiGraphics2019]
 
-Chaque axes de catégories peut avoir sa propre échelle. Cela représente mieux les valeurs de chaque catégorie mais cela implique également de bien labeliser les axes pour distinguer leurs échelles. [cite:@Schwabish2021p265]
+Chaque axes de catégories peut avoir sa propre échelle. Cela représente mieux les valeurs de chaque catégorie mais cela implique également de bien labeliser les axes pour distinguer leurs échelles. [cite:@jonathanschwabishRelationship2021]
 
-Afficher un grand nombre de jeux de données sur un même graphe risque de le rendre illisible. [cite:@Schwabish2021p265] Dans ce cas il convient d'utiliser une palette de couleur de mise en évidence et de selectionner un ou deux jeux de données à mettre en avant.
+Afficher un grand nombre de jeux de données sur un même graphe risque de le rendre illisible. [cite:@jonathanschwabishRelationship2021] Dans ce cas il convient d'utiliser une palette de couleur de mise en évidence et de selectionner un ou deux jeux de données à mettre en avant.
 
-Lors de l'exploration d'un jeu de donnée à travers une interface informatique, il convient de mettre en avant la ligne pointée par l'utilisateur et de labeliser chaque points de catégorie avec la valeur associé. [cite:@Sosulski2019p51]
+Lors de l'exploration d'un jeu de donnée à travers une interface informatique, il convient de mettre en avant la ligne pointée par l'utilisateur et de labeliser chaque points de catégorie avec la valeur associé. [cite:@sosulskiGraphics2019]
 
 ** Corde
 :PROPERTIES:
@@ -400,7 +400,7 @@ Illustre les flux bidirectionnels et le gagnant net dans une matrice. [cite:@ala
 
 Dans la mesure du possible, il convient de flécher le sens du flux.
 
-Ce diagramme incite les utilisateurs à l'explorer plus en détail. [cite:@Schwabish2021p272]
+Ce diagramme incite les utilisateurs à l'explorer plus en détail. [cite:@jonathanschwabishRelationship2021]
 
 ** Courbe cumulative
 :PROPERTIES:
@@ -445,8 +445,8 @@ Il est, autrement, en tout point similaire aux [[camembert]]
 :data-type-y:
 :END:
 Montre les changements sur un flux entre un état et au moins un autre. Adapté au traçage d'un processus complexe. [cite:@alansmithLexiqueVisuel]
-Cette représentation découpe un ensemble en quantité individuelles de plusieurs catégories. Les bandes sont tracées entre chaque catégories pour représenter leurs relations. La largeur des bandes indiquent la proportion des catégories correllées les unes aux autres. (Sankey diagram?) [cite:@Wilke2019p113]
-A utiliser à la place des mosaiques et treemaps lorsqu'il y a plus de deux variables de regroupement des données. [cite@Wilke2019p40]
+Cette représentation découpe un ensemble en quantité individuelles de plusieurs catégories. Les bandes sont tracées entre chaque catégories pour représenter leurs relations. La largeur des bandes indiquent la proportion des catégories correllées les unes aux autres. [cite:@wilkeVisualizingNestedProportions2019]
+A utiliser à la place des mosaiques et treemaps lorsqu'il y a plus de deux variables de regroupement des données. [cite:@wilkeDirectoryVisualizations2019]
 
 ** Eventail
 :PROPERTIES:
@@ -488,16 +488,16 @@ Les haltères sont toujours affichés à l'horizontal.
 :data-type-x:
 :data-type-y:
 :END:
-Utilisé pour afficher la fréquence d'une variable simple regroupée en intervale de fréquence (agrégat). [cite:@Sosulski2019p48] Il affiche ainsi une distribution statistique de donnée. Il n'y a pas d'espace entre deux barres (ratio 1:0) ce qui permet de favoriser la forme de la distribution. [cite:@alansmithLexiqueVisuel]
+Utilisé pour afficher la fréquence d'une variable simple regroupée en intervale de fréquence (agrégat).[cite:@sosulskiGraphics2019] Il affiche ainsi une distribution statistique de donnée. Il n'y a pas d'espace entre deux barres (ratio 1:0) ce qui permet de favoriser la forme de la distribution. [cite:@alansmithLexiqueVisuel]
 
-La nature du graphique (barre) implique un calcul d'agrégat pour chaque barre. [cite:@Wilke2019p60] La largeur de l'agrégat est à évaluer par le concepteur au regard du niveau de détail souhaité. [cite:@Wilke2019p60]
+La nature du graphique (barre) implique un calcul d'agrégat pour chaque barre. [cite:@wilkeVisualizingDistributionsHistograms2019] La largeur de l'agrégat est à évaluer par le concepteur au regard du niveau de détail souhaité.[cite:@wilkeVisualizingDistributionsHistograms2019]
 
 L'histogramme n'est pas adapté aux cas suivant :
-- l'affichage de l'ensemble des valeurs, pour cela il convient d'utiliser une [[courbe de densité]]. [cite:@Wilke2019p68]
-- s'il y a peu de valeurs dans le jeu de données, [cite:@Weissgerber2015p5] préférez l'utilisation d'une [[bande de valeur]].
-- l'affichage de plusieurs distributions, [cite:@Wilke2019p65] utilisez une décomposition en [[matrice de graphique]].
+- l'affichage de l'ensemble des valeurs, pour cela il convient d'utiliser une [[courbe de densité]]. [cite:@wilkeVisualizingDistributionsHistograms2019]
+- s'il y a peu de valeurs dans le jeu de données, [cite:@weissgerberBarLineGraphs2015] préférez l'utilisation d'une [[bande de valeur]].
+- l'affichage de plusieurs distributions,[cite:@wilkeVisualizingDistributionsHistograms2019] utilisez une décomposition en [[matrice de graphique]].
 
-L'utilisation d'un histogramme permet d'identifier des schémas de distributions tels que : [cite:@Schwabish2021p182]
+L'utilisation d'un histogramme permet d'identifier des schémas de distributions tels que : [cite:@jonathanschwabishDistribution2021]
 - *Incliné à gauche :* les données sont majoritairement sur la gauche du graphique
 - *Incliné à droite :* les données sont majoritairement sur la droite du graphique
 - *Bimodale :* lorsque deux pics de valeurs sont constatables
@@ -530,27 +530,27 @@ Représentation métaphorique la vitesse d'un système.
 :data-type-x:
 :data-type-y:
 :END:
-Inventé par Playfair en 1786 [cite:@Sosulski2019p2]
+Inventé par Playfair en 1786 [cite:@sosulskiBecomingVisual2019]
 Représentation graphique standard et famillière pour la représentation des séries temporelles. [cite:@alansmithLexiqueVisuel,@Schwabish2021p86]
 
-Les lignes relient chaque point de mesure. [cite:@Wong2010] Pour de grands jeux de données, il convient d'utiliser une ligne lissée sur l'ensemble du graphique plutot qu'une ligne brisée par chaque point de donnée. [cite:@Wilke2019p42]
+Les lignes relient chaque point de mesure. Pour de grands jeux de données, il convient d'utiliser une ligne lissée sur l'ensemble du graphique plutot qu'une ligne brisée par chaque point de donnée. [cite:@wilkeDirectoryVisualizations2019]
 
 La base des ordonnées doit être égale ou inférieure à la plus faible valeur affichée. [cite:@Wong2010]
 
-Il n'existe pas de rêgle stricte quand à la limite de séries affichables sur un graphique. [cite:@Schwabish2021p134] Il convient de s'intéresser à la perception du lecteur recherché par le concepteur pour arbitrer les choix : [cite:@Schwabish2021p134]
+Il n'existe pas de rêgle stricte quand à la limite de séries affichables sur un graphique.[cite:@jonathanschwabishTime2021] Il convient de s'intéresser à la perception du lecteur recherché par le concepteur pour arbitrer les choix : [cite:@jonathanschwabishTime2021]
 - En cas d'impression, limiter le nombre de lignes simultanées à 4 au maximum, [cite:@Wong2010]
-- Si l'interraction est possible avec le graphique, il est possible de tracer toutes les lignes dans un même graphique à condition d'utiliser un système de mise en évidence, [cite:@Schwabish2021p139]
+- Si l'interraction est possible avec le graphique, il est possible de tracer toutes les lignes dans un même graphique à condition d'utiliser un système de mise en évidence,[cite:@jonathanschwabishTime2021]
 - Ces cas échouant, séparez les lignes et tracez une [[matrice de graphique]].
 
-Ne pas utiliser ce graphique pour essayer d'illustrer une différence entre deux courbes. [cite:@Schwabish2021p139]
+Ne pas utiliser ce graphique pour essayer d'illustrer une différence entre deux courbes. [cite:@jonathanschwabishTime2021]
 
-Les axes doivent être labelisé (obligatoirement le titre de la série, optionnellement la valeur finale) directement en fin de ligne, à droite du graphique. [cite:@Krause2024p36,@Sosulski2019p55]
+Les axes doivent être labelisé (obligatoirement le titre de la série, optionnellement la valeur finale) directement en fin de ligne, à droite du graphique. [cite:@andreaskrauseBestPracticesData2024;@sosulskiGraphics2019]
 
 Il est possible de mettre en évidence un point spécifique en utilisant un symbole (de préférence un cercle plein) et en y apposant une étiquette affichant \(f(x)=y\).
 
-La distinction des séries est plus efficace en utilisant des teintes différentes. Dans ce cas, il convient également d'utiliser des tons différents pour assurer le maintiens des distinctions si le graphique est imprimé en nuance de gris. [cite:@Few2012p219]
-Il convient également de n'utiliser que des lignes continues pour les tracés. [cite:@Few2012p219]
-L'utilisation de symboles comme éléments différenciants entre les séries n'est pas pertinent. [cite:@Few2012p219]
+La distinction des séries est plus efficace en utilisant des teintes différentes. Dans ce cas, il convient également d'utiliser des tons différents pour assurer le maintiens des distinctions si le graphique est imprimé en nuance de gris. [cite:@stephenfewComponentlevelGraphDesign2012]
+Il convient également de n'utiliser que des lignes continues pour les tracés. [cite:@stephenfewComponentlevelGraphDesign2012]
+L'utilisation de symboles comme éléments différenciants entre les séries n'est pas pertinent. [cite:@stephenfewComponentlevelGraphDesign2012]
 
 ** Ligne de crête
 :PROPERTIES:
@@ -559,21 +559,21 @@ L'utilisation de symboles comme éléments différenciants entre les séries n'e
 :data-type-x:
 :data-type-y:
 :END:
-Ce graphique représente des courbes de densité séparées par un offset et est utilisé pour comparer la distribution d'une vrariable entre des catégories. [cite:@Wilke2019p88] Parfait lorsque les schémas de distributions sont bien distincts entre les groupes. [cite:@mikeyiHowChooseRight2020] Cela évite que les courbes de densités des catégories s'entrevêchent.[cite:@Schwabish2021p202]
+Ce graphique représente des courbes de densité séparées par un offset et est utilisé pour comparer la distribution d'une vrariable entre des catégories. [cite:@wilkeVisualizingManyDistributions2019] Parfait lorsque les schémas de distributions sont bien distincts entre les groupes. [cite:@mikeyiHowChooseRight2020] Cela évite que les courbes de densités des catégories s'entrevêchent.[cite:@jonathanschwabishDistribution2021]
 
-Ce graphique se met très bien à l'échelle de grands jeux de données. [cite:@Wilke2019p90]
+Ce graphique se met très bien à l'échelle de grands jeux de données. [cite:@wilkeVisualizingManyDistributions2019]
 
 Il est adapté à :
-- la comparaison des changements de distributions à travers le temps [cite:@Wilke2019p39] associé à un gradiant de couleur pour diriger le regard vers la distribution la plus récente, [cite:@Schwabish2021p203]
-- la comparaison des évolutions de deux tendances à travers le temps. [cite:@Wilke2019p91] associé à une palette de couleur binaire.
+- la comparaison des changements de distributions à travers le temps [cite:@wilkeDirectoryVisualizations2019] associé à un gradiant de couleur pour diriger le regard vers la distribution la plus récente, [cite:@jonathanschwabishDistribution2021]
+- la comparaison des évolutions de deux tendances à travers le temps. [cite:@wilkeVisualizingManyDistributions2019] associé à une palette de couleur binaire.
 
-L'axe des absysses affiche la valeur de réponse et l'axe des ordonnées affiche les catégories. [cite:@Wilke2019p88]
+L'axe des absysses affiche la valeur de réponse et l'axe des ordonnées affiche les catégories. [cite:@wilkeVisualizingManyDistributions2019]
 
-Il convient de classer les catégories suivant un ordre logique. [cite:@Schwabish2021p203] Voir (insérer renvois ici vers l'explication de la logique de classement de catégories)
+Il convient de classer les catégories suivant un ordre logique. [cite:@jonathanschwabishDistribution2021] Voir (insérer renvois ici vers l'explication de la logique de classement de catégories)
 
-Il est possible d'afficher les barres d'erreurs dans les lignes de crêtes. Ce mode de représentation s'appel un "demi-oeil". [cite:@Wilke2019p197]
+Il est possible d'afficher les barres d'erreurs dans les lignes de crêtes. Ce mode de représentation s'appel un "demi-oeil". [cite:@wilkeVisualizingUncertainty2019]
 
-Il est possible d'afficher les nuages de points dont l'estimation de la courbe de densité est issue. Ceux-ci sont affichés en dessous des courbes de densité. Cette forme de représentation est appelé "Nuage de pluie". (ref: Micah Allan ou Schwabish2021p212) Cette représentation offre à la fois une représentation générique et une visualisation précise des données. [cite:@Schwabis2021p213] Bien que cette représentation soit très efficace, elle n'est pas très répendue. [cite:@Schwabish2021p212] Il faut être vigilent à bien expliquer son fonctionnement lors de son utilisation dans un rapport. Dans le cas d'un nuage de pluie, il faut faire attention à ce que les points de données n'entre pas en surimposition avec les courbes de densitées tracées en dessous.
+Il est possible d'afficher les nuages de points dont l'estimation de la courbe de densité est issue. Ceux-ci sont affichés en dessous des courbes de densité. Cette forme de représentation est appelé "Nuage de pluie". (ref: Micah Allan ou Schwabish2021p212) Cette représentation offre à la fois une représentation générique et une visualisation précise des données. [cite:@jonathanschwabishDistribution2021] Bien que cette représentation soit très efficace, elle n'est pas très répendue. [cite:@jonathanschwabishDistribution2021] Il faut être vigilent à bien expliquer son fonctionnement lors de son utilisation dans un rapport. Dans le cas d'un nuage de pluie, il faut faire attention à ce que les points de données n'entre pas en surimposition avec les courbes de densitées tracées en dessous.
 
 ** Lollipop
 :PROPERTIES:
@@ -629,9 +629,9 @@ Le tableur associée est une matrice de correlation organisant les valeurs de co
 :END:
 
 Origine
-Est utilisé pour comparer de multiples graphiques homogènes organisées en matrices. Chaque entité affiche le graphique d'une catégorie. Les graphiques sont tous à la même échelle. [cite:@Sosulski2012p52]
+Est utilisé pour comparer de multiples graphiques homogènes organisées en matrices. Chaque entité affiche le graphique d'une catégorie. Les graphiques sont tous à la même échelle. [cite:@sosulskiGraphics2019]
 
-Conseils : Limitez les détails dans chacun des graphique. [cite:@Sosulski2019p52] Regroupez les axes pour n'afficher qu'un seul axe Y par ligne et un seul axe X par colonne.
+Conseils : Limitez les détails dans chacun des graphique. [cite:@sosulskiGraphics2019] Regroupez les axes pour n'afficher qu'un seul axe Y par ligne et un seul axe X par colonne.
 
 ** Matrice de température
 :PROPERTIES:
@@ -702,10 +702,10 @@ Si des milliers de point de données sont à afficher, il est préférable d'uti
 Montre l'évolution des données pour deux variables pertinentes si le modèle de progression est clair. [cite:@alansmithLexiqueVisuel]
 
 Pour souligner la direction de l'évolution entre deux points il est possible de :
-- Flécher la direction de l'évolution entre deux points si les points sont bien espacés et qu'un seul jeu de donnée est affiché, [cite:@Schabish2021p102]
+- Flécher la direction de l'évolution entre deux points si les points sont bien espacés et qu'un seul jeu de donnée est affiché, [cite:@jonathanschwabishComparingCategories2021]
 - Utiliser un gradiant de couleur du plus clair vers le plus foncé.
 
-Ce graphique sers à synthétiser des variations de valeurs, il est préférable de l'utiliser pour afficher des jeux de données dont la variation n'est pas mesurée régulièrement pour éviter d'avoir trop de points à relier et donc d'éviter de créer un graphique trop encombré. [cite:@Schwabish2021p102]
+Ce graphique sers à synthétiser des variations de valeurs, il est préférable de l'utiliser pour afficher des jeux de données dont la variation n'est pas mesurée régulièrement pour éviter d'avoir trop de points à relier et donc d'éviter de créer un graphique trop encombré. [cite:@jonathanschwabishComparingCategories2021]
 
 ** Pareto
 :PROPERTIES:
@@ -761,13 +761,13 @@ Adapté à l'affichage des informations en pourcentages. Fonctionne mieux avec d
 :data-type-x:
 :data-type-y:
 :END:
-Représentation compacte de la valeur de variables hétérogènes pour un seul système. [cite:@alansmithLexiqueVisuel] Les radards sont utilisés pour identifier les variables ayant des valeurs similaires et les exceptions. [cite:@Sosulski2019p52]
+Représentation compacte de la valeur de variables hétérogènes pour un seul système. [cite:@alansmithLexiqueVisuel] Les radards sont utilisés pour identifier les variables ayant des valeurs similaires et les exceptions. [cite:@sosulskiGraphics2019]
 
-La représentation des valeurs se fait à travers la forme globale du polygonne. Il convient de coloriser l'interrieur de celui-ci pour bien faire ressortir sa forme. [cite:@Schwabish2021p267]
+La représentation des valeurs se fait à travers la forme globale du polygonne. Il convient de coloriser l'interrieur de celui-ci pour bien faire ressortir sa forme. [cite:@jonathanschwabishRelationship2021]
 
-Utiliser une disposition en small-multiples plutot que de surimposer plusieurs polygones de valeurs. [cite:@Schwabish2021p268]
+Utiliser une disposition en small-multiples plutot que de surimposer plusieurs polygones de valeurs. [cite:@jonathanschwabishRelationship2021]
 
-La représentation des variables est fortement correlé à la forme du polygone plutot qu'aux valeurs des sommets. [cite:@Sosulski2019p52] De ce fait, pour améliorer la forme du polygonne et offrir une représentation avec le moins de distortions possibles, il convient d'homogénéiser les échelles des axes.
+La représentation des variables est fortement correlé à la forme du polygone plutot qu'aux valeurs des sommets. [cite:@sosulskiGraphics2019] De ce fait, pour améliorer la forme du polygonne et offrir une représentation avec le moins de distortions possibles, il convient d'homogénéiser les échelles des axes.
 
 ** Réseau
 :PROPERTIES:
@@ -800,11 +800,11 @@ A privilégier lorsque la visualisation des changements en proportions au fil du
 Créé par : Matthew Henry Phineas Riall Sankey (1898)
 L'épaisseur représente la part d'un évènement. Chaque flèche représente l'entrée ou la sortie d'élément sur le système étudié. [cite:@mikeyiHowChooseRight2020]
 
-Les changements sont liés à une évolution temporelle et à l'association de catégories. La force de ce graphique est qu'aucun de ces deux aspect ne pévaut sur l'autre. [cite:@Schwabish2021p126]
+Les changements sont liés à une évolution temporelle et à l'association de catégories. La force de ce graphique est qu'aucun de ces deux aspect ne pévaut sur l'autre. [cite:@jonathanschwabishComparingCategories2021]
 
-Très utile pour représenter les flux entre des catégories ou entre des états. [cite:@Schwabish2021p126]
+Très utile pour représenter les flux entre des catégories ou entre des états. [cite:@jonathanschwabishComparingCategories2021]
 
-Il convient néanmoins de limiter le nombre de catégorie  affiché pour maintenir un bon niveau de lisibilité. [cite:@Schwabish2021p129]
+Il convient néanmoins de limiter le nombre de catégorie  affiché pour maintenir un bon niveau de lisibilité. [cite:@jonathanschwabishComparingCategories2021]
 
 ** Sismographe
 :PROPERTIES:
@@ -879,14 +879,16 @@ Représente fidèlement les distributions d'un très grand nombre de données. [
 :END:
 Semblable à un diagramme de bulle mais transformées en zones dont l'ensemble des points de chacune est plus proche du centre de sa zone que de tout autre centroïde. [cite:@alansmithLexiqueVisuel]
 
-Il est très pertinent pour illustrer les parties d'un ensemble lorsque de nombreuses sous-catégories sont à afficher. [cite:@Schwabish2021p307] En ce sens, il est préféré aux camenberts.
+Il est très pertinent pour illustrer les parties d'un ensemble lorsque de nombreuses sous-catégories sont à afficher. [cite:@jonathanschwabishParttowhole2021] En ce sens, il est préféré aux camenberts.
 
 * Etudes futures
 Des études complémentaires pourraient être menées sur les sujets suivants :
 - La conception de librairies de graphiques accessibles et fonctionnant aussi bien dans un usage web que dans les PDF,
 
 * Evolution
-La table de donnée sous-jacente doit être organisée par colonne de valeur temporelle croissante.
+| Date         | Changements           |
+|--------------+-----------------------|
+| 2025-02-10   | Rédaction du document |
 
 * Glossaire
 - Médiane :: définition
