@@ -31,10 +31,13 @@
 #+LATEX_HEADER: \makenoidxglossaries
 #+LATEX_HEADER: \setcounter{page}{1}
 #+LaTeX_HEADER: \setlength{\marginparwidth}{1.6cm}
+#+LaTeX_HEADER: \setlength{\parindent}{0pt}
 #+LATEX_HEADER: \setcounter{secnumdepth}{0}
 #+LaTeX_HEADER: \usepackage[colorinlistoftodos]{todonotes}
 #+LaTeX_HEADER: \usepackage{microtype}
 #+LaTeX_HEADER: \usepackage{orcidlink}
+
+#+latex_header: \usepackage{wrapfig}
 
 #+BIBLIOGRAPHY: ~/bib/references.bib
 #+cite_export: biblatex backend=biber,style=iso-numeric,doi=true,isbn=true,autocite=superscript

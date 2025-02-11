@@ -59,6 +59,64 @@ Certaines polices peuvent être utilisés pour projeter des icones (NerdFont, St
 Il est important de prévoir le chargement de toutes polices non standard (eg. Source Sans Pro, NerdFont...) dans l'interface utilisateur si celles-ci sont utilisées puisqu'elles ne sont probablement pas installées dans le système d'exploitation de l'utilisateur. Prévoir leurs chargement vise à assurer la bonne expérience des utilisateurs.
 
 * Couleurs
+La conception de palettes de couleurs est un exercice difficile. Cette opération implique de considérer les facultées de perception visuelle des utilisateurs mais également le médium de l'information et les habitudes d'utilisation associées.
+
+Une palette de couleur doit être adaptée à :
+- L'achromatopsie avec une prévalence de 0.003% de la population et, par extension à l'impression en noir et blanc,
+- La deutéranopie avec une prévalence de 1.27% des hommes et 0.01% des femmes,
+- La protanopie avec une prévalence de 1.01% des hommes et 0.01% des femmes
+- La deutéranomalie avec une prévalence de 4.63% des hommes et 0.36% des femmes
+- La protanomalie avec une prévalence de 1.08% des hommes et 0.03% des femmes
+- La tritanopie avec une prévalence de 0.003% de la population
+- La tritanomalie avec une prévalence de 0.01% de la population
+source : https://lesyeuxdudaltonisme.fr/les-types-de-daltonisme/
+
+Des outils comme [[https://gka.github.io/palettes/#/5|s|ce0072,96ffea,00ffad|ffffe0,ff005e,93003a|1|1][Color Palette Helper]] permettent de vérifier le comportement des palettes de couleurs au regard de certaines affections visuelles.
+
+Elle doit également éviter les biais sociologiques, cognitifs, culturels, et autres tels que :
+- Le genrage des couleurs (bleu, rose)
+- La perception morale (vert, rouge)
+-
+
+#+name: fig:Palette d'accentuation
+[[./img/palette-evidence.pdf]]
+
+Lors de l'emploi de la palette d'accentuation il est important que la couleur de base n'attire pas l'attention. Le focus de l'utilisateur doit rester sur l'élément accentué. [cite:@Wilke2019p34]
+Le plus efficace est de tracer tous les éléments dans un gris homogène et léger et n'afficher que les valeurs accentuées avec la couleur retenue. [cite:@Wilke2019p34]
+
+#+name: fig:Palette binaire
+[[./img/palette-binaire.pdf]]
+
+
+#+name: fig:Palette divergente
+[[./img/palette-divergente.pdf]]
+
+Cette palette est utilisée pour accompagner la visualisation de la déviation de données dans deux directions opposées à un point central. [cite:@Wilke2019p30]
+
+Il convient que les écarts de contraste des deux extrémitées avec le point central soit égal. Il convient également qu'il y ai le même nombre d'échelons colorés de part et d'autre du point central. [cite:@Wilke2019p30]
+
+Il convient de ne pas utiliser le rouge et le vert conjointement comme teintes d'extrémités car environ 4% de la population ne peut pas discriminer ces couleurs. [cite:@CenteringAccessibilityInDataviz p4]
+
+#+name: fig:Palette monochrome
+[[./img/palette-monochrome.pdf]]
+
+Aussi appelée "séquentielle", cette palette de couleur est utilisée pour représenter la nature quantitative d'une donnée. [cite:@Wilke2019p29]
+
+En utilisant cette palette de couleur, l'utilisateur perçoit la valeur la plus contrasté (foncé) comme étant la plus haute et inversement. [cite:@REF???]
+
+Il convient d'employer une graduation présente dans l'environnement natuel, partant par exemple d'un bleu foncé et évoluent vers un jaune clair. [cite:@Wilke2019p30]
+
+#+name: fig:Palette thermique
+[[./img/palette-thermique.pdf]]
+
+C'est la température des couleurs qui souligne l'importance des données, du plus froid (faible) au plus chaud (élevé). [cite:@REF???]
+
+En utilisant cette palette de couleur, l'utilisateur donnera plus d'importance aux zones de couleurs chaudes. [cite:@REF???]
+
+#+name: fig:Palette catégorique
+[[./img/palette-categorique.pdf]]
+
+N'employez cette palette de couleur que lorsque les données affichées n'ont aucun lien intrinsèque. [cite:@Wilke2019p27]
 
 * Tables
 Une table ou tableur permet d'exposer des données brutes organisées en lignes ou en colonnes. [cite:@mikeyiHowChooseRight2020]
@@ -152,7 +210,7 @@ Peut être utilisé pour illustrer les distances entre deux points. Cet usage me
 :END:
 Affiche les points de données d'une catégorie.[cite:@jonathanschwabishDistribution2021] Les valeurs peuvent être affichés par des lignes ou des cercles pleins mais les cercles sont à privilégier lorsqu'il est nécessaire de déagglomérer les données.
 
-Il est possible d'utiliser de la trensparence pour illustrer les zones de valeurs compactes. [cite:@jonathanschwabishDistribution2021] Utiliser une palette de couleur divergente met en évidence la répartition des valeurs mesurées et souligner la séparation de celles ci par rapport à un axe de référence.[cite:@jonathanschwabishDistribution2021]
+Il est possible d'utiliser de la transparence pour illustrer les zones de valeurs compactes. [cite:@jonathanschwabishDistribution2021] Utilisez la palette de couleurs divergentes [[fig:Palette divergente]] pour mettre en évidence la répartition des valeurs mesurées et souligner la séparation de celles ci par rapport à un axe de référence.[cite:@jonathanschwabishDistribution2021]
 
 Les points peuvent être légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce mode de représentation est appelé "essaim d'abeille" (beeswarm). [cite:@jonathanschwabishDistribution2021]
 
@@ -684,8 +742,12 @@ Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la compositi
 :data-type-x:
 :data-type-y:
 :END:
+#+name: fig:Icone de nuage de point
+#+attr_latex: :center nil :width 1.2cm :float warp :placement {l}{0\textwidth}
+[[./img/icon-scatterplot.pdf]]
 Représente la relation entres deux variables continues. [cite:@alansmithLexiqueVisuel]
 La couleur est utilisée pour distinguer les catégories.
+
 Si des milliers de point de données sont à afficher, il est préférable d'utiliser soit :
 - des cercles ouverts
 - des petits cercles
@@ -831,7 +893,16 @@ Utile lorsqu'il est utile de compter ou de mettre en évidence des éléments in
 :data-type-x:
 :data-type-y:
 :END:
-Présentation d'une valeur mesurée ou calculée au regard d'une valeur cible. [cite:@alansmithLexiqueVisuel] Pertinent lors de la réalisation d'un benchmark. [cite:@mikeyiHowChooseRight2020]
+selont Schwabish : inventé par Few
+
+La valeur actuelle mesurée ou calculée est observée au moyen d'une barre horizontale constrastant avec l'arrière plan. [cite:@Schwabis2021p120]
+La valeur cible est représenté par une ligne verticale. [cite:@alansmithLexiqueVisuel]
+L'arrière plan expose 3 zones dites qualitative et associées à des notions de performance (eg. inférieur, moyen, bon). [cite:@Sosulski2019p47]
+
+Editer une série de tirets permet d'exposer au lecteur diverses comparaisons tout en restant compacte. [cite:@Schwabish2021p120]
+
+Cette représentation est notamment pertinente lors de la réalisation d'un benchmark. [cite:@mikeyiHowChooseRight2020]
+# Définir benchmark
 
 ** Tunnel
 :PROPERTIES:
@@ -886,17 +957,9 @@ Des études complémentaires pourraient être menées sur les sujets suivants :
 - La conception de librairies de graphiques accessibles et fonctionnant aussi bien dans un usage web que dans les PDF,
 
 * Evolution
-| Date         | Changements           |
-|--------------+-----------------------|
-| 2025-02-10   | Rédaction du document |
-
-* Glossaire
-- Médiane :: définition
-  
-* Acronymes
-- ML :: Machine Learning
-
-#+latex: \newpage
+|       Date | Changements           |
+|------------+-----------------------|
+| 2025-02-10 | Rédaction du document |
 
 * Références
 #+print_bibliography: :heading none
