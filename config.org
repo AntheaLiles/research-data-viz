@@ -37,10 +37,13 @@
 #+LaTeX_HEADER: \usepackage{microtype}
 #+LaTeX_HEADER: \usepackage{orcidlink}
 
+# Gestion des images
+#+LaTeX_HEADER: \usepackage{caption}
 #+latex_header: \usepackage{wrapfig}
 
+# Gestion des références
 #+BIBLIOGRAPHY: ~/bib/references.bib
-#+cite_export: biblatex backend=biber,style=iso-numeric,doi=true,isbn=true,autocite=superscript
+#+cite_export: biblatex backend=biber,style=iso-numeric,doi=true,isbn=true,mincrossrefs=1,autocite=superscript
 #+latex_header: \definecolor{wikipediablue}{HTML}{0645AD}
 #+latex_header: \let\cite\autocite
 #+latex_header: \hypersetup{colorlinks=true, linkcolor=wikipediablue, citecolor=wikipediablue, urlcolor=wikipediablue}

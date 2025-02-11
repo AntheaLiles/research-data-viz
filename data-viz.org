@@ -78,45 +78,57 @@ Elle doit également éviter les biais sociologiques, cognitifs, culturels, et a
 - La perception morale (vert, rouge)
 -
 
-#+name: fig:Palette d'accentuation
+#+caption: Palette d'accentuation
+#+name: fig:Pal-a
+#+attr_latex: :placement [H]
 [[./img/palette-evidence.pdf]]
 
-Lors de l'emploi de la palette d'accentuation il est important que la couleur de base n'attire pas l'attention. Le focus de l'utilisateur doit rester sur l'élément accentué. [cite:@Wilke2019p34]
-Le plus efficace est de tracer tous les éléments dans un gris homogène et léger et n'afficher que les valeurs accentuées avec la couleur retenue. [cite:@Wilke2019p34]
+Lors de l'emploi de la palette d'accentuation il est important que la couleur de base n'attire pas l'attention. Le focus de l'utilisateur doit rester sur l'élément accentué.[cite:@wilkeColorScales2019]
+Le plus efficace est de tracer tous les éléments dans un gris homogène et léger et n'afficher que les valeurs accentuées avec la couleur retenue. [cite:@wilkeColorScales2019]
 
-#+name: fig:Palette binaire
+#+caption: Palette binaire
+#+name: fig:Pal-b
+#+attr_latex: :placement [H]
 [[./img/palette-binaire.pdf]]
 
 
-#+name: fig:Palette divergente
+#+caption: Palette divergente
+#+name: fig:Pal-d
+#+attr_latex: :placement [H]
 [[./img/palette-divergente.pdf]]
 
-Cette palette est utilisée pour accompagner la visualisation de la déviation de données dans deux directions opposées à un point central. [cite:@Wilke2019p30]
+Cette palette est utilisée pour accompagner la visualisation de la déviation de données dans deux directions opposées à un point central. [cite:@wilkeColorScales2019]
 
-Il convient que les écarts de contraste des deux extrémitées avec le point central soit égal. Il convient également qu'il y ai le même nombre d'échelons colorés de part et d'autre du point central. [cite:@Wilke2019p30]
+Il convient que les écarts de contraste des deux extrémitées avec le point central soit égal. Il convient également qu'il y ai le même nombre d'échelons colorés de part et d'autre du point central. [cite:@wilkeColorScales2019]
 
-Il convient de ne pas utiliser le rouge et le vert conjointement comme teintes d'extrémités car environ 4% de la population ne peut pas discriminer ces couleurs. [cite:@CenteringAccessibilityInDataviz p4]
+Il convient de ne pas utiliser le rouge et le vert conjointement comme teintes d'extrémités car environ 4% de la population ne peut pas discriminer ces couleurs. [cite:@schwabishCenteringAccessibilityData2022a]
 
-#+name: fig:Palette monochrome
+#+caption: Palette monochrome
+#+name: fig:Pal-m
+#+attr_latex: :placement [H]
 [[./img/palette-monochrome.pdf]]
 
-Aussi appelée "séquentielle", cette palette de couleur est utilisée pour représenter la nature quantitative d'une donnée. [cite:@Wilke2019p29]
+Aussi appelée "séquentielle", cette palette de couleur est utilisée pour représenter la nature quantitative d'une donnée. [cite:@wilkeColorScales2019]
 
 En utilisant cette palette de couleur, l'utilisateur perçoit la valeur la plus contrasté (foncé) comme étant la plus haute et inversement. [cite:@REF???]
 
-Il convient d'employer une graduation présente dans l'environnement natuel, partant par exemple d'un bleu foncé et évoluent vers un jaune clair. [cite:@Wilke2019p30]
+Il convient d'employer une graduation présente dans l'environnement natuel, partant par exemple d'un bleu foncé et évoluent vers un jaune clair. [cite:@wilkeColorScales2019]
 
-#+name: fig:Palette thermique
+#+caption: Palette thermique
+#+name: fig:Pal-t
+#+attr_latex: :placement [H]
 [[./img/palette-thermique.pdf]]
 
 C'est la température des couleurs qui souligne l'importance des données, du plus froid (faible) au plus chaud (élevé). [cite:@REF???]
 
 En utilisant cette palette de couleur, l'utilisateur donnera plus d'importance aux zones de couleurs chaudes. [cite:@REF???]
 
-#+name: fig:Palette catégorique
+#+caption: Palette catégorique
+#+name: fig:Pal-c
+#+attr_latex: :placement [H]
 [[./img/palette-categorique.pdf]]
 
-N'employez cette palette de couleur que lorsque les données affichées n'ont aucun lien intrinsèque. [cite:@Wilke2019p27]
+N'employez cette palette de couleur que lorsque les données affichées n'ont aucun lien intrinsèque. [cite:@wilkeColorScales2019]
 
 * Tables
 Une table ou tableur permet d'exposer des données brutes organisées en lignes ou en colonnes. [cite:@mikeyiHowChooseRight2020]
@@ -210,7 +222,7 @@ Peut être utilisé pour illustrer les distances entre deux points. Cet usage me
 :END:
 Affiche les points de données d'une catégorie.[cite:@jonathanschwabishDistribution2021] Les valeurs peuvent être affichés par des lignes ou des cercles pleins mais les cercles sont à privilégier lorsqu'il est nécessaire de déagglomérer les données.
 
-Il est possible d'utiliser de la transparence pour illustrer les zones de valeurs compactes. [cite:@jonathanschwabishDistribution2021] Utilisez la palette de couleurs divergentes [[fig:Palette divergente]] pour mettre en évidence la répartition des valeurs mesurées et souligner la séparation de celles ci par rapport à un axe de référence.[cite:@jonathanschwabishDistribution2021]
+Il est possible d'utiliser de la transparence pour illustrer les zones de valeurs compactes. [cite:@jonathanschwabishDistribution2021] Utilisez la palette de couleurs divergentes [[fig:Pal-d]] pour mettre en évidence la répartition des valeurs mesurées et souligner la séparation de celles ci par rapport à un axe de référence.[cite:@jonathanschwabishDistribution2021]
 
 Les points peuvent être légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce mode de représentation est appelé "essaim d'abeille" (beeswarm). [cite:@jonathanschwabishDistribution2021]
 
@@ -742,9 +754,10 @@ Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la compositi
 :data-type-x:
 :data-type-y:
 :END:
-#+name: fig:Icone de nuage de point
-#+attr_latex: :center nil :width 1.2cm :float warp :placement {l}{0\textwidth}
+
+#+ATTR_LATEX: :float wrap :width 1.2cm :placement {l}{0\textwidth}
 [[./img/icon-scatterplot.pdf]]
+
 Représente la relation entres deux variables continues. [cite:@alansmithLexiqueVisuel]
 La couleur est utilisée pour distinguer les catégories.
 
@@ -895,11 +908,11 @@ Utile lorsqu'il est utile de compter ou de mettre en évidence des éléments in
 :END:
 selont Schwabish : inventé par Few
 
-La valeur actuelle mesurée ou calculée est observée au moyen d'une barre horizontale constrastant avec l'arrière plan. [cite:@Schwabis2021p120]
+La valeur actuelle mesurée ou calculée est observée au moyen d'une barre horizontale constrastant avec l'arrière plan. [cite:@jonathanschwabishComparingCategories2021]
 La valeur cible est représenté par une ligne verticale. [cite:@alansmithLexiqueVisuel]
-L'arrière plan expose 3 zones dites qualitative et associées à des notions de performance (eg. inférieur, moyen, bon). [cite:@Sosulski2019p47]
+L'arrière plan expose 3 zones dites qualitative et associées à des notions de performance (eg. inférieur, moyen, bon). [cite:@sosulskiGraphics2019]
 
-Editer une série de tirets permet d'exposer au lecteur diverses comparaisons tout en restant compacte. [cite:@Schwabish2021p120]
+Editer une série de tirets permet d'exposer au lecteur diverses comparaisons tout en restant compacte. [cite:@jonathanschwabishComparingCategories2021]
 
 Cette représentation est notamment pertinente lors de la réalisation d'un benchmark. [cite:@mikeyiHowChooseRight2020]
 # Définir benchmark
