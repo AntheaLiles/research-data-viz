@@ -4,6 +4,9 @@
 #+DATE: {{{time(%Y-%m-%d)}}}
 #+setupfile: "config.org"
 
+# Rédigé sur Emacs en Org-mode,
+# Edité avec AUCTeX sur la distribution TeX Live via le compilateur XeLaTeX
+
 #+begin_abstract
 Rédiger l'abstract ici
 #+end_abstract
@@ -15,23 +18,23 @@ Rédiger l'abstract ici
 * Introduction
 La visualization de donnée est une discipline ancienne à la littérature riche et précise. Cependant, il n'existe, à ce jour pas de synthèse opérationnelle ni de méthode harmonisée dans la conception des représentations graphiques des informations. Ce rapport vise à fournir un point de départ cohérent à de futurs travaux en représentation visuelle d'informations. Il est basé sur une revue de littérature rigoureuse et les recommendations qu'il porte sont issues des lectures réalisées. Une tentative est réalisée d'objectiver les usages des diverses représentations.
 
-L'origine de ces travaux prend place dans un besoin grandissant de solution de visualization d'information dans le secteur de la construction. Les technologies de Big Data, BIM, VDC et les disciplines de la science des données ont fortement pénétré ce secteur sur l'ensemble du cycle de vie des ouvrages. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020] L'utilisation renforcée de l'IoT, l'émèrgence des BIS et BOS et l'intégration des solutions d'intelligences artificielles renforcent d'autant plus la nécessité pour ce secteur de se doter de moyens robuste en exploration et en communication des informations.
+L'origine de ces travaux prend place dans un besoin grandissant de solution de visualization d'information dans le secteur de la construction. Les technologies de Big Data, BIM, VDC et les disciplines de la science des données ont fortement pénétré ce secteur sur l'ensemble du cycle de vie des ouvrages. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020] =mentionner les jumeaux numériques ici= L'utilisation renforcée de l'IoT, l'émèrgence des BIS et BOS et l'intégration des solutions d'intelligences artificielles renforcent d'autant plus la nécessité pour ce secteur de se doter de moyens robuste en exploration et en communication des informations.
 
-Le secteur de la construction est historiquement peu digitalisé en comparaison avec les autres industries. Pour adresser ce retard, il est important de publier des études opérationnelle claires et industrialisables dont chaque acteur de l'industrie de la construction puisse bénéficier immédiatement. Ce rapport s'inscrit dans cette démarche.
+Le secteur de la construction est historiquement peu digitalisé en comparaison avec les autres industries.[cite:@REF???] Pour adresser ce retard, il est important de publier des études opérationnelle claires et industrialisables dont chaque acteur puisse bénéficier immédiatement. Ce rapport s'inscrit dans cette démarche.
 
 Il existe de multiples manières d'interargir avec un graphique. [cite:@schwabishCenteringAccessibilityData2022a;@frankelavskyRightToolsJob2022]
 
 Ce rapport aborde les éléments impliquant la mise en oeuvre de solution programmatique d'accessibilité et pouvant intégrer une logique globale de préparation de graphiques numériques tels que:
-- L'exploration visuelle
-- La lecture des tables
-- L'écoute des descriptions
-- La sonification des données
-- L'interractivité avec les commandes de clavier
+- L'exploration visuelle,
+- La lecture des tables,
+- L'écoute des descriptions,
+- La sonification des données,
+- L'interractivité avec les commandes de clavier.
 
 Ce rapport n'aborde pas les éléments nécessitant l'emploi de matériels spécifiques tels que :
-- L'exploration en réalité mixte
-- Les retours haptiques
-- L'emploi d'écran à relief (braille)
+- L'exploration en réalité étendue,
+- L'utilisation de retours haptiques,
+- L'emploi d'écran à relief (braille).
 
 * Démarche
 La conduite de cette revue s'est déroulé de la manière suivante :
@@ -50,7 +53,7 @@ Pour finir, nous avons étudié les articles scientifiques publiés sur ces suje
 * Polices
 Le choix d'une police de texte a de multiples impacts sur la perception des graphiques. Il convient de selectionner une police accessible et de préférence sans sérif pour un usage informatique (Arial, Calibri, Source Sans Pro, Verdana...). [cite:@andreaskrauseBestPracticesData2024] Les polices avec serif peuvent être considérés pour la production d'éléments imprimés. Il n'y a pas de consensus clair sur l'impact des sérifs sur l'accessibilité des polices. [cite:@stephenfewTableDesign2012] Il n'y a pas non plus de consensus clair sur l'efficacité des polices conçues pour adresser des problématiques d'accessibilités telles que la dyslexie. Il convient d'utiliser une police utilisant une hauteur fixe pour les chiffres. [cite:@stephenfewTableDesign2012]
 
-Il est conseillé de restreindre l'utilisation de l'italique car les textes affichés de la sorte sont plus difficiles à lire. Il est égalemenbt conseiller de limiter l'utilisation de la graisse et du soulignement à des cas spécifiques pour ne pas surcharger les présentations.
+Il est conseillé de restreindre l'utilisation de l'italique car les textes affichés de la sorte sont plus difficiles à lire. Il est également conseillé de limiter l'utilisation de la graisse et du soulignement à des cas spécifiques pour ne pas surcharger les présentations.
 
 La taille de la police joue un role majeur dans l'accessibilité du texte. Il est recommendé d'utiliser une hauteur de police de 12 points.[cite:@andreaskrauseBestPracticesData2024] Le nombre de tailles et de type de police doit être limité en nombre.[cite:@andreaskrauseBestPracticesData2024]
 
@@ -59,31 +62,38 @@ Certaines polices peuvent être utilisés pour projeter des icones (NerdFont, St
 Il est important de prévoir le chargement de toutes polices non standard (eg. Source Sans Pro, NerdFont...) dans l'interface utilisateur si celles-ci sont utilisées puisqu'elles ne sont probablement pas installées dans le système d'exploitation de l'utilisateur. Prévoir leurs chargement vise à assurer la bonne expérience des utilisateurs.
 
 * Couleurs
-La conception de palettes de couleurs est un exercice difficile. Cette opération implique de considérer les facultées de perception visuelle des utilisateurs mais également le médium de l'information et les habitudes d'utilisation associées.
+L'utilisation de la couleur n'est pas nécessaire pour éditer un graphique efficace. Il s'agit par exemple de la manière la moins efficace pour représenter des différences entre des variables. [cite:@Beecham2021]
 
-Une palette de couleur doit être adaptée à :
-- L'achromatopsie avec une prévalence de 0.003% de la population et, par extension à l'impression en noir et blanc,
-- La deutéranopie avec une prévalence de 1.27% des hommes et 0.01% des femmes,
-- La protanopie avec une prévalence de 1.01% des hommes et 0.01% des femmes
-- La deutéranomalie avec une prévalence de 4.63% des hommes et 0.36% des femmes
-- La protanomalie avec une prévalence de 1.08% des hommes et 0.03% des femmes
-- La tritanopie avec une prévalence de 0.003% de la population
-- La tritanomalie avec une prévalence de 0.01% de la population
+Cependant, utilisé convenablement elle peut aider à la transmission des informations, améliorer la lisibilité de certain graphiques, inscrire une identité visuelle ou encore succiter l'intérêt du lecteur. L'objectif des représentations graphiques des informations étant de maximiser les chances d'acquisition d'une information par un lecteur, il est important de succiter son intérêt en premier lieu. [cite:@Références sur l'esthétisme?]
+
+La conception de palettes de couleurs est un exercice difficile. Cette opération implique de considérer les facultées de perception visuelle des utilisateurs mais également le médium et les habitudes associées.
+
+Les études de (Tran et al. 2024) ont mis en évidence une efficacité particulière de l'utilisation du vert vis à vis du rouge et du bleu dans la vitesse de transmission des informations. L'écart n'est cependant pas suffisement significatif pour justifier à ce titre de l'abandon de l'utilisation de l'une ou l'autre des couleurs. 
+
+Pour créer une palette de couleur accessible, celle-ci doit être adaptée à :
+- L'achromatopsie, prévalence de 0.003% de la population et par extension, à l'impression en noir et blanc,[cite:@andreaskrauseBestPracticesData2024]
+- La deutéranopie, prévalence de 1.27% des hommes et 0.01% des femmes,
+- La protanopie, prévalence de 1.01% des hommes et 0.01% des femmes
+- La deutéranomalie, prévalence de 4.63% des hommes et 0.36% des femmes
+- La protanomalie, prévalence de 1.08% des hommes et 0.03% des femmes
+- La tritanopie, prévalence de 0.003% de la population
+- La tritanomalie, prévalence de 0.01% de la population
 source : https://lesyeuxdudaltonisme.fr/les-types-de-daltonisme/
 
 Des outils comme [[https://gka.github.io/palettes/#/5|s|ce0072,96ffea,00ffad|ffffe0,ff005e,93003a|1|1][Color Palette Helper]] permettent de vérifier le comportement des palettes de couleurs au regard de certaines affections visuelles.
 
-Elle doit également éviter les biais sociologiques, cognitifs, culturels, et autres tels que :
-- Le genrage des couleurs (bleu, rose)
-- La perception morale (vert, rouge)
--
+Elle doit également éviter les biais sociologiques, cognitifs, culturels, et autres tels que le genrage des couleurs (bleu, rose),[cite:@andreaskrauseBestPracticesData2024]la perception morale (vert, rouge),[cite:@article sur le rouge en chine] ou la valeur émotionnelle (rouge).[cite:@tranDiscoveringAccessibleData2024]
 
-#+caption: Palette d'accentuation
+L'utilisation de la couleur doit également respecter le principe de [citer le principe sur l'encre de Tufte]. Ainsi, il convient de ne pas remplir les larges zones avec une couleur saturé.[cite:@wilkeCommonPitfallsColor2019] Si un remplissage est requis par le type de graphique, il est préférable d'utiliser des couleurs moins saturés et d'y ajouter de la transparence. [cite:REF???] 
+
+#+caption: Palette d'évidence
 #+name: fig:Pal-a
 #+attr_latex: :placement [H]
 [[./img/palette-evidence.pdf]]
 
-Lors de l'emploi de la palette d'accentuation il est important que la couleur de base n'attire pas l'attention. Le focus de l'utilisateur doit rester sur l'élément accentué.[cite:@wilkeColorScales2019]
+Cette palette de couleur permet d'orienter le regard du lecteur directement sur le segment du graphique important pour l'acquisition de l'information.[cite:@andreaskrauseBestPracticesData2024]
+
+Lors de l'emploi de la palette d'évidence il est important que la couleur de base n'attire pas l'attention. Le focus de l'utilisateur doit rester sur l'élément accentué.[cite:@wilkeColorScales2019]
 Le plus efficace est de tracer tous les éléments dans un gris homogène et léger et n'afficher que les valeurs accentuées avec la couleur retenue. [cite:@wilkeColorScales2019]
 
 #+caption: Palette binaire
@@ -91,6 +101,7 @@ Le plus efficace est de tracer tous les éléments dans un gris homogène et lé
 #+attr_latex: :placement [H]
 [[./img/palette-binaire.pdf]]
 
+Permet de souligner un propos divergent suivant un facteur binaire.[cite:@jonathanschwabishDevelopingDataVisualization2021] 
 
 #+caption: Palette divergente
 #+name: fig:Pal-d
@@ -103,12 +114,16 @@ Il convient que les écarts de contraste des deux extrémitées avec le point ce
 
 Il convient de ne pas utiliser le rouge et le vert conjointement comme teintes d'extrémités car environ 4% de la population ne peut pas discriminer ces couleurs. [cite:@schwabishCenteringAccessibilityData2022a]
 
+Il convient d'utiliser un vérificateur de couleur pour valider la composition de cette palette.[cite:@andreaskrauseBestPracticesData2024]
+
 #+caption: Palette monochrome
 #+name: fig:Pal-m
 #+attr_latex: :placement [H]
 [[./img/palette-monochrome.pdf]]
 
-Aussi appelée "séquentielle", cette palette de couleur est utilisée pour représenter la nature quantitative d'une donnée. [cite:@wilkeColorScales2019]
+Aussi appelée "séquentielle", cette palette de couleur est utilisée lorsque les données sont organisées dans un ordre quantitatif (croissant, décroissant, etc.). [cite:@wilkeColorScales2019;@jonathanschwabishDevelopingDataVisualization2021] 
+
+Les variations réalisées en modifiant la lumiosité d'une teinte.[cite:@andreaskrauseBestPracticesData2024] 
 
 En utilisant cette palette de couleur, l'utilisateur perçoit la valeur la plus contrasté (foncé) comme étant la plus haute et inversement. [cite:@REF???]
 
@@ -127,8 +142,18 @@ En utilisant cette palette de couleur, l'utilisateur donnera plus d'importance a
 #+name: fig:Pal-c
 #+attr_latex: :placement [H]
 [[./img/palette-categorique.pdf]]
+Ce jeu de couleur est utilisé pour discriminer des catégories et lorsque leurs divergences ou leurs ordre n'est pas important.[cite:@andreaskrauseBestPracticesData2024]
 
 N'employez cette palette de couleur que lorsque les données affichées n'ont aucun lien intrinsèque. [cite:@wilkeColorScales2019]
+
+Il convient d'utiliser un vérificateur de couleur pour valider la composition de cette palette.[cite:@andreaskrauseBestPracticesData2024]
+
+#+caption: Palette arc-en-ciel
+#+name: fig:Pal-x
+#+attr_latex: :placement [H]
+[[./img/palette-arc-en-ciel.pdf]]
+
+Palette de couleur à prohiber.[cite:@wilkeCommonPitfallsColor2019]
 
 * Tables
 Une table ou tableur permet d'exposer des données brutes organisées en lignes ou en colonnes. [cite:@mikeyiHowChooseRight2020]
@@ -591,7 +616,14 @@ Permet de vérifier un équilibre entre deux borne par rapport à une base. [cit
 :data-type-x:
 :data-type-y:
 :END:
-Représentation métaphorique la vitesse d'un système.
+Les jauges sont des représentations familières et facile à lire. [cite:@jonathanschwabishComparingCategories2021] En ce sens, elles sont pertinente pour afficher des données. Cependant, il convient de s'intéresser particulièrement à leurs représentation métaphorique. Les graphiques en jauge étant un =skeumorphisme=, leurs utilisation est probablement plus pertinente pour l'affichage d'information pour lesquelles elles sont utilisées dans le monde physique.
+
+Cela concerne par exemple :
+- L'affichage d'une vitesse instantanée,
+- L'affichage d'une pression instantanée et par extension,
+- L'affichage d'un niveau dans un réservoir.
+
+Pour tout autre usage, et considérant la difficulté humaine d'interprétation d'une valeur en comparant des angles ainsi que le manque d'options pertinentes pour ajouter des informations qualitatives sur les jauges, il convient d'utiliser un graphique en [[Tiret]].
 
 ** Ligne
 :PROPERTIES:
@@ -755,16 +787,27 @@ Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la compositi
 :data-type-y:
 :END:
 
-#+ATTR_LATEX: :float wrap :width 1.2cm :placement {l}{0\textwidth}
+#+ATTR_LATEX: :float wrap :width 1.2cm :placement {l}{0.8cm}
 [[./img/icon-scatterplot.pdf]]
 
 Représente la relation entres deux variables continues. [cite:@alansmithLexiqueVisuel]
-La couleur est utilisée pour distinguer les catégories.
+La couleur est la meilleure façon de distinguer les catégories.[cite:@stephenfewComponentlevelGraphDesign2012] Pour cela, utilisez la pallette catégorique ([[fig:Pal-c]])
+
+Dans un maximum de 4 catégories de données, il est possible d'utiliser un double encodage combinant une forme et une couleur.[cite:@andreaskrauseBestPracticesData2024]
+
+les formes recommandées sont :
+
+#+caption: Formes des points de données
+#+name: fig:formes
+#+attr_latex: :width 3.2cm :placement [H]
+[[./img/formes.pdf]]
+
 
 Si des milliers de point de données sont à afficher, il est préférable d'utiliser soit :
-- des cercles ouverts
-- des petits cercles
-- des cercles avec une transparence
+- des cercles ouverts,
+- des petits cercles,[cite:@stephenfewComponentlevelGraphDesign2012]
+- des cercles avec une transparence.[cite:@stephenfewComponentlevelGraphDesign2012]
+
   Cela permet de limiter le masquage des points de données par surimposition. [cite:@andreaskrauseBestPracticesData2024]
 
 ** Nuage de point connecté
@@ -974,7 +1017,43 @@ Des études complémentaires pourraient être menées sur les sujets suivants :
 |------------+-----------------------|
 | 2025-02-10 | Rédaction du document |
 
+* Glossaire
+** Vocabulaire technique 
+- Big data :: Désigne les ressources d’informations dont les caractéristiques en termes de volume, de vélocité et de variété imposent l’utilisation de technologies et de méthodes analytiques particulières pour créer de la valeur et qui dépassent en général les capacités d'une seule et unique machine. [cite:https://fr.wikipedia.org/wiki/Big_data]
+- Jumeau numérique :: Modèle numérique qui reconstitue fidèlement un objet, une opération ou un système tel qu'utilisé (ou maintenu/exploité). [cite:https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique]
+- Médium :: Moyen par lequel est transmise une information. [cite:https://fr.wikipedia.org/wiki/M%C3%A9dium]
+- Réalité étendue :: Mise en œuvre de technologies de réalité augmentée (AR), de réalité virtuelle (VR) et de réalité mixte (MR) dont l'objectif est de fusionner ou de refléter le monde physique avec un monde numérique qui peut interagir avec lui. [cite:https://fr.wikipedia.org/wiki/R%C3%A9alit%C3%A9_%C3%A9tendue]
+- Retours haptiques :: Technologie utilisant les vibrations pour stimuler le toucher. [cite:https://fr.wikipedia.org/wiki/Vibration_(jeu_vid%C3%A9o)#Retour_haptique]
+- Skeumorphisme :: Elément de design dont la forme n'est pas directement liée à la fonction, mais qui reproduit de manière ornementale un élément qui était nécessaire dans l'objet d'origine. [cite:https://fr.wikipedia.org/wiki/Skeuomorphisme]
+- Sonification :: Représentation et émission de données sous forme de signaux acoustiques non verbaux aux fins de la transmission ou de la perception d’information. [cite:https://fr.wikipedia.org/wiki/Sonification] 
+
+** Troubles neurodivergents
+- Autisme :: Troubles caractérisé par des difficultés dans les interactions sociales et la communication, ainsi que par des comportements et intérêts à caractère restreint, répétitif et stéréotypé. [cite:https://fr.wikipedia.org/wiki/Autisme]
+- Dyscalculie :: Trouble sévère dans les apprentissages numériques, sans atteinte organique, sans troubles envahissants du développement et sans déficience mentale et engendrant notamment des difficultés en mathématiques. [cite:https://fr.wikipedia.org/wiki/Dyscalculie]
+- Dyslexie :: Trouble de la lecture et de l'écriture spécifique et durable [...] qui peut se traduire à divers degrés par des difficultés à épeler les mots, lire vite, écrire, lire à voix haute ou bien comprendre ce qui est lu. [cite:https://fr.wikipedia.org/wiki/Dyslexie]
+- Dysorthographie :: Dysfonctionnement de l’écriture dû à un trouble d'apprentissage persistant de l’acquisition et de la maîtrise de l’orthographe et, pouvant se charactériser par des erreurs orthographiques, de conjugaison, de grammaire et d’analyse, des erreurs visuelles, etc. [cite:https://fr.wikipedia.org/wiki/Dysorthographie]
+- Epilepsie :: Prédisposition cérébrale à engendrer des "crises" épileptiques dites "non provoquées", c'est-à-dire spontanées, non expliquées par un facteur causal immédiat. [cite:https://fr.wikipedia.org/wiki/%C3%89pilepsie]
+- TDA/H :: Trouble provoquant trois types de symptômes pouvant se manifester seuls ou combinés : des difficultés d'attention et son contrôle, des symptômes d'hyperactivité et d'hyperkinésie. [cite:https://fr.wikipedia.org/wiki/Trouble_du_d%C3%A9ficit_de_l%27attention_avec_ou_sans_hyperactivit%C3%A9]
+
+** Troubles de la vision [cite:https://fr.wikipedia.org/wiki/Daltonisme]
+- Achromatopsie :: Absence totale de vision des couleurs.
+- Deutéranopie :: Incapacité à différencier le rouge du vert.
+- Deutéranomalie :: Sensibilité au vert réduite avec une tendance à le confondre avec le jaune.
+- Protanopie :: Absence totale de la perception du rouge.
+- Protanomalie :: Sensibilité au rouge réduite avec une tendance à le confondre avec le vert.
+- Tritanopie :: Absence totale de la perception du bleu.
+- Tritanomalie :: Sensibilité au bleu réduite avec une tendance à le confondre avec le vert ou le jaune.
+  
+* Acronymes
+- BIM :: Building Information Modeling
+- BIS :: Building Information System
+- BOS :: Building Operating System
+- IoT :: Internet of Things
+- TDA/H :: Trouble du déficit de l'attention avec ou sans hyperactivité
+- VDC :: Virtual Design and Construction
+  
 * Références
 #+print_bibliography: :heading none
 
 #+LaTeX_HEADER: \end{multicols}
+
