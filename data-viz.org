@@ -4,9 +4,6 @@
 #+DATE: {{{time(%Y-%m-%d)}}}
 #+setupfile: "config.org"
 
-# Rédigé sur Emacs en Org-mode,
-# Edité avec AUCTeX sur la distribution TeX Live via le compilateur XeLaTeX
-
 #+begin_abstract
 Rédiger l'abstract ici
 #+end_abstract
@@ -146,7 +143,7 @@ Ce jeu de couleur est utilisé pour discriminer des catégories et lorsque leurs
 
 N'employez cette palette de couleur que lorsque les données affichées n'ont aucun lien intrinsèque. [cite:@wilkeColorScales2019]
 
-Il convient d'utiliser un vérificateur de couleur pour valider la composition de cette palette.[cite:@andreaskrauseBestPracticesData2024]
+Chaque couleur doit rester distinguable des autres en toute condition.[cite:@Wilke2019p240] Il convient d'utiliser un vérificateur de couleur pour valider la composition de cette palette.[cite:@andreaskrauseBestPracticesData2024]
 
 #+caption: Palette arc-en-ciel
 #+name: fig:Pal-x
@@ -206,32 +203,50 @@ Si des valeurs spécifiques doivent être mises en avant, il est possible d'util
 Il est recommandé de limiter cette opération à un nombre réduit de valeur. Si cela n'est pas possible, il convient de sélectionner un autre mode de visualisation.
 
 * Méthode de sélection
+* Méthode de validation
+Comme tout élément informatique, un graphique doit être vérifier et valider. Cela est d'autant plus nécessaire si la production de graphique est intégré à un pipeline de donnée.
+
+En premier lieu, il convient de vérifier l'abscence de "distortion" des données affichées pour limiter les biais inhérents.[cite:@Few2012p192]
+
+$$ \text{Rédiger la formule de "truth validation"}$$
+
+Vérifier l'absence de distortion
 
 * Graphiques
+:PROPERTIES:
+:COLUMNS: %ITEM %data-processing %data-table %data-cleanning %data-filter %data-unit
+:END:
 ** Arbre de mot
 :PROPERTIES:
 :en-name: Treeword
-:chart-goal: Correlation
-:data-type-x:
-:data-type-y:
+:chart-class: correlation
+:chart-goal: discovery
+:data-nature: quantitative
+:data-type: text
+:DATA-TRANSFERT: count
+:data-table: key-value
+:data-cleanning: stopwords
+:data-filter: depth
+:data-unit: nil
+:DATA-PROCESSING: COUNT()
 :END:
 Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegas 2007) La taille des mots représente la fréquence de leurs usages. [cite:@jonathanschwabishQualitative2021]
 
-** Arc
+** Arc     
 :PROPERTIES:
-:en-name:
-:chart-goal: Partie d'un ensemble
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Arc
+:CHART-GOAL:
+:CHART-CLASS: part-to-whole
+:DATA-TRANSFERT: ratio
+:DATA-PROCESSING:
 :END:
 +Hémicycle, souvent utilisé pour visualiser la composition d'un effectif.+
 
 ** Arc temporel
 :PROPERTIES:
 :en-name: Arc-time
-:chart-goal: Correlation
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: correlation
 :END:
 
 Utilisé pour illustré les connexions des catégories à travers le temps. L'ordre des données influence la percéption de l'importance des connexions. [cite:@jonathanschwabishRelationship2021]
@@ -241,9 +256,9 @@ Peut être utilisé pour illustrer les distances entre deux points. Cet usage me
 ** Bande de valeur
 :PROPERTIES:
 :en-name: Strip plot
-:chart-goal: Distribution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: distribution
+:DATA-PROCESSING: GROUP BY
 :END:
 Affiche les points de données d'une catégorie.[cite:@jonathanschwabishDistribution2021] Les valeurs peuvent être affichés par des lignes ou des cercles pleins mais les cercles sont à privilégier lorsqu'il est nécessaire de déagglomérer les données.
 
@@ -258,28 +273,25 @@ Epis de blé : Wheat plot (SFew)
 
 ** Barre divergente
 :PROPERTIES:
-:en-name:
-:chart-goal: Déviation
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Diverging bar chart
+:CHART-GOAL:
+:CHART-CLASS: deviation
 :END:
 Affiche correctement un ensemble de valeur quantitative triées par catégories lorsque des valeurs négatives sont utilisées. [cite:@alansmithLexiqueVisuel] L'axe des absysse doit être égal à 0 et toutes les barres doivent être projetées depuis cet axe.
 
 ** Barres divergentes empilées
 :PROPERTIES:
-:en-name:
-:chart-goal: Déviation
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Diverging stacked bar chart
+:CHART-GOAL:
+:CHART-CLASS: deviation
 :END:
 Utilisé pour illustrer les résultats d'enquêtes impliquant un sentiment. [cite:@alansmithLexiqueVisuel] Les barres doivent être calculées en pourcentage et alignées à 100% comme pour une partie d'un ensemble. Les réponses sont affichées de façon ordonée et du plus négatif au plus positif. Il convient d'utiliser une palette de couleur divergente. Lors de la préparation d'une enquête impliquant des sentiment, il est conseiller de proposer un choix de valeur paires pour éviter les votes neutres sauf si la représentation de l'indiférence est une volontée de l'étude. De plus, *expliquer la limite de nombre de zones facile à visualiser* (max 6?)
 
 ** Barre empilées
 :PROPERTIES:
 :en-name: Stacked bar chart
-:chart-goal: Comparaison
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: comparison
 :END:
 Représente le total de chaque catégorie et la proportion de leurs composantes. Les composantes doivent être homogènes. Si les proportions sont plus importantes que les totaux, considérer d'utiliser l'affichage empilée à 100%. [cite:@mikeyiHowChooseRight2020]
 
@@ -287,10 +299,9 @@ Seule la catégorie ayant sa base à 0 sera facile à comparer pour le lecteur c
 
 ** Barre jumelée
 :PROPERTIES:
-:en-name:
-:chart-goal: Comparaison
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Paired bar chart
+:CHART-GOAL:
+:CHART-CLASS: comparison
 :END:
 Permet d'afficher plusieurs séries. Devient plus difficile à lire avec plus de deux séries. [cite:@alansmithLexiqueVisuel]
 Les barres d'une même catégories sont collées les unes aux autres pour souligner leurs appartenance à une même catégorie (ratio 1:0). Espacer les jeux de barres jumelées d'une largeur égale à une barre (ratio n:1).
@@ -299,10 +310,10 @@ Les barres sont colorées avec une palette de couleur de catégories. Les couleu
 
 ** Barre ordonnée
 :PROPERTIES:
-:en-name:
-:chart-goal: Classement
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Ordered bar chart
+:CHART-GOAL:
+:CHART-CLASS: ranking
+:DATA-PROCESSING: ORDER BY
 :END:
 Les catégories sont ordonnées par décroissance de leurs valeurs de quantité[cite:@jonathanschwabishComparingCategories2021] sauf si les catégories on un autre ordre logique (eg. temporel). Dans ce second cas, cet ordre doit être utilisé pour la construction du graphique. [cite:@wilkeVisualizingAmounts2019]
 
@@ -340,19 +351,18 @@ Ne pas ajouter d'iconographie aux barres. [cite:@tranDiscoveringAccessibleData20
 
 ** Bulle proportionnelle ordonnée
 :PROPERTIES:
-:en-name:
-:chart-goal: Classement
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Ordered proportionnal bubble chart
+:CHART-GOAL:
+:CHART-CLASS: ranking
+:DATA-PROCESSING: ORDER BY
 :END:
 Utilisé pour illustrer les grandes variations de quantité pour différentes catégories et lorsque la distinction des nuances n'est pas primordiale. Les bulles doivent être dimensionnés par leurs surface pour éviter d'éxagérer les différences. [cite:@jonathanschwabishComparingCategories2021] Ce type de graphique utilise un double encodage de la quantité : la position et la taille. [cite:@wilkeVisualizingAssociationsTwo2019] Bien que ce type de représentation soit considéré comme engageant, il convient d'utiliser un graphique en barre ordonnée à la place lorsque l'évaluation des différences entre catégories est importante. [cite:@jonathanschwabishComparingCategories2021]
 
 ** Boite à moustache
 :PROPERTIES:
-:en-name:
-:chart-goal: Distribution
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Box plot
+:CHART-GOAL:
+:CHART-CLASS: distribution
 :END:
 Résume les distributions multiples en montrant la médiane et l'étendue des données. [cite:@alansmithLexiqueVisuel]
 
@@ -366,21 +376,23 @@ Il est possible d'afficher la position d'un point précis du jeu de donnée sous
 
 Les boites à moustaches suivent les dispositions graphiques des barres ordonnées. [cite:@stephenfewComponentlevelGraphDesign2012]
 
-** Bosses
+** Bosses  
 :PROPERTIES:
 :en-name: Bumpchart
-:chart-goal: Classement
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: ranking
 :END:
 Affiche l'évolution d'un classement entre différents jalons. [cite:@mikeyiHowChooseRight2020;@alansmithLexiqueVisuel]  Ce graphique n'affiche pas les valeurs sous-jacente mais uniquement le positionnement de la catégorie dans le classement. [cite:@jonathanschwabishTime2021] Si la valeur source est également à représenter, ce graphique peut se transformer en graphique en ruban, combinant les disposition du graphique en bosse avec celles du graphique de Sankey. [cite:@jonathanschwabishTime2021]
 
 ** Camembert
 :PROPERTIES:
 :en-name: Pie chart
-:chart-goal: Partie d'un ensemble
-:data-type-x:
-:data-type-y:
+:CHART-GOAL: education
+:CHART-CLASS: part-to-whole
+:DATA-NATURE: quantitative,qualitative
+:DATA-TYPE:
+:DATA-PROCESSING: PERCENT_RANK(OVER())
+:DATA-TABLE: key-value
 :END:
 Diagramme standard, difficile à lire. [cite:@alansmithLexiqueVisuel]
 Limiter à 5 (4?) entrées maximum [cite:@mikeyiHowChooseRight2020]
@@ -413,27 +425,28 @@ Ce diagramme possède un avantage majeur au regard des autres modes de représen
 ** Carte de fréquentation
 :PROPERTIES:
 :en-name:
-:chart-goal: Evolution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: evolution
 :END:
 Excellente visualisation pour suivre la fréquence d'une activité. Favorise la quantité à la qualité (exemple : github). [cite:@alansmithLexiqueVisuel]
 
-** Cascade
+** Carte de température
+
+Heatmap
+
+** Cascade 
 :PROPERTIES:
 :en-name: Waterfall plot
-:chart-goal: Déviation,Evolution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: deviation,evolution
 :END:
 Affiche les gains et pertes entres deux états d'un système. [cite:@jonathanschwabishComparingCategories2021] Utilisé principalement pour les analyses financières. [cite:@alansmithLexiqueVisuel]
 
 ** Chandelier
 :PROPERTIES:
 :en-name: Candlestick
-:chart-goal: Evolution,Déviation
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: deviation,evolution
 :END:
 Affiche des bilans quotidiens (eg. ouverture, fermeture, point haut, point bas). [cite:@alansmithLexiqueVisuel]
 La couleur est utilisée pour représenter la direction de l'évolution de la valeur (augmente, descend).
@@ -443,36 +456,32 @@ Illustre les évolutions d'un stock sur une temporalité donnée. La ligne indiq
 ** Chronologie circulaire
 :PROPERTIES:
 :en-name:
-:chart-goal: Evolution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: evolution
 :END:
 Pour l'affichage des valeurs discrètes de taille variable à travers de multiples catégories. [cite:@alansmithLexiqueVisuel]
 
 ** Chronologie verticale
 :PROPERTIES:
 :en-name:
-:chart-goal: Evolution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: evolution
 :END:
 Affiche le temps sur l'axe Y. Particulièrement adapté à l'affichage sur mobile. [cite:@alansmithLexiqueVisuel]
 
 ** Colonne vertébrale
 :PROPERTIES:
 :en-name: Spine chart
-:chart-goal: Déviation
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: deviation
 :END:
 Utilisé pour afficher la quantité de réponses négatives et positives à une question. Le spine divise une valeure quantitative unique en deux ccomposants distinct contrasté par un déterminent binaire. [cite:@alansmithLexiqueVisuel] Utilisé pour afficher la quantité de réponses négatives et positives à une question.
 
 ** Coordonnées parallèles
 :PROPERTIES:
-:en-name:
-:chart-goal: Ordre de grandeur
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Parallel coordinate
+:CHART-GOAL:
+:CHART-CLASS: magnitude
 :END:
 Montre en simultané la valeur et la relation de catégories hétérogènes pour plusieurs systèmes. [cite:@jonathanschwabishRelationship2021] Permet de valoriser la valeur. [cite:@alansmithLexiqueVisuel]
 
@@ -484,12 +493,11 @@ Afficher un grand nombre de jeux de données sur un même graphe risque de le re
 
 Lors de l'exploration d'un jeu de donnée à travers une interface informatique, il convient de mettre en avant la ligne pointée par l'utilisateur et de labeliser chaque points de catégorie avec la valeur associé. [cite:@sosulskiGraphics2019]
 
-** Corde
+** Corde   
 :PROPERTIES:
 :en-name: Chord diagram
-:chart-goal: Flux
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: flow
 :END:
 Illustre les flux bidirectionnels et le gagnant net dans une matrice. [cite:@alansmithLexiqueVisuel]
 
@@ -497,30 +505,35 @@ Dans la mesure du possible, il convient de flécher le sens du flux.
 
 Ce diagramme incite les utilisateurs à l'explorer plus en détail. [cite:@jonathanschwabishRelationship2021]
 
+** Courbe de contrôle
+
+Control charts are graphical plots used in production control to determine whether quality and manufacturing processes are being controlled under stable conditions. (ISO 7870-1)
+
+`https://en.wikipedia.org/wiki/Control_chart`
+
 ** Courbe cumulative
 :PROPERTIES:
 :en-name:
-:chart-goal: Distribution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: distribution
+:DATA-PROCESSING: CUME_DIST() OVER()
 :END:
 Utilisé pour représenter une distribution inégale. L'axe des ordonnées est toujours la fréquence cumulative et l'axe des absisses est toujours une mesure. [cite:@alansmithLexiqueVisuel]
 
 ** Courbe de densité
 :PROPERTIES:
 :en-name:
-:chart-goal: Distribution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: distribution
+:DATA-PROCESSING: PERCENT_RANK((OVER())
 :END:
 La densité représente la probabilité de distribution des variables. [cite:@sosulskiGraphics2019] Pertinent lorsque le nombre de données est très grand, autrement il convient d'utiliser un histogramme. [cite:@wilkeVisualizingManyDistributions2019] En cas d'affichage de plusieurs courbe, utiliser  des remplissages transparents pour faciliter la distinctions. L'air de la courbe est usuellement égal à 1 et de ce fait, l'échelle de l'axe des ordonnées dépend de l'axe des absisses. [cite:@wilkeVisualizingManyDistributions2019]
 
-** Donut
+** Donut   
 :PROPERTIES:
-:en-name:
-:chart-goal: Partie d'un ensemble
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Donut
+:CHART-GOAL:
+:CHART-CLASS: part-to-whole
 :END:
 Dans un graphique en donut, les valeurs sont à comparer en fonction des longueurs d'arcs.
 
@@ -535,9 +548,8 @@ Il est, autrement, en tout point similaire aux [[camembert]]
 ** Etats parallèles
 :PROPERTIES:
 :en-name:
-:chart-goal: Flux
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: flow
 :END:
 Montre les changements sur un flux entre un état et au moins un autre. Adapté au traçage d'un processus complexe. [cite:@alansmithLexiqueVisuel]
 Cette représentation découpe un ensemble en quantité individuelles de plusieurs catégories. Les bandes sont tracées entre chaque catégories pour représenter leurs relations. La largeur des bandes indiquent la proportion des catégories correllées les unes aux autres. [cite:@wilkeVisualizingNestedProportions2019]
@@ -546,27 +558,24 @@ A utiliser à la place des mosaiques et treemaps lorsqu'il y a plus de deux vari
 ** Eventail
 :PROPERTIES:
 :en-name:
-:chart-goal: Evolution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: evolution
 :END:
 Utilisé pour montrer l'incertitude des projections futures. [cite:@alansmithLexiqueVisuel]
 
 ** Frise de Priestley
 :PROPERTIES:
-:en-name:
-:chart-goal: Evolution
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Priestley
+:CHART-GOAL:
+:CHART-CLASS: evolution
 :END:
 Parfait lorsque la date et la durée sont des éléments clés dans l'histoire de la donnée. [cite:@alansmithLexiqueVisuel]
 
 ** Haltères
 :PROPERTIES:
-:en-name:
-:chart-goal: Classement
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Dumbbell chart
+:CHART-GOAL:
+:CHART-CLASS: ranking
 :END:
 Utilisé pour comparer un minimum et un maximum de plusieurs catégories. [cite:@alansmithLexiqueVisuel] La relation entre le maximum et le minimum d'une catégorie est représenté par la barre reliant les deux valeurs. [cite:@mikeyiHowChooseRight2020]
 
@@ -579,9 +588,8 @@ Les haltères sont toujours affichés à l'horizontal.
 ** Histogramme
 :PROPERTIES:
 :en-name: Histogram
-:chart-goal: Distribution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: distribution
 :END:
 Utilisé pour afficher la fréquence d'une variable simple regroupée en intervale de fréquence (agrégat).[cite:@sosulskiGraphics2019] Il affiche ainsi une distribution statistique de donnée. Il n'y a pas d'espace entre deux barres (ratio 1:0) ce qui permet de favoriser la forme de la distribution. [cite:@alansmithLexiqueVisuel]
 
@@ -600,21 +608,19 @@ L'utilisation d'un histogramme permet d'identifier des schémas de distributions
 - *Symétrique :* lorsqu'il y a un nombre approximativement égal de valeurs de chaque coté d'une valeur centrale
 - *Uniforme :* lorsque toutes les valeurs sont distribuées de façon globalement homogène
 
-** Horizon
+** Horizon 
 :PROPERTIES:
 :en-name:
-:chart-goal: Evolution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: evolution
 :END:
 Permet de vérifier un équilibre entre deux borne par rapport à une base. [cite:@alansmithLexiqueVisuel]  Utilisé pour suivre l'évolution d'une variable dans le temps et devant respecter un écart-type (eg. tension à 230V +/- 5%). L'information la plus importante est le dépassement de l'écart-type. Pour correctement mettre en évidence ces phénomènes, il est recommendé d'utiliser une palette de couleur de
 
-** Jauge
+** Jauge   
 :PROPERTIES:
 :en-name: Gauge
-:chart-goal: Indicateur
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: indicator
 :END:
 Les jauges sont des représentations familières et facile à lire. [cite:@jonathanschwabishComparingCategories2021] En ce sens, elles sont pertinente pour afficher des données. Cependant, il convient de s'intéresser particulièrement à leurs représentation métaphorique. Les graphiques en jauge étant un =skeumorphisme=, leurs utilisation est probablement plus pertinente pour l'affichage d'information pour lesquelles elles sont utilisées dans le monde physique.
 
@@ -625,12 +631,11 @@ Cela concerne par exemple :
 
 Pour tout autre usage, et considérant la difficulté humaine d'interprétation d'une valeur en comparant des angles ainsi que le manque d'options pertinentes pour ajouter des informations qualitatives sur les jauges, il convient d'utiliser un graphique en [[Tiret]].
 
-** Ligne
+** Ligne   
 :PROPERTIES:
 :en-name:
-:chart-goal: Evolution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: evolution
 :END:
 Inventé par Playfair en 1786 [cite:@sosulskiBecomingVisual2019]
 Représentation graphique standard et famillière pour la représentation des séries temporelles. [cite:@alansmithLexiqueVisuel,@Schwabish2021p86]
@@ -657,9 +662,8 @@ L'utilisation de symboles comme éléments différenciants entre les séries n'e
 ** Ligne de crête
 :PROPERTIES:
 :en-name: Ridgeline
-:chart-goal: Comparaison
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: comparison
 :END:
 Ce graphique représente des courbes de densité séparées par un offset et est utilisé pour comparer la distribution d'une vrariable entre des catégories. [cite:@wilkeVisualizingManyDistributions2019] Parfait lorsque les schémas de distributions sont bien distincts entre les groupes. [cite:@mikeyiHowChooseRight2020] Cela évite que les courbes de densités des catégories s'entrevêchent.[cite:@jonathanschwabishDistribution2021]
 
@@ -679,28 +683,25 @@ Il est possible d'afficher les nuages de points dont l'estimation de la courbe d
 
 ** Lollipop
 :PROPERTIES:
-:en-name:
-:chart-goal: Classement
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Lollipop
+:CHART-GOAL:
+:CHART-CLASS: ranking
 :END:
 Utilisé pour afficher la position dans une liste ordonnée lorsque l'affichage de la valeur est moins important que la position. [cite:@alansmithLexiqueVisuel] Egalement très efficace comparé aux barres hordonnées lorsqu'il y a un grand nombre de catégorie dans le classement. [cite:@mikeyiHowChooseRight2020]  Si une ligne connecte le point de la valeur à laxe des ordonnées, l'axe des absisse doit commencer à 0, autrement cela n'est pas obligatoire.
 
 ** Marqueur
 :PROPERTIES:
 :en-name: Big number
-:chart-goal: Indicateur
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: indicator
 :END:
 Affiche une valeur simple, plus pertinent lorsqu'associé à une tendance sur une période donnée. [cite:@mikeyiHowChooseRight2020]
 
 ** Marimeko
 :PROPERTIES:
-:en-name:
-:chart-goal: Ordre de grandeur
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Marimeko
+:CHART-GOAL:
+:CHART-CLASS: magnitude
 :END:
 Visualisation de la taille et des proportions d'un ensemble homogène de données. [cite:@alansmithLexiqueVisuel]
 Exemple : répartition des parts de marché de 3 entreprises sur un axe et taux dans 3 catégories de marché pour chacune
@@ -710,9 +711,8 @@ La couleur peut être utilisée pour mettre en évidence une valeur. [cite:@jona
 ** Matrice de bulle
 :PROPERTIES:
 :en-name:
-:chart-goal: Correlation
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: correlation
 :END:
 Ce graphique est une version aggrégée du nuage de bulle et le la matrice de température.
 
@@ -726,21 +726,29 @@ Le tableur associée est une matrice de correlation organisant les valeurs de co
 :PROPERTIES:
 :en-name: Small multiples
 :data-goal: Comparaison
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: correlation
 :END:
+`https://en.wikipedia.org/wiki/Small_multiple`
 
-Origine
+Popularisé par E. Tufte
+
 Est utilisé pour comparer de multiples graphiques homogènes organisées en matrices. Chaque entité affiche le graphique d'une catégorie. Les graphiques sont tous à la même échelle. [cite:@sosulskiGraphics2019]
 
 Conseils : Limitez les détails dans chacun des graphique. [cite:@sosulskiGraphics2019] Regroupez les axes pour n'afficher qu'un seul axe Y par ligne et un seul axe X par colonne.
 
+Interractivité : pouvoir explorer l'ensemble des graphiques simultanéments (eg. cible en croix '+' au niveau du point de donnée pointé répliqué dans les autres graphiques)
+
+#+caption: Composition d'une matrice de graphique
+#+name: fig:Comp-small-multiple
+#+attr_latex: :placement [H]
+[[./img/small-multiple.pdf]]
+
 ** Matrice de température
 :PROPERTIES:
 :en-name: Heatmap
-:chart-goal: Correlation
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: correlation
 :END:
 Représentation graphique d'une table de valeur homogène. [cite:@sosulskiGraphics2019]
 Intéressante pour afficher une tendance lorsqu'un très grand nombre d'information est impliqué.
@@ -752,9 +760,8 @@ L'organisation des catégories changeant la forme de la matrice de température,
 ** Mini-graphe
 :PROPERTIES:
 :en-name: Sparkline
-:chart-goal: Evolution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: evolution
 :END:
 Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. Un mini-graphe ne possède pas d'axes ni d'autres détails et est composé uniquement d'une courbe et d'un point indiquant la dernière valeur du jeu de donnée. [cite:@sosulskiGraphics2019] Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise. [cite:@jonathanschwabishDistribution2021]
 
@@ -763,28 +770,25 @@ Un mini-graphe ne possède pas d'axes ni d'autres détails.
 ** Nuage de bulle
 :PROPERTIES:
 :en-name:
-:chart-goal: Correlation
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: correlation
 :END:
 Il s'agit d'un nuage de point dont la taille des bules est utilisé pour représenter une troisieme valeur quantitative. [cite:@alansmithLexiqueVisuel]
 
 ** Nuage de mots
 :PROPERTIES:
-:en-name:
-:chart-goal: Ordre de grandeur
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Word cloud
+:CHART-GOAL:
+:CHART-CLASS: magnitude
 :END:
 Affiche des nuages de mots organisés en groupes sémantiques. La taille des mots indique leur fréquence d'utilisation dans le corpus étudié. La couleur des groupes peut représenter un choix de données qualitative (catégorisation). [cite:@sosulskiGraphics2019] Cette visualisation est une méthode d'exploration de texte utile pour réaliser une synthèse macroscopique.
 Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la composition des nuages. [cite:@jonathanschwabishQualitative2021] Des listes de mots vides peuvent être trouvées à l'adresse <https://github.com/stopwords-iso/>.
 
 ** Nuage de point
 :PROPERTIES:
-:en-name:
-:chart-goal: Correlation
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Scatterplot
+:CHART-GOAL:
+:CHART-CLASS: correlation
 :END:
 
 #+ATTR_LATEX: :float wrap :width 1.2cm :placement {l}{0.8cm}
@@ -793,7 +797,7 @@ Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la compositi
 Représente la relation entres deux variables continues. [cite:@alansmithLexiqueVisuel]
 La couleur est la meilleure façon de distinguer les catégories.[cite:@stephenfewComponentlevelGraphDesign2012] Pour cela, utilisez la pallette catégorique ([[fig:Pal-c]])
 
-Dans un maximum de 4 catégories de données, il est possible d'utiliser un double encodage combinant une forme et une couleur.[cite:@andreaskrauseBestPracticesData2024]
+Dans un maximum de 3 catégories de données, il est possible d'utiliser un double encodage combinant une forme et une couleur.[cite:@andreaskrauseBestPracticesData2024]
 
 les formes recommandées sont :
 
@@ -802,6 +806,7 @@ les formes recommandées sont :
 #+attr_latex: :width 3.2cm :placement [H]
 [[./img/formes.pdf]]
 
+Leur avantage est qu'elles n'ont pas de connotation intuitive.[cite:@Krause] (retirer la croix...)
 
 Si des milliers de point de données sont à afficher, il est préférable d'utiliser soit :
 - des cercles ouverts,
@@ -812,44 +817,46 @@ Si des milliers de point de données sont à afficher, il est préférable d'uti
 
 ** Nuage de point connecté
 :PROPERTIES:
-:en-name:
-:chart-goal: Evolution
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Connected scatterplot
+:CHART-GOAL:
+:CHART-CLASS: evolution
 :END:
-Montre l'évolution des données pour deux variables pertinentes si le modèle de progression est clair. [cite:@alansmithLexiqueVisuel]
+Ce graphique est utilisé pour représenter les mouvements entre des étapes. Il permet d'identifier des schémas de progressions comme des cycles et des irrégularités qui seraient difficiles de remarquer autrement. [cite:@Wilke2019p139]
+
+Lors de l'utilisation de ce type de graphique, il convient d'indiquer la direction ainsi que la temporalité étudiée. [cite:@Wilke2019p140]
 
 Pour souligner la direction de l'évolution entre deux points il est possible de :
 - Flécher la direction de l'évolution entre deux points si les points sont bien espacés et qu'un seul jeu de donnée est affiché, [cite:@jonathanschwabishComparingCategories2021]
-- Utiliser un gradiant de couleur du plus clair vers le plus foncé.
+- Utiliser un gradiant de couleur du plus clair vers le plus foncé.[cite:@Wilke2019p140]
 
-Ce graphique sers à synthétiser des variations de valeurs, il est préférable de l'utiliser pour afficher des jeux de données dont la variation n'est pas mesurée régulièrement pour éviter d'avoir trop de points à relier et donc d'éviter de créer un graphique trop encombré. [cite:@jonathanschwabishComparingCategories2021]
+La temporalité devrait être indiquée dans le titre du graphique ou au moyen d'éléments de l'interface utilisateur.
 
-** Pareto
+Comme ce graphique sert à synthétiser des variations de valeurs, il est préférable de l'utiliser pour afficher des jeux de données dont la variation n'est pas mesurée régulièrement pour éviter d'avoir trop de points à relier et donc d'éviter de créer un graphique trop encombré. [cite:@jonathanschwabishComparingCategories2021]
+
+Un exemple d'utilisation du nuage de point connecté : `https://share.stateofjs.com/share/prerendered?localeId=en-US&surveyId=state_of_js&editionId=js2024&blockId=tools_arrows&params=&sectionId=libraries`
+
+** Pareto  
 :PROPERTIES:
-:en-name:
-:chart-goal: Correlation
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Pareto
+:CHART-GOAL:
+:CHART-CLASS: correlation
 :END:
 Ce type de graphique montre la relation entre les valeurs quantitatives de catégories organisées en colonne ordonnée et la valeur cumulée affichée en ligne brisée. Le premier point de la ligne vérifiant \(\tau\geq80\%Total\) est affichée. La zone précédent ce point est mise en évidence.
 Est utilisé pour illustrer les éléments important dans un système qualité.
 
-** Pente
+** Pente   
 :PROPERTIES:
 :en-name:
-:chart-goal: Classement
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: ranking
 :END:
 Affiche la variation des valeurs ou ratios des catégories entre deux états donnés. [cite:@alansmithLexiqueVisuel]
 
-** Pictographe
+** Pictogramme
 :PROPERTIES:
-:en-name:
-:chart-goal: Ordre de grandeur
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Pictogram
+:CHART-GOAL:
+:CHART-CLASS: magnitude
 :END:
 Utilisation hautement contextuelle limiter strictement à l'affichage d'entiers naturels. [cite:@alansmithLexiqueVisuel]
 Les pictographes peuvent augmenter significativement la précision d'acquisition d'un écart de ratio ainsi que la rapidité de la visualisation d'un minimum ou d'un maximum entre des catégories. [cite:@tranDiscoveringAccessibleData2024] A la manière des symboles groupées, si la transmission de valeurs précise est importante, il convient d'utiliser un graphique en barre ordonnée à la place. [cite:@tranDiscoveringAccessibleData2024]
@@ -857,27 +864,24 @@ Les pictographes peuvent augmenter significativement la précision d'acquisition
 ** Polygone de fréquence
 :PROPERTIES:
 :en-name:
-:chart-goal: Distribution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: distribution
 :END:
 Utilisé pour afficher simultanément plusieurs distributions de données. Fonctionne comme un histogramme. Chaque agrégat est représenté par un point et ils sont reliés entres eux par un segment droit. Pour faciliter la lécture, il convient de limiter le nombre de distributions affichées à 4 [cite:@alansmithLexiqueVisuel] ce qui correspondant notamment au nombre de symboles aisément discriminables.
 
 ** Quadrillage
 :PROPERTIES:
 :en-name:
-:chart-goal: Partie d'un ensemble
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: part-to-whole
 :END:
 Adapté à l'affichage des informations en pourcentages. Fonctionne mieux avec des entiers naturels. [cite:@alansmithLexiqueVisuel] Généralement en grille de 10 x 10 carrés (pour un total de 100). Chaque carré représente 1% d'un tout. Les carrés sont colorés sur la base de la taille d'une catégorie dans un groupe. [cite:@mikeyiHowChooseRight2020]
 
-** Radar
+** Radar   
 :PROPERTIES:
 :en-name:
-:chart-goal: Ordre de grandeur
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: magnitude
 :END:
 Représentation compacte de la valeur de variables hétérogènes pour un seul système. [cite:@alansmithLexiqueVisuel] Les radards sont utilisés pour identifier les variables ayant des valeurs similaires et les exceptions. [cite:@sosulskiGraphics2019]
 
@@ -887,33 +891,39 @@ Utiliser une disposition en small-multiples plutot que de surimposer plusieurs p
 
 La représentation des variables est fortement correlé à la forme du polygone plutot qu'aux valeurs des sommets. [cite:@sosulskiGraphics2019] De ce fait, pour améliorer la forme du polygonne et offrir une représentation avec le moins de distortions possibles, il convient d'homogénéiser les échelles des axes.
 
-** Réseau
+** Réseau  
 :PROPERTIES:
-:en-name: Network
-:chart-goal: Flux
-:data-type-x:
-:data-type-y:
+:en-name: Network diagram
+:CHART-GOAL:
+:CHART-CLASS: flow
 :END:
-Utilisé pour montrer la force et l'interconnectivité des relations de types différents. [cite:@alansmithLexiqueVisuel] La position des nœuds n’a pas de fonction logique. Elle vise à rendre le diagramme le plus lisible possible. [cite:@mikeyiHowChooseRight2020]
+Utilisé pour montrer la force et l'interconnectivité et les relations de multiples entitées. [cite:@alansmithLexiqueVisuel] La position des nœuds n’a pas de fonction logique. Elle vise à rendre le diagramme le plus lisible possible. [cite:@mikeyiHowChooseRight2020]
+
+
+
+Il existe 4 types de diagrammes de réseaux : [cite:@Schwabish2021p278]
+- Non dirigé et non pondéré,
+- Non dirigé et pondéré,
+- Dirigé et non pondéré,
+- Dirigé et pondéré.
+
 
 ** Ruisseau
 :PROPERTIES:
 :en-name: Streamgraph
-:chart-goal: Evolution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: evolution
 :END:
 
 Vérifier la méthafore liée au nom
 
 A privilégier lorsque la visualisation des changements en proportions au fil du temps est plus importante que les valeurs individuelles. [cite:@alansmithLexiqueVisuel]
 
-** Sankey
+** Sankey  
 :PROPERTIES:
-:en-name:
-:chart-goal: Flux
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Sankey
+:CHART-GOAL:
+:CHART-CLASS: flow
 :END:
 Créé par : Matthew Henry Phineas Riall Sankey (1898)
 L'épaisseur représente la part d'un évènement. Chaque flèche représente l'entrée ou la sortie d'élément sur le système étudié. [cite:@mikeyiHowChooseRight2020]
@@ -924,30 +934,27 @@ Très utile pour représenter les flux entre des catégories ou entre des états
 
 Il convient néanmoins de limiter le nombre de catégorie  affiché pour maintenir un bon niveau de lisibilité. [cite:@jonathanschwabishComparingCategories2021]
 
-** Sismographe
+** Sismogramme
 :PROPERTIES:
-:en-name:
-:chart-goal: Evolution
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Seismogram
+:CHART-GOAL:
+:CHART-CLASS: evolution
 :END:
 Pour montrer des séries à grandes variation dans les données. [cite:@alansmithLexiqueVisuel]
 
 ** Symbole groupé
 :PROPERTIES:
 :en-name:
-:chart-goal: Ordre de grandeur
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: magnitude
 :END:
 Utile lorsqu'il est utile de compter ou de mettre en évidence des éléments individuels organisés en barre ou en colonne. [cite:@alansmithLexiqueVisuel] Cependant, ce type de graphique n'est pas efficace dans cette action car il incite le lecteur à compter chaque point, ce qui peut s'avérer décourageant. [cite:@stephenfewSillyGraphsThat2012] Un certain usage peut être imaginé à des fins décoratives visant à illustrer un élément déjà explicité dans un texte. Un graphique en barre ordonné est à privilégier aux symboles groupés.
 
-** Tiret
+** Tiret   
 :PROPERTIES:
 :en-name: Bullet point
-:chart-goal: Indicateur
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: indicator
 :END:
 selont Schwabish : inventé par Few
 
@@ -960,21 +967,25 @@ Editer une série de tirets permet d'exposer au lecteur diverses comparaisons to
 Cette représentation est notamment pertinente lors de la réalisation d'un benchmark. [cite:@mikeyiHowChooseRight2020]
 # Définir benchmark
 
-** Tunnel
+** Tunnel  
 :PROPERTIES:
 :en-name: Funnel
-:chart-goal: Flux
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: flow
 :END:
 Utilisé pour suivre l'engagement d'une population (taille) à chaque étape d'un processus (barre). [cite:@mikeyiHowChooseRight2020]
+
+Bien que répendu dans les analyses marketing (suivi des processus de vente), ce graphique n'est pas réellement pertinent. Sa composition ne représente pas correcement les données et il n'est pas évident de comprendre les différences entre chaque segments.[cite:@Few2012p283]
+
+Si la quantité de chaque étape d'un processus est l'information la plus importante, il est préférable d'avoir recours à un diagramme en [[barre ordonnée]].
+
+S'il est  souhaité de visualiser les pertes quantitatives au fil d'un processus, il sera préférable d'employer un diagramme de [[Sankey]].
 
 ** Treemap
 :PROPERTIES:
 :en-name: Treemap
-:chart-goal: Partie d'un ensemble
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: part-to-whole
 :END:
 Utilisé pour les relations hiérarchiques d'une partie vers l'ensemble. Difficile à lire s'il y a trop d'éléments affichés. [cite:@alansmithLexiqueVisuel]
 Le découpage des boites n'a pas besoin d'être ordonné, il peut y avoir plus de 2 niveaux de hiérarchie. [cite:@mikeyiHowChooseRight2020]
@@ -982,27 +993,24 @@ Le découpage des boites n'a pas besoin d'être ordonné, il peut y avoir plus d
 ** Valeur lettrée
 :PROPERTIES:
 :en-name: Letter value
-:chart-goal: Distribution
-:data-type-x:
-:data-type-y:
+:CHART-GOAL:
+:CHART-CLASS: distribution
 :END:
 Représente chaque découpage statistique (\(x\sigma\)) par une boite distincte. Convient en remplacement des boites à moustache lorsqu'il y a un très grand nombre de données disponibles. Permet de faire des estimations fiables. [cite:@hofmannLettervaluePlotsBoxplots2017;@mikeyiHowChooseRight2020 ]
 
-** Violon
+** Violon  
 :PROPERTIES:
-:en-name:
-:chart-goal: Distribution
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Violin
+:CHART-GOAL:
+:CHART-CLASS: distribution
 :END:
 Représente fidèlement les distributions d'un très grand nombre de données. [cite:@alansmithLexiqueVisuel] Utilisé pour faire des comparaisons entre des catégories. [cite:@mikeyiHowChooseRight2020]  Très pertinent pour représenter les distributions bimodales. [cite:@wilkeVisualizingManyDistributions2019] Le tracé du demi-violon est identique au tracé d'une courbe de densité. Celui-ci commence à la valeur la plus petite et termine à la valeur la plus grande.
 
-** Voronoi
+** Voronoi 
 :PROPERTIES:
-:en-name:
-:chart-goal: Partie d'un ensemble
-:data-type-x:
-:data-type-y:
+:EN-NAME:  Voronoi
+:CHART-GOAL:
+:CHART-CLASS: part-to-whole
 :END:
 Semblable à un diagramme de bulle mais transformées en zones dont l'ensemble des points de chacune est plus proche du centre de sa zone que de tout autre centroïde. [cite:@alansmithLexiqueVisuel]
 
