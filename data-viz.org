@@ -59,7 +59,7 @@ Certaines polices peuvent être utilisés pour projeter des icones (NerdFont, St
 Il est important de prévoir le chargement de toutes polices non standard (eg. Source Sans Pro, NerdFont...) dans l'interface utilisateur si celles-ci sont utilisées puisqu'elles ne sont probablement pas installées dans le système d'exploitation de l'utilisateur. Prévoir leurs chargement vise à assurer la bonne expérience des utilisateurs.
 
 * Couleurs
-L'utilisation de la couleur n'est pas nécessaire pour éditer un graphique efficace. Il s'agit par exemple de la manière la moins efficace pour représenter des différences entre des variables. [cite:@Beecham2021]
+L'utilisation de la couleur n'est pas nécessaire pour éditer un graphique efficace. Il s'agit par exemple de la manière la moins efficace pour représenter des différences entre des variables. [cite:@beechamUseGlyphmapsAnalysing2021]
 
 Cependant, utilisé convenablement elle peut aider à la transmission des informations, améliorer la lisibilité de certain graphiques, inscrire une identité visuelle ou encore succiter l'intérêt du lecteur. L'objectif des représentations graphiques des informations étant de maximiser les chances d'acquisition d'une information par un lecteur, il est important de succiter son intérêt en premier lieu. [cite:@Références sur l'esthétisme?]
 
@@ -143,7 +143,7 @@ Ce jeu de couleur est utilisé pour discriminer des catégories et lorsque leurs
 
 N'employez cette palette de couleur que lorsque les données affichées n'ont aucun lien intrinsèque. [cite:@wilkeColorScales2019]
 
-Chaque couleur doit rester distinguable des autres en toute condition.[cite:@Wilke2019p240] Il convient d'utiliser un vérificateur de couleur pour valider la composition de cette palette.[cite:@andreaskrauseBestPracticesData2024]
+Chaque couleur doit rester distinguable des autres en toute condition.[cite:@wilkeRedundantCoding2019] Il convient d'utiliser un vérificateur de couleur pour valider la composition de cette palette.[cite:@andreaskrauseBestPracticesData2024]
 
 #+caption: Palette arc-en-ciel
 #+name: fig:Pal-x
@@ -230,7 +230,7 @@ Vérifier l'absence de distortion
 :data-unit: nil
 :DATA-PROCESSING: COUNT()
 :END:
-Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegas 2007) La taille des mots représente la fréquence de leurs usages. [cite:@jonathanschwabishQualitative2021]
+Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegs 2007) La taille des mots représente la fréquence de leurs usages. [cite:@jonathanschwabishQualitative2021]
 
 ** Arc     
 :PROPERTIES:
@@ -622,7 +622,7 @@ Permet de vérifier un équilibre entre deux borne par rapport à une base. [cit
 :CHART-GOAL:
 :CHART-CLASS: indicator
 :END:
-Les jauges sont des représentations familières et facile à lire. [cite:@jonathanschwabishComparingCategories2021] En ce sens, elles sont pertinente pour afficher des données. Cependant, il convient de s'intéresser particulièrement à leurs représentation métaphorique. Les graphiques en jauge étant un =skeumorphisme=, leurs utilisation est probablement plus pertinente pour l'affichage d'information pour lesquelles elles sont utilisées dans le monde physique.
+Les jauges sont des représentations familières et facile à lire. [cite:@jonathanschwabishComparingCategories2021] En ce sens, elles sont pertinente pour afficher des données. Cependant, il convient de s'intéresser particulièrement à leurs représentation métaphorique. Les graphiques en jauge étant un skeumorphisme, leurs utilisation est probablement plus pertinente pour l'affichage d'information pour lesquelles elles sont utilisées dans le monde physique.
 
 Cela concerne par exemple :
 - L'affichage d'une vitesse instantanée,
@@ -806,7 +806,7 @@ les formes recommandées sont :
 #+attr_latex: :width 3.2cm :placement [H]
 [[./img/formes.pdf]]
 
-Leur avantage est qu'elles n'ont pas de connotation intuitive.[cite:@Krause] (retirer la croix...)
+Leur avantage est qu'elles n'ont pas de connotation intuitive.[cite:@andreaskrauseBestPracticesData2024] (retirer la croix?)
 
 Si des milliers de point de données sont à afficher, il est préférable d'utiliser soit :
 - des cercles ouverts,
@@ -821,13 +821,13 @@ Si des milliers de point de données sont à afficher, il est préférable d'uti
 :CHART-GOAL:
 :CHART-CLASS: evolution
 :END:
-Ce graphique est utilisé pour représenter les mouvements entre des étapes. Il permet d'identifier des schémas de progressions comme des cycles et des irrégularités qui seraient difficiles de remarquer autrement. [cite:@Wilke2019p139]
+Ce graphique est utilisé pour représenter les mouvements entre des étapes. Il permet d'identifier des schémas de progressions comme des cycles et des irrégularités qui seraient difficiles de remarquer autrement. [cite:@wilkeVisualizingTimeSeries2019]
 
-Lors de l'utilisation de ce type de graphique, il convient d'indiquer la direction ainsi que la temporalité étudiée. [cite:@Wilke2019p140]
+Lors de l'utilisation de ce type de graphique, il convient d'indiquer la direction ainsi que la temporalité étudiée. [cite:@wilkeVisualizingTimeSeries2019]
 
 Pour souligner la direction de l'évolution entre deux points il est possible de :
 - Flécher la direction de l'évolution entre deux points si les points sont bien espacés et qu'un seul jeu de donnée est affiché, [cite:@jonathanschwabishComparingCategories2021]
-- Utiliser un gradiant de couleur du plus clair vers le plus foncé.[cite:@Wilke2019p140]
+- Utiliser un gradiant de couleur du plus clair vers le plus foncé.[cite:@wilkeVisualizingTimeSeries2019]
 
 La temporalité devrait être indiquée dans le titre du graphique ou au moyen d'éléments de l'interface utilisateur.
 
