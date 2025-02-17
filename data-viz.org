@@ -3,6 +3,8 @@
 #+EMAIL: cyprien.pierre@eiffage.com
 #+DATE: {{{time(%Y-%m-%d)}}}
 #+setupfile: "config.org"
+#+startup: olivetti-mode
+#+startup: writer-mode
 
 #+begin_abstract
 Rédiger l'abstract ici
@@ -1121,6 +1123,7 @@ Des études complémentaires pourraient être menées sur les sujets suivants :
 - Dysorthographie :: Dysfonctionnement de l’écriture dû à un trouble d'apprentissage persistant de l’acquisition et de la maîtrise de l’orthographe et, pouvant se charactériser par des erreurs orthographiques, de conjugaison, de grammaire et d’analyse, des erreurs visuelles, etc.
 - Epilepsie :: Prédisposition cérébrale à engendrer des "crises" épileptiques dites "non provoquées", c'est-à-dire spontanées, non expliquées par un facteur causal immédiat.
 - TDA/H :: Trouble provoquant trois types de symptômes pouvant se manifester seuls ou combinés : des difficultés d'attention et son contrôle, des symptômes d'hyperactivité et d'hyperkinésie.
+
 ** Troubles de la vision
 - Achromatopsie :: Absence totale de vision des couleurs.
 - Deutéranopie :: Incapacité à différencier le rouge du vert.
