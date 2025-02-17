@@ -69,6 +69,103 @@
       \endverb
       \keyw{,/done,imprime}
     \endentry
+    \entry{sosulskiDataVisualizationMade2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a1d8f9a3e172b359362317dd6883ac0e}{%
+           family={Sosulski},
+           familyi={S\bibinitperiod},
+           given={Kristen},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Routledge, Taylor \& Francis Group}%
+      }
+      \strng{namehash}{a1d8f9a3e172b359362317dd6883ac0e}
+      \strng{fullhash}{a1d8f9a3e172b359362317dd6883ac0e}
+      \strng{bibnamehash}{a1d8f9a3e172b359362317dd6883ac0e}
+      \strng{authorbibnamehash}{a1d8f9a3e172b359362317dd6883ac0e}
+      \strng{authornamehash}{a1d8f9a3e172b359362317dd6883ac0e}
+      \strng{authorfullhash}{a1d8f9a3e172b359362317dd6883ac0e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Data Visualization Made Simple is a practical guide to the fundamentals, strategies, and real-world cases for data visualization, an essential skill required in today's information-rich world. With foundations rooted in statistics, psychology, and computer science, data visualization offers practitioners in almost every field a coherent way to share findings from original research, big data, learning analytics, and more. In nine appealing chapters, the book: - examines the role of data graphics in decision making, sharing information, sparking discussions, and inspiring future research; - scrutinizes data graphics, deliberates on the messages they convey, and looks at options for design visualization; and - includes cases and interviews to provide a contemporary view of how data graphics are used by professionals across industries. Both novices and seasoned designers in education, business, and other areas can use this book's effective, linear process to develop data visualization literacy and promote exploratory, inquiry-based approaches to visualization problems.}
+      \field{isbn}{978-1-138-50387-8 978-1-138-50391-5}
+      \field{langid}{english}
+      \field{pagetotal}{272}
+      \field{shorttitle}{Data Visualization Made Simple}
+      \field{title}{Data Visualization Made Simple: Insights into Becoming Visual}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb /home/anthea/Zotero/storage/XXMPY8FL/Sosulski - 2019 - Data visualization made simple insights into becoming visual.pdf
+      \endverb
+      \keyw{,/done,imprime}
+    \endentry
+    \entry{safurazabidinBibliometricScientometricMapping2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e0bf7ea05402ddb6740c2c7b392e0123}{%
+           family={Safura\bibnamedelima Zabidin},
+           familyi={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={Nadia},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3546daf481b52bfe550a6c4ebce74dd7}{%
+           family={Belayutham},
+           familyi={B\bibinitperiod},
+           given={Sheila},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8b32989a7b31cf35f77a31dcd443c908}{%
+           family={Che\bibnamedelima Ibrahim},
+           familyi={C\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={Che\bibnamedelimb Khairil\bibnamedelima Izam},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
+      \strng{fullhash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
+      \strng{bibnamehash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
+      \strng{authorbibnamehash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
+      \strng{authornamehash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
+      \strng{authorfullhash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industry 4.0 embraces digitization and smart products or processes that are integrated with several technological developments to control the entire value chain of workflows. The construction industry is also captivated with the idea of Industry 4.0 transformation that changes the traditional system into digital and cyberphysical system that interacts and connects across the geographical and organizational borders. However, as construction is commonly known as a low-technologically advanced industry, studies on Industry 4.0 in construction still remains elusive, as compared to other sectors such as manufacturing, electrical and electronic engineering and computer science. Therefore, this study aims to explore the current state of Industry 4.0 application from the construction engineering perspective. A systematic literature review (SLR) was conducted to identify publications related to Industry 4.0 in construction. A bibliometric analysis has been outlined through exclusion and inclusion principles, while a scientometric analysis has been further applied to enhance the SLR findings through `science mapping' visualization techniques. This study presents the relevance, along with the movement, adoption and adaption of Industry 4.0 in the construction industry that further enables the spark of new ideas, in effort to realize and comprehend the current and future technological transformation in construction.}
+      \field{annotation}{TLDR: This study presents the relevance, along with the movement, adoption and adaption of Industry 4.0 in the construction industry that further enables the spark of new ideas, in effort to realize and comprehend the current and future technological transformation in construction.}
+      \field{day}{15}
+      \field{issn}{1874-4753}
+      \field{journaltitle}{Journal of Information Technology in Construction}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shortjournal}{J. Inf. Technol. Construct.}
+      \field{title}{A Bibliometric and Scientometric Mapping of {{Industry}} 4.0 in Construction}
+      \field{urlday}{16}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{volume}{25}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{287\bibrangedash 307}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.36680/j.itcon.2020.017
+      \endverb
+      \verb{file}
+      \verb /home/anthea/Zotero/storage/LDN39WV6/Safura Zabidin et al. - 2020 - A bibliometric and scientometric mapping of Industry 4.0 in construction.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.itcon.org/paper/2020/17
+      \endverb
+      \verb{url}
+      \verb https://www.itcon.org/paper/2020/17
+      \endverb
+      \keyw{/unread}
+    \endentry
     \entry{schwabishCenteringAccessibilityData2022a}{inbook}{}
       \name{bookauthor}{3}{}{%
         {{hash=4297ecd0035e3a6b6674b79bad127077}{%
@@ -93,8 +190,8 @@
       \strng{bookauthorbibnamehash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{bookauthornamehash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{bookauthorfullhash}{ebbe9d2ebc5f596043750b769650aff2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{booktitle}{Centering Accessibility in Data Visualization}
       \field{langid}{english}
@@ -123,8 +220,8 @@
       \strng{authorbibnamehash}{e986f96806172338671b5f104947725b}
       \strng{authornamehash}{e986f96806172338671b5f104947725b}
       \strng{authorfullhash}{e986f96806172338671b5f104947725b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Centering Accessibility in Data Visualization}
@@ -154,8 +251,8 @@
       \strng{authorbibnamehash}{c16c9c145bf6a137f3c2a878c530a20f}
       \strng{authornamehash}{c16c9c145bf6a137f3c2a878c530a20f}
       \strng{authorfullhash}{c16c9c145bf6a137f3c2a878c530a20f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{"From Data to Viz" is a classification of chart types based on input data format. It will help you find the perfect chart in three simple steps : 1. Identify what type of data you have, 2. Go to the corresponding decision tree and follow it down to a set of possible charts, 3. Choose the chart from the set that will suit your data and your needs best. Dataviz is a world with endless possibilities ans this project does not claim to be exhaustive. However it should provide you with good starting point. For an interactive version and much more, visit : data-to-viz.com}
@@ -189,8 +286,8 @@
       \strng{authorbibnamehash}{6179acdac197289e51e14ed161361f3a}
       \strng{authornamehash}{6179acdac197289e51e14ed161361f3a}
       \strng{authorfullhash}{6179acdac197289e51e14ed161361f3a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The Graphic Continuum is our view of the many different types of visualizations available to us when we encode and present data. We've plotted nearly 90 different graphics across five main categories: Distribution, Time, Comparing Categories, Geospatial, Part-to-Whole, and Relationships. The space does not include every type of graphic, nor does it display every link between visualizations, but we view it as a thought-starter. We hope readers will use it to develop ideas, consider different options, or simply as a piece of art.}
@@ -240,8 +337,8 @@
       \strng{nameabibnamehash}{55cd6521bf9616325af3a2d9fc80979f}
       \strng{nameanamehash}{55cd6521bf9616325af3a2d9fc80979f}
       \strng{nameafullhash}{55cd6521bf9616325af3a2d9fc80979f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Il existe un très grand nombre de manières de visualiser les données - comment savoir laquelle choisir ? Utilisez les catégories en haut de la page pour décider quelle est la relation entre les données la plus pertinente par rapport à l'histoire que vous souhaitez raconter. Passez ensuite en revue les différents types de graphiques de la catégorie : vous aurez ainsi quelques idées préliminaires sur le type de représentation le plus approprié. Cette liste n'est pas exhaustive, elle ne constitue pas non plus un assistant automatique : elle vous aidera en revanche à réaliser des visualisations de données informatives et éloquentes.}
       \field{annotation}{Financial Times}
@@ -269,8 +366,8 @@
       \strng{nameabibnamehash}{8bd379c5665d422a6c64a310ecec93e9}
       \strng{nameanamehash}{8bd379c5665d422a6c64a310ecec93e9}
       \strng{nameafullhash}{8bd379c5665d422a6c64a310ecec93e9}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{annotation}{Esri}
       \field{langid}{english}
@@ -344,8 +441,8 @@
       \strng{nameabibnamehash}{5c06ca6c63ce2628c834b3649b7cbe68}
       \strng{nameanamehash}{5c06ca6c63ce2628c834b3649b7cbe68}
       \strng{nameafullhash}{5c06ca6c63ce2628c834b3649b7cbe68}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{month}{12}
@@ -403,8 +500,8 @@
       \strng{nameabibnamehash}{02ebe9f86a497994124f08b7ecff698e}
       \strng{nameanamehash}{02ebe9f86a497994124f08b7ecff698e}
       \strng{nameafullhash}{02ebe9f86a497994124f08b7ecff698e}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Introductory guide to the art and science of data visualisation. Insights, advice, and examples (with code) to make data outputs more readable, accessible, and impactful:~https://royal-statistical-society.github.io/datavisguide/ What's changed in v1.0.1 DOI info added by @brtarran in https://github.com/royal-statistical-society/datavisguide/pull/44 Full Changelog: https://github.com/royal-statistical-society/datavisguide/compare/v1...v1.0.1}
@@ -575,6 +672,57 @@
       \verb{url}
       \verb https://www.mdpi.com/2220-9964/10/4/213
       \endverb
+      \keyw{/unread}
+    \endentry
+    \entry{rose-greenlandColorPerceptionSociology2016}{article}{}
+      \name{author}{1}{}{%
+        {{hash=eb7882d12ae519daf5ac710b931c409c}{%
+           family={Rose-Greenland},
+           familyi={R\bibinithyphendelim G\bibinitperiod},
+           given={Fiona},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{fullhash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{bibnamehash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{authorbibnamehash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{authornamehash}{eb7882d12ae519daf5ac710b931c409c}
+      \strng{authorfullhash}{eb7882d12ae519daf5ac710b931c409c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Color is a central feature of social life, yet its value in sociological theory is ambiguous. This paper establishes an approach to a social theory of color by focusing on color perception. Using theories from materiality studies and cultural sociology, I argue that color perception is an unstable and contestable phenomenon shaped by social and material factors. My argument is empirically grounded in a case study of a blockbuster museum show called Gods in Color. The show toured 21 cities in Europe and North America from 2003 to 2015. Its centerpiece---brightly painted reconstructions of ancient Greek and Roman marble sculptures---triggered a vigorous debate about the limits of science in correcting historical optics. The case has broader implications for sociological theories of authenticity, materiality, and aesthetic knowledge.}
+      \field{issn}{0735-2751, 1467-9558}
+      \field{journaltitle}{Sociological Theory}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{2}
+      \field{shortjournal}{Sociol. Theor.}
+      \field{shorttitle}{Color {{Perception}} in {{Sociology}}}
+      \field{title}{Color {{Perception}} in {{Sociology}}: {{Materiality}} and {{Authenticity}} at the {{{\mkbibemph{Gods}}}}{\mkbibemph{ in }}{{{\mkbibemph{Color}}}} {{Show}}}
+      \field{urlday}{16}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{volume}{34}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{81\bibrangedash 105}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1177/0735275116648178
+      \endverb
+      \verb{file}
+      \verb /home/anthea/Zotero/storage/3ZGDRVG4/Rose-Greenland - 2016 - Color Perception in Sociology Materiality and Authenticity at the Gods in Color Show.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.sagepub.com/doi/10.1177/0735275116648178
+      \endverb
+      \verb{url}
+      \verb https://journals.sagepub.com/doi/10.1177/0735275116648178
+      \endverb
+      \keyw{/unread}
     \endentry
     \entry{tranDiscoveringAccessibleData2024}{inproceedings}{}
       \name{author}{3}{}{%
@@ -783,8 +931,8 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{abstract}{"Effective visualization is the best way to communicate information from the increasingly large and complex datasets in the natural and social sciences. But with the increasing power of visualization software today, scientists, engineers, and business analysts often have to navigate a bewildering array of visualization choices and options. This practical book takes you through many commonly encountered visualization problems, and it provides guidelines on how to turn large datasets into clear and compelling figures. What visualization type is best for the story you want to tell? How do you make informative figures that are visually pleasing? Author Claus O. Wilke teaches you the elements most critical to successful data visualization."--Provided by publisher}
       \field{booktitle}{Fundamentals of {{Data Visualization}}}
@@ -810,6 +958,128 @@
       \endverb
       \keyw{/done,nosource}
     \endentry
+    \entry{stephenfewComponentlevelGraphDesign2012}{inbook}{}
+      \name{bookauthor}{1}{}{%
+        {{hash=196e1dab835cd0054b6fa1afa4aec3e2}{%
+           family={{Stephen Few}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Burlingame, California}%
+      }
+      \list{publisher}{1}{%
+        {Analytics Press}%
+      }
+      \strng{bookauthorbibnamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \strng{bookauthornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \strng{bookauthorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Show Me the Numbers - {{Designing}} Tables and Graphs to Enlighten}
+      \field{edition}{Seconde Edition}
+      \field{isbn}{978-0-9706019-7-1}
+      \field{langid}{english}
+      \field{title}{Component-Level Graph Design}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{205\bibrangedash 256}
+      \range{pages}{52}
+      \keyw{/done,nosource}
+    \endentry
+    \entry{dougschepersDesigningDataCognitive2022}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=8be7d1e68d9ada9cdfd223a72f58639a}{%
+           family={{Doug Schepers}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Urban Institute}%
+      }
+      \strng{namehash}{8be7d1e68d9ada9cdfd223a72f58639a}
+      \strng{fullhash}{8be7d1e68d9ada9cdfd223a72f58639a}
+      \strng{bibnamehash}{8be7d1e68d9ada9cdfd223a72f58639a}
+      \strng{authorbibnamehash}{8be7d1e68d9ada9cdfd223a72f58639a}
+      \strng{authornamehash}{8be7d1e68d9ada9cdfd223a72f58639a}
+      \strng{authorfullhash}{8be7d1e68d9ada9cdfd223a72f58639a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Centering Accessibility in Data Visualization}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{3}
+      \field{series}{Do {{Not Harm Guide}}}
+      \field{title}{Designing Data for Cognitive Load}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{19\bibrangedash 29}
+      \range{pages}{11}
+      \keyw{/done,nosource}
+    \endentry
+    \entry{elizabethhareWritingAltText2022}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=be29e70ed56d5922ef34a088883c1f9e}{%
+           family={{Elizabeth Hare}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Urban Institute}%
+      }
+      \strng{namehash}{be29e70ed56d5922ef34a088883c1f9e}
+      \strng{fullhash}{be29e70ed56d5922ef34a088883c1f9e}
+      \strng{bibnamehash}{be29e70ed56d5922ef34a088883c1f9e}
+      \strng{authorbibnamehash}{be29e70ed56d5922ef34a088883c1f9e}
+      \strng{authornamehash}{be29e70ed56d5922ef34a088883c1f9e}
+      \strng{authorfullhash}{be29e70ed56d5922ef34a088883c1f9e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Centering Accessibility in Data Visualization}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{3}
+      \field{series}{Do {{Not Harm Guide}}}
+      \field{title}{Writing Alt Text to Communicate the Meaning in Data Visualizations}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{31\bibrangedash 39}
+      \range{pages}{9}
+      \keyw{/done,nosource}
+    \endentry
+    \entry{sarahfossheimCreatingBetterScreen2022}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=4b48a3dccb3635441dd47d7f2e715e80}{%
+           family={{Sarah Fossheim}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Urban Institute}%
+      }
+      \strng{namehash}{4b48a3dccb3635441dd47d7f2e715e80}
+      \strng{fullhash}{4b48a3dccb3635441dd47d7f2e715e80}
+      \strng{bibnamehash}{4b48a3dccb3635441dd47d7f2e715e80}
+      \strng{authorbibnamehash}{4b48a3dccb3635441dd47d7f2e715e80}
+      \strng{authornamehash}{4b48a3dccb3635441dd47d7f2e715e80}
+      \strng{authorfullhash}{4b48a3dccb3635441dd47d7f2e715e80}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Centering Accessibility in Data Visualization}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{3}
+      \field{series}{Do {{Not Harm Guide}}}
+      \field{title}{Creating Better Screen Reader Experiences}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{48\bibrangedash 58}
+      \range{pages}{11}
+      \keyw{/done,nosource}
+    \endentry
     \entry{mikeyiHowChooseRight2020}{misc}{}
       \name{author}{1}{}{%
         {{hash=0fa28bc257327d5b4f1e4787966f5209}{%
@@ -825,8 +1095,8 @@
       \strng{authorbibnamehash}{0fa28bc257327d5b4f1e4787966f5209}
       \strng{authornamehash}{0fa28bc257327d5b4f1e4787966f5209}
       \strng{authorfullhash}{0fa28bc257327d5b4f1e4787966f5209}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -862,8 +1132,8 @@
       \strng{authorbibnamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{authornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
       \strng{authorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{edition}{Seconde Edition}
@@ -883,8 +1153,8 @@
       \list{publisher}{1}{%
         {AFNOR}%
       }
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{abstract}{Le présent document fournit un document d'orientation pour la présentation visuelle d'informations sous le contrôle d'un logiciel, indépendamment du support. Il inclut des propriétés spécifiques telles que les aspects syntaxiques ou sémantiques des informations, par exemple les techniques de codage, et fournit des dispositions relatives à l'organisation des informations en tenant compte des capacités humaines de perception et de mémorisation. Les dispositions qui ne s'appliquent pas à des types spécifiques d'interfaces visuelles indiquent clairement les éventuelles limites de leur applicabilité. Ne sont pas concernés les détails spécifiques des tableaux, des graphiques ou ceux de la visualisation des informations. Le présent document ne concerne pas la présentation auditive ou tactile/haptique des informations, ni le transfert de modalité à une fin de présentation d'informations visuelles dans d'autres modalités.}
       \field{langid}{english}
@@ -902,8 +1172,8 @@
       \keyw{/unread,broken,imprime}
     \endentry
     \entry{ISO8601-1DateHeureRepresentations2019}{standard}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{number}{ISO 8601-1}
@@ -912,6 +1182,35 @@
       \field{year}{2019}
       \field{dateera}{ce}
       \keyw{/unread,nosource}
+    \endentry
+    \entry{stephenfewGeneralGraphDesign2012}{inbook}{}
+      \name{bookauthor}{1}{}{%
+        {{hash=196e1dab835cd0054b6fa1afa4aec3e2}{%
+           family={{Stephen Few}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Burlingame, California}%
+      }
+      \list{publisher}{1}{%
+        {Analytics Press}%
+      }
+      \strng{bookauthorbibnamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \strng{bookauthornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \strng{bookauthorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Show Me the Numbers - {{Designing}} Tables and Graphs to Enlighten}
+      \field{edition}{Seconde Edition}
+      \field{isbn}{978-0-9706019-7-1}
+      \field{langid}{english}
+      \field{title}{General Graph Design}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{191\bibrangedash 204}
+      \range{pages}{14}
+      \keyw{/done,nosource}
     \endentry
     \entry{jonathanschwabishRelationship2021}{inbook}{}
       \name{bookauthor}{1}{}{%
@@ -928,8 +1227,8 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{booktitle}{Better {{Data Visualizations}}: {{A Guide}} for {{Scholars}}, {{Researchers}}, and {{Wonks}}}
       \field{day}{31}
@@ -974,8 +1273,8 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{booktitle}{Better {{Data Visualizations}}: {{A Guide}} for {{Scholars}}, {{Researchers}}, and {{Wonks}}}
       \field{day}{31}
@@ -1020,8 +1319,8 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{booktitle}{Better {{Data Visualizations}}: {{A Guide}} for {{Scholars}}, {{Researchers}}, and {{Wonks}}}
       \field{day}{31}
@@ -1051,35 +1350,6 @@
       \endverb
       \keyw{/done}
     \endentry
-    \entry{stephenfewComponentlevelGraphDesign2012}{inbook}{}
-      \name{bookauthor}{1}{}{%
-        {{hash=196e1dab835cd0054b6fa1afa4aec3e2}{%
-           family={{Stephen Few}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Burlingame, California}%
-      }
-      \list{publisher}{1}{%
-        {Analytics Press}%
-      }
-      \strng{bookauthorbibnamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
-      \strng{bookauthornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
-      \strng{bookauthorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Show Me the Numbers - {{Designing}} Tables and Graphs to Enlighten}
-      \field{edition}{Seconde Edition}
-      \field{isbn}{978-0-9706019-7-1}
-      \field{langid}{english}
-      \field{title}{Component-Level Graph Design}
-      \field{year}{2012}
-      \field{dateera}{ce}
-      \field{pages}{205\bibrangedash 256}
-      \range{pages}{52}
-      \keyw{/done,nosource}
-    \endentry
     \entry{wilkeVisualizingAmounts2019}{inbook}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
@@ -1094,8 +1364,8 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{abstract}{"Effective visualization is the best way to communicate information from the increasingly large and complex datasets in the natural and social sciences. But with the increasing power of visualization software today, scientists, engineers, and business analysts often have to navigate a bewildering array of visualization choices and options. This practical book takes you through many commonly encountered visualization problems, and it provides guidelines on how to turn large datasets into clear and compelling figures. What visualization type is best for the story you want to tell? How do you make informative figures that are visually pleasing? Author Claus O. Wilke teaches you the elements most critical to successful data visualization."--Provided by publisher}
       \field{booktitle}{Fundamentals of {{Data Visualization}}}
@@ -1138,8 +1408,8 @@
       \strng{bookauthorbibnamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{bookauthornamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{bookauthorfullhash}{a1d8f9a3e172b359362317dd6883ac0e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{booktitle}{Data Visualization Made Simple: Insights into Becoming Visual}
       \field{isbn}{978-1-138-50387-8 978-1-138-50391-5}
@@ -1165,8 +1435,8 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{abstract}{"Effective visualization is the best way to communicate information from the increasingly large and complex datasets in the natural and social sciences. But with the increasing power of visualization software today, scientists, engineers, and business analysts often have to navigate a bewildering array of visualization choices and options. This practical book takes you through many commonly encountered visualization problems, and it provides guidelines on how to turn large datasets into clear and compelling figures. What visualization type is best for the story you want to tell? How do you make informative figures that are visually pleasing? Author Claus O. Wilke teaches you the elements most critical to successful data visualization."--Provided by publisher}
       \field{booktitle}{Fundamentals of {{Data Visualization}}}
@@ -1206,8 +1476,8 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{abstract}{"Effective visualization is the best way to communicate information from the increasingly large and complex datasets in the natural and social sciences. But with the increasing power of visualization software today, scientists, engineers, and business analysts often have to navigate a bewildering array of visualization choices and options. This practical book takes you through many commonly encountered visualization problems, and it provides guidelines on how to turn large datasets into clear and compelling figures. What visualization type is best for the story you want to tell? How do you make informative figures that are visually pleasing? Author Claus O. Wilke teaches you the elements most critical to successful data visualization."--Provided by publisher}
       \field{booktitle}{Fundamentals of {{Data Visualization}}}
@@ -1248,8 +1518,8 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{booktitle}{Better {{Data Visualizations}}: {{A Guide}} for {{Scholars}}, {{Researchers}}, and {{Wonks}}}
       \field{day}{31}
@@ -1294,8 +1564,8 @@
       \strng{bookauthorbibnamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthornamehash}{0bc4f0014731309707d3862b9edb260a}
       \strng{bookauthorfullhash}{0bc4f0014731309707d3862b9edb260a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{booktitle}{Better {{Data Visualizations}}: {{A Guide}} for {{Scholars}}, {{Researchers}}, and {{Wonks}}}
       \field{day}{31}
@@ -1339,8 +1609,8 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{abstract}{"Effective visualization is the best way to communicate information from the increasingly large and complex datasets in the natural and social sciences. But with the increasing power of visualization software today, scientists, engineers, and business analysts often have to navigate a bewildering array of visualization choices and options. This practical book takes you through many commonly encountered visualization problems, and it provides guidelines on how to turn large datasets into clear and compelling figures. What visualization type is best for the story you want to tell? How do you make informative figures that are visually pleasing? Author Claus O. Wilke teaches you the elements most critical to successful data visualization."--Provided by publisher}
       \field{booktitle}{Fundamentals of {{Data Visualization}}}
@@ -1545,6 +1815,43 @@
       \range{pages}{24}
       \keyw{/done,nosource}
     \endentry
+    \entry{wongWallStreetJournal2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d36331834df2821ec820ed7bb96ebe59}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Dona\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {W.W. Norton \& Co}%
+      }
+      \strng{namehash}{d36331834df2821ec820ed7bb96ebe59}
+      \strng{fullhash}{d36331834df2821ec820ed7bb96ebe59}
+      \strng{bibnamehash}{d36331834df2821ec820ed7bb96ebe59}
+      \strng{authorbibnamehash}{d36331834df2821ec820ed7bb96ebe59}
+      \strng{authornamehash}{d36331834df2821ec820ed7bb96ebe59}
+      \strng{authorfullhash}{d36331834df2821ec820ed7bb96ebe59}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{1. ed}
+      \field{isbn}{978-0-393-07295-2}
+      \field{langid}{english}
+      \field{pagetotal}{157}
+      \field{shorttitle}{The Wall Street Journal Guide to Information Graphics}
+      \field{title}{The Wall Street Journal Guide to Information Graphics: The Dos and Don'ts of Presenting Data, Facts, and Figures}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb /home/anthea/Zotero/storage/582JNYMH/Wong - 2010 - The wall street journal guide to information graphics the dos and don'ts of presenting data, facts,.pdf
+      \endverb
+      \keyw{/unread}
+    \endentry
     \entry{wilkeVisualizingUncertainty2019}{inbook}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
@@ -1600,8 +1907,8 @@
       \strng{bookauthorbibnamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthornamehash}{8e86aa1915156f8016600d977acef303}
       \strng{bookauthorfullhash}{8e86aa1915156f8016600d977acef303}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{abstract}{"Effective visualization is the best way to communicate information from the increasingly large and complex datasets in the natural and social sciences. But with the increasing power of visualization software today, scientists, engineers, and business analysts often have to navigate a bewildering array of visualization choices and options. This practical book takes you through many commonly encountered visualization problems, and it provides guidelines on how to turn large datasets into clear and compelling figures. What visualization type is best for the story you want to tell? How do you make informative figures that are visually pleasing? Author Claus O. Wilke teaches you the elements most critical to successful data visualization."--Provided by publisher}
       \field{booktitle}{Fundamentals of {{Data Visualization}}}
@@ -1718,13 +2025,8 @@
       \keyw{/unread,imprime}
     \endentry
   \enddatalist
-  \missing{Few2012p192}
-  \missing{Few2012p283}
   \missing{REF???}
-  \missing{Références}
-  \missing{Schwabish2021p278}
-  \missing{Wong2010}
-  \missing{article}
+  \missing{Tufte:@}
 \endrefsection
 \endinput
 
