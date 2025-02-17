@@ -15,9 +15,9 @@ Rédiger l'abstract ici
 * Introduction
 La visualization de donnée est une discipline ancienne à la littérature riche et précise. Cependant, il n'existe, à ce jour pas de synthèse opérationnelle ni de méthode harmonisée dans la conception des représentations graphiques des informations. Ce rapport vise à fournir un point de départ cohérent à de futurs travaux en représentation visuelle d'informations. Il est basé sur une revue de littérature rigoureuse et les recommendations qu'il porte sont issues des lectures réalisées. Une tentative est réalisée d'objectiver les usages des diverses représentations.
 
-L'origine de ces travaux prend place dans un besoin grandissant de solution de visualization d'information dans le secteur de la construction. Les technologies de Big Data, BIM, VDC et les disciplines de la science des données ont fortement pénétré ce secteur sur l'ensemble du cycle de vie des ouvrages. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020] =mentionner les jumeaux numériques ici= L'utilisation renforcée de l'IoT, l'émèrgence des BIS et BOS et l'intégration des solutions d'intelligences artificielles renforcent d'autant plus la nécessité pour ce secteur de se doter de moyens robuste en exploration et en communication des informations.
+L'origine de ces travaux prend place dans un besoin grandissant de solution de visualization d'information dans le secteur de la construction. Les technologies de Big Data, BIM, VDC et les disciplines de la science des données ont fortement pénétré ce secteur sur l'ensemble du cycle de vie des ouvrages. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020] L'élaboration de jumeau numérique des bâtiments, l'utilisation renforcée de l'IoT, l'émèrgence des BIS et BOS et l'intégration des solutions d'intelligences artificielles renforcent d'autant plus la nécessité pour ce secteur de se doter de moyens robuste en exploration et en communication des informations.
 
-Le secteur de la construction est historiquement peu digitalisé en comparaison avec les autres industries.[cite:@REF???] Pour adresser ce retard, il est important de publier des études opérationnelle claires et industrialisables dont chaque acteur puisse bénéficier immédiatement. Ce rapport s'inscrit dans cette démarche.
+Le secteur de la construction est historiquement peu digitalisé en comparaison avec les autres industries.[cite:@safurazabidinBibliometricScientometricMapping2020] Pour adresser ce retard, il est important de publier des études opérationnelle claires et industrialisables dont chaque acteur puisse bénéficier immédiatement. Ce rapport s'inscrit dans cette démarche.
 
 Il existe de multiples manières d'interargir avec un graphique. [cite:@schwabishCenteringAccessibilityData2022a;@frankelavskyRightToolsJob2022]
 
@@ -61,7 +61,7 @@ Il est important de prévoir le chargement de toutes polices non standard (eg. S
 * Couleurs
 L'utilisation de la couleur n'est pas nécessaire pour éditer un graphique efficace. Il s'agit par exemple de la manière la moins efficace pour représenter des différences entre des variables. [cite:@beechamUseGlyphmapsAnalysing2021]
 
-Cependant, utilisé convenablement elle peut aider à la transmission des informations, améliorer la lisibilité de certain graphiques, inscrire une identité visuelle ou encore succiter l'intérêt du lecteur. L'objectif des représentations graphiques des informations étant de maximiser les chances d'acquisition d'une information par un lecteur, il est important de succiter son intérêt en premier lieu. [cite:@Références sur l'esthétisme?]
+Cependant, utilisé convenablement elle peut aider à la transmission des informations, améliorer la lisibilité de certain graphiques, inscrire une identité visuelle ou encore succiter l'intérêt du lecteur. L'objectif des représentations graphiques des informations étant de maximiser les chances d'acquisition d'une information par un lecteur, il est important de succiter son intérêt en premier lieu. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020]
 
 La conception de palettes de couleurs est un exercice difficile. Cette opération implique de considérer les facultées de perception visuelle des utilisateurs mais également le médium et les habitudes associées.
 
@@ -79,9 +79,9 @@ source : https://lesyeuxdudaltonisme.fr/les-types-de-daltonisme/
 
 Des outils comme [[https://gka.github.io/palettes/#/5|s|ce0072,96ffea,00ffad|ffffe0,ff005e,93003a|1|1][Color Palette Helper]] permettent de vérifier le comportement des palettes de couleurs au regard de certaines affections visuelles.
 
-Elle doit également éviter les biais sociologiques, cognitifs, culturels, et autres tels que le genrage des couleurs (bleu, rose),[cite:@andreaskrauseBestPracticesData2024]la perception morale (vert, rouge),[cite:@article sur le rouge en chine] ou la valeur émotionnelle (rouge).[cite:@tranDiscoveringAccessibleData2024]
+Elle doit également éviter les biais sociologiques, cognitifs, culturels, et autres tels que le genrage des couleurs,[cite:@andreaskrauseBestPracticesData2024] la perception morale[cite:@rose-greenlandColorPerceptionSociology2016] ou la valeur émotionnelle.[cite:@tranDiscoveringAccessibleData2024]
 
-L'utilisation de la couleur doit également respecter le principe de [citer le principe sur l'encre de Tufte]. Ainsi, il convient de ne pas remplir les larges zones avec une couleur saturé.[cite:@wilkeCommonPitfallsColor2019] Si un remplissage est requis par le type de graphique, il est préférable d'utiliser des couleurs moins saturés et d'y ajouter de la transparence. [cite:REF???] 
+L'utilisation de la couleur doit également respecter le principe de [cite:@Tufte le principe sur l'encre de Tufte]. Ainsi, il convient de ne pas remplir les larges zones avec une couleur saturé.[cite:@wilkeCommonPitfallsColor2019] Si un remplissage est requis par le type de graphique, il est préférable d'utiliser des couleurs moins saturés et d'y ajouter de la transparence. [cite:@REF???] 
 
 #+caption: Palette d'évidence
 #+name: fig:Pal-a
@@ -206,9 +206,9 @@ Il est recommandé de limiter cette opération à un nombre réduit de valeur. S
 * Méthode de validation
 Comme tout élément informatique, un graphique doit être vérifier et valider. Cela est d'autant plus nécessaire si la production de graphique est intégré à un pipeline de donnée.
 
-En premier lieu, il convient de vérifier l'abscence de "distortion" des données affichées pour limiter les biais inhérents.[cite:@Few2012p192]
+En premier lieu, il convient de vérifier l'abscence de "distortion" des données affichées pour limiter les biais inhérents.[cite:@stephenfewGeneralGraphDesign2012]
 
-$$ \text{Rédiger la formule de "truth validation"}$$
+$$\text{Rédiger la formule de "truth validation"}$$
 
 Vérifier l'absence de distortion
 
@@ -642,10 +642,10 @@ Représentation graphique standard et famillière pour la représentation des s�
 
 Les lignes relient chaque point de mesure. Pour de grands jeux de données, il convient d'utiliser une ligne lissée sur l'ensemble du graphique plutot qu'une ligne brisée par chaque point de donnée. [cite:@wilkeDirectoryVisualizations2019]
 
-La base des ordonnées doit être égale ou inférieure à la plus faible valeur affichée. [cite:@Wong2010]
+La base des ordonnées doit être égale ou inférieure à la plus faible valeur affichée. [cite:@wongWallStreetJournal2010]
 
 Il n'existe pas de rêgle stricte quand à la limite de séries affichables sur un graphique.[cite:@jonathanschwabishTime2021] Il convient de s'intéresser à la perception du lecteur recherché par le concepteur pour arbitrer les choix : [cite:@jonathanschwabishTime2021]
-- En cas d'impression, limiter le nombre de lignes simultanées à 4 au maximum, [cite:@Wong2010]
+- En cas d'impression, limiter le nombre de lignes simultanées à 4 au maximum, [cite:@wongWallStreetJournal2010]
 - Si l'interraction est possible avec le graphique, il est possible de tracer toutes les lignes dans un même graphique à condition d'utiliser un système de mise en évidence,[cite:@jonathanschwabishTime2021]
 - Ces cas échouant, séparez les lignes et tracez une [[matrice de graphique]].
 
@@ -901,7 +901,7 @@ Utilisé pour montrer la force et l'interconnectivité et les relations de multi
 
 
 
-Il existe 4 types de diagrammes de réseaux : [cite:@Schwabish2021p278]
+Il existe 4 types de diagrammes de réseaux : [cite:@jonathanschwabishRelationship2021]
 - Non dirigé et non pondéré,
 - Non dirigé et pondéré,
 - Dirigé et non pondéré,
@@ -975,7 +975,7 @@ Cette représentation est notamment pertinente lors de la réalisation d'un benc
 :END:
 Utilisé pour suivre l'engagement d'une population (taille) à chaque étape d'un processus (barre). [cite:@mikeyiHowChooseRight2020]
 
-Bien que répendu dans les analyses marketing (suivi des processus de vente), ce graphique n'est pas réellement pertinent. Sa composition ne représente pas correcement les données et il n'est pas évident de comprendre les différences entre chaque segments.[cite:@Few2012p283]
+Bien que répendu dans les analyses marketing (suivi des processus de vente), ce graphique n'est pas réellement pertinent. Sa composition ne représente pas correcement les données et il n'est pas évident de comprendre les différences entre chaque segments.[cite:@stephenfewSillyGraphsThat2012]
 
 Si la quantité de chaque étape d'un processus est l'information la plus importante, il est préférable d'avoir recours à un diagramme en [[barre ordonnée]].
 
@@ -1021,29 +1021,29 @@ Des études complémentaires pourraient être menées sur les sujets suivants :
 - La conception de librairies de graphiques accessibles et fonctionnant aussi bien dans un usage web que dans les PDF,
 
 * Evolution
-|       Date | Changements           |
-|------------+-----------------------|
-| 2025-02-10 | Rédaction du document |
+|    Date | Changements           |
+|---------+-----------------------|
+| 2025-02 | Rédaction du document |
 
 * Glossaire
 ** Vocabulaire technique 
-- Big data :: Désigne les ressources d’informations dont les caractéristiques en termes de volume, de vélocité et de variété imposent l’utilisation de technologies et de méthodes analytiques particulières pour créer de la valeur et qui dépassent en général les capacités d'une seule et unique machine. [cite:https://fr.wikipedia.org/wiki/Big_data]
-- Jumeau numérique :: Modèle numérique qui reconstitue fidèlement un objet, une opération ou un système tel qu'utilisé (ou maintenu/exploité). [cite:https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique]
-- Médium :: Moyen par lequel est transmise une information. [cite:https://fr.wikipedia.org/wiki/M%C3%A9dium]
-- Réalité étendue :: Mise en œuvre de technologies de réalité augmentée (AR), de réalité virtuelle (VR) et de réalité mixte (MR) dont l'objectif est de fusionner ou de refléter le monde physique avec un monde numérique qui peut interagir avec lui. [cite:https://fr.wikipedia.org/wiki/R%C3%A9alit%C3%A9_%C3%A9tendue]
-- Retours haptiques :: Technologie utilisant les vibrations pour stimuler le toucher. [cite:https://fr.wikipedia.org/wiki/Vibration_(jeu_vid%C3%A9o)#Retour_haptique]
-- Skeumorphisme :: Elément de design dont la forme n'est pas directement liée à la fonction, mais qui reproduit de manière ornementale un élément qui était nécessaire dans l'objet d'origine. [cite:https://fr.wikipedia.org/wiki/Skeuomorphisme]
-- Sonification :: Représentation et émission de données sous forme de signaux acoustiques non verbaux aux fins de la transmission ou de la perception d’information. [cite:https://fr.wikipedia.org/wiki/Sonification] 
+- Big data :: Désigne les ressources d’informations dont les caractéristiques en termes de volume, de vélocité et de variété imposent l’utilisation de technologies et de méthodes analytiques particulières pour créer de la valeur et qui dépassent en général les capacités d'une seule et unique machine. [[https://fr.wikipedia.org/wiki/Big_data][Wikipedia/Big Data]]
+- Jumeau numérique :: Modèle numérique qui reconstitue fidèlement un objet, une opération ou un système tel qu'utilisé (ou maintenu/exploité). [[https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique][Wikipedia/Jumeau Numérique]]
+- Médium :: Moyen par lequel est transmise une information. [[https://fr.wikipedia.org/wiki/M%C3%A9dium][Wikipedia/Médium]]
+- Réalité étendue :: Mise en œuvre de technologies de réalité augmentée (AR), de réalité virtuelle (VR) et de réalité mixte (MR) dont l'objectif est de fusionner ou de refléter le monde physique avec un monde numérique qui peut interagir avec lui. [[https://fr.wikipedia.org/wiki/R%C3%A9alit%C3%A9_%C3%A9tendue][Wikipedia/Réalisté étendue]]
+- Retours haptiques :: Technologie utilisant les vibrations pour stimuler le toucher. [[https://fr.wikipedia.org/wiki/Vibration_(jeu_vid%C3%A9o)#Retour_haptique][Wikipedia/Vibration Jeu Vidéo]]
+- Skeumorphisme :: Elément de design dont la forme n'est pas directement liée à la fonction, mais qui reproduit de manière ornementale un élément qui était nécessaire dans l'objet d'origine. [[https://fr.wikipedia.org/wiki/Skeuomorphisme][Wikipedia/Skeumorphisme]]
+- Sonification :: Représentation et émission de données sous forme de signaux acoustiques non verbaux aux fins de la transmission ou de la perception d’information. [[https://fr.wikipedia.org/wiki/Sonification][Wikipedia/Sonification]]
 
 ** Troubles neurodivergents
-- Autisme :: Troubles caractérisé par des difficultés dans les interactions sociales et la communication, ainsi que par des comportements et intérêts à caractère restreint, répétitif et stéréotypé. [cite:https://fr.wikipedia.org/wiki/Autisme]
-- Dyscalculie :: Trouble sévère dans les apprentissages numériques, sans atteinte organique, sans troubles envahissants du développement et sans déficience mentale et engendrant notamment des difficultés en mathématiques. [cite:https://fr.wikipedia.org/wiki/Dyscalculie]
-- Dyslexie :: Trouble de la lecture et de l'écriture spécifique et durable [...] qui peut se traduire à divers degrés par des difficultés à épeler les mots, lire vite, écrire, lire à voix haute ou bien comprendre ce qui est lu. [cite:https://fr.wikipedia.org/wiki/Dyslexie]
-- Dysorthographie :: Dysfonctionnement de l’écriture dû à un trouble d'apprentissage persistant de l’acquisition et de la maîtrise de l’orthographe et, pouvant se charactériser par des erreurs orthographiques, de conjugaison, de grammaire et d’analyse, des erreurs visuelles, etc. [cite:https://fr.wikipedia.org/wiki/Dysorthographie]
-- Epilepsie :: Prédisposition cérébrale à engendrer des "crises" épileptiques dites "non provoquées", c'est-à-dire spontanées, non expliquées par un facteur causal immédiat. [cite:https://fr.wikipedia.org/wiki/%C3%89pilepsie]
-- TDA/H :: Trouble provoquant trois types de symptômes pouvant se manifester seuls ou combinés : des difficultés d'attention et son contrôle, des symptômes d'hyperactivité et d'hyperkinésie. [cite:https://fr.wikipedia.org/wiki/Trouble_du_d%C3%A9ficit_de_l%27attention_avec_ou_sans_hyperactivit%C3%A9]
+- Autisme :: Troubles caractérisé par des difficultés dans les interactions sociales et la communication, ainsi que par des comportements et intérêts à caractère restreint, répétitif et stéréotypé. [[https://fr.wikipedia.org/wiki/Autisme][Wikipedia/Autisme]]
+- Dyscalculie :: Trouble sévère dans les apprentissages numériques, sans atteinte organique, sans troubles envahissants du développement et sans déficience mentale et engendrant notamment des difficultés en mathématiques. [[https://fr.wikipedia.org/wiki/Dyscalculie][Wikipedia/Dyscalculie]]
+- Dyslexie :: Trouble de la lecture et de l'écriture spécifique et durable [...] qui peut se traduire à divers degrés par des difficultés à épeler les mots, lire vite, écrire, lire à voix haute ou bien comprendre ce qui est lu. [[https://fr.wikipedia.org/wiki/Dyslexie][Wikipedia/Dyslexie]]
+- Dysorthographie :: Dysfonctionnement de l’écriture dû à un trouble d'apprentissage persistant de l’acquisition et de la maîtrise de l’orthographe et, pouvant se charactériser par des erreurs orthographiques, de conjugaison, de grammaire et d’analyse, des erreurs visuelles, etc. [[https://fr.wikipedia.org/wiki/Dysorthographie][Wikipedia/Dysorthographie]]
+- Epilepsie :: Prédisposition cérébrale à engendrer des "crises" épileptiques dites "non provoquées", c'est-à-dire spontanées, non expliquées par un facteur causal immédiat. [[https://fr.wikipedia.org/wiki/%C3%89pilepsie][Wikipedia/Epilepsie]]
+- TDA/H :: Trouble provoquant trois types de symptômes pouvant se manifester seuls ou combinés : des difficultés d'attention et son contrôle, des symptômes d'hyperactivité et d'hyperkinésie. [[https://fr.wikipedia.org/wiki/Trouble_du_d%C3%A9ficit_de_l%27attention_avec_ou_sans_hyperactivit%C3%A9][Wikipedia/TDAH]]
 
-** Troubles de la vision [cite:https://fr.wikipedia.org/wiki/Daltonisme]
+** Troubles de la vision
 - Achromatopsie :: Absence totale de vision des couleurs.
 - Deutéranopie :: Incapacité à différencier le rouge du vert.
 - Deutéranomalie :: Sensibilité au vert réduite avec une tendance à le confondre avec le jaune.
@@ -1051,6 +1051,7 @@ Des études complémentaires pourraient être menées sur les sujets suivants :
 - Protanomalie :: Sensibilité au rouge réduite avec une tendance à le confondre avec le vert.
 - Tritanopie :: Absence totale de la perception du bleu.
 - Tritanomalie :: Sensibilité au bleu réduite avec une tendance à le confondre avec le vert ou le jaune.
+Source : [[https://fr.wikipedia.org/wiki/Daltonisme][Wikipedia/Daltonisme]]
   
 * Acronymes
 - BIM :: Building Information Modeling
