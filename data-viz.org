@@ -145,6 +145,7 @@ En utilisant cette palette de couleur, l'utilisateur donnera plus d'importance a
 #+name: fig:Pal-c
 #+attr_latex: :placement [H]
 [[./img/palette-categorique.pdf]]
+
 Ce jeu de couleur est utilisé pour discriminer des catégories et lorsque leurs divergences ou leurs ordre n'est pas important.[cite:@andreaskrauseBestPracticesData2024]
 
 N'employez cette palette de couleur que lorsque les données affichées n'ont aucun lien intrinsèque. [cite:@wilkeColorScales2019]
