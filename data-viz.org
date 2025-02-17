@@ -104,8 +104,8 @@ Le plus efficace est de tracer tous les éléments dans un gris homogène et lé
 
 Permet de souligner un propos divergent suivant un facteur binaire.[cite:@jonathanschwabishDevelopingDataVisualization2021] 
 
-#+caption: Palette divergente
 #+note: réalisé avec [[https://gka.github.io/palettes/#/7|s|2e004d|ffffe0,ff005e,93003a|1|1][chroma.js]]
+#+caption: Palette divergente
 #+name: fig:Pal-d
 #+attr_latex: :placement [H]
 [[./img/palette-divergente.pdf]]
@@ -118,8 +118,8 @@ Il convient de ne pas utiliser le rouge et le vert conjointement comme teintes d
 
 Il convient d'utiliser un vérificateur de couleur pour valider la composition de cette palette.[cite:@andreaskrauseBestPracticesData2024]
 
-#+caption: Palette monochrome
 #+note: réalisé avec [[https://gka.github.io/palettes/#/7|s|2e004d|ffffe0,ff005e,93003a|1|1][chroma.js]]
+#+caption: Palette monochrome
 #+name: fig:Pal-m
 #+attr_latex: :placement [H]
 [[./img/palette-monochrome.pdf]]
@@ -872,9 +872,6 @@ Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la compositi
 :CHART-GOAL:
 :CHART-CLASS: correlation
 :END:
-
-#+ATTR_LATEX: :float wrap :width 1.2cm :placement {l}{0.8cm}
-[[./img/icon-scatterplot.pdf]]
 
 Représente la relation entres deux variables continues. [cite:@alansmithLexiqueVisuel]
 La couleur est la meilleure façon de distinguer les catégories.[cite:@stephenfewComponentlevelGraphDesign2012] Pour cela, utilisez la pallette catégorique ([[fig:Pal-c]])
