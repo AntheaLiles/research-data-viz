@@ -293,7 +293,7 @@ Il est recommandé de limiter cette opération à un nombre réduit de valeur. S
 
 #+caption: Matrice de sélection
 #+name: fig:HowTo-Select
-#+attr_latex: :float multicolumn :placement [H]
+#+attr_latex: :float multicolumn
 [[./img/methode-de-selection.pdf]]
 
 

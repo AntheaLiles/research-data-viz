@@ -1,4 +1,4 @@
-% Created 2025-02-17 lun. 22:05
+% Created 2025-02-18 mar. 19:13
 % Intended LaTeX compiler: lualatex
 \documentclass[a4paper,12pt]{article}
 \usepackage{amsmath}
@@ -45,7 +45,7 @@
 \hypersetup{colorlinks=true, linkcolor=customgray, citecolor=customgray, urlcolor=customgray, pdfborder={0 0 0}}
 \end{multicols}
 \author{Cyprien PIERRE \orcidlink{0009-0009-9040-6795}}
-\date{2025-02-17}
+\date{2025-02-18}
 \title{Méthode de sélection et de configuration des représentations graphiques des corpus d'informations}
 \hypersetup{
  pdfauthor={Cyprien PIERRE \orcidlink{0009-0009-9040-6795}},
@@ -67,7 +67,7 @@ Rédiger l'abstract ici
 
 \begin{multicols}{2}
 \section*{Introduction}
-\label{sec:orge7953e2}
+\label{sec:orga5c6e90}
 La visualization de donnée est une discipline ancienne à la littérature riche et précise. Cependant, il n'existe, à ce jour pas de synthèse opérationnelle ni de méthode harmonisée dans la conception des représentations graphiques des informations. Ce rapport vise à fournir un point de départ cohérent à de futurs travaux en représentation visuelle d'informations. Il est basé sur une revue de littérature rigoureuse et les recommendations qu'il porte sont issues des lectures réalisées.
 
 La production d'information réalisée par ordinateur ayant tendance à être perçue comme authentique et fiable [cite@Stephenfew2012p9] il convient de respecter un certain nombre de rêgles et de bonnes pratiques pour ne pas introduire de biais complémentaires. Nous tentons, à travers ce document, d'objectiver les usages des diverses représentations et leurs configurations.
@@ -97,7 +97,7 @@ Ce rapport n'aborde pas les éléments nécessitant l'emploi de matériels spéc
 \item L'emploi d'écran à relief (braille).
 \end{itemize}
 \section*{Démarche}
-\label{sec:org6ea3181}
+\label{sec:org6338a3d}
 La conduite de cette revue s'est déroulé de la manière suivante :
 Nous avons commencé par dresser un panorama des types de graphiques existant en nous appuyant sur les travaux de "From Data to Viz" \autocite{yanholtzDataViz2018}, "The Graphic Continuum" \autocite{jonathanschwabishGraphicContinuum2014}, "Lexique Visuel" \autocite{alansmithLexiqueVisuel}, "Insights for ArcGis" \autocite{lindabealeInsightsArcGIS2017}.
 Cette première action nous a permis de pré-catégoriser les graphiques selon leurs utilisation.
@@ -110,9 +110,9 @@ En parallele, nous avons étudié diverses chartes de publications issues de div
 
 Pour finir, nous avons étudié les articles scientifiques publiés sur ces sujets avec une profondeur de recherche à 5 ans. Ce choix de profondeur résulte d'une évolution conséquente depuis le début de la décenie des sciences de l'information. Cetains papiers étudiés sont plus anciens mais ont été très régulièrement cités par d'autres publications et nous avons choisis de les considérer. De cette étape, nous avons affiné les recommendations en identifiant les résultats d'expérimentations.
 \section*{Composants}
-\label{sec:orgd3d0dbc}
+\label{sec:org155956c}
 \subsection*{Polices}
-\label{sec:org6f51ea1}
+\label{sec:org58ec1b0}
 Le choix d'une police de texte a de multiples impacts sur la perception des graphiques. Il convient de selectionner une police accessible et de préférence sans sérif pour un usage informatique (Arial, Calibri, Source Sans Pro, Verdana\ldots{}). \autocite{andreaskrauseBestPracticesData2024} Les polices avec serif peuvent être considérés pour la production d'éléments imprimés. Il n'y a pas de consensus clair sur l'impact des sérifs sur l'accessibilité des polices. \autocite{stephenfewTableDesign2012} Il n'y a pas non plus de consensus clair sur l'efficacité des polices conçues pour adresser des problématiques d'accessibilités telles que la dyslexie. Il convient d'utiliser une police utilisant une hauteur fixe pour les chiffres. \autocite{stephenfewTableDesign2012}
 
 Il est conseillé de restreindre l'utilisation de l'italique car les textes affichés de la sorte sont plus difficiles à lire. Il est également conseillé de limiter l'utilisation de la graisse et du soulignement à des cas spécifiques pour ne pas surcharger les présentations.
@@ -123,7 +123,7 @@ Certaines polices peuvent être utilisés pour projeter des icones (NerdFont, St
 
 Il est important de prévoir le chargement de toutes polices non standard (eg. Source Sans Pro, NerdFont\ldots{}) dans l'interface utilisateur si celles-ci sont utilisées puisqu'elles ne sont probablement pas installées dans le système d'exploitation de l'utilisateur. Prévoir leurs chargement vise à assurer la bonne expérience des utilisateurs.
 \subsection*{Couleurs}
-\label{sec:org70ed723}
+\label{sec:org910696e}
 L'utilisation de la couleur n'est pas nécessaire pour éditer un graphique efficace. Il s'agit par exemple de la manière la moins efficace pour représenter des différences entre des variables. \autocite{beechamUseGlyphmapsAnalysing2021}
 
 Cependant, utilisé convenablement elle peut aider à la transmission des informations, améliorer la lisibilité de certain graphiques, inscrire une identité visuelle ou encore succiter l'intérêt du lecteur. L'objectif des représentations graphiques des informations étant de maximiser les chances d'acquisition d'une information par un lecteur, il est important de succiter son intérêt en premier lieu. \autocite{asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020}
@@ -152,7 +152,7 @@ L'utilisation de la couleur doit également respecter le principe de \autocite[l
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{./img/palette-evidence.pdf}
-\caption{\label{fig:orgd932408}Palette d'évidence}
+\caption{\label{fig:orgb58e4ae}Palette d'évidence}
 \end{figure}
 
 Cette palette de couleur permet d'orienter le regard du lecteur directement sur le segment du graphique important pour l'acquisition de l'information.\autocite{andreaskrauseBestPracticesData2024}
@@ -163,7 +163,7 @@ Le plus efficace est de tracer tous les éléments dans un gris homogène et lé
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{./img/palette-binaire.pdf}
-\caption{\label{fig:org99eada9}Palette binaire}
+\caption{\label{fig:org02301fc}Palette binaire}
 \end{figure}
 
 Permet de souligner un propos divergent suivant un facteur binaire.\autocite{jonathanschwabishDevelopingDataVisualization2021} 
@@ -171,7 +171,7 @@ Permet de souligner un propos divergent suivant un facteur binaire.\autocite{jon
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{./img/palette-divergente.pdf}
-\caption{\label{fig:org2349876}Palette divergente}
+\caption{\label{fig:org135cfa8}Palette divergente}
 \end{figure}
 
 Cette palette est utilisée pour accompagner la visualisation de la déviation de données dans deux directions opposées à un point central. \autocite{wilkeColorScales2019}
@@ -185,10 +185,10 @@ Il convient d'utiliser un vérificateur de couleur pour valider la composition d
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{./img/palette-monochrome.pdf}
-\caption{\label{fig:orge3af066}Palette monochrome}
+\caption{\label{fig:org73ced1c}Palette Séquencielle}
 \end{figure}
 
-Aussi appelée "séquentielle", cette palette de couleur est utilisée lorsque les données sont organisées dans un ordre quantitatif (croissant, décroissant, etc.). \autocite{wilkeColorScales2019,jonathanschwabishDevelopingDataVisualization2021} 
+Aussi appelée "monochrome", cette palette de couleur est utilisée lorsque les données sont organisées dans un ordre quantitatif (croissant, décroissant, etc.). \autocite{wilkeColorScales2019,jonathanschwabishDevelopingDataVisualization2021}
 
 Les variations réalisées en modifiant la lumiosité d'une teinte.\autocite{andreaskrauseBestPracticesData2024} 
 
@@ -199,7 +199,7 @@ Il convient d'employer une graduation présente dans l'environnement natuel, par
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{./img/palette-thermique.pdf}
-\caption{\label{fig:org907ad67}Palette thermique}
+\caption{\label{fig:orga2f620e}Palette thermique}
 \end{figure}
 
 C'est la température des couleurs qui souligne l'importance des données, du plus froid (faible) au plus chaud (élevé). \autocite{REF???}
@@ -209,7 +209,7 @@ En utilisant cette palette de couleur, l'utilisateur donnera plus d'importance a
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{./img/palette-categorique.pdf}
-\caption{\label{fig:org9bae2ad}Palette catégorique}
+\caption{\label{fig:org02befec}Palette catégorique}
 \end{figure}
 
 Ce jeu de couleur est utilisé pour discriminer des catégories et lorsque leurs divergences ou leurs ordre n'est pas important.\autocite{andreaskrauseBestPracticesData2024}
@@ -221,16 +221,16 @@ Chaque couleur doit rester distinguable des autres en toute condition.\autocite{
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{./img/palette-arc-en-ciel.pdf}
-\caption{\label{fig:orga6b72dd}Palette arc-en-ciel}
+\caption{\label{fig:org78e6dc6}Palette arc-en-ciel}
 \end{figure}
 
 Palette de couleur à prohiber.\autocite{wilkeCommonPitfallsColor2019}
 \subsection*{Graphiques}
-\label{sec:org6d3f3d6}
+\label{sec:orgddf4714}
 \subsubsection*{Titre}
-\label{sec:org4bcfd8e}
+\label{sec:org03adee0}
 \subsubsection*{Cadre}
-\label{sec:org7b45e2b}
+\label{sec:org46313fd}
 Les lignes d'ages
 
 Les titres d'axes
@@ -239,60 +239,74 @@ Les marques d'axes sont utilisées uniquement sur les axes de données quantitat
 
 Les grilles et lignes de guidages sont utiles lorsque les graphiques sont intéractifs. Cependant ils ne doivent pas prendre le dessus sur la représentation des données. \autocite{dougschepersDesigningDataCognitive2022}
 \subsubsection*{Ligne}
-\label{sec:org46d06f3}
-Les lignes sont à différencier les unes des autres en utilisant les méthodologies décrites dans la section \hyperref[sec:org70ed723]{Couleurs}. Il est possible de surimposer des points de repères lorsque diverses valeurs sont à comparer pour un temps donné. \autocite{stephenfewComponentlevelGraphDesign2012}
+\label{sec:orgec15932}
+Les lignes sont à différencier les unes des autres en utilisant les méthodologies décrites dans la section \hyperref[sec:org910696e]{Couleurs}. Il est possible de surimposer des points de repères lorsque diverses valeurs sont à comparer pour un temps donné. \autocite{stephenfewComponentlevelGraphDesign2012}
 
 Une lignes de tendance peut être utilisée pour aider à la compréhension d'un graphique. Le calcul de moyennes mobiles représente mieux l'évolution des tendances impliquant une évolution temporelle. Dans un nuage de point, cette ligne de tendance peut être droite (meilleur ajustement) ou courbée en fonction des données affichées. Cela doit être considérer lors du tracé. \autocite{stephenfewComponentlevelGraphDesign2012}
 
 Des lignes de références peuvent être utilisées pour indiquer des seuils signicatifs dans le cadre d'une mesure ou d'un suivi de performance. \autocite{stephenfewComponentlevelGraphDesign2012}
 \subsubsection*{Annotation}
-\label{sec:orge0007c8}
-Des annotations peuvent être apposées directement sur le graphique lorsque cela est pertinent pour la communication d'une information spécifique. Si l'annotation n'est pas immédiatement exploitée par le lecteur, elle engendre une diminution de l'efficacité de la lecture du graphique. \autocite{tranDiscoveringAccessibleData2024} Dans ce cas de figure, il faut limiter le nombre d'annotations au strict minimum pour ne pas surcharger le graphique et en conserver sa lisibilité. \autocite{stephenfewComponentlevelGraphDesign2012} Bien que certains lecteurs n'apprécient pas d'être dirigés directement vers une valeur spécifiques,\autocite{tranDiscoveringAccessibleData2024} cette opération reste bénéfique pour des lecteurs ayant des troubles de la visions. \autocite{dougschepersDesigningDataCognitive2022} Nous remarquons, ici, un besoin de personnalisation au regards de préférences utilisateurs.
+\label{sec:orged1fe46}
+Des annotations peuvent être apposées directement sur le graphique lorsque cela est pertinent pour la communication d'une information spécifique. Si l'annotation n'est pas immédiatement exploitée par le lecteur, elle engendre une diminution de l'efficacité de la lecture du graphique. \autocite{tranDiscoveringAccessibleData2024} Dans ce cas de figure, il faut limiter le nombre d'annotations au strict minimum pour ne pas surcharger le graphique et en conserver sa lisibilité. \autocite{stephenfewComponentlevelGraphDesign2012} Bien que certains lecteurs n'apprécient pas d'être dirigés directement vers une valeur spécifiques, \autocite{tranDiscoveringAccessibleData2024} cette opération reste bénéfique pour des lecteurs ayant des troubles de la visions. \autocite{dougschepersDesigningDataCognitive2022} Nous remarquons, ici, un besoin de personnalisation au regards de préférences utilisateurs.
 \subsubsection*{Note}
-\label{sec:org3137818}
+\label{sec:orgbfde3fd}
 Le créateur d'un graphique peut être ammené à rédiger une note de lecture pour aider à la comprehension du graphique. L'accès à cette note doit être accordé par le mode de présentation du graphique. \autocite{jonathanschwabishDevelopingDataVisualization2021}
 
 Pour une interface numérique, une approche de composition d'interface d'utilisateur avec une étude du mode d'interaction humain-machine est à prévoir.
 
 Pour une présentation imprimée (PDF ou papier), la note doit être imprimé en dessous du titre et de la description du graphique, dans un encart prévu à cet effet.
 \subsubsection*{Texte alternatif}
-\label{sec:orgcff6f0d}
+\label{sec:orged1d894}
 Ce type de texte est utilisé pour présenter les graphiques aux utilisateurs employant un logiciel de lecture d'écran. Il n'est pas affiché ni imprimé mais seulement lu par ces logiciels spécialisés.
+Les recommendations de cette sections proviennent de l'ouvrage "Centering Accessibility in Data Visualization" \autocite{schwabishCenteringAccessibilityData2022}
 
 La rédaction de ce texte doit fournir une experience similaire à la visualisation du graphique.
 
-Il n'existe pas de norme de rédaction de ces textes descriptifs mais un ensemble de bonnes pratiques sont remarquées.
+Il n'existe pas de norme de rédaction de ces textes descriptifs mais un ensemble de bonnes pratiques sont remarquées. Il existe un écart entre les recommandations mettant en avant la concisions et celle promouvant la précision, la secondes impliquant une rédaction plus complète du texte de remplacement et vise à une meilleure transmission des informations.
 
-Le titre du graphique n'est pas intégré dans le texte alternatif car il est déjà lu par le lecteur auparavant.
-Le contexte du graphique doit y être présenté. La description doit être valable indépendament de l'avis de l'auteur. Elle doit donc être la plus factuelle et neutre possible.
+En tout état de cause :
+\begin{itemize}
+\item Le titre du graphique n'est pas intégré dans le texte alternatif,
+\item La description doit être la plus factuelle et neutre possible,
+\item Les incertitudes et estimations doivent être précisées,
+\item Il faut éviter toute suggestion de causalité et,
+\item Ne pas présenter les couleurs et textures.
+\end{itemize}
 
-Suivant la localisation du graphique, les informations à présenter lors de la lecture sont de nature différentes. \autocite{frankelavskyRightToolsJob2022}
+Suivant l'usage attendu du graphique, les informations à présenter lors de la lecture sont de nature différentes.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{./img/alt-text.pdf}
-\caption{\label{fig:org841ad5a}Contenu type d'un texte alternatif selon le médium concerné}
+\caption{\label{fig:orgfca3505}Contenu type d'un texte alternatif selon l'usage concerné}
 \end{figure}
 
-Il est contre productif d'expliquer un jeu de couleur ou le détails de textures dans un texte alternatif. \autocite{elizabethhareWritingAltText2022}
+Lorsque les données sont présentées, il convient d'inclure le nom de la variable, son unité et la plage de valeur affichée.
+
+Le texte doit être rédigé en utilisant une ponctuation classique et en évitant les symboles particuliers. Les formules mathématiques sont rédigée de manière litéraire pour éviter les erreurs d'interprétation par les programmes de lectures. Ces textes ne doivent pas comprendre d'URL. Les acronymes doivent être rédigés en majuscule.
+
+La bonne lecture du texte alternatif doit être vérifié.
+
+Une étude future pourrait étudier un parcours utilisateur pour assister à la création des textes alternatifs en employant des modèles de langages, des formulaires et d'autres outils d'interaction humain-machine. Cette étude pourrait également s'intéresser à la mise à jour automatique de ces textes pour les graphiques dynamiques  (mises à jours ponctuelles ou en temps réel).
 \subsubsection*{Tableur alternatif}
-\label{sec:org3085c27}
+\label{sec:orge9523d2}
 Ce type de table est utilisé en complément du texte alternatif pour exposer les jeux de données affichés dans un graphique aux utilisateurs employant un logiciel de lecture d'écran. Il n'est pas affiché ni imprimé et est uniquement accessible à ces logiciels spécialisés.
 
 Les tables alternatives permettent d'approfondir l'exploration des données exposées sur un graphique par une personne ayant des troubles de la vision. L'exploration de ces éléments doit être proposé et le choix de cette lécture revient à l'utilisateur. \autocite{sarahfossheimCreatingBetterScreen2022}
 
 Des modalitées de navigations à travers ce jeu de données doivent être prises pour améliorer l'interraction humain-machine. Cela peut concerner des solutions propres à la découverte d'information comme la recherche, le filtrage et le classement ou encore des mécanismes de navigations au clavier ou autres. \autocite{sarahfossheimCreatingBetterScreen2022}
 \subsubsection*{Jeu de données}
-\label{sec:org38b2787}
+\label{sec:orgc1581ad}
 Les utilisateurs doivent pouvoir télécharger les données utilisées pour constituer le graphique. Ces données doivent être mises à disposition par un format libre et ouvert tel que le CSV. \autocite{frankelavskyRightToolsJob2022}
-\subsection*{Tableur}
-\label{sec:org640ef4b}
+\subsection*{Tableurs}
+\label{sec:org832cb6a}
 Un tableur permet d'exposer des données brutes organisées en lignes ou en colonnes. \autocite{mikeyiHowChooseRight2020}
 
 Sauf mention contraire, les recommendations sur les tables sont issues du livre "Show me the numbers" de Stephen Few.\autocite{stephenfewShowMeNumbers2012} L'auteur y rentre très en détails sur chaque point de paramétrage. Il y indique notamment les orientations en matière de construction de tableur lorsqu'il s'agit du choix premier d'affichage de données. Ce rapport s'intéresse à la conception de graphique. Dans ce cadre, les tableurs sont des éléments complémentaires pouvant être affichés par l'utilisateur pour explorer plus précisement les données préalablement affichées.
 
 Des prescriptions spécifiques à la préparation de tableurs pour certains graphiques sont apportés le cas échéant dans la suite de ce rapport.
 \subsubsection*{Composition}
-\label{sec:org3865e0c}
+\label{sec:orga787a03}
 Il est recommendé de séparer les entrées avec un espace vide.
 Lorsque les données sont présentées en colonnes, l'espace entre deux colonnes doit être plus grand qu'entre deux lignes,
 Lorsque les données sont présentées en ligne, l'espace entre deux ligne doit être plus grand qu'entre deux colonnes,
@@ -310,7 +324,7 @@ Ne pas effectuer de rotation sur un tableur, son orientation doit respecter cell
 
 Maintenir les aligmnements les titres avecc celui des données en colonnes.
 \subsubsection*{Chiffres}
-\label{sec:org81bd8d3}
+\label{sec:org316314c}
 Aligner les chiffres à droite.
 Homogénéiser les décimales (généralement 2 ou 3 décimales suffisent suivant le contexte).
 Indiquer les valeurs négatives avec le symbole moins "-", ici la notion de valeur symbolique est importante. Certains choisissent d'identifier les valeurs négatives entre parenthèses, cependant il ne s'agit pas d'une représentation naturelle répendue pour une telle identification.
@@ -319,12 +333,12 @@ Si une valeur numérique réfère à une information de catégorie elle doit êt
 
 En cas de constat de déviations, utilisez les symboles plus "+" pour les déviations positives, moins "-" pour les déviations négatives et cercle "\^{}" pour les éléments stables. \autocite{andreaskrauseBestPracticesData2024}
 \subsubsection*{Texte}
-\label{sec:org4668809}
+\label{sec:org72af97b}
 Aligner les textes à gauche.
 Centrer les dates et utiliser une convention stricte d'écriture de ces données telles que "YYYY-MM-DD". \autocite{ISO8601-1DateHeureRepresentations2019} La composition de la date doit être indiqué à l'utilisateur. Le choix du format doit respecter le niveau de précision associée à la mesure. Implicitement, le choix d'un formatage de plus haut niveau que la précision de la mesure induit une agrégation des valeurs.
 Centrer les données dont la largeur de charactère est fixe.
 \subsubsection*{Sommaire et agrégats}
-\label{sec:org875899a}
+\label{sec:orgf95c537}
 Utiliser une ligne verticale pour séparer les valeurs placées en colonne à droite de toutes les valeurs.
 Utiliser une ligne horizontale si ces valeurs sont placées en une ligne en bas du tableau.
 Si ces valeurs sont le message important de votre tableur, il convient de les affichés imédiatement à droite des colonnes de catégories ou immédiatement en dessous des entêtes de colonnes, suivant la nature du sommaire.
@@ -347,7 +361,7 @@ Lorsque l'on travaille avec des valeurs monétaires il convient de :
 \item Corriger les valeurs de l'inflation lorsque l'analyse implique une répartition temporelle.
 \end{itemize}
 \subsubsection*{Mise en évidence}
-\label{sec:org8678d08}
+\label{sec:orgbd1c7bc}
 Si des valeurs spécifiques doivent être mises en avant, il est possible d'utiliser l'une ou l'autre de ces solutions :
 \begin{itemize}
 \item mettre le texte en gras,
@@ -355,9 +369,15 @@ Si des valeurs spécifiques doivent être mises en avant, il est possible d'util
 \end{itemize}
 Il est recommandé de limiter cette opération à un nombre réduit de valeur. Si cela n'est pas possible, il convient de sélectionner un autre mode de visualisation.
 \section*{Méthode de sélection}
-\label{sec:orgfa30ef1}
+\label{sec:orge61e7f0}
+
+\begin{figure*}
+\centering
+\includegraphics[width=.9\linewidth]{./img/methode-de-selection.pdf}
+\caption{\label{fig:org3b9e019}Matrice de sélection}
+\end{figure*}
 \section*{Méthode de validation}
-\label{sec:org0eafcc9}
+\label{sec:org2034cea}
 Comme tout élément informatique, un graphique doit être vérifier et valider. Cela est d'autant plus nécessaire si la production de graphique est intégré à un pipeline de donnée.
 
 En premier lieu, il convient de vérifier l'abscence de "distortion" des données affichées pour limiter les biais inhérents.\autocite{stephenfewGeneralGraphDesign2012}
@@ -372,23 +392,15 @@ $$\LieFactor=\abs{\frac{\frac{\Delta VisualLength}{VisualStartLength}}{\frac{\De
 
 \url{https://www.labo.mathieurella.fr/?p=395}
 \section*{Graphiques}
-\label{sec:org39813d1}
+\label{sec:org1d77aff}
 \subsection*{Arbre de mot}
-\label{sec:orgc2c6101}
+\label{sec:orge1a4e04}
 Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg \& Fernanda Viegs 2007) La taille des mots représente la fréquence de leurs usages. \autocite{jonathanschwabishQualitative2021}
-\subsection*{Arc}
-\label{sec:org49c5301}
-\sout{Hémicycle, souvent utilisé pour visualiser la composition d'un effectif.}
-\subsection*{Arc temporel}
-\label{sec:org0fd9bba}
-Utilisé pour illustré les connexions des catégories à travers le temps. L'ordre des données influence la percéption de l'importance des connexions. \autocite{jonathanschwabishRelationship2021}
-
-Peut être utilisé pour illustrer les distances entre deux points. Cet usage met bien en évidence l'augmentation des disances. \autocite{jonathanschwabishRelationship2021}
 \subsection*{Bande de valeur}
-\label{sec:org3f6fad5}
+\label{sec:orgf09a52e}
 Affiche les points de données d'une catégorie.\autocite{jonathanschwabishDistribution2021} Les valeurs peuvent être affichés par des lignes ou des cercles pleins mais les cercles sont à privilégier lorsqu'il est nécessaire de déagglomérer les données.
 
-Il est possible d'utiliser de la transparence pour illustrer les zones de valeurs compactes. \autocite{jonathanschwabishDistribution2021} Utilisez la palette de couleurs divergentes \ref{fig:org2349876} pour mettre en évidence la répartition des valeurs mesurées et souligner la séparation de celles ci par rapport à un axe de référence.\autocite{jonathanschwabishDistribution2021}
+Il est possible d'utiliser de la transparence pour illustrer les zones de valeurs compactes. \autocite{jonathanschwabishDistribution2021} Utilisez la palette de couleurs divergentes \ref{fig:org135cfa8} pour mettre en évidence la répartition des valeurs mesurées et souligner la séparation de celles ci par rapport à un axe de référence.\autocite{jonathanschwabishDistribution2021}
 
 Les points peuvent être légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce mode de représentation est appelé "essaim d'abeille" (beeswarm). \autocite{jonathanschwabishDistribution2021}
 
@@ -396,24 +408,24 @@ Histopoint : Wilkinson dot plot (Leland Wilkinson) Affichage des bandes de valeu
 
 Epis de blé : Wheat plot (SFew)
 \subsection*{Barre divergente}
-\label{sec:orgabead01}
+\label{sec:org329bad1}
 Affiche correctement un ensemble de valeur quantitative triées par catégories lorsque des valeurs négatives sont utilisées. \autocite{alansmithLexiqueVisuel} L'axe des absysse doit être égal à 0 et toutes les barres doivent être projetées depuis cet axe.
-\subsection*{Barres divergentes empilées}
-\label{sec:org6f38f1d}
+\subsection*{Barre divergente empilée}
+\label{sec:org2351ad7}
 Utilisé pour illustrer les résultats d'enquêtes impliquant un sentiment. \autocite{alansmithLexiqueVisuel} Les barres doivent être calculées en pourcentage et alignées à 100\% comme pour une partie d'un ensemble. Les réponses sont affichées de façon ordonée et du plus négatif au plus positif. Il convient d'utiliser une palette de couleur divergente. Lors de la préparation d'une enquête impliquant des sentiment, il est conseiller de proposer un choix de valeur paires pour éviter les votes neutres sauf si la représentation de l'indiférence est une volontée de l'étude. De plus, \textbf{expliquer la limite de nombre de zones facile à visualiser} (max 6?)
-\subsection*{Barre empilées}
-\label{sec:org1de3b40}
+\subsection*{Barre empilée}
+\label{sec:orgc5fa74c}
 Représente le total de chaque catégorie et la proportion de leurs composantes. Les composantes doivent être homogènes. Si les proportions sont plus importantes que les totaux, considérer d'utiliser l'affichage empilée à 100\%. \autocite{mikeyiHowChooseRight2020}
 
-Seule la catégorie ayant sa base à 0 sera facile à comparer pour le lecteur car les autres ne partagent pas la même base.\autocite{jonathanschwabishComparingCategories2021} Il est préférable de tracer chaque diagramme de barre dans un grapgique distinct et des les disposer en \hyperref[sec:orge3b89ac]{Matrice de graphique}. \autocite{jonathanschwabishComparingCategories2021}
+Seule la catégorie ayant sa base à 0 sera facile à comparer pour le lecteur car les autres ne partagent pas la même base.\autocite{jonathanschwabishComparingCategories2021} Il est préférable de tracer chaque diagramme de barre dans un grapgique distinct et des les disposer en \hyperref[sec:org855a817]{Matrice de graphique}. \autocite{jonathanschwabishComparingCategories2021}
 \subsection*{Barre jumelée}
-\label{sec:orgec17099}
+\label{sec:orge4751de}
 Permet d'afficher plusieurs séries. Devient plus difficile à lire avec plus de deux séries. \autocite{alansmithLexiqueVisuel}
 Les barres d'une même catégories sont collées les unes aux autres pour souligner leurs appartenance à une même catégorie (ratio 1:0). Espacer les jeux de barres jumelées d'une largeur égale à une barre (ratio n:1).
 
 Les barres sont colorées avec une palette de couleur de catégories. Les couleurs sont utilisées pour distinguées chaques barres dans une catégories, les couleurs doivent être homogènes pour chaque catégorie. Si les différentes valeurs affichées sont d'importances similaires, il convient d'utiliser une palette de couleurs à faibles contrastes. N'utiliser qu'une seule couleur par ensemble de données apparentées. \autocite{stephenfewComponentlevelGraphDesign2012}
 \subsection*{Barre ordonnée}
-\label{sec:orgb0f48a4}
+\label{sec:orge802a0e}
 Les catégories sont ordonnées par décroissance de leurs valeurs de quantité\autocite{jonathanschwabishComparingCategories2021} sauf si les catégories on un autre ordre logique (eg. temporel). Dans ce second cas, cet ordre doit être utilisé pour la construction du graphique. \autocite{wilkeVisualizingAmounts2019}
 
 \textbf{Note: si catégories temporelles, utiliser un histogramme?}
@@ -448,10 +460,10 @@ Ne pas segmenter les barres. \autocite{jonathanschwabishComparingCategories2021}
 
 Ne pas ajouter d'iconographie aux barres. \autocite{tranDiscoveringAccessibleData2024}
 \subsection*{Bulle proportionnelle ordonnée}
-\label{sec:org2905d08}
+\label{sec:org6062a0b}
 Utilisé pour illustrer les grandes variations de quantité pour différentes catégories et lorsque la distinction des nuances n'est pas primordiale. Les bulles doivent être dimensionnés par leurs surface pour éviter d'éxagérer les différences. \autocite{jonathanschwabishComparingCategories2021} Ce type de graphique utilise un double encodage de la quantité : la position et la taille. \autocite{wilkeVisualizingAssociationsTwo2019} Bien que ce type de représentation soit considéré comme engageant, il convient d'utiliser un graphique en barre ordonnée à la place lorsque l'évaluation des différences entre catégories est importante. \autocite{jonathanschwabishComparingCategories2021}
 \subsection*{Boite à moustache}
-\label{sec:org8f1b4a1}
+\label{sec:org58ff523}
 Résume les distributions multiples en montrant la médiane et l'étendue des données. \autocite{alansmithLexiqueVisuel}
 
 Ce graphique est plus efficace lorsqu'il y a de nombreuses mesures pour une entrée et que leur distribution doit être représentée (eg : mesure médiane, basse, haute, incertitude\ldots{}). \autocite{mikeyiHowChooseRight2020}
@@ -464,10 +476,10 @@ Il est possible d'afficher la position d'un point précis du jeu de donnée sous
 
 Les boites à moustaches suivent les dispositions graphiques des barres ordonnées. \autocite{stephenfewComponentlevelGraphDesign2012}
 \subsection*{Bosses}
-\label{sec:org562d443}
+\label{sec:org78dcfce}
 Affiche l'évolution d'un classement entre différents jalons. \autocite{mikeyiHowChooseRight2020,alansmithLexiqueVisuel}  Ce graphique n'affiche pas les valeurs sous-jacente mais uniquement le positionnement de la catégorie dans le classement. \autocite{jonathanschwabishTime2021} Si la valeur source est également à représenter, ce graphique peut se transformer en graphique en ruban, combinant les disposition du graphique en bosse avec celles du graphique de Sankey. \autocite{jonathanschwabishTime2021}
 \subsection*{Camembert}
-\label{sec:org2e47929}
+\label{sec:org98909e2}
 Diagramme standard, difficile à lire. \autocite{alansmithLexiqueVisuel}
 Limiter à 5 (4?) entrées maximum \autocite{mikeyiHowChooseRight2020}
 
@@ -494,38 +506,38 @@ Il convient de :
 
 Les parties n'étant pas mises en avant peuvent être agrégée en une catégories "autres". Leurs informations ne servant pas à appuyer le message du graphique. \autocite{jonathanschwabishParttowhole2021}
 
-Dans le cas ou une seule partie de l'ensemble est mise en avant, il est à considérer l'utilisation d'un \hyperref[sec:org9aea287]{Marqueur}. Le camembert n'apportant aucune information particulière à votre propos.
+Dans le cas ou une seule partie de l'ensemble est mise en avant, il est à considérer l'utilisation d'un \hyperref[sec:org1b7d901]{Marqueur}. Le camembert n'apportant aucune information particulière à votre propos.
 
 Il n'est pas encore clairement établis si la comparaison des valeurs est réalisé par la perception des angles ou par la perception des longueurs d'arcs des différentes parties.\autocite{jonathanschwabishParttowhole2021}
 
 Ce diagramme possède un avantage majeur au regard des autres modes de représentation des parties d'un ensemble, il est très populaire et ainsi accessible à usager. \autocite{jonathanschwabishParttowhole2021} Il est également reconnu que les formes circulaires attirent l'intéret des utilisateurs.\autocite{jonathanschwabishParttowhole2021}
 \subsection*{Carte de fréquentation}
-\label{sec:org8e4cfbe}
+\label{sec:org5a78169}
 Excellente visualisation pour suivre la fréquence d'une activité. Favorise la quantité à la qualité (exemple : github). \autocite{alansmithLexiqueVisuel}
 \subsection*{Carte de température}
-\label{sec:org4c4135b}
+\label{sec:org9ddd1a8}
+Représentation graphique d'une table de valeur homogène. \autocite{sosulskiGraphics2019}
+Intéressante pour afficher une tendance lorsqu'un très grand nombre d'information est impliqué.
 
-Heatmap
+Ce graphique utilise les couleurs de la palette thermique \ref{fig:orga2f620e}.
+
+L'organisation des catégories changeant la forme de la matrice de température, il convient de retenir une organisation par valeur croissante ou décroissante à une colonne donnée. Il convient de signaler cette configuration au lecteur. \autocite{wilkeVisualizingAmounts2019}
+
+L'emplois de solutions d'intéractivité permet une meilleure découverte des données affichées.
 \subsection*{Cascade}
-\label{sec:org23d2430}
+\label{sec:orgf5ed92a}
 Affiche les gains et pertes entres deux états d'un système. \autocite{jonathanschwabishComparingCategories2021} Utilisé principalement pour les analyses financières. \autocite{alansmithLexiqueVisuel}
 \subsection*{Chandelier}
-\label{sec:org7d1d5ed}
+\label{sec:org670ea24}
 Affiche des bilans quotidiens (eg. ouverture, fermeture, point haut, point bas). \autocite{alansmithLexiqueVisuel}
 La couleur est utilisée pour représenter la direction de l'évolution de la valeur (augmente, descend).
 
 Illustre les évolutions d'un stock sur une temporalité donnée. La ligne indique l'état le plus haut et l'état le plus bas de la journée. La barre indique l'état de l'ouverture et de la cloture de la période. \autocite{jonathanschwabishDistribution2021} Il convient d'utiliser une palette de couleur binaire pour contraster les périodes aux soldes positifs des périodes aux soldes négatifs.
-\subsection*{Chronologie circulaire}
-\label{sec:orga0af8f2}
-Pour l'affichage des valeurs discrètes de taille variable à travers de multiples catégories. \autocite{alansmithLexiqueVisuel}
-\subsection*{Chronologie verticale}
-\label{sec:org0c3f316}
-Affiche le temps sur l'axe Y. Particulièrement adapté à l'affichage sur mobile. \autocite{alansmithLexiqueVisuel}
 \subsection*{Colonne vertébrale}
-\label{sec:orga7e38e9}
-Utilisé pour afficher la quantité de réponses négatives et positives à une question. Le spine divise une valeure quantitative unique en deux ccomposants distinct contrasté par un déterminent binaire. \autocite{alansmithLexiqueVisuel} Utilisé pour afficher la quantité de réponses négatives et positives à une question.
+\label{sec:orgaf08c1c}
+Utilisé pour afficher la quantité de réponses négatives et positives à une question. Le spine divise une valeure quantitative unique en deux composants distinct contrasté par un déterminent binaire. \autocite{alansmithLexiqueVisuel} Utilisé pour afficher la quantité de réponses négatives et positives à une question.
 \subsection*{Coordonnées parallèles}
-\label{sec:org361c068}
+\label{sec:orgfb331c3}
 Montre en simultané la valeur et la relation de catégories hétérogènes pour plusieurs systèmes. \autocite{jonathanschwabishRelationship2021} Permet de valoriser la valeur. \autocite{alansmithLexiqueVisuel}
 
 Pratique pour observer les schémas et relations entre les systèmes. \autocite{mikeyiHowChooseRight2020} Ce graphique est plus efficace pour explorer des jeux de données que pour les présenter à un audimat. \autocite{sosulskiGraphics2019}
@@ -535,45 +547,24 @@ Chaque axes de catégories peut avoir sa propre échelle. Cela représente mieux
 Afficher un grand nombre de jeux de données sur un même graphe risque de le rendre illisible. \autocite{jonathanschwabishRelationship2021} Dans ce cas il convient d'utiliser une palette de couleur de mise en évidence et de selectionner un ou deux jeux de données à mettre en avant.
 
 Lors de l'exploration d'un jeu de donnée à travers une interface informatique, il convient de mettre en avant la ligne pointée par l'utilisateur et de labeliser chaque points de catégorie avec la valeur associé. \autocite{sosulskiGraphics2019}
-\subsection*{Corde}
-\label{sec:org5e4d55b}
-Illustre les flux bidirectionnels et le gagnant net dans une matrice. \autocite{alansmithLexiqueVisuel}
-
-Dans la mesure du possible, il convient de flécher le sens du flux.
-
-Ce diagramme incite les utilisateurs à l'explorer plus en détail. \autocite{jonathanschwabishRelationship2021}
-\subsection*{Courbe de contrôle}
-\label{sec:org1a13534}
-
-Control charts are graphical plots used in production control to determine whether quality and manufacturing processes are being controlled under stable conditions. (ISO 7870-1)
-
-`\url{https://en.wikipedia.org/wiki/Control\_chart}`
 \subsection*{Courbe cumulative}
-\label{sec:orgd1128cc}
+\label{sec:orgc5ab427}
 Utilisé pour représenter une distribution inégale. L'axe des ordonnées est toujours la fréquence cumulative et l'axe des absisses est toujours une mesure. \autocite{alansmithLexiqueVisuel}
 \subsection*{Courbe de densité}
-\label{sec:org9cfd88a}
+\label{sec:org8aec8c4}
 La densité représente la probabilité de distribution des variables. \autocite{sosulskiGraphics2019} Pertinent lorsque le nombre de données est très grand, autrement il convient d'utiliser un histogramme. \autocite{wilkeVisualizingManyDistributions2019} En cas d'affichage de plusieurs courbe, utiliser  des remplissages transparents pour faciliter la distinctions. L'air de la courbe est usuellement égal à 1 et de ce fait, l'échelle de l'axe des ordonnées dépend de l'axe des absisses. \autocite{wilkeVisualizingManyDistributions2019}
 \subsection*{Donut}
-\label{sec:orgec2fc0e}
+\label{sec:org95b9720}
 Dans un graphique en donut, les valeurs sont à comparer en fonction des longueurs d'arcs.
 
 Comme le diagramme circulaire, le centre peut être utilisé pour afficher un total ou encore une icone. \autocite{alansmithLexiqueVisuel}
 
-Il est, autrement, en tout point similaire aux \hyperref[sec:org2e47929]{Camembert}
-\subsection*{Etats parallèles}
-\label{sec:org13fc578}
-Montre les changements sur un flux entre un état et au moins un autre. Adapté au traçage d'un processus complexe. \autocite{alansmithLexiqueVisuel}
-Cette représentation découpe un ensemble en quantité individuelles de plusieurs catégories. Les bandes sont tracées entre chaque catégories pour représenter leurs relations. La largeur des bandes indiquent la proportion des catégories correllées les unes aux autres. \autocite{wilkeVisualizingNestedProportions2019}
-A utiliser à la place des mosaiques et treemaps lorsqu'il y a plus de deux variables de regroupement des données. \autocite{wilkeDirectoryVisualizations2019}
+Il est, autrement, en tout point similaire aux \hyperref[sec:org98909e2]{Camembert}
 \subsection*{Eventail}
-\label{sec:orgaecdef7}
+\label{sec:org53da8f1}
 Utilisé pour montrer l'incertitude des projections futures. \autocite{alansmithLexiqueVisuel}
-\subsection*{Frise de Priestley}
-\label{sec:orgaef3757}
-Parfait lorsque la date et la durée sont des éléments clés dans l'histoire de la donnée. \autocite{alansmithLexiqueVisuel}
 \subsection*{Haltères}
-\label{sec:orga599229}
+\label{sec:org44291db}
 Utilisé pour comparer un minimum et un maximum de plusieurs catégories. \autocite{alansmithLexiqueVisuel} La relation entre le maximum et le minimum d'une catégorie est représenté par la barre reliant les deux valeurs. \autocite{mikeyiHowChooseRight2020}
 
 Peut être utilisé pour illustrer le changement d'une valeur entre deux état données. Dans ce cas, il convient de flécher le sens du changement de l'état antérieur vers l'état final.
@@ -582,16 +573,16 @@ Dans ces deux cas de figures, les catégories doivent êtres ordonnées de la pl
 
 Les haltères sont toujours affichés à l'horizontal.
 \subsection*{Histogramme}
-\label{sec:org5e09461}
+\label{sec:orgbd88464}
 Utilisé pour afficher la fréquence d'une variable simple regroupée en intervale de fréquence (agrégat).\autocite{sosulskiGraphics2019} Il affiche ainsi une distribution statistique de donnée. Il n'y a pas d'espace entre deux barres (ratio 1:0) ce qui permet de favoriser la forme de la distribution. \autocite{alansmithLexiqueVisuel}
 
 La nature du graphique (barre) implique un calcul d'agrégat pour chaque barre. \autocite{wilkeVisualizingDistributionsHistograms2019} La largeur de l'agrégat est à évaluer par le concepteur au regard du niveau de détail souhaité.\autocite{wilkeVisualizingDistributionsHistograms2019}
 
 L'histogramme n'est pas adapté aux cas suivant :
 \begin{itemize}
-\item l'affichage de l'ensemble des valeurs, pour cela il convient d'utiliser une \hyperref[sec:org9cfd88a]{Courbe de densité}. \autocite{wilkeVisualizingDistributionsHistograms2019}
-\item s'il y a peu de valeurs dans le jeu de données, \autocite{weissgerberBarLineGraphs2015} préférez l'utilisation d'une \hyperref[sec:org3f6fad5]{Bande de valeur}.
-\item l'affichage de plusieurs distributions,\autocite{wilkeVisualizingDistributionsHistograms2019} utilisez une décomposition en \hyperref[sec:orge3b89ac]{Matrice de graphique}.
+\item l'affichage de l'ensemble des valeurs, pour cela il convient d'utiliser une \hyperref[sec:org8aec8c4]{Courbe de densité}. \autocite{wilkeVisualizingDistributionsHistograms2019}
+\item s'il y a peu de valeurs dans le jeu de données, \autocite{weissgerberBarLineGraphs2015} préférez l'utilisation d'une \hyperref[sec:orgf09a52e]{Bande de valeur}.
+\item l'affichage de plusieurs distributions,\autocite{wilkeVisualizingDistributionsHistograms2019} utilisez une décomposition en \hyperref[sec:org855a817]{Matrice de graphique}.
 \end{itemize}
 
 L'utilisation d'un histogramme permet d'identifier des schémas de distributions tels que : \autocite{jonathanschwabishDistribution2021}
@@ -604,10 +595,10 @@ L'utilisation d'un histogramme permet d'identifier des schémas de distributions
 \item \textbf{Uniforme :} lorsque toutes les valeurs sont distribuées de façon globalement homogène
 \end{itemize}
 \subsection*{Horizon}
-\label{sec:org64423aa}
+\label{sec:org2b0121a}
 Permet de vérifier un équilibre entre deux borne par rapport à une base. \autocite{alansmithLexiqueVisuel}  Utilisé pour suivre l'évolution d'une variable dans le temps et devant respecter un écart-type (eg. tension à 230V +/- 5\%). L'information la plus importante est le dépassement de l'écart-type. Pour correctement mettre en évidence ces phénomènes, il est recommendé d'utiliser une palette de couleur de
 \subsection*{Jauge}
-\label{sec:orgef0a7f6}
+\label{sec:org5a983d4}
 Les jauges sont des représentations familières et facile à lire. \autocite{jonathanschwabishComparingCategories2021} En ce sens, elles sont pertinente pour afficher des données. Cependant, il convient de s'intéresser particulièrement à leurs représentation métaphorique. Les graphiques en jauge étant un skeumorphisme, leurs utilisation est probablement plus pertinente pour l'affichage d'information pour lesquelles elles sont utilisées dans le monde physique.
 
 Cela concerne par exemple :
@@ -617,9 +608,9 @@ Cela concerne par exemple :
 \item L'affichage d'un niveau dans un réservoir.
 \end{itemize}
 
-Pour tout autre usage, et considérant la difficulté humaine d'interprétation d'une valeur en comparant des angles ainsi que le manque d'options pertinentes pour ajouter des informations qualitatives sur les jauges, il convient d'utiliser un graphique en \hyperref[sec:orgbdee5c6]{Tiret}.
+Pour tout autre usage, et considérant la difficulté humaine d'interprétation d'une valeur en comparant des angles ainsi que le manque d'options pertinentes pour ajouter des informations qualitatives sur les jauges, il convient d'utiliser un graphique en \hyperref[sec:org10010af]{Tiret}.
 \subsection*{Ligne}
-\label{sec:orgc614473}
+\label{sec:org264a4e0}
 Inventé par Playfair en 1786 \autocite{sosulskiBecomingVisual2019}
 Représentation graphique standard et famillière pour la représentation des séries temporelles. \autocite[,@Schwabish2021p86]{alansmithLexiqueVisuel}
 
@@ -631,7 +622,7 @@ Il n'existe pas de rêgle stricte quand à la limite de séries affichables sur 
 \begin{itemize}
 \item En cas d'impression, limiter le nombre de lignes simultanées à 4 au maximum, \autocite{wongWallStreetJournal2010}
 \item Si l'interraction est possible avec le graphique, il est possible de tracer toutes les lignes dans un même graphique à condition d'utiliser un système de mise en évidence,\autocite{jonathanschwabishTime2021}
-\item Ces cas échouant, séparez les lignes et tracez une \hyperref[sec:orge3b89ac]{Matrice de graphique}.
+\item Ces cas échouant, séparez les lignes et tracez une \hyperref[sec:org855a817]{Matrice de graphique}.
 \end{itemize}
 
 Ne pas utiliser ce graphique pour essayer d'illustrer une différence entre deux courbes. \autocite{jonathanschwabishTime2021}
@@ -643,8 +634,10 @@ Il est possible de mettre en évidence un point spécifique en utilisant un symb
 La distinction des séries est plus efficace en utilisant des teintes différentes. Dans ce cas, il convient également d'utiliser des tons différents pour assurer le maintiens des distinctions si le graphique est imprimé en nuance de gris. \autocite{stephenfewComponentlevelGraphDesign2012}
 Il convient également de n'utiliser que des lignes continues pour les tracés. \autocite{stephenfewComponentlevelGraphDesign2012}
 L'utilisation de symboles comme éléments différenciants entre les séries n'est pas pertinent. \autocite{stephenfewComponentlevelGraphDesign2012}
+
+La plage allant de la plus petite à la plus grande valeur occupe entre 70 et 80\% de l'espace vertical dans le graphique.\autocite{mikecisnerosWhatLineGraph2024}
 \subsection*{Ligne de crête}
-\label{sec:org4625e52}
+\label{sec:orgc578ed3}
 Ce graphique représente des courbes de densité séparées par un offset et est utilisé pour comparer la distribution d'une vrariable entre des catégories. \autocite{wilkeVisualizingManyDistributions2019} Parfait lorsque les schémas de distributions sont bien distincts entre les groupes. \autocite{mikeyiHowChooseRight2020} Cela évite que les courbes de densités des catégories s'entrevêchent.\autocite{jonathanschwabishDistribution2021}
 
 Ce graphique se met très bien à l'échelle de grands jeux de données. \autocite{wilkeVisualizingManyDistributions2019}
@@ -663,19 +656,19 @@ Il est possible d'afficher les barres d'erreurs dans les lignes de crêtes. Ce m
 
 Il est possible d'afficher les nuages de points dont l'estimation de la courbe de densité est issue. Ceux-ci sont affichés en dessous des courbes de densité. Cette forme de représentation est appelé "Nuage de pluie". (ref: Micah Allan ou Schwabish2021p212) Cette représentation offre à la fois une représentation générique et une visualisation précise des données. \autocite{jonathanschwabishDistribution2021} Bien que cette représentation soit très efficace, elle n'est pas très répendue. \autocite{jonathanschwabishDistribution2021} Il faut être vigilent à bien expliquer son fonctionnement lors de son utilisation dans un rapport. Dans le cas d'un nuage de pluie, il faut faire attention à ce que les points de données n'entre pas en surimposition avec les courbes de densitées tracées en dessous.
 \subsection*{Lollipop}
-\label{sec:orgbda6ce2}
+\label{sec:org8fdcd95}
 Utilisé pour afficher la position dans une liste ordonnée lorsque l'affichage de la valeur est moins important que la position. \autocite{alansmithLexiqueVisuel} Egalement très efficace comparé aux barres hordonnées lorsqu'il y a un grand nombre de catégorie dans le classement. \autocite{mikeyiHowChooseRight2020}  Si une ligne connecte le point de la valeur à laxe des ordonnées, l'axe des absisse doit commencer à 0, autrement cela n'est pas obligatoire.
 \subsection*{Marqueur}
-\label{sec:org9aea287}
+\label{sec:org1b7d901}
 Affiche une valeur simple, plus pertinent lorsqu'associé à une tendance sur une période donnée. \autocite{mikeyiHowChooseRight2020}
 \subsection*{Marimeko}
-\label{sec:org4a0b5f5}
+\label{sec:orgd6b551c}
 Visualisation de la taille et des proportions d'un ensemble homogène de données. \autocite{alansmithLexiqueVisuel}
 Exemple : répartition des parts de marché de 3 entreprises sur un axe et taux dans 3 catégories de marché pour chacune
 
 La couleur peut être utilisée pour mettre en évidence une valeur. \autocite{jonathanschwabishComparingCategories2021} Attention au biais de correlation lorsque ce graphique est utilisé pour représenter plusieurs variables. \autocite{jonathanschwabishComparingCategories2021}
 \subsection*{Matrice de bulle}
-\label{sec:org0a46421}
+\label{sec:orgc8b98fc}
 Ce graphique est une version aggrégée du nuage de bulle et le la matrice de température.
 
 Il simplifie la visualisation des relations entre un couple de variable. A réserver pour un usage d'exploration de donées. \autocite{sosulskiGraphics2019} La taille des bules représente la force de la corrélation. Cette force est la représentation du coefficient de Pearson. \autocite{jonathanschwabishRelationship2021}
@@ -684,9 +677,7 @@ La couleur peut être utilisée pour distinguer les catégories (à vérifier). 
 
 Le tableur associée est une matrice de correlation organisant les valeurs de coefficient de Pearson.
 \subsection*{Matrice de graphique}
-\label{sec:orge3b89ac}
-`\url{https://en.wikipedia.org/wiki/Small\_multiple}`
-
+\label{sec:org855a817}
 Popularisé par E. Tufte
 
 Est utilisé pour comparer de multiples graphiques homogènes organisées en matrices. Chaque entité affiche le graphique d'une catégorie. Les graphiques sont tous à la même échelle. \autocite{sosulskiGraphics2019}
@@ -698,32 +689,24 @@ Interractivité : pouvoir explorer l'ensemble des graphiques simultanéments (eg
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{./img/small-multiple.pdf}
-\caption{\label{fig:orga087681}Composition d'une matrice de graphique}
+\caption{\label{fig:org0e1e187}Composition d'une matrice de graphique}
 \end{figure}
-\subsection*{Matrice de température}
-\label{sec:org7303f1a}
-Représentation graphique d'une table de valeur homogène. \autocite{sosulskiGraphics2019}
-Intéressante pour afficher une tendance lorsqu'un très grand nombre d'information est impliqué.
-
-En utilisant une palette de couleur séquentielle, un lecteur aura tendance à considérer une couleur sombre comme une valeur haute. En utilisant une palette de couleur divergente (eg. basée sur la température de la couleur), ce phénomène s'estompe.
-
-L'organisation des catégories changeant la forme de la matrice de température, il convient de retenir une organisation par valeur croissante ou décroissante à une colonne donnée. Il convient de signaler cette configuration au lecteur. \autocite{wilkeVisualizingAmounts2019}
-\subsection*{Mini-graphe}
-\label{sec:orgafc7bed}
+\subsection*{Minigraphe}
+\label{sec:org6ab6db9}
 Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. Un mini-graphe ne possède pas d'axes ni d'autres détails et est composé uniquement d'une courbe et d'un point indiquant la dernière valeur du jeu de donnée. \autocite{sosulskiGraphics2019} Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise. \autocite{jonathanschwabishDistribution2021}
 
 Un mini-graphe ne possède pas d'axes ni d'autres détails.
 \subsection*{Nuage de bulle}
-\label{sec:orgbe92c00}
+\label{sec:orgf7386cd}
 Il s'agit d'un nuage de point dont la taille des bules est utilisé pour représenter une troisieme valeur quantitative. \autocite{alansmithLexiqueVisuel}
 \subsection*{Nuage de mots}
-\label{sec:orgc467a63}
+\label{sec:orgc483801}
 Affiche des nuages de mots organisés en groupes sémantiques. La taille des mots indique leur fréquence d'utilisation dans le corpus étudié. La couleur des groupes peut représenter un choix de données qualitative (catégorisation). \autocite{sosulskiGraphics2019} Cette visualisation est une méthode d'exploration de texte utile pour réaliser une synthèse macroscopique.
 Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la composition des nuages. \autocite{jonathanschwabishQualitative2021} Des listes de mots vides peuvent être trouvées à l'adresse \url{https://github.com/stopwords-iso/}.
 \subsection*{Nuage de point}
-\label{sec:org12b85c8}
+\label{sec:org2797eb0}
 Représente la relation entres deux variables continues. \autocite{alansmithLexiqueVisuel}
-La couleur est la meilleure façon de distinguer les catégories.\autocite{stephenfewComponentlevelGraphDesign2012} Pour cela, utilisez la pallette catégorique (\ref{fig:org9bae2ad})
+La couleur est la meilleure façon de distinguer les catégories.\autocite{stephenfewComponentlevelGraphDesign2012} Pour cela, utilisez la pallette catégorique (\ref{fig:org02befec})
 
 Dans un maximum de 3 catégories de données, il est possible d'utiliser un double encodage combinant une forme et une couleur.\autocite{andreaskrauseBestPracticesData2024}
 
@@ -732,7 +715,7 @@ les formes recommandées sont :
 \begin{figure}[H]
 \centering
 \includegraphics[width=3.2cm]{./img/formes.pdf}
-\caption{\label{fig:org13121bd}Formes des points de données}
+\caption{\label{fig:org2f92ddf}Formes des points de données}
 \end{figure}
 
 Leur avantage est qu'elles n'ont pas de connotation intuitive.\autocite{andreaskrauseBestPracticesData2024} (retirer la croix?)
@@ -746,7 +729,7 @@ Si des milliers de point de données sont à afficher, il est préférable d'uti
 Cela permet de limiter le masquage des points de données par surimposition. \autocite{andreaskrauseBestPracticesData2024}
 \end{itemize}
 \subsection*{Nuage de point connecté}
-\label{sec:org643d201}
+\label{sec:org403e52d}
 Ce graphique est utilisé pour représenter les mouvements entre des étapes. Il permet d'identifier des schémas de progressions comme des cycles et des irrégularités qui seraient difficiles de remarquer autrement. \autocite{wilkeVisualizingTimeSeries2019}
 
 Lors de l'utilisation de ce type de graphique, il convient d'indiquer la direction ainsi que la temporalité étudiée. \autocite{wilkeVisualizingTimeSeries2019}
@@ -763,24 +746,17 @@ Comme ce graphique sert à synthétiser des variations de valeurs, il est préf�
 
 Un exemple d'utilisation du nuage de point connecté : `\url{https://share.stateofjs.com/share/prerendered?localeId=en-US\&surveyId=state\_of\_js\&editionId=js2024\&blockId=tools\_arrows\&params=\&sectionId=libraries}`
 \subsection*{Pareto}
-\label{sec:org9a16ce9}
+\label{sec:orgdb6fccd}
 Ce type de graphique montre la relation entre les valeurs quantitatives de catégories organisées en colonne ordonnée et la valeur cumulée affichée en ligne brisée. Le premier point de la ligne vérifiant \(\tau\geq80\%Total\) est affichée. La zone précédent ce point est mise en évidence.
 Est utilisé pour illustrer les éléments important dans un système qualité.
 \subsection*{Pente}
-\label{sec:orgbbad05e}
+\label{sec:org42379ad}
 Affiche la variation des valeurs ou ratios des catégories entre deux états donnés. \autocite{alansmithLexiqueVisuel}
-\subsection*{Pictogramme}
-\label{sec:orgc3c5cad}
-Utilisation hautement contextuelle limiter strictement à l'affichage d'entiers naturels. \autocite{alansmithLexiqueVisuel}
-Les pictographes peuvent augmenter significativement la précision d'acquisition d'un écart de ratio ainsi que la rapidité de la visualisation d'un minimum ou d'un maximum entre des catégories. \autocite{tranDiscoveringAccessibleData2024} A la manière des symboles groupées, si la transmission de valeurs précise est importante, il convient d'utiliser un graphique en barre ordonnée à la place. \autocite{tranDiscoveringAccessibleData2024}
-\subsection*{Polygone de fréquence}
-\label{sec:org32ba198}
-Utilisé pour afficher simultanément plusieurs distributions de données. Fonctionne comme un histogramme. Chaque agrégat est représenté par un point et ils sont reliés entres eux par un segment droit. Pour faciliter la lécture, il convient de limiter le nombre de distributions affichées à 4 \autocite{alansmithLexiqueVisuel} ce qui correspondant notamment au nombre de symboles aisément discriminables.
 \subsection*{Quadrillage}
-\label{sec:org70d98dc}
+\label{sec:org1969a08}
 Adapté à l'affichage des informations en pourcentages. Fonctionne mieux avec des entiers naturels. \autocite{alansmithLexiqueVisuel} Généralement en grille de 10 x 10 carrés (pour un total de 100). Chaque carré représente 1\% d'un tout. Les carrés sont colorés sur la base de la taille d'une catégorie dans un groupe. \autocite{mikeyiHowChooseRight2020}
 \subsection*{Radar}
-\label{sec:orge5c6690}
+\label{sec:orgc39a578}
 Représentation compacte de la valeur de variables hétérogènes pour un seul système. \autocite{alansmithLexiqueVisuel} Les radards sont utilisés pour identifier les variables ayant des valeurs similaires et les exceptions. \autocite{sosulskiGraphics2019}
 
 La représentation des valeurs se fait à travers la forme globale du polygonne. Il convient de coloriser l'interrieur de celui-ci pour bien faire ressortir sa forme. \autocite{jonathanschwabishRelationship2021}
@@ -788,27 +764,25 @@ La représentation des valeurs se fait à travers la forme globale du polygonne.
 Utiliser une disposition en small-multiples plutot que de surimposer plusieurs polygones de valeurs. \autocite{jonathanschwabishRelationship2021}
 
 La représentation des variables est fortement correlé à la forme du polygone plutot qu'aux valeurs des sommets. \autocite{sosulskiGraphics2019} De ce fait, pour améliorer la forme du polygonne et offrir une représentation avec le moins de distortions possibles, il convient d'homogénéiser les échelles des axes.
-\subsection*{Réseau}
-\label{sec:org6ab342a}
-Utilisé pour montrer la force et l'interconnectivité et les relations de multiples entitées. \autocite{alansmithLexiqueVisuel} La position des nœuds n’a pas de fonction logique. Elle vise à rendre le diagramme le plus lisible possible. \autocite{mikeyiHowChooseRight2020}
-
-
-
-Il existe 4 types de diagrammes de réseaux : \autocite{jonathanschwabishRelationship2021}
-\begin{itemize}
-\item Non dirigé et non pondéré,
-\item Non dirigé et pondéré,
-\item Dirigé et non pondéré,
-\item Dirigé et pondéré.
-\end{itemize}
 \subsection*{Ruisseau}
-\label{sec:orgf46edc7}
-Vérifier la méthafore liée au nom
+\label{sec:org488f7ed}
+Vérifier la métaphore liée au nom
 
 A privilégier lorsque la visualisation des changements en proportions au fil du temps est plus importante que les valeurs individuelles. \autocite{alansmithLexiqueVisuel}
 \subsection*{Sankey}
-\label{sec:org02777cb}
+\label{sec:org60082a7}
 Créé par : Matthew Henry Phineas Riall Sankey (1898)
+
+V1 : "Etat parallele"
+
+Montre les changements sur un flux entre un état et au moins un autre. Adapté au traçage d'un processus complexe. \autocite{alansmithLexiqueVisuel}
+
+Cette représentation découpe un ensemble en quantité individuelles de plusieurs catégories. Les bandes sont tracées entre chaque catégories pour représenter leurs relations. La largeur des bandes indiquent la proportion des catégories correllées les unes aux autres. \autocite{wilkeVisualizingNestedProportions2019}
+
+A utiliser à la place des mosaiques et treemaps lorsqu'il y a plus de deux variables de regroupement des données. \autocite{wilkeDirectoryVisualizations2019}
+
+V2 : "Entrées et sorties"
+
 L'épaisseur représente la part d'un évènement. Chaque flèche représente l'entrée ou la sortie d'élément sur le système étudié. \autocite{mikeyiHowChooseRight2020}
 
 Les changements sont liés à une évolution temporelle et à l'association de catégories. La force de ce graphique est qu'aucun de ces deux aspect ne pévaut sur l'autre. \autocite{jonathanschwabishComparingCategories2021}
@@ -816,14 +790,19 @@ Les changements sont liés à une évolution temporelle et à l'association de c
 Très utile pour représenter les flux entre des catégories ou entre des états. \autocite{jonathanschwabishComparingCategories2021}
 
 Il convient néanmoins de limiter le nombre de catégorie  affiché pour maintenir un bon niveau de lisibilité. \autocite{jonathanschwabishComparingCategories2021}
+
+V3 : "Echanges, corde"
+
+Illustre les flux bidirectionnels et le gagnant net dans une matrice. \autocite{alansmithLexiqueVisuel}
+
+Dans la mesure du possible, il convient de flécher le sens du flux.
+
+Ce diagramme incite les utilisateurs à l'explorer plus en détail. \autocite{jonathanschwabishRelationship2021}
 \subsection*{Sismogramme}
-\label{sec:orgc7ab31a}
+\label{sec:orga893d60}
 Pour montrer des séries à grandes variation dans les données. \autocite{alansmithLexiqueVisuel}
-\subsection*{Symbole groupé}
-\label{sec:orge1202f0}
-Utile lorsqu'il est utile de compter ou de mettre en évidence des éléments individuels organisés en barre ou en colonne. \autocite{alansmithLexiqueVisuel} Cependant, ce type de graphique n'est pas efficace dans cette action car il incite le lecteur à compter chaque point, ce qui peut s'avérer décourageant. \autocite{stephenfewSillyGraphsThat2012} Un certain usage peut être imaginé à des fins décoratives visant à illustrer un élément déjà explicité dans un texte. Un graphique en barre ordonné est à privilégier aux symboles groupés.
 \subsection*{Tiret}
-\label{sec:orgbdee5c6}
+\label{sec:org10010af}
 selont Schwabish : inventé par Few
 
 La valeur actuelle mesurée ou calculée est observée au moyen d'une barre horizontale constrastant avec l'arrière plan. \autocite{jonathanschwabishComparingCategories2021}
@@ -833,38 +812,29 @@ L'arrière plan expose 3 zones dites qualitative et associées à des notions de
 Editer une série de tirets permet d'exposer au lecteur diverses comparaisons tout en restant compacte. \autocite{jonathanschwabishComparingCategories2021}
 
 Cette représentation est notamment pertinente lors de la réalisation d'un benchmark. \autocite{mikeyiHowChooseRight2020}
-\subsection*{Tunnel}
-\label{sec:orge265e21}
-Utilisé pour suivre l'engagement d'une population (taille) à chaque étape d'un processus (barre). \autocite{mikeyiHowChooseRight2020}
-
-Bien que répendu dans les analyses marketing (suivi des processus de vente), ce graphique n'est pas réellement pertinent. Sa composition ne représente pas correcement les données et il n'est pas évident de comprendre les différences entre chaque segments.\autocite{stephenfewSillyGraphsThat2012}
-
-Si la quantité de chaque étape d'un processus est l'information la plus importante, il est préférable d'avoir recours à un diagramme en \hyperref[sec:orgb0f48a4]{Barre ordonnée}.
-
-S'il est  souhaité de visualiser les pertes quantitatives au fil d'un processus, il sera préférable d'employer un diagramme de \hyperref[sec:org02777cb]{Sankey}.
 \subsection*{Treemap}
-\label{sec:org463102d}
+\label{sec:org33ffe1e}
 Utilisé pour les relations hiérarchiques d'une partie vers l'ensemble. Difficile à lire s'il y a trop d'éléments affichés. \autocite{alansmithLexiqueVisuel}
 Le découpage des boites n'a pas besoin d'être ordonné, il peut y avoir plus de 2 niveaux de hiérarchie. \autocite{mikeyiHowChooseRight2020}
 \subsection*{Valeur lettrée}
-\label{sec:org4bf39f8}
+\label{sec:org28d6ba9}
 Représente chaque découpage statistique (\(x\sigma\)) par une boite distincte. Convient en remplacement des boites à moustache lorsqu'il y a un très grand nombre de données disponibles. Permet de faire des estimations fiables. \autocite{hofmannLettervaluePlotsBoxplots2017,mikeyiHowChooseRight2020}
 \subsection*{Violon}
-\label{sec:org758132d}
+\label{sec:org341544e}
 Représente fidèlement les distributions d'un très grand nombre de données. \autocite{alansmithLexiqueVisuel} Utilisé pour faire des comparaisons entre des catégories. \autocite{mikeyiHowChooseRight2020}  Très pertinent pour représenter les distributions bimodales. \autocite{wilkeVisualizingManyDistributions2019} Le tracé du demi-violon est identique au tracé d'une courbe de densité. Celui-ci commence à la valeur la plus petite et termine à la valeur la plus grande.
 \subsection*{Voronoi}
-\label{sec:orgce80817}
+\label{sec:org4994ff9}
 Semblable à un diagramme de bulle mais transformées en zones dont l'ensemble des points de chacune est plus proche du centre de sa zone que de tout autre centroïde. \autocite{alansmithLexiqueVisuel}
 
 Il est très pertinent pour illustrer les parties d'un ensemble lorsque de nombreuses sous-catégories sont à afficher. \autocite{jonathanschwabishParttowhole2021} En ce sens, il est préféré aux camenberts.
 \section*{Etudes futures}
-\label{sec:org4fe4a09}
+\label{sec:org291bc54}
 Des études complémentaires pourraient être menées sur les sujets suivants :
 \begin{itemize}
 \item La conception de librairies de graphiques accessibles et fonctionnant aussi bien dans un usage web que dans les PDF,
 \end{itemize}
 \section*{Evolution}
-\label{sec:org3fdac8e}
+\label{sec:org92f0b67}
 \begin{center}
 \begin{tabular}{rl}
 Date & Changements\\
@@ -873,7 +843,9 @@ Date & Changements\\
 \end{tabular}
 \end{center}
 \section*{Glossaire}
-\label{sec:orgd267edb}
+\label{sec:org523a7c0}
+\subsection*{Vocabulaire technique}
+\label{sec:orgb4224dd}
 \begin{description}
 \item[{Big data}] Désigne les ressources d’informations dont les caractéristiques en termes de volume, de vélocité et de variété imposent l’utilisation de technologies et de méthodes analytiques particulières pour créer de la valeur et qui dépassent en général les capacités d'une seule et unique machine.
 \item[{Jumeau numérique}] Modèle numérique qui reconstitue fidèlement un objet, une opération ou un système tel qu'utilisé (ou maintenu/exploité).
@@ -883,7 +855,8 @@ Date & Changements\\
 \item[{Skeumorphisme}] Elément de design dont la forme n'est pas directement liée à la fonction, mais qui reproduit de manière ornementale un élément qui était nécessaire dans l'objet d'origine.
 \item[{Sonification}] Représentation et émission de données sous forme de signaux acoustiques non verbaux aux fins de la transmission ou de la perception d’information.
 \end{description}
-
+\subsection*{Troubles neurodivergents}
+\label{sec:orgf2d4558}
 \begin{description}
 \item[{Autisme}] Troubles caractérisé par des difficultés dans les interactions sociales et la communication, ainsi que par des comportements et intérêts à caractère restreint, répétitif et stéréotypé.
 \item[{Dyscalculie}] Trouble sévère dans les apprentissages numériques, sans atteinte organique, sans troubles envahissants du développement et sans déficience mentale et engendrant notamment des difficultés en mathématiques.
@@ -892,7 +865,8 @@ Date & Changements\\
 \item[{Epilepsie}] Prédisposition cérébrale à engendrer des "crises" épileptiques dites "non provoquées", c'est-à-dire spontanées, non expliquées par un facteur causal immédiat.
 \item[{TDA/H}] Trouble provoquant trois types de symptômes pouvant se manifester seuls ou combinés : des difficultés d'attention et son contrôle, des symptômes d'hyperactivité et d'hyperkinésie.
 \end{description}
-
+\subsection*{Troubles de la vision}
+\label{sec:orgeb2ea8b}
 \begin{description}
 \item[{Achromatopsie}] Absence totale de vision des couleurs.
 \item[{Deutéranopie}] Incapacité à différencier le rouge du vert.
@@ -903,7 +877,7 @@ Date & Changements\\
 \item[{Tritanomalie}] Sensibilité au bleu réduite avec une tendance à le confondre avec le vert ou le jaune.
 \end{description}
 \section*{Acronymes}
-\label{sec:orgc736908}
+\label{sec:orge90be1a}
 \begin{description}
 \item[{BIM}] Building Information Modeling
 \item[{BIS}] Building Information System
@@ -913,6 +887,6 @@ Date & Changements\\
 \item[{VDC}] Virtual Design and Construction
 \end{description}
 \section*{Références}
-\label{sec:org9803504}
+\label{sec:org5906297}
 \printbibliography[heading=none]
 \end{document}
