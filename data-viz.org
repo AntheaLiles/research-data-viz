@@ -158,7 +158,13 @@ Chaque couleur doit rester distinguable des autres en toute condition.[cite:@wil
 Palette de couleur à prohiber.[cite:@wilkeCommonPitfallsColor2019]
 
 ** Graphiques
-*** Titre
+Pour qu'un graphique s'intègre correctement dans un document, il convient de prévoir une zone de protection. Dans la figure [[fig:ZPR]] nous proposons un exemple de protection relative aux largeurs des marges latérales.
+
+#+caption: Zones de protection d'un graphique
+#+name: fig:ZPR
+#+attr_latex: :placement [H]
+[[./img/general-graphics-rules.pdf]]
+
 *** Cadre
 Les lignes d'ages
 
@@ -250,7 +256,7 @@ Ne pas effectuer de rotation sur un tableur, son orientation doit respecter cell
 
 Maintenir les aligmnements les titres avecc celui des données en colonnes.
 
-*** Chiffres
+*** Chiffre
 Aligner les chiffres à droite.
 Homogénéiser les décimales (généralement 2 ou 3 décimales suffisent suivant le contexte).
 Indiquer les valeurs négatives avec le symbole moins "-", ici la notion de valeur symbolique est importante. Certains choisissent d'identifier les valeurs négatives entre parenthèses, cependant il ne s'agit pas d'une représentation naturelle répendue pour une telle identification.
@@ -264,7 +270,7 @@ Aligner les textes à gauche.
 Centrer les dates et utiliser une convention stricte d'écriture de ces données telles que "YYYY-MM-DD". [cite:@ISO8601-1DateHeureRepresentations2019] La composition de la date doit être indiqué à l'utilisateur. Le choix du format doit respecter le niveau de précision associée à la mesure. Implicitement, le choix d'un formatage de plus haut niveau que la précision de la mesure induit une agrégation des valeurs.
 Centrer les données dont la largeur de charactère est fixe.
 
-*** Sommaire et agrégats
+*** Sommaire et agrégat
 Utiliser une ligne verticale pour séparer les valeurs placées en colonne à droite de toutes les valeurs.
 Utiliser une ligne horizontale si ces valeurs sont placées en une ligne en bas du tableau.
 Si ces valeurs sont le message important de votre tableur, il convient de les affichés imédiatement à droite des colonnes de catégories ou immédiatement en dessous des entêtes de colonnes, suivant la nature du sommaire.
@@ -291,103 +297,177 @@ Il est recommandé de limiter cette opération à un nombre réduit de valeur. S
 
 * Méthode de sélection
 
-#+caption: Matrice de sélection
-#+name: fig:HowTo-Select
-#+attr_latex: :float multicolumn
-[[./img/methode-de-selection.pdf]]
-
-
 * Méthode de validation
 Comme tout élément informatique, un graphique doit être vérifier et valider. Cela est d'autant plus nécessaire si la production de graphique est intégré à un pipeline de donnée.
 
 En premier lieu, il convient de vérifier l'abscence de "distortion" des données affichées pour limiter les biais inhérents.[cite:@stephenfewGeneralGraphDesign2012]
 
-$$\text{Rédiger la formule de "truth validation"}$$
-
-Vérifier l'absence de distortion
+$$LieFactor=\abs{\frac{\frac{\Delta VisualLength}{VisualStartLength}}{\frac{\Delta Data}{DataStart}}}$$
+[[https://www.labo.mathieurella.fr/?p=395][source]]
 
 Références à Sosulski & Tufte : Lie Factor
 
-$$\LieFactor=\abs{\frac{\frac{\Delta VisualLength}{VisualStartLength}}{\frac{\Delta Data}{DataStart}}}$$
-
-https://www.labo.mathieurella.fr/?p=395
-
 * Graphiques
-:PROPERTIES:
-:COLUMNS: %ITEM %chart-class %data-processing %data-table %data-cleanning %data-filter %data-unit
-:END:
-** Arbre de mot
-:PROPERTIES:
-:en-name: Treeword
-:chart-class: correlation
-:chart-goal: discovery
-:data-nature: quantitative
-:data-type: text
-:DATA-TRANSFERT: count
-:data-table: key-value
-:data-cleanning: stopwords
-:data-filter: depth
-:data-unit: nil
-:DATA-PROCESSING: COUNT()
-:END:
-Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegs 2007) La taille des mots représente la fréquence de leurs usages. [cite:@jonathanschwabishQualitative2021]
+A travers notre revue de litérature, nous avons identifié deux directions pouvant aider à la selection de la meilleure représentation graphique d'informations.
 
-** Bande de valeur
+La première est de trier les types de graphiques au regard du type de données qui leurs sont appropriés. Cela implique implicitement que l'utilisateur doit connaitre les données qu'il manipule.
+
+Cela peut représenter un défi pour une population d'utilisateurs d'avantages orientés vers des aspects opérationnels qu'informatiques.
+
+Nous sommes tout de même convaincu que la selection d'un type de graphique doit discretement filtrer les données affichés à l'utilisateurs pour s'assurer du correct emploi du graphique.
+
+La seconde direction est de filtrer les types de graphiques en fonction de l'objectif de l'utilisateur. Nous avons poursuivi notre étude dans ce sens. La figure [[fig:select-filter]] propose un premier niveau de discrimination des types de représentations en identifiant en premier lieu si le graphique doit s'actualiser en temps réel puis en orientant vers des catégories de graphiques au regards de l'objectif recherché.
+
+#+caption: Parcours de sélection initial
+#+name: fig:select-filter
+#+attr_latex: :float multicolumn
+[[./img/select-filter.pdf]]
+
+La suite de l'étude présentera, pour chaque catégorie de graphique, un parcours de discrimination supplémentaire.
+
+Pour améliorer l'assistance informatique de l'informatique  à l'utilisateur dans son parcours de conception de graphique, il pourrait être envisager d'étudier la conception d'une interface de requête en langage formel et produisant une proposition de graphique. 
+
+Un graphique conçu dans un espace partager d'analyse de donnée peut être difficile à retrouver. Il peut également être affiché dans divers contextes tels qu'une présentation, un rapport ou encore un tableau de bord. Une étude traitant de la récupération d'information associé à une analyse sémantique des graphiques pourrait être menée pour concevoir un système adapté à la recherche d'un graphique existant.
+
+** Indicateur
+
+#+caption: Séléction d'un graphique d'indicateur
+#+name: fig:select-indicateur
+#+attr_latex: :float multicolumn
+[[./img/select-indicateur.pdf]]
+
+*** Marqueur
+Affiche une valeur simple, plus pertinent lorsqu'associé à une tendance sur une période donnée. [cite:@mikeyiHowChooseRight2020]
+
+*** Minigraphe
+Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. Un mini-graphe ne possède pas d'axes ni d'autres détails et est composé uniquement d'une courbe et d'un point indiquant la dernière valeur du jeu de donnée. [cite:@sosulskiGraphics2019] Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise. [cite:@jonathanschwabishDistribution2021]
+
+Un mini-graphe ne possède pas d'axes ni d'autres détails.
+
+*** Tiret
+selont Schwabish : inventé par Few
+
+La valeur actuelle mesurée ou calculée est observée au moyen d'une barre horizontale constrastant avec l'arrière plan. [cite:@jonathanschwabishComparingCategories2021]
+La valeur cible est représenté par une ligne verticale. [cite:@alansmithLexiqueVisuel]
+L'arrière plan expose 3 zones dites qualitative et associées à des notions de performance (eg. inférieur, moyen, bon). [cite:@sosulskiGraphics2019]
+
+Editer une série de tirets permet d'exposer au lecteur diverses comparaisons tout en restant compacte. [cite:@jonathanschwabishComparingCategories2021]
+
+Cette représentation est notamment pertinente lors de la réalisation d'un benchmark. [cite:@mikeyiHowChooseRight2020]
+# Définir benchmark
+
+** Composition
+
+*** Camembert
 :PROPERTIES:
-:en-name: Strip plot
+:en-name:  Pie chart
+:CHART-GOAL: education
+:CHART-CLASS: part-to-whole
+:DATA-NATURE: quantitative,qualitative
+:DATA-TYPE:
+:DATA-PROCESSING: PERCENT_RANK(OVER())
+:DATA-TABLE: key-value
+:END:
+Diagramme standard, difficile à lire. [cite:@alansmithLexiqueVisuel]
+Limiter à 5 (4?) entrées maximum [cite:@mikeyiHowChooseRight2020]
+
+Ce graphique doit être limité à l'illustration d'un état donnée. Il est important de garder à l'esprit que ce graphique ne donne qu'une représentation et n'est pas adapté à l'affichage de valeurs précises. [cite:@jonathanschwabishParttowhole2021]
+
+Le camembert permet d'accentuer l'appartenance d'une partie individuelle à un ensemble homogène et complet. Il illustre parfaitement des fractions simples.[cite:@wilkeDirectoryVisualizations2019] Les quantités n'ont pas leurs place dans un camembert, ce sont les fractions (taux, pourcentages) qui y sont illustrés. Ainsi, l'ensemble des valeurs constituante sont strictement égale à 100% du total.[cite:@wilkeVisualizingAmounts2019] Il représente plus efficacement les parts dont les angles sont familiers aux lecteurs soit respectivement 90°, 180° et 240° pour les taux 25%, 50% et 75%.
+
+Ce graphine n'est pas adapté à ces cas de figure :
+- les parts sont de tailles similaires,[cite:@sosulskiGraphics2019]
+- Il y a beaucoup de catégories à afficher pour atteindre l'objectif du message,
+- il y a une comparaison entre deux graphiques à réaliser,[cite:@jonathanschwabishParttowhole2021]
+- il y a un changement entre plusieurs états.[cite:@wilkeDirectoryVisualizations2019]
+
+Il convient de :
+- Arranger les parts par orgre de valeur croissant en commençant à '12h'. [cite:@jonathanschwabishParttowhole2021]
+- Utiliser un espace vide entre chaque part pour les faire resortir, [cite:@sosulskiGraphics2019]
+- Utiliser une palette de couleur de mise en évidence pour faire ressortir une seule part ou,
+- Utiliser une palette de couleur pour faire resortir deux parts,
+- Apposer les labels directement sur les parts au moyen d'étiquette. [cite:@sosulskiGraphics2019]
+
+Les parties n'étant pas mises en avant peuvent être agrégée en une catégories "autres". Leurs informations ne servant pas à appuyer le message du graphique. [cite:@jonathanschwabishParttowhole2021]
+
+Dans le cas ou une seule partie de l'ensemble est mise en avant, il est à considérer l'utilisation d'un [[marqueur]]. Le camembert n'apportant aucune information particulière à votre propos.
+
+Il n'est pas encore clairement établis si la comparaison des valeurs est réalisé par la perception des angles ou par la perception des longueurs d'arcs des différentes parties.[cite:@jonathanschwabishParttowhole2021]
+
+Ce diagramme possède un avantage majeur au regard des autres modes de représentation des parties d'un ensemble, il est très populaire et ainsi accessible à usager. [cite:@jonathanschwabishParttowhole2021] Il est également reconnu que les formes circulaires attirent l'intéret des utilisateurs.[cite:@jonathanschwabishParttowhole2021]
+
+*** Donut
+:PROPERTIES:
+:EN-NAME:  Donut
 :CHART-GOAL:
-:CHART-CLASS: distribution
-:DATA-PROCESSING: GROUP BY
+:CHART-CLASS: part-to-whole
 :END:
-Affiche les points de données d'une catégorie.[cite:@jonathanschwabishDistribution2021] Les valeurs peuvent être affichés par des lignes ou des cercles pleins mais les cercles sont à privilégier lorsqu'il est nécessaire de déagglomérer les données.
+Dans un graphique en donut, les valeurs sont à comparer en fonction des longueurs d'arcs.
 
-Il est possible d'utiliser de la transparence pour illustrer les zones de valeurs compactes. [cite:@jonathanschwabishDistribution2021] Utilisez la palette de couleurs divergentes [[fig:Pal-d]] pour mettre en évidence la répartition des valeurs mesurées et souligner la séparation de celles ci par rapport à un axe de référence.[cite:@jonathanschwabishDistribution2021]
+Comme le diagramme circulaire, le centre peut être utilisé pour afficher un total ou encore une icone. [cite:@alansmithLexiqueVisuel]
 
-Les points peuvent être légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce mode de représentation est appelé "essaim d'abeille" (beeswarm). [cite:@jonathanschwabishDistribution2021]
+# avantage de l'iconographie ?
 
-# -----à creuser-----
-Histopoint : Wilkinson dot plot (Leland Wilkinson) Affichage des bandes de valeurs pour chaque agrégat d'un histogramme.[cite:@jonathanschwabishDistribution2021]
+# avantage de l'estétique ?
 
-Epis de blé : Wheat plot (SFew)
+Il est, autrement, en tout point similaire aux [[camembert]]
 
-** Barre divergente
+*** Quadrillage
 :PROPERTIES:
-:EN-NAME:  Diverging bar chart
+:en-name:
 :CHART-GOAL:
-:CHART-CLASS: deviation
+:CHART-CLASS: part-to-whole
 :END:
-Affiche correctement un ensemble de valeur quantitative triées par catégories lorsque des valeurs négatives sont utilisées. [cite:@alansmithLexiqueVisuel] L'axe des absysse doit être égal à 0 et toutes les barres doivent être projetées depuis cet axe.
+Adapté à l'affichage des informations en pourcentages. Fonctionne mieux avec des entiers naturels. [cite:@alansmithLexiqueVisuel] Généralement en grille de 10 x 10 carrés (pour un total de 100). Chaque carré représente 1% d'un tout. Les carrés sont colorés sur la base de la taille d'une catégorie dans un groupe. [cite:@mikeyiHowChooseRight2020]
 
-** Barre divergente empilée
+*** Treemap
 :PROPERTIES:
-:EN-NAME:  Diverging stacked bar chart
+:en-name:  Treemap
 :CHART-GOAL:
-:CHART-CLASS: deviation
+:CHART-CLASS: part-to-whole
 :END:
-Utilisé pour illustrer les résultats d'enquêtes impliquant un sentiment. [cite:@alansmithLexiqueVisuel] Les barres doivent être calculées en pourcentage et alignées à 100% comme pour une partie d'un ensemble. Les réponses sont affichées de façon ordonée et du plus négatif au plus positif. Il convient d'utiliser une palette de couleur divergente. Lors de la préparation d'une enquête impliquant des sentiment, il est conseiller de proposer un choix de valeur paires pour éviter les votes neutres sauf si la représentation de l'indiférence est une volontée de l'étude. De plus, *expliquer la limite de nombre de zones facile à visualiser* (max 6?)
+Utilisé pour les relations hiérarchiques d'une partie vers l'ensemble. Difficile à lire s'il y a trop d'éléments affichés. [cite:@alansmithLexiqueVisuel]
+Le découpage des boites n'a pas besoin d'être ordonné, il peut y avoir plus de 2 niveaux de hiérarchie. [cite:@mikeyiHowChooseRight2020]
 
-** Barre empilée
+*** Marimeko
 :PROPERTIES:
-:en-name: Stacked bar chart
+:EN-NAME:  Marimeko
 :CHART-GOAL:
-:CHART-CLASS: comparison
+:CHART-CLASS: magnitude
 :END:
-Représente le total de chaque catégorie et la proportion de leurs composantes. Les composantes doivent être homogènes. Si les proportions sont plus importantes que les totaux, considérer d'utiliser l'affichage empilée à 100%. [cite:@mikeyiHowChooseRight2020]
+Visualisation de la taille et des proportions d'un ensemble homogène de données. [cite:@alansmithLexiqueVisuel]
+Exemple : répartition des parts de marché de 3 entreprises sur un axe et taux dans 3 catégories de marché pour chacune
 
-Seule la catégorie ayant sa base à 0 sera facile à comparer pour le lecteur car les autres ne partagent pas la même base.[cite:@jonathanschwabishComparingCategories2021] Il est préférable de tracer chaque diagramme de barre dans un grapgique distinct et des les disposer en [[matrice de graphique]]. [cite:@jonathanschwabishComparingCategories2021]
+La couleur peut être utilisée pour mettre en évidence une valeur. [cite:@jonathanschwabishComparingCategories2021] Attention au biais de correlation lorsque ce graphique est utilisé pour représenter plusieurs variables. [cite:@jonathanschwabishComparingCategories2021]
 
-** Barre jumelée
+*** Voronoi
 :PROPERTIES:
-:EN-NAME:  Paired bar chart
+:EN-NAME:  Voronoi
 :CHART-GOAL:
-:CHART-CLASS: comparison
+:CHART-CLASS: part-to-whole
 :END:
-Permet d'afficher plusieurs séries. Devient plus difficile à lire avec plus de deux séries. [cite:@alansmithLexiqueVisuel]
-Les barres d'une même catégories sont collées les unes aux autres pour souligner leurs appartenance à une même catégorie (ratio 1:0). Espacer les jeux de barres jumelées d'une largeur égale à une barre (ratio n:1).
+Semblable à un diagramme de bulle mais transformées en zones dont l'ensemble des points de chacune est plus proche du centre de sa zone que de tout autre centroïde. [cite:@alansmithLexiqueVisuel]
 
-Les barres sont colorées avec une palette de couleur de catégories. Les couleurs sont utilisées pour distinguées chaques barres dans une catégories, les couleurs doivent être homogènes pour chaque catégorie. Si les différentes valeurs affichées sont d'importances similaires, il convient d'utiliser une palette de couleurs à faibles contrastes. N'utiliser qu'une seule couleur par ensemble de données apparentées. [cite:@stephenfewComponentlevelGraphDesign2012]
+Il est très pertinent pour illustrer les parties d'un ensemble lorsque de nombreuses sous-catégories sont à afficher. [cite:@jonathanschwabishParttowhole2021] En ce sens, il est préféré aux camenberts.
 
-** Barre ordonnée
+*** Nuage de mots
+:PROPERTIES:
+:EN-NAME:  Word cloud
+:CHART-GOAL:
+:CHART-CLASS: magnitude
+:END:
+Affiche des nuages de mots organisés en groupes sémantiques. La taille des mots indique leur fréquence d'utilisation dans le corpus étudié. La couleur des groupes peut représenter un choix de données qualitative (catégorisation). [cite:@sosulskiGraphics2019] Cette visualisation est une méthode d'exploration de texte utile pour réaliser une synthèse macroscopique.
+Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la composition des nuages. [cite:@jonathanschwabishQualitative2021] Des listes de mots vides peuvent être trouvées à l'adresse <https://github.com/stopwords-iso/>.
+
+
+** Classement
+
+#+caption: Séléction d'un graphique de classement
+#+name: fig:select-classement
+#+attr_latex: :float multicolumn
+[[./img/select-classement.pdf]]
+
+*** Barre ordonnée
 :PROPERTIES:
 :EN-NAME:  Ordered bar chart
 :CHART-GOAL:
@@ -428,129 +508,66 @@ Ne pas segmenter les barres. [cite:@jonathanschwabishComparingCategories2021]
 
 Ne pas ajouter d'iconographie aux barres. [cite:@tranDiscoveringAccessibleData2024]
 
-** Bulle proportionnelle ordonnée
+*** Lollipop
+Utilisé pour afficher la position dans une liste ordonnée lorsque l'affichage de la valeur est moins important que la position. [cite:@alansmithLexiqueVisuel] Egalement très efficace comparé aux barres hordonnées lorsqu'il y a un grand nombre de catégorie dans le classement. [cite:@mikeyiHowChooseRight2020]  Si une ligne connecte le point de la valeur à laxe des ordonnées, l'axe des absisse doit commencer à 0, autrement cela n'est pas obligatoire.
 :PROPERTIES:
-:EN-NAME:  Ordered proportionnal bubble chart
+:EN-NAME:  Lollipop
 :CHART-GOAL:
 :CHART-CLASS: ranking
-:DATA-PROCESSING: ORDER BY
 :END:
-Utilisé pour illustrer les grandes variations de quantité pour différentes catégories et lorsque la distinction des nuances n'est pas primordiale. Les bulles doivent être dimensionnés par leurs surface pour éviter d'éxagérer les différences. [cite:@jonathanschwabishComparingCategories2021] Ce type de graphique utilise un double encodage de la quantité : la position et la taille. [cite:@wilkeVisualizingAssociationsTwo2019] Bien que ce type de représentation soit considéré comme engageant, il convient d'utiliser un graphique en barre ordonnée à la place lorsque l'évaluation des différences entre catégories est importante. [cite:@jonathanschwabishComparingCategories2021]
 
-** Boite à moustache
+*** Haltères
 :PROPERTIES:
-:EN-NAME:  Box plot
+:EN-NAME:  Dumbbell chart
 :CHART-GOAL:
-:CHART-CLASS: distribution
+:CHART-CLASS: ranking
 :END:
-Résume les distributions multiples en montrant la médiane et l'étendue des données. [cite:@alansmithLexiqueVisuel]
+Utilisé pour comparer un minimum et un maximum de plusieurs catégories. [cite:@alansmithLexiqueVisuel] La relation entre le maximum et le minimum d'une catégorie est représenté par la barre reliant les deux valeurs. [cite:@mikeyiHowChooseRight2020]
 
-Ce graphique est plus efficace lorsqu'il y a de nombreuses mesures pour une entrée et que leur distribution doit être représentée (eg : mesure médiane, basse, haute, incertitude...). [cite:@mikeyiHowChooseRight2020]
+Peut être utilisé pour illustrer le changement d'une valeur entre deux état données. Dans ce cas, il convient de flécher le sens du changement de l'état antérieur vers l'état final.
 
-Les lignes s'étendant au dessus et en dessous sont appelées les moustaches. [cite:@wilkeVisualizingManyDistributions2019]
+Dans ces deux cas de figures, les catégories doivent êtres ordonnées de la plus grande valeur à la plus petite.
 
-*Voir trx de son inventeur : John W. Tukey*
+Les haltères sont toujours affichés à l'horizontal.
 
-Il est possible d'afficher la position d'un point précis du jeu de donnée sous-jacent. (couleurs mise en évidence ?)
-
-Les boites à moustaches suivent les dispositions graphiques des barres ordonnées. [cite:@stephenfewComponentlevelGraphDesign2012]
-
-** Bosses  
+*** Bosses
 :PROPERTIES:
-:en-name: Bumpchart
+:en-name:  Bumpchart
 :CHART-GOAL:
 :CHART-CLASS: ranking
 :END:
 Affiche l'évolution d'un classement entre différents jalons. [cite:@mikeyiHowChooseRight2020;@alansmithLexiqueVisuel]  Ce graphique n'affiche pas les valeurs sous-jacente mais uniquement le positionnement de la catégorie dans le classement. [cite:@jonathanschwabishTime2021] Si la valeur source est également à représenter, ce graphique peut se transformer en graphique en ruban, combinant les disposition du graphique en bosse avec celles du graphique de Sankey. [cite:@jonathanschwabishTime2021]
 
-** Camembert
+*** Barre empilée
 :PROPERTIES:
-:en-name: Pie chart
-:CHART-GOAL: education
-:CHART-CLASS: part-to-whole
-:DATA-NATURE: quantitative,qualitative
-:DATA-TYPE:
-:DATA-PROCESSING: PERCENT_RANK(OVER())
-:DATA-TABLE: key-value
-:END:
-Diagramme standard, difficile à lire. [cite:@alansmithLexiqueVisuel]
-Limiter à 5 (4?) entrées maximum [cite:@mikeyiHowChooseRight2020]
-
-Ce graphique doit être limité à l'illustration d'un état donnée. Il est important de garder à l'esprit que ce graphique ne donne qu'une représentation et n'est pas adapté à l'affichage de valeurs précises. [cite:@jonathanschwabishParttowhole2021]
-
-Le camembert permet d'accentuer l'appartenance d'une partie individuelle à un ensemble homogène et complet. Il illustre parfaitement des fractions simples.[cite:@wilkeDirectoryVisualizations2019] Les quantités n'ont pas leurs place dans un camembert, ce sont les fractions (taux, pourcentages) qui y sont illustrés. Ainsi, l'ensemble des valeurs constituante sont strictement égale à 100% du total.[cite:@wilkeVisualizingAmounts2019] Il représente plus efficacement les parts dont les angles sont familiers aux lecteurs soit respectivement 90°, 180° et 240° pour les taux 25%, 50% et 75%.
-
-Ce graphine n'est pas adapté à ces cas de figure :
-- les parts sont de tailles similaires,[cite:@sosulskiGraphics2019]
-- Il y a beaucoup de catégories à afficher pour atteindre l'objectif du message,
-- il y a une comparaison entre deux graphiques à réaliser,[cite:@jonathanschwabishParttowhole2021]
-- il y a un changement entre plusieurs états.[cite:@wilkeDirectoryVisualizations2019]
-
-Il convient de :
-- Arranger les parts par orgre de valeur croissant en commençant à '12h'. [cite:@jonathanschwabishParttowhole2021]
-- Utiliser un espace vide entre chaque part pour les faire resortir, [cite:@sosulskiGraphics2019]
-- Utiliser une palette de couleur de mise en évidence pour faire ressortir une seule part ou,
-- Utiliser une palette de couleur pour faire resortir deux parts,
-- Apposer les labels directement sur les parts au moyen d'étiquette. [cite:@sosulskiGraphics2019]
-
-Les parties n'étant pas mises en avant peuvent être agrégée en une catégories "autres". Leurs informations ne servant pas à appuyer le message du graphique. [cite:@jonathanschwabishParttowhole2021]
-
-Dans le cas ou une seule partie de l'ensemble est mise en avant, il est à considérer l'utilisation d'un [[marqueur]]. Le camembert n'apportant aucune information particulière à votre propos.
-
-Il n'est pas encore clairement établis si la comparaison des valeurs est réalisé par la perception des angles ou par la perception des longueurs d'arcs des différentes parties.[cite:@jonathanschwabishParttowhole2021]
-
-Ce diagramme possède un avantage majeur au regard des autres modes de représentation des parties d'un ensemble, il est très populaire et ainsi accessible à usager. [cite:@jonathanschwabishParttowhole2021] Il est également reconnu que les formes circulaires attirent l'intéret des utilisateurs.[cite:@jonathanschwabishParttowhole2021]
-
-** Carte de fréquentation
-:PROPERTIES:
-:en-name:
+:en-name:  Stacked bar chart
 :CHART-GOAL:
-:CHART-CLASS: evolution
+:CHART-CLASS: comparison
 :END:
-Excellente visualisation pour suivre la fréquence d'une activité. Favorise la quantité à la qualité (exemple : github). [cite:@alansmithLexiqueVisuel]
+Représente le total de chaque catégorie et la proportion de leurs composantes. Les composantes doivent être homogènes. Si les proportions sont plus importantes que les totaux, considérer d'utiliser l'affichage empilée à 100%. [cite:@mikeyiHowChooseRight2020]
 
-** Carte de température
+Seule la catégorie ayant sa base à 0 sera facile à comparer pour le lecteur car les autres ne partagent pas la même base.[cite:@jonathanschwabishComparingCategories2021] Il est préférable de tracer chaque diagramme de barre dans un grapgique distinct et des les disposer en [[matrice de graphique]]. [cite:@jonathanschwabishComparingCategories2021]
+
+*** Barre jumelée
 :PROPERTIES:
-:en-name: Heatmap
+:EN-NAME:  Paired bar chart
 :CHART-GOAL:
-:CHART-CLASS: correlation
+:CHART-CLASS: comparison
 :END:
-Représentation graphique d'une table de valeur homogène. [cite:@sosulskiGraphics2019]
-Intéressante pour afficher une tendance lorsqu'un très grand nombre d'information est impliqué.
+Permet d'afficher plusieurs séries. Devient plus difficile à lire avec plus de deux séries. [cite:@alansmithLexiqueVisuel]
+Les barres d'une même catégories sont collées les unes aux autres pour souligner leurs appartenance à une même catégorie (ratio 1:0). Espacer les jeux de barres jumelées d'une largeur égale à une barre (ratio n:1).
 
-Ce graphique utilise les couleurs de la palette thermique [[fig:Pal-t]].
+Les barres sont colorées avec une palette de couleur de catégories. Les couleurs sont utilisées pour distinguées chaques barres dans une catégories, les couleurs doivent être homogènes pour chaque catégorie. Si les différentes valeurs affichées sont d'importances similaires, il convient d'utiliser une palette de couleurs à faibles contrastes. N'utiliser qu'une seule couleur par ensemble de données apparentées. [cite:@stephenfewComponentlevelGraphDesign2012]
 
-L'organisation des catégories changeant la forme de la matrice de température, il convient de retenir une organisation par valeur croissante ou décroissante à une colonne donnée. Il convient de signaler cette configuration au lecteur. [cite:@wilkeVisualizingAmounts2019]
-
-L'emplois de solutions d'intéractivité permet une meilleure découverte des données affichées.
-
-** Cascade
+*** Pente
 :PROPERTIES:
-:en-name: Waterfall plot
+:en-name:  Slope-chart
 :CHART-GOAL:
-:CHART-CLASS: deviation
+:CHART-CLASS: ranking
 :END:
-Affiche les gains et pertes entres deux états d'un système. [cite:@jonathanschwabishComparingCategories2021] Utilisé principalement pour les analyses financières. [cite:@alansmithLexiqueVisuel]
-** Chandelier
-:PROPERTIES:
-:en-name: Candlestick
-:CHART-GOAL:
-:CHART-CLASS: deviation
-:END:
-Affiche des bilans quotidiens (eg. ouverture, fermeture, point haut, point bas). [cite:@alansmithLexiqueVisuel]
-La couleur est utilisée pour représenter la direction de l'évolution de la valeur (augmente, descend).
+Affiche la variation des valeurs ou ratios des catégories entre deux états donnés. [cite:@alansmithLexiqueVisuel]
 
-Illustre les évolutions d'un stock sur une temporalité donnée. La ligne indique l'état le plus haut et l'état le plus bas de la journée. La barre indique l'état de l'ouverture et de la cloture de la période. [cite:@jonathanschwabishDistribution2021] Il convient d'utiliser une palette de couleur binaire pour contraster les périodes aux soldes positifs des périodes aux soldes négatifs.
-
-** Colonne vertébrale
-:PROPERTIES:
-:en-name: Spine chart
-:CHART-GOAL:
-:CHART-CLASS: deviation
-:END:
-Utilisé pour afficher la quantité de réponses négatives et positives à une question. Le spine divise une valeure quantitative unique en deux composants distinct contrasté par un déterminent binaire. [cite:@alansmithLexiqueVisuel] Utilisé pour afficher la quantité de réponses négatives et positives à une question.
-
-** Coordonnées parallèles
+*** Coordonnées parallèles
 :PROPERTIES:
 :EN-NAME:  Parallel coordinate
 :CHART-GOAL:
@@ -566,16 +583,69 @@ Afficher un grand nombre de jeux de données sur un même graphe risque de le re
 
 Lors de l'exploration d'un jeu de donnée à travers une interface informatique, il convient de mettre en avant la ligne pointée par l'utilisateur et de labeliser chaque points de catégorie avec la valeur associé. [cite:@sosulskiGraphics2019]
 
-** Courbe cumulative
+*** Radar
 :PROPERTIES:
 :en-name:
 :CHART-GOAL:
-:CHART-CLASS: distribution
-:DATA-PROCESSING: CUME_DIST() OVER()
+:CHART-CLASS: magnitude
 :END:
-Utilisé pour représenter une distribution inégale. L'axe des ordonnées est toujours la fréquence cumulative et l'axe des absisses est toujours une mesure. [cite:@alansmithLexiqueVisuel]
+Représentation compacte de la valeur de variables hétérogènes pour un seul système. [cite:@alansmithLexiqueVisuel] Les radards sont utilisés pour identifier les variables ayant des valeurs similaires et les exceptions. [cite:@sosulskiGraphics2019]
 
-** Courbe de densité
+La représentation des valeurs se fait à travers la forme globale du polygonne. Il convient de coloriser l'interrieur de celui-ci pour bien faire ressortir sa forme. [cite:@jonathanschwabishRelationship2021]
+
+Utiliser une disposition en small-multiples plutot que de surimposer plusieurs polygones de valeurs. [cite:@jonathanschwabishRelationship2021]
+
+La représentation des variables est fortement correlé à la forme du polygone plutot qu'aux valeurs des sommets. [cite:@sosulskiGraphics2019] De ce fait, pour améliorer la forme du polygonne et offrir une représentation avec le moins de distortions possibles, il convient d'homogénéiser les échelles des axes.
+
+*** Ligne de crête
+:PROPERTIES:
+:en-name:  Ridgeline
+:CHART-GOAL:
+:CHART-CLASS: comparison
+:END:
+Ce graphique représente des courbes de densité séparées par un offset et est utilisé pour comparer la distribution d'une vrariable entre des catégories. [cite:@wilkeVisualizingManyDistributions2019] Parfait lorsque les schémas de distributions sont bien distincts entre les groupes. [cite:@mikeyiHowChooseRight2020] Cela évite que les courbes de densités des catégories s'entrevêchent.[cite:@jonathanschwabishDistribution2021]
+
+Ce graphique se met très bien à l'échelle de grands jeux de données. [cite:@wilkeVisualizingManyDistributions2019]
+
+Il est adapté à :
+- la comparaison des changements de distributions à travers le temps [cite:@wilkeDirectoryVisualizations2019] associé à un gradiant de couleur pour diriger le regard vers la distribution la plus récente, [cite:@jonathanschwabishDistribution2021]
+- la comparaison des évolutions de deux tendances à travers le temps. [cite:@wilkeVisualizingManyDistributions2019] associé à une palette de couleur binaire.
+
+L'axe des absysses affiche la valeur de réponse et l'axe des ordonnées affiche les catégories. [cite:@wilkeVisualizingManyDistributions2019]
+
+Il convient de classer les catégories suivant un ordre logique. [cite:@jonathanschwabishDistribution2021] Voir (insérer renvois ici vers l'explication de la logique de classement de catégories)
+
+Il est possible d'afficher les barres d'erreurs dans les lignes de crêtes. Ce mode de représentation s'appel un "demi-oeil". [cite:@wilkeVisualizingUncertainty2019]
+
+Il est possible d'afficher les nuages de points dont l'estimation de la courbe de densité est issue. Ceux-ci sont affichés en dessous des courbes de densité. Cette forme de représentation est appelé "Nuage de pluie". (ref: Micah Allan ou Schwabish2021p212) Cette représentation offre à la fois une représentation générique et une visualisation précise des données. [cite:@jonathanschwabishDistribution2021] Bien que cette représentation soit très efficace, elle n'est pas très répendue. [cite:@jonathanschwabishDistribution2021] Il faut être vigilent à bien expliquer son fonctionnement lors de son utilisation dans un rapport. Dans le cas d'un nuage de pluie, il faut faire attention à ce que les points de données n'entre pas en surimposition avec les courbes de densitées tracées en dessous.
+*** Matrice de graphique
+:PROPERTIES:
+:en-name:  Small multiples
+:CHART-GOAL: Comparaison
+:END:
+
+Popularisé par E. Tufte
+
+Est utilisé pour comparer de multiples graphiques homogènes organisées en matrices. Chaque entité affiche le graphique d'une catégorie. Les graphiques sont tous à la même échelle. [cite:@sosulskiGraphics2019]
+
+Conseils : Limitez les détails dans chacun des graphique. [cite:@sosulskiGraphics2019] Regroupez les axes pour n'afficher qu'un seul axe Y par ligne et un seul axe X par colonne.
+
+Interractivité : pouvoir explorer l'ensemble des graphiques simultanéments (eg. cible en croix '+' au niveau du point de donnée pointé répliqué dans les autres graphiques)
+
+#+caption: Composition d'une matrice de graphique
+#+name: fig:Comp-small-multiple
+#+attr_latex: :placement [H]
+[[./img/small-multiple.pdf]]
+
+
+** Distribution
+
+#+caption: Séléction d'un graphique de distribution
+#+name: fig:select-distribution
+#+attr_latex: :float multicolumn
+[[./img/select-distribution.pdf]]
+
+*** Courbe de densité
 :PROPERTIES:
 :en-name:
 :CHART-GOAL:
@@ -584,47 +654,17 @@ Utilisé pour représenter une distribution inégale. L'axe des ordonnées est t
 :END:
 La densité représente la probabilité de distribution des variables. [cite:@sosulskiGraphics2019] Pertinent lorsque le nombre de données est très grand, autrement il convient d'utiliser un histogramme. [cite:@wilkeVisualizingManyDistributions2019] En cas d'affichage de plusieurs courbe, utiliser  des remplissages transparents pour faciliter la distinctions. L'air de la courbe est usuellement égal à 1 et de ce fait, l'échelle de l'axe des ordonnées dépend de l'axe des absisses. [cite:@wilkeVisualizingManyDistributions2019]
 
-** Donut
+*** Violon
 :PROPERTIES:
-:EN-NAME:  Donut
+:EN-NAME:  Violin
 :CHART-GOAL:
-:CHART-CLASS: part-to-whole
+:CHART-CLASS: distribution
 :END:
-Dans un graphique en donut, les valeurs sont à comparer en fonction des longueurs d'arcs.
+Représente fidèlement les distributions d'un très grand nombre de données. [cite:@alansmithLexiqueVisuel] Utilisé pour faire des comparaisons entre des catégories. [cite:@mikeyiHowChooseRight2020]  Très pertinent pour représenter les distributions bimodales. [cite:@wilkeVisualizingManyDistributions2019] Le tracé du demi-violon est identique au tracé d'une courbe de densité. Celui-ci commence à la valeur la plus petite et termine à la valeur la plus grande.
 
-Comme le diagramme circulaire, le centre peut être utilisé pour afficher un total ou encore une icone. [cite:@alansmithLexiqueVisuel]
-
-# avantage de l'iconographie ?
-
-# avantage de l'estétique ?
-
-Il est, autrement, en tout point similaire aux [[camembert]]
-
-** Eventail
+*** Histogramme
 :PROPERTIES:
-:en-name:
-:CHART-GOAL:
-:CHART-CLASS: evolution
-:END:
-Utilisé pour montrer l'incertitude des projections futures. [cite:@alansmithLexiqueVisuel]
-
-** Haltères
-:PROPERTIES:
-:EN-NAME:  Dumbbell chart
-:CHART-GOAL:
-:CHART-CLASS: ranking
-:END:
-Utilisé pour comparer un minimum et un maximum de plusieurs catégories. [cite:@alansmithLexiqueVisuel] La relation entre le maximum et le minimum d'une catégorie est représenté par la barre reliant les deux valeurs. [cite:@mikeyiHowChooseRight2020]
-
-Peut être utilisé pour illustrer le changement d'une valeur entre deux état données. Dans ce cas, il convient de flécher le sens du changement de l'état antérieur vers l'état final.
-
-Dans ces deux cas de figures, les catégories doivent êtres ordonnées de la plus grande valeur à la plus petite.
-
-Les haltères sont toujours affichés à l'horizontal.
-
-** Histogramme
-:PROPERTIES:
-:en-name: Histogram
+:en-name:  Histogram
 :CHART-GOAL:
 :CHART-CLASS: distribution
 :END:
@@ -645,17 +685,51 @@ L'utilisation d'un histogramme permet d'identifier des schémas de distributions
 - *Symétrique :* lorsqu'il y a un nombre approximativement égal de valeurs de chaque coté d'une valeur centrale
 - *Uniforme :* lorsque toutes les valeurs sont distribuées de façon globalement homogène
 
-** Horizon
+*** Valeur lettrée
+:PROPERTIES:
+:en-name:  Letter value
+:CHART-GOAL:
+:CHART-CLASS: distribution
+:END:
+Représente chaque découpage statistique (\(x\sigma\)) par une boite distincte. Convient en remplacement des boites à moustache lorsqu'il y a un très grand nombre de données disponibles. Permet de faire des estimations fiables. [cite:@hofmannLettervaluePlotsBoxplots2017;@mikeyiHowChooseRight2020 ]
+
+*** Boite à moustache
+:PROPERTIES:
+:EN-NAME:  Box plot
+:CHART-GOAL:
+:CHART-CLASS: distribution
+:END:
+Résume les distributions multiples en montrant la médiane et l'étendue des données. [cite:@alansmithLexiqueVisuel]
+
+Ce graphique est plus efficace lorsqu'il y a de nombreuses mesures pour une entrée et que leur distribution doit être représentée (eg : mesure médiane, basse, haute, incertitude...). [cite:@mikeyiHowChooseRight2020]
+
+Les lignes s'étendant au dessus et en dessous sont appelées les moustaches. [cite:@wilkeVisualizingManyDistributions2019]
+
+*Voir trx de son inventeur : John W. Tukey*
+
+Il est possible d'afficher la position d'un point précis du jeu de donnée sous-jacent. (couleurs mise en évidence ?)
+
+Les boites à moustaches suivent les dispositions graphiques des barres ordonnées. [cite:@stephenfewComponentlevelGraphDesign2012]
+
+*** Carte de fréquentation
 :PROPERTIES:
 :en-name:
 :CHART-GOAL:
 :CHART-CLASS: evolution
 :END:
-Permet de vérifier un équilibre entre deux borne par rapport à une base. [cite:@alansmithLexiqueVisuel]  Utilisé pour suivre l'évolution d'une variable dans le temps et devant respecter un écart-type (eg. tension à 230V +/- 5%). L'information la plus importante est le dépassement de l'écart-type. Pour correctement mettre en évidence ces phénomènes, il est recommendé d'utiliser une palette de couleur de
+Excellente visualisation pour suivre la fréquence d'une activité. Favorise la quantité à la qualité (exemple : github). [cite:@alansmithLexiqueVisuel]
 
-** Jauge
+
+** Evolution
+
+#+caption: Séléction d'un graphique d'évolution
+#+name: fig:select-evolution
+#+attr_latex: :float multicolumn
+[[./img/select-evolution.pdf]]
+
+*** Jauge
 :PROPERTIES:
-:en-name: Gauge
+:en-name:  Gauge
 :CHART-GOAL:
 :CHART-CLASS: indicator
 :END:
@@ -668,7 +742,34 @@ Cela concerne par exemple :
 
 Pour tout autre usage, et considérant la difficulté humaine d'interprétation d'une valeur en comparant des angles ainsi que le manque d'options pertinentes pour ajouter des informations qualitatives sur les jauges, il convient d'utiliser un graphique en [[Tiret]].
 
-** Ligne
+*** Ruisseau
+:PROPERTIES:
+:en-name:  Streamgraph
+:CHART-GOAL:
+:CHART-CLASS: evolution
+:END:
+
+Vérifier la métaphore liée au nom
+
+A privilégier lorsque la visualisation des changements en proportions au fil du temps est plus importante que les valeurs individuelles. [cite:@alansmithLexiqueVisuel]
+
+*** Horizon
+:PROPERTIES:
+:en-name:
+:CHART-GOAL:
+:CHART-CLASS: evolution
+:END:
+Permet de vérifier un équilibre entre deux borne par rapport à une base. [cite:@alansmithLexiqueVisuel]  Utilisé pour suivre l'évolution d'une variable dans le temps et devant respecter un écart-type (eg. tension à 230V +/- 5%). L'information la plus importante est le dépassement de l'écart-type. Pour correctement mettre en évidence ces phénomènes, il est recommendé d'utiliser une palette de couleur de
+
+*** Sismogramme
+:PROPERTIES:
+:EN-NAME:  Seismogram
+:CHART-GOAL:
+:CHART-CLASS: evolution
+:END:
+Pour montrer des séries à grandes variation dans les données. [cite:@alansmithLexiqueVisuel]
+
+*** Ligne
 :PROPERTIES:
 :en-name:
 :CHART-GOAL:
@@ -698,116 +799,23 @@ L'utilisation de symboles comme éléments différenciants entre les séries n'e
 
 La plage allant de la plus petite à la plus grande valeur occupe entre 70 et 80% de l'espace vertical dans le graphique.[cite:@mikecisnerosWhatLineGraph2024]
 
-** Ligne de crête
+** Correlation
+
+#+caption: Séléction d'un graphique de correlation
+#+name: fig:select-corellation
+#+attr_latex: :float multicolumn
+[[./img/select-correlation.pdf]]
+
+*** Pareto
 :PROPERTIES:
-:en-name: Ridgeline
-:CHART-GOAL:
-:CHART-CLASS: comparison
-:END:
-Ce graphique représente des courbes de densité séparées par un offset et est utilisé pour comparer la distribution d'une vrariable entre des catégories. [cite:@wilkeVisualizingManyDistributions2019] Parfait lorsque les schémas de distributions sont bien distincts entre les groupes. [cite:@mikeyiHowChooseRight2020] Cela évite que les courbes de densités des catégories s'entrevêchent.[cite:@jonathanschwabishDistribution2021]
-
-Ce graphique se met très bien à l'échelle de grands jeux de données. [cite:@wilkeVisualizingManyDistributions2019]
-
-Il est adapté à :
-- la comparaison des changements de distributions à travers le temps [cite:@wilkeDirectoryVisualizations2019] associé à un gradiant de couleur pour diriger le regard vers la distribution la plus récente, [cite:@jonathanschwabishDistribution2021]
-- la comparaison des évolutions de deux tendances à travers le temps. [cite:@wilkeVisualizingManyDistributions2019] associé à une palette de couleur binaire.
-
-L'axe des absysses affiche la valeur de réponse et l'axe des ordonnées affiche les catégories. [cite:@wilkeVisualizingManyDistributions2019]
-
-Il convient de classer les catégories suivant un ordre logique. [cite:@jonathanschwabishDistribution2021] Voir (insérer renvois ici vers l'explication de la logique de classement de catégories)
-
-Il est possible d'afficher les barres d'erreurs dans les lignes de crêtes. Ce mode de représentation s'appel un "demi-oeil". [cite:@wilkeVisualizingUncertainty2019]
-
-Il est possible d'afficher les nuages de points dont l'estimation de la courbe de densité est issue. Ceux-ci sont affichés en dessous des courbes de densité. Cette forme de représentation est appelé "Nuage de pluie". (ref: Micah Allan ou Schwabish2021p212) Cette représentation offre à la fois une représentation générique et une visualisation précise des données. [cite:@jonathanschwabishDistribution2021] Bien que cette représentation soit très efficace, elle n'est pas très répendue. [cite:@jonathanschwabishDistribution2021] Il faut être vigilent à bien expliquer son fonctionnement lors de son utilisation dans un rapport. Dans le cas d'un nuage de pluie, il faut faire attention à ce que les points de données n'entre pas en surimposition avec les courbes de densitées tracées en dessous.
-
-** Lollipop
-:PROPERTIES:
-:EN-NAME:  Lollipop
-:CHART-GOAL:
-:CHART-CLASS: ranking
-:END:
-Utilisé pour afficher la position dans une liste ordonnée lorsque l'affichage de la valeur est moins important que la position. [cite:@alansmithLexiqueVisuel] Egalement très efficace comparé aux barres hordonnées lorsqu'il y a un grand nombre de catégorie dans le classement. [cite:@mikeyiHowChooseRight2020]  Si une ligne connecte le point de la valeur à laxe des ordonnées, l'axe des absisse doit commencer à 0, autrement cela n'est pas obligatoire.
-
-** Marqueur
-:PROPERTIES:
-:en-name: Big number
-:CHART-GOAL:
-:CHART-CLASS: indicator
-:END:
-Affiche une valeur simple, plus pertinent lorsqu'associé à une tendance sur une période donnée. [cite:@mikeyiHowChooseRight2020]
-
-** Marimeko
-:PROPERTIES:
-:EN-NAME:  Marimeko
-:CHART-GOAL:
-:CHART-CLASS: magnitude
-:END:
-Visualisation de la taille et des proportions d'un ensemble homogène de données. [cite:@alansmithLexiqueVisuel]
-Exemple : répartition des parts de marché de 3 entreprises sur un axe et taux dans 3 catégories de marché pour chacune
-
-La couleur peut être utilisée pour mettre en évidence une valeur. [cite:@jonathanschwabishComparingCategories2021] Attention au biais de correlation lorsque ce graphique est utilisé pour représenter plusieurs variables. [cite:@jonathanschwabishComparingCategories2021]
-
-** Matrice de bulle
-:PROPERTIES:
-:en-name:
+:EN-NAME:  Pareto
 :CHART-GOAL:
 :CHART-CLASS: correlation
 :END:
-Ce graphique est une version aggrégée du nuage de bulle et le la matrice de température.
+Ce type de graphique montre la relation entre les valeurs quantitatives de catégories organisées en colonne ordonnée et la valeur cumulée affichée en ligne brisée. Le premier point de la ligne vérifiant \(\tau\geq80\%Total\) est affichée. La zone précédent ce point est mise en évidence.
+Est utilisé pour illustrer les éléments important dans un système qualité.
 
-Il simplifie la visualisation des relations entre un couple de variable. A réserver pour un usage d'exploration de donées. [cite:@sosulskiGraphics2019] La taille des bules représente la force de la corrélation. Cette force est la représentation du coefficient de Pearson. [cite:@jonathanschwabishRelationship2021]
-
-La couleur peut être utilisée pour distinguer les catégories (à vérifier). Elle peut être également utilisée comme double encodage de la correlation (à vérifier).
-
-Le tableur associée est une matrice de correlation organisant les valeurs de coefficient de Pearson.
-
-** Matrice de graphique
-:PROPERTIES:
-:en-name: Small multiples
-:CHART-GOAL: Comparaison
-:END:
-
-Popularisé par E. Tufte
-
-Est utilisé pour comparer de multiples graphiques homogènes organisées en matrices. Chaque entité affiche le graphique d'une catégorie. Les graphiques sont tous à la même échelle. [cite:@sosulskiGraphics2019]
-
-Conseils : Limitez les détails dans chacun des graphique. [cite:@sosulskiGraphics2019] Regroupez les axes pour n'afficher qu'un seul axe Y par ligne et un seul axe X par colonne.
-
-Interractivité : pouvoir explorer l'ensemble des graphiques simultanéments (eg. cible en croix '+' au niveau du point de donnée pointé répliqué dans les autres graphiques)
-
-#+caption: Composition d'une matrice de graphique
-#+name: fig:Comp-small-multiple
-#+attr_latex: :placement [H]
-[[./img/small-multiple.pdf]]
-
-** Minigraphe
-:PROPERTIES:
-:en-name: Sparkline
-:CHART-GOAL:
-:CHART-CLASS: evolution
-:END:
-Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. Un mini-graphe ne possède pas d'axes ni d'autres détails et est composé uniquement d'une courbe et d'un point indiquant la dernière valeur du jeu de donnée. [cite:@sosulskiGraphics2019] Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise. [cite:@jonathanschwabishDistribution2021]
-
-Un mini-graphe ne possède pas d'axes ni d'autres détails.
-
-** Nuage de bulle
-:PROPERTIES:
-:en-name:
-:CHART-GOAL:
-:CHART-CLASS: correlation
-:END:
-Il s'agit d'un nuage de point dont la taille des bules est utilisé pour représenter une troisieme valeur quantitative. [cite:@alansmithLexiqueVisuel]
-
-** Nuage de mots
-:PROPERTIES:
-:EN-NAME:  Word cloud
-:CHART-GOAL:
-:CHART-CLASS: magnitude
-:END:
-Affiche des nuages de mots organisés en groupes sémantiques. La taille des mots indique leur fréquence d'utilisation dans le corpus étudié. La couleur des groupes peut représenter un choix de données qualitative (catégorisation). [cite:@sosulskiGraphics2019] Cette visualisation est une méthode d'exploration de texte utile pour réaliser une synthèse macroscopique.
-Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la composition des nuages. [cite:@jonathanschwabishQualitative2021] Des listes de mots vides peuvent être trouvées à l'adresse <https://github.com/stopwords-iso/>.
-
-** Nuage de point
+*** Nuage de point
 :PROPERTIES:
 :EN-NAME:  Scatterplot
 :CHART-GOAL:
@@ -835,7 +843,156 @@ Si des milliers de point de données sont à afficher, il est préférable d'uti
 
   Cela permet de limiter le masquage des points de données par surimposition. [cite:@andreaskrauseBestPracticesData2024]
 
-** Nuage de point connecté
+*** Nuage de bulle
+:PROPERTIES:
+:en-name:
+:CHART-GOAL:
+:CHART-CLASS: correlation
+:END:
+Il s'agit d'un nuage de point dont la taille des bules est utilisé pour représenter une troisieme valeur quantitative. [cite:@alansmithLexiqueVisuel]
+
+*** Matrice de bulle
+:PROPERTIES:
+:en-name:
+:CHART-GOAL:
+:CHART-CLASS: correlation
+:END:
+Ce graphique est une version aggrégée du nuage de bulle et le la matrice de température.
+
+Il simplifie la visualisation des relations entre un couple de variable. A réserver pour un usage d'exploration de donées. [cite:@sosulskiGraphics2019] La taille des bules représente la force de la corrélation. Cette force est la représentation du coefficient de Pearson. [cite:@jonathanschwabishRelationship2021]
+
+La couleur peut être utilisée pour distinguer les catégories (à vérifier). Elle peut être également utilisée comme double encodage de la correlation (à vérifier).
+
+Le tableur associée est une matrice de correlation organisant les valeurs de coefficient de Pearson.
+
+*** Carte de température
+:PROPERTIES:
+:en-name:  Heatmap
+:CHART-GOAL:
+:CHART-CLASS: correlation
+:END:
+Représentation graphique d'une table de valeur homogène. [cite:@sosulskiGraphics2019]
+Intéressante pour afficher une tendance lorsqu'un très grand nombre d'information est impliqué.
+
+Ce graphique utilise les couleurs de la palette thermique [[fig:Pal-t]].
+
+L'organisation des catégories changeant la forme de la matrice de température, il convient de retenir une organisation par valeur croissante ou décroissante à une colonne donnée. Il convient de signaler cette configuration au lecteur. [cite:@wilkeVisualizingAmounts2019]
+
+L'emplois de solutions d'intéractivité permet une meilleure découverte des données affichées.
+
+*** Arbre de mot
+:PROPERTIES:
+:en-name:  Treeword
+:chart-class: correlation
+:chart-goal: discovery
+:data-nature: quantitative
+:data-type: text
+:DATA-TRANSFERT: count
+:data-table: key-value
+:data-cleanning: stopwords
+:data-filter: depth
+:data-unit: nil
+:DATA-PROCESSING: COUNT()
+:END:
+Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegs 2007) La taille des mots représente la fréquence de leurs usages. [cite:@jonathanschwabishQualitative2021]
+
+
+** Déviation
+
+#+caption: Séléction d'un graphique de déviation
+#+name: fig:select-deviation
+#+attr_latex: :float multicolumn
+[[./img/select-deviation.pdf]]
+
+*** Alluvial
+:PROPERTIES:
+:CHART-CLASS: evolution
+:END:
+
+Montre les changements sur un flux entre un état et au moins un autre. Adapté au traçage d'un processus complexe. [cite:@alansmithLexiqueVisuel]
+
+Cette représentation découpe un ensemble en quantité individuelles de plusieurs catégories. Les bandes sont tracées entre chaque catégories pour représenter leurs relations. La largeur des bandes indiquent la proportion des catégories correllées les unes aux autres. [cite:@wilkeVisualizingNestedProportions2019]
+
+A utiliser à la place des mosaiques et treemaps lorsqu'il y a plus de deux variables de regroupement des données. [cite:@wilkeDirectoryVisualizations2019]
+
+*** Bande de valeur
+:PROPERTIES:
+:en-name:  Strip plot
+:CHART-GOAL:
+:CHART-CLASS: distribution
+:DATA-PROCESSING: GROUP BY
+:END:
+Affiche les points de données d'une catégorie.[cite:@jonathanschwabishDistribution2021] Les valeurs peuvent être affichés par des lignes ou des cercles pleins mais les cercles sont à privilégier lorsqu'il est nécessaire de déagglomérer les données.
+
+Il est possible d'utiliser de la transparence pour illustrer les zones de valeurs compactes. [cite:@jonathanschwabishDistribution2021] Utilisez la palette de couleurs divergentes [[fig:Pal-d]] pour mettre en évidence la répartition des valeurs mesurées et souligner la séparation de celles ci par rapport à un axe de référence.[cite:@jonathanschwabishDistribution2021]
+
+Les points peuvent être légèrement décalés les uns des autres par un offset pour éviter le masquage de données par surimposition. Ce mode de représentation est appelé "essaim d'abeille" (beeswarm). [cite:@jonathanschwabishDistribution2021]
+
+# -----à creuser-----
+Histopoint : Wilkinson dot plot (Leland Wilkinson) Affichage des bandes de valeurs pour chaque agrégat d'un histogramme.[cite:@jonathanschwabishDistribution2021]
+
+Epis de blé : Wheat plot (SFew)
+
+*** Barre divergente
+:PROPERTIES:
+:EN-NAME:  Diverging bar chart
+:CHART-GOAL:
+:CHART-CLASS: deviation
+:END:
+Affiche correctement un ensemble de valeur quantitative triées par catégories lorsque des valeurs négatives sont utilisées. [cite:@alansmithLexiqueVisuel] L'axe des absysse doit être égal à 0 et toutes les barres doivent être projetées depuis cet axe.
+
+*** Barre divergente empilée
+:PROPERTIES:
+:EN-NAME:  Diverging stacked bar chart
+:CHART-GOAL:
+:CHART-CLASS: deviation
+:END:
+Utilisé pour illustrer les résultats d'enquêtes impliquant un sentiment. [cite:@alansmithLexiqueVisuel] Les barres doivent être calculées en pourcentage et alignées à 100% comme pour une partie d'un ensemble. Les réponses sont affichées de façon ordonée et du plus négatif au plus positif. Il convient d'utiliser une palette de couleur divergente. Lors de la préparation d'une enquête impliquant des sentiment, il est conseiller de proposer un choix de valeur paires pour éviter les votes neutres sauf si la représentation de l'indiférence est une volontée de l'étude. De plus, *expliquer la limite de nombre de zones facile à visualiser* (max 6?)
+
+*** Cascade
+:PROPERTIES:
+:en-name:  Waterfall plot
+:CHART-GOAL:
+:CHART-CLASS: deviation
+:END:
+Affiche les gains et pertes entres deux états d'un système. [cite:@jonathanschwabishComparingCategories2021] Utilisé principalement pour les analyses financières. [cite:@alansmithLexiqueVisuel]
+*** Chandelier
+:PROPERTIES:
+:en-name:  Candlestick
+:CHART-GOAL:
+:CHART-CLASS: deviation
+:END:
+Affiche des bilans quotidiens (eg. ouverture, fermeture, point haut, point bas). [cite:@alansmithLexiqueVisuel]
+La couleur est utilisée pour représenter la direction de l'évolution de la valeur (augmente, descend).
+
+Illustre les évolutions d'un stock sur une temporalité donnée. La ligne indique l'état le plus haut et l'état le plus bas de la journée. La barre indique l'état de l'ouverture et de la cloture de la période. [cite:@jonathanschwabishDistribution2021] Il convient d'utiliser une palette de couleur binaire pour contraster les périodes aux soldes positifs des périodes aux soldes négatifs.
+
+*** Colonne vertébrale
+:PROPERTIES:
+:en-name:  Spine chart
+:CHART-GOAL:
+:CHART-CLASS: deviation
+:END:
+Utilisé pour afficher la quantité de réponses négatives et positives à une question. Le spine divise une valeure quantitative unique en deux composants distinct contrasté par un déterminent binaire. [cite:@alansmithLexiqueVisuel] Utilisé pour afficher la quantité de réponses négatives et positives à une question.
+
+*** Courbe cumulative
+:PROPERTIES:
+:en-name:
+:CHART-GOAL:
+:CHART-CLASS: distribution
+:DATA-PROCESSING: CUME_DIST() OVER()
+:END:
+Utilisé pour représenter une distribution inégale. L'axe des ordonnées est toujours la fréquence cumulative et l'axe des absisses est toujours une mesure. [cite:@alansmithLexiqueVisuel]
+
+*** Eventail
+:PROPERTIES:
+:en-name:
+:CHART-GOAL:
+:CHART-CLASS: evolution
+:END:
+Utilisé pour montrer l'incertitude des projections futures. [cite:@alansmithLexiqueVisuel]
+
+*** Nuage de point connecté
 :PROPERTIES:
 :EN-NAME:  Connected scatterplot
 :CHART-GOAL:
@@ -855,73 +1012,13 @@ Comme ce graphique sert à synthétiser des variations de valeurs, il est préf�
 
 Un exemple d'utilisation du nuage de point connecté : `https://share.stateofjs.com/share/prerendered?localeId=en-US&surveyId=state_of_js&editionId=js2024&blockId=tools_arrows&params=&sectionId=libraries`
 
-** Pareto
-:PROPERTIES:
-:EN-NAME:  Pareto
-:CHART-GOAL:
-:CHART-CLASS: correlation
-:END:
-Ce type de graphique montre la relation entre les valeurs quantitatives de catégories organisées en colonne ordonnée et la valeur cumulée affichée en ligne brisée. Le premier point de la ligne vérifiant \(\tau\geq80\%Total\) est affichée. La zone précédent ce point est mise en évidence.
-Est utilisé pour illustrer les éléments important dans un système qualité.
-
-** Pente
-:PROPERTIES:
-:en-name: Slope-chart
-:CHART-GOAL:
-:CHART-CLASS: ranking
-:END:
-Affiche la variation des valeurs ou ratios des catégories entre deux états donnés. [cite:@alansmithLexiqueVisuel]
-
-** Quadrillage
-:PROPERTIES:
-:en-name:
-:CHART-GOAL:
-:CHART-CLASS: part-to-whole
-:END:
-Adapté à l'affichage des informations en pourcentages. Fonctionne mieux avec des entiers naturels. [cite:@alansmithLexiqueVisuel] Généralement en grille de 10 x 10 carrés (pour un total de 100). Chaque carré représente 1% d'un tout. Les carrés sont colorés sur la base de la taille d'une catégorie dans un groupe. [cite:@mikeyiHowChooseRight2020]
-
-** Radar
-:PROPERTIES:
-:en-name:
-:CHART-GOAL:
-:CHART-CLASS: magnitude
-:END:
-Représentation compacte de la valeur de variables hétérogènes pour un seul système. [cite:@alansmithLexiqueVisuel] Les radards sont utilisés pour identifier les variables ayant des valeurs similaires et les exceptions. [cite:@sosulskiGraphics2019]
-
-La représentation des valeurs se fait à travers la forme globale du polygonne. Il convient de coloriser l'interrieur de celui-ci pour bien faire ressortir sa forme. [cite:@jonathanschwabishRelationship2021]
-
-Utiliser une disposition en small-multiples plutot que de surimposer plusieurs polygones de valeurs. [cite:@jonathanschwabishRelationship2021]
-
-La représentation des variables est fortement correlé à la forme du polygone plutot qu'aux valeurs des sommets. [cite:@sosulskiGraphics2019] De ce fait, pour améliorer la forme du polygonne et offrir une représentation avec le moins de distortions possibles, il convient d'homogénéiser les échelles des axes.
-
-** Ruisseau
-:PROPERTIES:
-:en-name: Streamgraph
-:CHART-GOAL:
-:CHART-CLASS: evolution
-:END:
-
-Vérifier la métaphore liée au nom
-
-A privilégier lorsque la visualisation des changements en proportions au fil du temps est plus importante que les valeurs individuelles. [cite:@alansmithLexiqueVisuel]
-
-** Sankey
+*** Sankey
 :PROPERTIES:
 :EN-NAME:  Sankey
 :CHART-GOAL:
 :CHART-CLASS: flow
 :END:
 Créé par : Matthew Henry Phineas Riall Sankey (1898)
-
-V1 : "Etat parallele"
-
-Montre les changements sur un flux entre un état et au moins un autre. Adapté au traçage d'un processus complexe. [cite:@alansmithLexiqueVisuel]
-
-Cette représentation découpe un ensemble en quantité individuelles de plusieurs catégories. Les bandes sont tracées entre chaque catégories pour représenter leurs relations. La largeur des bandes indiquent la proportion des catégories correllées les unes aux autres. [cite:@wilkeVisualizingNestedProportions2019]
-
-A utiliser à la place des mosaiques et treemaps lorsqu'il y a plus de deux variables de regroupement des données. [cite:@wilkeDirectoryVisualizations2019]
-
-V2 : "Entrées et sorties"
 
 L'épaisseur représente la part d'un évènement. Chaque flèche représente l'entrée ou la sortie d'élément sur le système étudié. [cite:@mikeyiHowChooseRight2020]
 
@@ -931,7 +1028,7 @@ Très utile pour représenter les flux entre des catégories ou entre des états
 
 Il convient néanmoins de limiter le nombre de catégorie  affiché pour maintenir un bon niveau de lisibilité. [cite:@jonathanschwabishComparingCategories2021]
 
-V3 : "Echanges, corde"
+Variante : "Echanges, corde"
 
 Illustre les flux bidirectionnels et le gagnant net dans une matrice. [cite:@alansmithLexiqueVisuel]
 
@@ -939,69 +1036,15 @@ Dans la mesure du possible, il convient de flécher le sens du flux.
 
 Ce diagramme incite les utilisateurs à l'explorer plus en détail. [cite:@jonathanschwabishRelationship2021]
 
-** Sismogramme
-:PROPERTIES:
-:EN-NAME:  Seismogram
-:CHART-GOAL:
-:CHART-CLASS: evolution
-:END:
-Pour montrer des séries à grandes variation dans les données. [cite:@alansmithLexiqueVisuel]
-
-** Tiret
-:PROPERTIES:
-:en-name: Bullet point
-:CHART-GOAL:
-:CHART-CLASS: indicator
-:END:
-selont Schwabish : inventé par Few
-
-La valeur actuelle mesurée ou calculée est observée au moyen d'une barre horizontale constrastant avec l'arrière plan. [cite:@jonathanschwabishComparingCategories2021]
-La valeur cible est représenté par une ligne verticale. [cite:@alansmithLexiqueVisuel]
-L'arrière plan expose 3 zones dites qualitative et associées à des notions de performance (eg. inférieur, moyen, bon). [cite:@sosulskiGraphics2019]
-
-Editer une série de tirets permet d'exposer au lecteur diverses comparaisons tout en restant compacte. [cite:@jonathanschwabishComparingCategories2021]
-
-Cette représentation est notamment pertinente lors de la réalisation d'un benchmark. [cite:@mikeyiHowChooseRight2020]
-# Définir benchmark
-
-** Treemap
-:PROPERTIES:
-:en-name: Treemap
-:CHART-GOAL:
-:CHART-CLASS: part-to-whole
-:END:
-Utilisé pour les relations hiérarchiques d'une partie vers l'ensemble. Difficile à lire s'il y a trop d'éléments affichés. [cite:@alansmithLexiqueVisuel]
-Le découpage des boites n'a pas besoin d'être ordonné, il peut y avoir plus de 2 niveaux de hiérarchie. [cite:@mikeyiHowChooseRight2020]
-
-** Valeur lettrée
-:PROPERTIES:
-:en-name: Letter value
-:CHART-GOAL:
-:CHART-CLASS: distribution
-:END:
-Représente chaque découpage statistique (\(x\sigma\)) par une boite distincte. Convient en remplacement des boites à moustache lorsqu'il y a un très grand nombre de données disponibles. Permet de faire des estimations fiables. [cite:@hofmannLettervaluePlotsBoxplots2017;@mikeyiHowChooseRight2020 ]
-
-** Violon
-:PROPERTIES:
-:EN-NAME:  Violin
-:CHART-GOAL:
-:CHART-CLASS: distribution
-:END:
-Représente fidèlement les distributions d'un très grand nombre de données. [cite:@alansmithLexiqueVisuel] Utilisé pour faire des comparaisons entre des catégories. [cite:@mikeyiHowChooseRight2020]  Très pertinent pour représenter les distributions bimodales. [cite:@wilkeVisualizingManyDistributions2019] Le tracé du demi-violon est identique au tracé d'une courbe de densité. Celui-ci commence à la valeur la plus petite et termine à la valeur la plus grande.
-
-** Voronoi
-:PROPERTIES:
-:EN-NAME:  Voronoi
-:CHART-GOAL:
-:CHART-CLASS: part-to-whole
-:END:
-Semblable à un diagramme de bulle mais transformées en zones dont l'ensemble des points de chacune est plus proche du centre de sa zone que de tout autre centroïde. [cite:@alansmithLexiqueVisuel]
-
-Il est très pertinent pour illustrer les parties d'un ensemble lorsque de nombreuses sous-catégories sont à afficher. [cite:@jonathanschwabishParttowhole2021] En ce sens, il est préféré aux camenberts.
 
 * Etudes futures
 Des études complémentaires pourraient être menées sur les sujets suivants :
-- La conception de librairies de graphiques accessibles et fonctionnant aussi bien dans un usage web que dans les PDF,
+
+La conception de librairies de graphiques accessibles et fonctionnant aussi bien dans un usage web que dans les PDF.
+  
+* Aknowledgement
+
+* Conflits d'intérêt
 
 * Evolution
 |    Date | Changements           |
