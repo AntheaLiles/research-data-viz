@@ -1047,8 +1047,8 @@ La conception de librairies de graphiques accessibles et fonctionnant aussi bien
 * Conflits d'intérêt
 
 * Evolution
-|    Date | Changements           |
-|---------+-----------------------|
+|    Date | Changements         |
+|---------+----------------------|
 | 2025-02 | Rédaction du document |
 
 * Glossaire
