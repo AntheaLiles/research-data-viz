@@ -1,6 +1,6 @@
 # Drawio
-.bkp
-.dtmp
+*.bkp
+*.dtmp
 
 # TeX
-.bbl
+*.bbl
