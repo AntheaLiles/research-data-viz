@@ -1,0 +1,23 @@
+#+title: Déclaration de Conflits d'Intérêts
+#+author: Cyprien PIERRE
+#+EMAIL: cyprien.pierre@eiffage.com
+#+DATE: {{{time(%Y-%m-%d)}}}
+
+* Déclaration
+Dans le cadre de ce projet de recherche, je déclare les conflits d'intérêts potentiels suivants :
+
+*Relations Professionnelles* : Je suis employé par Eiffage Energie Systèmes, et ce projet est réalisé dans le cadre de mes activités professionnelles au sein de cette entreprise.
+
+*Relations Financières* : Je possède des actions chez Eiffage (groupe). Bien que cela puisse être perçu comme un conflit d'intérêt potentiel, je m'engage à maintenir l'objectivité et l'intégrité de cette recherche.
+
+*Impact du Projet* : Les résultats de cette étude peuvent potentiellement bénéficier à l'ensemble du secteur, y compris à mon employeur et à ses concurrents. Je m'engage à présenter les résultats de manière impartiale et à garantir que les conclusions ne sont pas influencées par des intérêts particuliers.
+
+* Mesures de Gestion des Conflits
+
+Pour gérer ces conflits d'intérêts potentiels, je m'engage à :
+
+- Maintenir une transparence totale concernant mes affiliations et intérêts financiers.
+- Assurer que les résultats et les conclusions de cette étude sont fondés sur des données objectives et des analyses rigoureuses.
+- Considérer les implications éthiques et professionnelles de mes décisions tout au long du projet.
+
+Je suis en pleine démarche de mise en place de mesures supplémentaires pour garantir l'intégrité de cette recherche et je m'engage à les documenter au fur et à mesure de leur mise en œuvre.

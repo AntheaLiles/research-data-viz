@@ -27,7 +27,7 @@
 #+LATEX_HEADER: \usepackage[table]{xcolor}
 
 # ---Listes et énumérations-------
-#+LATEX_HEADER: \usepackage{enumitem}
+#+LATEX_HEADER: \usepackage{enumitem}\setlist{nosep}
 
 # ---Graphiques et dessins-------
 #+LATEX_HEADER: \usepackage{graphicx,xcolor,pgf,tikz,pgfplots,pgfplotstable}
