@@ -1,5 +1,5 @@
-#+title: Méthode de sélection et de configuration des représentations graphiques des corpus d'informations
 #+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
+#+title: Méthode de sélection et de configuration des représentations graphiques des corpus d'informations
 #+EMAIL: cyprien.pierre@eiffage.com
 #+DATE: {{{time(%Y-%m-%d)}}}
 #+setupfile: "config.org"
@@ -17,11 +17,10 @@ La visualization de donnée est une discipline ancienne à la littérature riche
 
 La production d'information réalisée par ordinateur ayant tendance à être perçue comme authentique et fiable [cite@Stephenfew2012p9] il convient de respecter un certain nombre de rêgles et de bonnes pratiques pour ne pas introduire de biais complémentaires. Nous tentons, à travers ce document, d'objectiver les usages des diverses représentations et leurs configurations.
 
-L'origine de ces travaux prend place dans un besoin grandissant de solution de visualization d'information dans le secteur de la construction. Les technologies de Big Data, BIM, VDC et les disciplines de la science des données ont fortement pénétré ce secteur sur l'ensemble du cycle de vie des ouvrages. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020] L'élaboration de jumeau numérique des bâtiments, l'utilisation renforcée de l'IoT, l'émèrgence des BIS et BOS et l'intégration des solutions d'intelligences artificielles renforcent d'autant plus la nécessité pour ce secteur de se doter de moyens robuste en exploration et en communication des informations.
-
-L'accès à l'information et à sa bonne interprétation permet aux organisations d'adopter une démarche de prise de décision orienté sur les données. [cite:@sosulskiDataVisualizationMade2019]  =expliquer les enjeux inhérents + références=.
-
 Le secteur de la construction est historiquement peu digitalisé en comparaison avec les autres industries.[cite:@safurazabidinBibliometricScientometricMapping2020] Pour adresser ce retard, il est important de publier des études opérationnelle claires et industrialisables dont chaque acteur puisse bénéficier immédiatement. Ce rapport s'inscrit dans cette démarche.
+
+L'origine de ces travaux prend place dans un besoin grandissant de solution de visualization d'information dans le secteur de la construction. Les technologies de Big Data, BIM, VDC et les disciplines de la science des données ont fortement pénétré ce secteur sur l'ensemble du cycle de vie des ouvrages. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020] L'élaboration de jumeau numérique des bâtiments, l'utilisation renforcée de l'IoT, l'émèrgence des BIS et BOS et l'intégration des solutions d'intelligences artificielles renforcent d'autant plus la nécessité pour ce secteur de se doter de moyens robuste en exploration et en communication des informations.
+L'accès à l'information et à sa bonne interprétation permet aux organisations d'adopter une démarche de prise de décision orienté sur les données. [cite:@sosulskiDataVisualizationMade2019]  =expliquer les enjeux inhérents + références=.
 
 
 Il existe de multiples manières d'interargir avec un graphique. [cite:@schwabishCenteringAccessibilityData2022a;@frankelavskyRightToolsJob2022]
