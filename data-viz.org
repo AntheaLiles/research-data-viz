@@ -1,11 +1,11 @@
+#+title: Méthode de sélection, configuration et validation des représentations graphiques des corpus d'informations
 #+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
-#+title: Méthode de sélection et de configuration des représentations graphiques des corpus d'informations
 #+EMAIL: cyprien.pierre@eiffage.com
 #+DATE: {{{time(%Y-%m-%d)}}}
 #+setupfile: "config.org"
 
 #+begin_abstract
-Rédiger l'abstract ici
+\todo[inline]{Rédiger l'abstract}
 #+end_abstract
 
 \renewcommand{\keywordsname{\textbf{Mots clés : }\keywords{Visualisation de données, Graphique, Méthode}
@@ -15,12 +15,12 @@ Rédiger l'abstract ici
 * Introduction
 La visualization de donnée est une discipline ancienne à la littérature riche et précise. Cependant, il n'existe, à ce jour pas de synthèse opérationnelle ni de méthode harmonisée dans la conception des représentations graphiques des informations. Ce rapport vise à fournir un point de départ cohérent à de futurs travaux en représentation visuelle d'informations. Il est basé sur une revue de littérature rigoureuse et les recommendations qu'il porte sont issues des lectures réalisées.
 
-La production d'information réalisée par ordinateur ayant tendance à être perçue comme authentique et fiable [cite@Stephenfew2012p9] il convient de respecter un certain nombre de rêgles et de bonnes pratiques pour ne pas introduire de biais complémentaires. Nous tentons, à travers ce document, d'objectiver les usages des diverses représentations et leurs configurations.
+La production d'information réalisée par ordinateur ayant tendance à être perçue comme authentique et fiable, [cite:@stephenfewIntroduction2012] il convient de respecter un certain nombre de rêgles et de bonnes pratiques pour ne pas introduire de biais complémentaires. Nous tentons, à travers ce document, d'objectiver les usages des diverses représentations et leurs configurations.
 
 Le secteur de la construction est historiquement peu digitalisé en comparaison avec les autres industries.[cite:@safurazabidinBibliometricScientometricMapping2020] Pour adresser ce retard, il est important de publier des études opérationnelle claires et industrialisables dont chaque acteur puisse bénéficier immédiatement. Ce rapport s'inscrit dans cette démarche.
 
 L'origine de ces travaux prend place dans un besoin grandissant de solution de visualization d'information dans le secteur de la construction. Les technologies de Big Data, BIM, VDC et les disciplines de la science des données ont fortement pénétré ce secteur sur l'ensemble du cycle de vie des ouvrages. [cite:@asiauniversitytaichungtaiwanResearchApplicationFunctiontechnologyaesthetics2020] L'élaboration de jumeau numérique des bâtiments, l'utilisation renforcée de l'IoT, l'émèrgence des BIS et BOS et l'intégration des solutions d'intelligences artificielles renforcent d'autant plus la nécessité pour ce secteur de se doter de moyens robuste en exploration et en communication des informations.
-L'accès à l'information et à sa bonne interprétation permet aux organisations d'adopter une démarche de prise de décision orienté sur les données. [cite:@sosulskiDataVisualizationMade2019]  =expliquer les enjeux inhérents + références=.
+L'accès à l'information et à sa bonne interprétation permet aux organisations d'adopter une démarche de prise de décision orienté sur les données. [cite:@sosulskiDataVisualizationMade2019]  \todo[inline]{expliquer les enjeux inhérents + références}
 
 
 Il existe de multiples manières d'interargir avec un graphique. [cite:@schwabishCenteringAccessibilityData2022a;@frankelavskyRightToolsJob2022]
@@ -44,7 +44,7 @@ Cette première action nous a permis de pré-catégoriser les graphiques selon l
 
 Ensuite, nous avons étudié les livres de divers auteurs et en avons tirés un ensemble de rêgles générales quant à la préparation des graphiques. Cela concerne les aspects visuels (couleurs, polices...), des conseils sur la pertinence dans le choix des types graphiques suivant les objectifs attendus, quelques éléments d'accessibilités et des retours d'expériences. Sur cette base, nous avons affiné la catégorisation préétablies et commencé à regrouper les recommendations.
 
-Pour compléter les dispositions propres à l'accessibilité, nous avons étudié le rapport "Centering accessibility in data visualization". [cite:@schwabishCenteringAccessibilityData2022] Nous en avons tiré un apperçu global des approches possibles pour améliorer l'accessibilité des graphiques ainsi que de nombreux conseils et bonnes pratiques.
+Pour compléter les dispositions propres à l'accessibilité, nous avons étudié le rapport "Centering accessibility in data visualization". [cite:@schwabishNotHarmGuide2022] Nous en avons tiré un apperçu global des approches possibles pour améliorer l'accessibilité des graphiques ainsi que de nombreux conseils et bonnes pratiques.
 
 En parallele, nous avons étudié diverses chartes de publications issues de divers médias et institutions. Ces lectures nous ont permis de nourrir les reccommendations en matière de conception visuelle des graphiques ainsi que de dresser une liste d'éléments standardisables et d'autres pouvant être laisser libre de personnalisation avec quelques conseils.
 
@@ -84,7 +84,7 @@ Des outils comme [[https://gka.github.io/palettes/#/5|s|ce0072,96ffea,00ffad|fff
 
 Elle doit également éviter les biais sociologiques, cognitifs, culturels, et autres tels que le genrage des couleurs,[cite:@andreaskrauseBestPracticesData2024] la perception morale[cite:@rose-greenlandColorPerceptionSociology2016] ou la valeur émotionnelle.[cite:@tranDiscoveringAccessibleData2024]
 
-L'utilisation de la couleur doit également respecter le principe de [cite:@Tufte:@ le principe sur l'encre de Tufte]. Ainsi, il convient de ne pas remplir les larges zones avec une couleur saturé.[cite:@wilkeCommonPitfallsColor2019] Si un remplissage est requis par le type de graphique, il est préférable d'utiliser des couleurs moins saturés et d'y ajouter de la transparence. [cite:@REF???]
+L'utilisation de la couleur doit également respecter le principe de [cite:@principe sur l'encre de Tufte]. Ainsi, il convient de ne pas remplir les larges zones avec une couleur saturé.[cite:@wilkeCommonPitfallsColor2019] Si un remplissage est requis par le type de graphique, il est préférable d'utiliser des couleurs moins saturés et d'y ajouter de la transparence. [cite:@REF???]
 
 #+caption: Palette d'évidence
 #+name: fig:Pal-a
@@ -103,7 +103,38 @@ Le plus efficace est de tracer tous les éléments dans un gris homogène et lé
 
 Permet de souligner un propos divergent suivant un facteur binaire.[cite:@jonathanschwabishDevelopingDataVisualization2021] 
 
-#+caption: Palette divergente
+
+#+caption: Palette Séquencielle
+#+name: fig:Pal-m
+#+attr_latex: :placement [H]
+[[./img/palette-monochrome.pdf]]
+
+Aussi appelée "monochrome", cette palette de couleur est utilisée lorsque les données sont organisées dans un ordre quantitatif (croissant, décroissant, etc.). [cite:@wilkeColorScales2019;@jonathanschwabishDevelopingDataVisualization2021]
+
+Les variations réalisées en modifiant la lumiosité d'une teinte.[cite:@andreaskrauseBestPracticesData2024] 
+
+En utilisant cette palette de couleur, l'utilisateur perçoit la valeur la plus contrasté (foncé) comme étant la plus haute et inversement. [cite:@kirkDataRepresentation2019]
+
+Il convient d'employer une graduation présente dans l'environnement natuel, partant par exemple d'un bleu foncé et évoluent vers un jaune clair. [cite:@wilkeColorScales2019]
+
+
+#+caption: Palette de Classement
+#+name: fig:Pal-q
+#+attr_latex: :placement [H]
+[[./img/palette-ranking.pdf]]
+
+Cette palette de couleur est utilisée pour encodé les variations des positions relatives des catégories. La variation s'effectue sur la saturation de la couleur contrairement à la palette [[fig:Pal-m]] qui varie sur la luminosité.
+
+#+caption: Palette thermique
+#+name: fig:Pal-t
+#+attr_latex: :placement [H]
+[[./img/palette-thermique.pdf]]
+
+C'est la température des couleurs qui souligne l'importance des données, du plus froid (faible) au plus chaud (élevé). [cite:@REF???]
+
+En utilisant cette palette de couleur, l'utilisateur donnera plus d'importance aux zones de couleurs chaudes. [cite:@REF???]
+
+#+Caption: Palette divergente
 #+name: fig:Pal-d
 #+attr_latex: :placement [H]
 [[./img/palette-divergente.pdf]]
@@ -115,28 +146,6 @@ Il convient que les écarts de contraste des deux extrémitées avec le point ce
 Il convient de ne pas utiliser le rouge et le vert conjointement comme teintes d'extrémités car environ 4% de la population ne peut pas discriminer ces couleurs. [cite:@schwabishCenteringAccessibilityData2022a]
 
 Il convient d'utiliser un vérificateur de couleur pour valider la composition de cette palette.[cite:@andreaskrauseBestPracticesData2024]
-
-#+caption: Palette Séquencielle
-#+name: fig:Pal-m
-#+attr_latex: :placement [H]
-[[./img/palette-monochrome.pdf]]
-
-Aussi appelée "monochrome", cette palette de couleur est utilisée lorsque les données sont organisées dans un ordre quantitatif (croissant, décroissant, etc.). [cite:@wilkeColorScales2019;@jonathanschwabishDevelopingDataVisualization2021]
-
-Les variations réalisées en modifiant la lumiosité d'une teinte.[cite:@andreaskrauseBestPracticesData2024] 
-
-En utilisant cette palette de couleur, l'utilisateur perçoit la valeur la plus contrasté (foncé) comme étant la plus haute et inversement. [cite:@REF???]
-
-Il convient d'employer une graduation présente dans l'environnement natuel, partant par exemple d'un bleu foncé et évoluent vers un jaune clair. [cite:@wilkeColorScales2019]
-
-#+caption: Palette thermique
-#+name: fig:Pal-t
-#+attr_latex: :placement [H]
-[[./img/palette-thermique.pdf]]
-
-C'est la température des couleurs qui souligne l'importance des données, du plus froid (faible) au plus chaud (élevé). [cite:@REF???]
-
-En utilisant cette palette de couleur, l'utilisateur donnera plus d'importance aux zones de couleurs chaudes. [cite:@REF???]
 
 #+caption: Palette catégorique
 #+name: fig:Pal-c
@@ -192,7 +201,7 @@ Pour une présentation imprimée (PDF ou papier), la note doit être imprimé en
 
 *** Texte alternatif
 Ce type de texte est utilisé pour présenter les graphiques aux utilisateurs employant un logiciel de lecture d'écran. Il n'est pas affiché ni imprimé mais seulement lu par ces logiciels spécialisés.
-Les recommendations de cette sections proviennent de l'ouvrage "Centering Accessibility in Data Visualization"[cite:@schwabishCenteringAccessibilityData2022]
+Les recommendations de cette sections proviennent de l'ouvrage "Centering Accessibility in Data Visualization"[cite:@schwabishNotHarmGuide2022]
 
 La rédaction de ce texte doit fournir une experience similaire à la visualisation du graphique.
 
@@ -262,7 +271,7 @@ Indiquer les valeurs négatives avec le symbole moins "-", ici la notion de vale
 Séparer les digit d'un nombre par un espace tous les 3 charactères. Dans le cas de grands nombres, il convient de les arrondir à la précision utile (dixaine, centaine...). Par défaut, la précision affichée doit correspondre à celle de la source d'information.
 Si une valeur numérique réfère à une information de catégorie elle doit être traitée comme un texte.
 
-En cas de constat de déviations, utilisez les symboles plus "+" pour les déviations positives, moins "-" pour les déviations négatives et cercle "\circ" pour les éléments stables. [cite:@andreaskrauseBestPracticesData2024]
+En cas de constat de déviations, utilisez les symboles plus (+) pour les déviations positives, moins (-) pour les déviations négatives et cercle ($\circ$) pour les éléments stables. [cite:@andreaskrauseBestPracticesData2024]
 
 *** Texte
 Aligner les textes à gauche.
@@ -307,7 +316,7 @@ La seconde direction est de filtrer les types de graphiques en fonction de l'obj
 
 #+caption: Parcours de sélection initial
 #+name: fig:select-filter
-#+attr_latex: :float multicolumn
+#+attr_latex: :placement [H]
 [[./img/select-filter.pdf]]
 
 La suite de l'étude présentera, pour chaque catégorie de graphique, un parcours de discrimination supplémentaire.
@@ -315,12 +324,12 @@ La suite de l'étude présentera, pour chaque catégorie de graphique, un parcou
 Pour améliorer l'assistance informatique de l'informatique  à l'utilisateur dans son parcours de conception de graphique, il pourrait être envisager d'étudier la conception d'une interface de requête en langage formel et produisant une proposition de graphique.
 
 Un graphique conçu dans un espace partager d'analyse de donnée peut être difficile à retrouver. Il peut également être affiché dans divers contextes tels qu'une présentation, un rapport ou encore un tableau de bord. Une étude traitant de la récupération d'information associé à une analyse sémantique des graphiques pourrait être menée pour concevoir un système adapté à la recherche d'un graphique existant.
-
+* Méthode de configuration
 ** Indicateur
 
 #+caption: Séléction d'un graphique d'indicateur
 #+name: fig:select-indicateur
-#+attr_latex: :float multicolumn
+#+attr_latex: :placement [H]
 [[./img/select-indicateur.pdf]]
 
 *** Marqueur
@@ -344,6 +353,11 @@ Cette représentation est notamment pertinente lors de la réalisation d'un benc
 # Définir benchmark
 
 ** Composition
+
+#+caption: Séléction d'un graphique de composition
+#+name: fig:select-compo
+#+attr_latex: :placement [H]
+[[./img/select-composition.pdf]]
 
 *** Camembert
 Diagramme standard, difficile à lire. [cite:@alansmithLexiqueVisuel]
@@ -411,7 +425,7 @@ Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la compositi
 
 #+caption: Séléction d'un graphique de classement
 #+name: fig:select-classement
-#+attr_latex: :float multicolumn
+#+attr_latex: :placement [H]
 [[./img/select-classement.pdf]]
 
 *** Barre ordonnée
@@ -532,7 +546,7 @@ Interractivité : pouvoir explorer l'ensemble des graphiques simultanéments (eg
 
 #+caption: Séléction d'un graphique de distribution
 #+name: fig:select-distribution
-#+attr_latex: :float multicolumn
+#+attr_latex: :placement [H]
 [[./img/select-distribution.pdf]]
 
 *** Courbe de densité
@@ -544,39 +558,37 @@ Représente fidèlement les distributions d'un très grand nombre de données. [
 *** Histogramme
 Utilisé pour afficher la fréquence d'une variable simple regroupée en intervale de fréquence (agrégat).[cite:@sosulskiGraphics2019] Il affiche ainsi une distribution statistique de donnée. Il n'y a pas d'espace entre deux barres (ratio 1:0) ce qui permet de favoriser la forme de la distribution. [cite:@alansmithLexiqueVisuel]
 
-#+caption: Composition d'un histogramme
-#+name: fig:Compo-histogram
-#+attr_latex: :placement [H]
-[[./img/histogram-compo.pdf]]
+# #+caption: Composition d'un histogramme
+# #+name: fig:Compo-histogram
+# #+attr_latex: :placement [H]
+# [[./img/histogram-compo.pdf]]
 
 La nature du graphique (barre) implique un calcul d'agrégat pour chaque barre. [cite:@wilkeVisualizingDistributionsHistograms2019] La largeur de l'agrégat est à évaluer par le concepteur au regard du niveau de détail souhaité.[cite:@wilkeVisualizingDistributionsHistograms2019]
 
-#+caption: Sélection des rêgles de définitions des agrégats
-#+name: fig:histo-agregats
-#+attr_latex: :placement [H]
-[[./img/histogram-agregats.pdf]]
+# #+caption: Sélection des rêgles de définitions des agrégats
+# #+name: fig:histo-agregats
+# #+attr_latex: :placement [H]
+# [[./img/histogram-agregats.pdf]]
 
-
-L'utilisation d'un histogramme permet d'identifier des schémas de distributions tels que définis dans la figure [[fig:Patterns-histogram]] : [cite:@jonathanschwabishDistribution2021]
+L'utilisation d'un histogramme permet d'identifier des schémas de distributions tels que définis dans la figure [[fig:Patterns-histogram]]. [cite:@jonathanschwabishDistribution2021]
+Ces schémas sont dit :
+- *Incliné à gauche* lorsque les données sont majoritairement sur la gauche du graphique,
+- *Incliné à droite* lorsque les données sont majoritairement sur la droite du graphique,
+- *Symétrique* quand il y a approximativement égal de valeurs de chaque coté d'une valeur centrale,
+- *Bimodale* lorsque deux pics de valeurs sont constatables,
+- *Multimodale* lorsque plus de deux pics de valeurs sont constatables,
+- *Uniforme* quand toutes les valeurs sont distribuées de façon globalement homogène.
 
 #+caption: Illustration des formes remarquables d'un histogramme
 #+name: fig:Patterns-histogram
 #+attr_latex: :placement [H]
 [[./img/histogram-patterns.pdf]]
 
-*Incliné à gauche :* les données sont majoritairement sur la gauche du graphique
-*Incliné à droite :* les données sont majoritairement sur la droite du graphique
-*Bimodale :* lorsque deux pics de valeurs sont constatables
-*Multimodale :* lorsque plus de deux pics de valeurs sont constatables
-*Symétrique :* lorsqu'il y a un nombre approximativement égal de valeurs de chaque coté d'une valeur centrale
-*Uniforme :* lorsque toutes les valeurs sont distribuées de façon globalement homogène
-
-Les variantes de l'histogrammes :
-
-#+caption: Illustration des variantes de l'histogramme
-#+name: fig:Variantes-histogram
-#+attr_latex: :placement [H]
-[[./img/histogram-variantes.pdf]]
+# Les variantes de l'histogrammes :
+# #+caption: Illustration des variantes de l'histogramme
+# #+name: fig:Variantes-histogram
+# #+attr_latex: :placement [H]
+# [[./img/histogram-variantes.pdf]]
 
 L'histogramme n'est pas adapté aux cas suivant :
 - l'affichage de l'ensemble des valeurs, pour cela il convient d'utiliser une [[courbe de densité]]. [cite:@wilkeVisualizingDistributionsHistograms2019]
@@ -606,7 +618,7 @@ Excellente visualisation pour suivre la fréquence d'une activité. Favorise la 
 
 #+caption: Séléction d'un graphique d'évolution
 #+name: fig:select-evolution
-#+attr_latex: :float multicolumn
+#+attr_latex: :placement [H]
 [[./img/select-evolution.pdf]]
 
 *** Jauge
@@ -659,7 +671,7 @@ La plage allant de la plus petite à la plus grande valeur occupe entre 70 et 80
 
 #+caption: Séléction d'un graphique de correlation
 #+name: fig:select-corellation
-#+attr_latex: :float multicolumn
+#+attr_latex: :placement [H]
 [[./img/select-correlation.pdf]]
 
 *** Pareto
@@ -712,13 +724,16 @@ L'organisation des catégories changeant la forme de la matrice de température,
 L'emplois de solutions d'intéractivité permet une meilleure découverte des données affichées.
 
 *** Arbre de mot
-Représente les liens sémantiques. Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau) Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegs 2007) La taille des mots représente la fréquence de leurs usages. [cite:@jonathanschwabishQualitative2021]
+Représente les liens sémantiques.
+Utilisé pour classifier les réponses textuelles d'une enquête.(voir Paige Jarreau)
+Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg & Fernanda Viegs 2007)
+La taille des mots représente la fréquence de leurs usages. [cite:@jonathanschwabishQualitative2021]
 
 ** Déviation
 
 #+caption: Séléction d'un graphique de déviation
 #+name: fig:select-deviation
-#+attr_latex: :float multicolumn
+#+attr_latex: :placement [H]
 [[./img/select-deviation.pdf]]
 
 *** Alluvial
@@ -809,20 +824,57 @@ $$LieFactor=\abs{\frac{\frac{\Delta VisualLength}{VisualStartLength}}{\frac{\Del
 
 Références à Sosulski & Tufte : Lie Factor
 
+Pour définir un cadre de validation des graphiques, nous avons étudié les personas mis à disposition par Will Soward à travers le site web "Neurodiversity Design System".[cite:@NeurodiversityDesignSystem]
+
+De cette étude, nous avons extrait des éléments généraux et d'autres pouvant faire l'objet d'un choix de personnalisation de l'utilisateur. Le tableau [[table:persona]] les identifies.
+
+#+caption:Résumé des attentes utilisateurs
+#+name: table:persona
+#+attr_latex: :float multicolumn
+| N° | Besoins                    | Niveau d'implémentation | Référence CIM-10 |
+|----+----------------------------+-----------------------+-----------------|
+| 01 | Absence d'animation         | Personnalisé           | F84, F90         |
+| 02 | Absence de distraction        | Personnalisé           | F84, F90         |
+| 03 | Adapté au thème sombre      | Tous les utilisateurs     | F84             |
+| 04 | Adapter la langue            | Personnalisé           | N/A             |
+| 05 | Aide contextuelle             | Personnalisé           | F70-F79         |
+| 06 | Concision des informations    | Personnalisé           | F84             |
+| 07 | Données claires et factuelles   | Tous les utilisateurs     | F70-F79         |
+| 08 | Explication d'utilisation       | Personnalisé           | F70-F79         |
+| 09 | Facilité d'accès à l'information | Tous les utilisateurs     | F70-F79, F90      |
+| 10 | Facilité de compréhension     | Tous les utilisateurs     | F70-F79         |
+| 11 | Facilité d'utilisation           | Tous les utilisateurs     | F70-F79, F84      |
+| 12 | Lecture par logiciel           | Personnalisé           | R48, H53, H54     |
+| 13 | Réduire la luminosité         | Personnalisé           | F84, H53, H54     |
+| 14 | Rétrocompatibilité           | Tous les utilisateurs     | N/A             |
+
+Les références CIM-10 mensionnées dans le tableau [[table:persona]] sont : les troubles du langage (R48), les troubles de déficience cognitive (F70-F79), les troubles du spectre autistique (F84), les troubles du déficit de l'attention avec ou sans hyperactivité (F90)  les troubles de la vision (H53), les déficits de la vision (H54).
+
+La capacité de modifier la langue par défaut vise à limiter la barrière de la langue. Dans le même ordre, la rétrocompatibilité vise à limiter la fracture numérique.
+
+Cette analyse met en lumière l'intérêt de la considération de l'accessibilité pour les populations idoines. De nombreux éléments trouvent également  leurs place dans la conception de systèmes d'intérractions humain-machines et dont la prise en compte peut bénéficier à toutes les populations d'utilisateurs.
+
 * Etudes futures
 Des études complémentaires pourraient être menées sur les sujets suivants :
 
 La conception de librairies de graphiques accessibles et fonctionnant aussi bien dans un usage web que dans les PDF.
   
 * Evolution
-|    Date | Changements           |
-|---------+-----------------------|
+|    Date | Changements         |
+|---------+----------------------|
 | 2025-02 | Rédaction du document |
 
 * Glossaire
-#+print_glossary:
+# Fixer la position, l'export
+# #+include: ~/org/glossary.org
+# #+print_glossary: :type glossary
+
+* Acronymes
+# #+print_glossary: :type acronyms
 
 * Références
+# Séparer les entrées de bibliographie (Livres, Infographies, Normes, Articles, Divers)
+# Associer les chapitres de livres aux livres sources (crossref in biblatex)
 #+print_bibliography: :heading none
 
 #+LaTeX_HEADER: \end{multicols}

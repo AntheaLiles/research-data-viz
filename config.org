@@ -27,7 +27,7 @@
 #+LATEX_HEADER: \usepackage[table]{xcolor}
 
 # ---Listes et énumérations-------
-#+LATEX_HEADER: \usepackage{enumitem}\setlist{nosep}
+#+LATEX_HEADER: \usepackage{enumitem}\setlist{nosep}\setlist[itemize]{leftmargin=*}
 
 # ---Graphiques et dessins-------
 #+LATEX_HEADER: \usepackage{graphicx,xcolor,pgf,tikz,pgfplots,pgfplotstable}
@@ -42,8 +42,9 @@
 
 # ---Citations et références-------
 #+LATEX_HEADER: \usepackage{fvextra,csquotes}
-#+BIBLIOGRAPHY: ~/bib/references.bib
+#+BIBLIOGRAPHY: ~/org/references.bib
 #+cite_export: biblatex backend=biber,style=iso-numeric,doi=true,isbn=true,mincrossrefs=1,autocite=superscript
+#+LATEX_HEADER: \usepackage{etoolbox}
 #+latex_header: \definecolor{customgray}{HTML}{505050}
 
 # ---Gestion des images-------

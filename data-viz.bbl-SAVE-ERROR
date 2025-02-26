@@ -19,35 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{stephenfewIntroduction2012}{inbook}{}
-      \name{bookauthor}{1}{}{%
-        {{hash=196e1dab835cd0054b6fa1afa4aec3e2}{%
-           family={{Stephen Few}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Burlingame, California}%
-      }
-      \list{publisher}{1}{%
-        {Analytics Press}%
-      }
-      \strng{bookauthorbibnamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
-      \strng{bookauthornamehash}{196e1dab835cd0054b6fa1afa4aec3e2}
-      \strng{bookauthorfullhash}{196e1dab835cd0054b6fa1afa4aec3e2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Show Me the Numbers - {{Designing}} Tables and Graphs to Enlighten}
-      \field{edition}{Seconde Edition}
-      \field{isbn}{978-0-9706019-7-1}
-      \field{langid}{english}
-      \field{title}{Introduction}
-      \field{year}{2012}
-      \field{dateera}{ce}
-      \field{pages}{1\bibrangedash 14}
-      \range{pages}{14}
-      \keyw{/done,nosource}
-    \endentry
     \entry{safurazabidinBibliometricScientometricMapping2020}{article}{}
       \name{author}{3}{}{%
         {{hash=e0bf7ea05402ddb6740c2c7b392e0123}{%
@@ -72,8 +43,8 @@
       \strng{authorbibnamehash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
       \strng{authornamehash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
       \strng{authorfullhash}{a0d5f9d56c167c99bd3a6bb0887e79ab}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Industry 4.0 embraces digitization and smart products or processes that are integrated with several technological developments to control the entire value chain of workflows. The construction industry is also captivated with the idea of Industry 4.0 transformation that changes the traditional system into digital and cyberphysical system that interacts and connects across the geographical and organizational borders. However, as construction is commonly known as a low-technologically advanced industry, studies on Industry 4.0 in construction still remains elusive, as compared to other sectors such as manufacturing, electrical and electronic engineering and computer science. Therefore, this study aims to explore the current state of Industry 4.0 application from the construction engineering perspective. A systematic literature review (SLR) was conducted to identify publications related to Industry 4.0 in construction. A bibliometric analysis has been outlined through exclusion and inclusion principles, while a scientometric analysis has been further applied to enhance the SLR findings through `science mapping' visualization techniques. This study presents the relevance, along with the movement, adoption and adaption of Industry 4.0 in the construction industry that further enables the spark of new ideas, in effort to realize and comprehend the current and future technological transformation in construction.}
@@ -125,8 +96,8 @@
       \strng{authorbibnamehash}{7f357700b43471499ad9c11bb83c6849}
       \strng{authornamehash}{7f357700b43471499ad9c11bb83c6849}
       \strng{authorfullhash}{7f357700b43471499ad9c11bb83c6849}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Data visualization is the combination of design aesthetics and rigorous science, and the selection on visual representations is ultimately determined by the integration of aesthetics and design information. For the design knowledge and experience on this aspect is rather deficient, designers often cannot keep the balance between design and functions. This study is aim at developing a data visualization design method targeted to design on design education, to enable students to have specific methods to follow when engaging in information design and to provide reference to designers for design. The content analysis method is employed to discuss relevant literature and to summarize the data visualization design cases, and the data visualization design patterns are established to facilitate learning and knowledge inheritance of data visualization design.}
@@ -178,8 +149,8 @@
       \strng{authorbibnamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{authornamehash}{a1d8f9a3e172b359362317dd6883ac0e}
       \strng{authorfullhash}{a1d8f9a3e172b359362317dd6883ac0e}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Data Visualization Made Simple is a practical guide to the fundamentals, strategies, and real-world cases for data visualization, an essential skill required in today's information-rich world. With foundations rooted in statistics, psychology, and computer science, data visualization offers practitioners in almost every field a coherent way to share findings from original research, big data, learning analytics, and more. In nine appealing chapters, the book: - examines the role of data graphics in decision making, sharing information, sparking discussions, and inspiring future research; - scrutinizes data graphics, deliberates on the messages they convey, and looks at options for design visualization; and - includes cases and interviews to provide a contemporary view of how data graphics are used by professionals across industries. Both novices and seasoned designers in education, business, and other areas can use this book's effective, linear process to develop data visualization literacy and promote exploratory, inquiry-based approaches to visualization problems.}
@@ -219,8 +190,8 @@
       \strng{bookauthorbibnamehash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{bookauthornamehash}{ebbe9d2ebc5f596043750b769650aff2}
       \strng{bookauthorfullhash}{ebbe9d2ebc5f596043750b769650aff2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{booktitle}{Centering Accessibility in Data Visualization}
       \field{langid}{english}
@@ -249,8 +220,8 @@
       \strng{authorbibnamehash}{e986f96806172338671b5f104947725b}
       \strng{authornamehash}{e986f96806172338671b5f104947725b}
       \strng{authorfullhash}{e986f96806172338671b5f104947725b}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Centering Accessibility in Data Visualization}
@@ -280,8 +251,8 @@
       \strng{authorbibnamehash}{c16c9c145bf6a137f3c2a878c530a20f}
       \strng{authornamehash}{c16c9c145bf6a137f3c2a878c530a20f}
       \strng{authorfullhash}{c16c9c145bf6a137f3c2a878c530a20f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{"From Data to Viz" is a classification of chart types based on input data format. It will help you find the perfect chart in three simple steps : 1. Identify what type of data you have, 2. Go to the corresponding decision tree and follow it down to a set of possible charts, 3. Choose the chart from the set that will suit your data and your needs best. Dataviz is a world with endless possibilities ans this project does not claim to be exhaustive. However it should provide you with good starting point. For an interactive version and much more, visit : data-to-viz.com}
@@ -315,8 +286,8 @@
       \strng{authorbibnamehash}{6179acdac197289e51e14ed161361f3a}
       \strng{authornamehash}{6179acdac197289e51e14ed161361f3a}
       \strng{authorfullhash}{6179acdac197289e51e14ed161361f3a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The Graphic Continuum is our view of the many different types of visualizations available to us when we encode and present data. We've plotted nearly 90 different graphics across five main categories: Distribution, Time, Comparing Categories, Geospatial, Part-to-Whole, and Relationships. The space does not include every type of graphic, nor does it display every link between visualizations, but we view it as a thought-starter. We hope readers will use it to develop ideas, consider different options, or simply as a piece of art.}
@@ -340,12 +311,39 @@
       \keyw{,/done,imprime}
     \endentry
     \entry{alansmithLexiqueVisuel}{artwork}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \name{namea}{7}{}{%
+        {{hash=390d3f2db02f465a401ad8821c1dd1c0}{%
+           family={{Alan Smith}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=144647f3eb21dfaa34541984c0387075}{%
+           family={{Chris Campbell}},
+           familyi={C\bibinitperiod}}}%
+        {{hash=61d8e0b647ce790d5e4fc56f733e39b3}{%
+           family={{Ian Bott}},
+           familyi={I\bibinitperiod}}}%
+        {{hash=1e3578fbd02ef40ef5f5ab82b57a92a0}{%
+           family={{Liz Faunce}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=634d7f203a23d2fbbd828419528a225d}{%
+           family={{Billy Ehrenberg-Shannon}},
+           familyi={B\bibinitperiod}}}%
+        {{hash=c852cf7fd46ed756748c61f284bc6cbe}{%
+           family={{Paul McCallum}},
+           familyi={P\bibinitperiod}}}%
+        {{hash=67e04b0ac7a6af32c55bbcae30afdf50}{%
+           family={{Martin Stabe}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{nameabibnamehash}{55cd6521bf9616325af3a2d9fc80979f}
+      \strng{nameanamehash}{55cd6521bf9616325af3a2d9fc80979f}
+      \strng{nameafullhash}{55cd6521bf9616325af3a2d9fc80979f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Il existe un très grand nombre de manières de visualiser les données - comment savoir laquelle choisir ? Utilisez les catégories en haut de la page pour décider quelle est la relation entre les données la plus pertinente par rapport à l'histoire que vous souhaitez raconter. Passez ensuite en revue les différents types de graphiques de la catégorie : vous aurez ainsi quelques idées préliminaires sur le type de représentation le plus approprié. Cette liste n'est pas exhaustive, elle ne constitue pas non plus un assistant automatique : elle vous aidera en revanche à réaliser des visualisations de données informatives et éloquentes.}
       \field{annotation}{Financial Times}
       \field{langid}{english}
+      \field{nameatype}{collaborator}
       \field{shorttitle}{Lexique Visuel}
       \field{title}{Lexique Visuel}
       \verb{file}
@@ -360,11 +358,20 @@
       \keyw{,/done,imprime}
     \endentry
     \entry{lindabealeInsightsArcGIS2017}{artwork}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \name{namea}{1}{}{%
+        {{hash=8bd379c5665d422a6c64a310ecec93e9}{%
+           family={{Linda Beale}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{nameabibnamehash}{8bd379c5665d422a6c64a310ecec93e9}
+      \strng{nameanamehash}{8bd379c5665d422a6c64a310ecec93e9}
+      \strng{nameafullhash}{8bd379c5665d422a6c64a310ecec93e9}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labeltitlesource}{title}
       \field{annotation}{Esri}
       \field{langid}{english}
+      \field{nameatype}{collaborator}
       \field{title}{Insights for {{ArcGIS}}}
       \field{urlday}{18}
       \field{urlmonth}{7}
@@ -380,50 +387,6 @@
       \endverb
       \verb{url}
       \verb https://www.esri.com/content/dam/esrisites/fr-fr/media/pdf/data-visualization-options-in-insights-3.0.pdf
-      \endverb
-      \keyw{,/done,imprime}
-    \endentry
-    \entry{schwabishNotHarmGuide2022}{book}{}
-      \name{editor}{3}{}{%
-        {{hash=4297ecd0035e3a6b6674b79bad127077}{%
-           family={Schwabish},
-           familyi={S\bibinitperiod},
-           given={Jonathan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=df7aee528996b0f6ed9c00a2584dbd54}{%
-           family={Popkin},
-           familyi={P\bibinitperiod},
-           given={Sue},
-           giveni={S\bibinitperiod}}}%
-        {{hash=13e654605fe51932c7fb071c2a43d80a}{%
-           family={Feng},
-           familyi={F\bibinitperiod},
-           given={Alice},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Urban Institute}%
-      }
-      \strng{namehash}{ebbe9d2ebc5f596043750b769650aff2}
-      \strng{fullhash}{ebbe9d2ebc5f596043750b769650aff2}
-      \strng{bibnamehash}{ebbe9d2ebc5f596043750b769650aff2}
-      \strng{editorbibnamehash}{ebbe9d2ebc5f596043750b769650aff2}
-      \strng{editornamehash}{ebbe9d2ebc5f596043750b769650aff2}
-      \strng{editorfullhash}{ebbe9d2ebc5f596043750b769650aff2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{3}
-      \field{pagetotal}{112}
-      \field{series}{Do {{Not Harm Guide}}}
-      \field{title}{Do {{Not Harm Guide}} - {{Centering}} Accessibility in Data Visualization}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \verb{file}
-      \verb /home/anthea/Zotero/storage/7MXHRVTT/Schwabish et al. - 2022 - Centering accessibility in data visualization.pdf
       \endverb
       \keyw{,/done,imprime}
     \endentry
@@ -445,6 +408,18 @@
            given={Brian},
            giveni={B\bibinitperiod}}}%
       }
+      \name{namea}{2}{}{%
+        {{hash=b019c92816a2e9d0b67094270a1cf178}{%
+           family={Storopoli},
+           familyi={S\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2b8b27fc03bb65080e1de86d34893316}{%
+           family={Shirk},
+           familyi={S\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+      }
       \list{publisher}{1}{%
         {Royal Statistical Society}%
       }
@@ -454,6 +429,9 @@
       \strng{authorbibnamehash}{9b0f3360f69411ca9451bf59b8fcb8be}
       \strng{authornamehash}{9b0f3360f69411ca9451bf59b8fcb8be}
       \strng{authorfullhash}{9b0f3360f69411ca9451bf59b8fcb8be}
+      \strng{nameabibnamehash}{02ebe9f86a497994124f08b7ecff698e}
+      \strng{nameanamehash}{02ebe9f86a497994124f08b7ecff698e}
+      \strng{nameafullhash}{02ebe9f86a497994124f08b7ecff698e}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -462,6 +440,7 @@
       \field{day}{1}
       \field{langid}{english}
       \field{month}{2}
+      \field{nameatype}{collaborator}
       \field{title}{Best Practices for Data Visualisation}
       \field{urlday}{30}
       \field{urlmonth}{12}
@@ -639,8 +618,8 @@
       \strng{authorbibnamehash}{eb7882d12ae519daf5ac710b931c409c}
       \strng{authornamehash}{eb7882d12ae519daf5ac710b931c409c}
       \strng{authorfullhash}{eb7882d12ae519daf5ac710b931c409c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Color is a central feature of social life, yet its value in sociological theory is ambiguous. This paper establishes an approach to a social theory of color by focusing on color perception. Using theories from materiality studies and cultural sociology, I argue that color perception is an unstable and contestable phenomenon shaped by social and material factors. My argument is empirically grounded in a case study of a blockbuster museum show called Gods in Color. The show toured 21 cities in Europe and North America from 2003 to 2015. Its centerpiece---brightly painted reconstructions of ancient Greek and Roman marble sculptures---triggered a vigorous debate about the limits of science in correcting historical optics. The case has broader implications for sociological theories of authenticity, materiality, and aesthetic knowledge.}
@@ -866,37 +845,6 @@
       \endverb
       \keyw{/done}
     \endentry
-    \entry{kirkDataRepresentation2019}{inbook}{}
-      \name{bookauthor}{1}{}{%
-        {{hash=bffbeab802f44e07986dac869ceb2b46}{%
-           family={Kirk},
-           familyi={K\bibinitperiod},
-           given={Andy},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Los Angeles London New Delhi Singapore Washington DC Melbourne}%
-      }
-      \list{publisher}{1}{%
-        {SAGE}%
-      }
-      \strng{bookauthorbibnamehash}{bffbeab802f44e07986dac869ceb2b46}
-      \strng{bookauthornamehash}{bffbeab802f44e07986dac869ceb2b46}
-      \strng{bookauthorfullhash}{bffbeab802f44e07986dac869ceb2b46}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Data {{Visualisation}}: A {{Handbook}} for {{Data Driven Design}}}
-      \field{edition}{2nd edition}
-      \field{isbn}{978-1-5264-6893-2 978-1-5264-6892-5}
-      \field{langid}{english}
-      \field{title}{Data {{Representation}}}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \field{pages}{135}
-      \range{pages}{1}
-      \keyw{/unread,imprime,nosource}
-    \endentry
     \entry{wilkeRedundantCoding2019}{inbook}{}
       \name{bookauthor}{1}{}{%
         {{hash=8e86aa1915156f8016600d977acef303}{%
@@ -1102,8 +1050,8 @@
       \list{publisher}{1}{%
         {AFNOR}%
       }
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{abstract}{Le présent document fournit un document d'orientation pour la présentation visuelle d'informations sous le contrôle d'un logiciel, indépendamment du support. Il inclut des propriétés spécifiques telles que les aspects syntaxiques ou sémantiques des informations, par exemple les techniques de codage, et fournit des dispositions relatives à l'organisation des informations en tenant compte des capacités humaines de perception et de mémorisation. Les dispositions qui ne s'appliquent pas à des types spécifiques d'interfaces visuelles indiquent clairement les éventuelles limites de leur applicabilité. Ne sont pas concernés les détails spécifiques des tableaux, des graphiques ou ceux de la visualisation des informations. Le présent document ne concerne pas la présentation auditive ou tactile/haptique des informations, ni le transfert de modalité à une fin de présentation d'informations visuelles dans d'autres modalités.}
       \field{langid}{english}
@@ -1929,34 +1877,10 @@
       \range{pages}{14}
       \keyw{/done,nosource}
     \endentry
-    \entry{NeurodiversityDesignSystem}{online}{}
-      \list{organization}{1}{%
-        {Neurodiversity Design System}%
-      }
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The NDS is a coherent set of standards and principles that combine neurodiversity and user experience design for Learning Management Systems.}
-      \field{langid}{english}
-      \field{title}{Neurodiversity Design System}
-      \field{urlday}{2}
-      \field{urlmonth}{1}
-      \field{urlyear}{2025}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb /home/anthea/Zotero/storage/6U6BB9JY/neurodiversity.design.html
-      \endverb
-      \verb{urlraw}
-      \verb https://www.neurodiversity.design/
-      \endverb
-      \verb{url}
-      \verb https://www.neurodiversity.design/
-      \endverb
-      \keyw{/unread}
-    \endentry
   \enddatalist
   \missing{REF???}
-  \missing{principe}
+  \missing{Tufte:@}
+  \missing{schwabishCenteringAccessibilityData2022}
 \endrefsection
 \endinput
 
