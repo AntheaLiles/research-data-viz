@@ -831,28 +831,26 @@ De cette étude, nous avons extrait des éléments généraux et d'autres pouvan
 #+caption:Résumé des attentes utilisateurs
 #+name: table:persona
 #+attr_latex: :float multicolumn
-| N° | Besoins                    | Niveau d'implémentation | Référence CIM-10 |
-|----+----------------------------+-----------------------+-----------------|
-| 01 | Absence d'animation         | Personnalisé           | F84, F90         |
-| 02 | Absence de distraction        | Personnalisé           | F84, F90         |
-| 03 | Adapté au thème sombre      | Tous les utilisateurs     | F84             |
-| 04 | Adapter la langue            | Personnalisé           | N/A             |
-| 05 | Aide contextuelle             | Personnalisé           | F70-F79         |
-| 06 | Concision des informations    | Personnalisé           | F84             |
-| 07 | Données claires et factuelles   | Tous les utilisateurs     | F70-F79         |
-| 08 | Explication d'utilisation       | Personnalisé           | F70-F79         |
-| 09 | Facilité d'accès à l'information | Tous les utilisateurs     | F70-F79, F90      |
-| 10 | Facilité de compréhension     | Tous les utilisateurs     | F70-F79         |
-| 11 | Facilité d'utilisation           | Tous les utilisateurs     | F70-F79, F84      |
-| 12 | Lecture par logiciel           | Personnalisé           | R48, H53, H54     |
-| 13 | Réduire la luminosité         | Personnalisé           | F84, H53, H54     |
-| 14 | Rétrocompatibilité           | Tous les utilisateurs     | N/A             |
+| N° | Besoins                          | Niveau d'implémentation | Référence CIM-10            |
+|----+----------------------------------+-------------------------+-----------------------------|
+| 01 | Absence d'animation              | Personnalisé            | F84, F90, G40-G41           |
+| 02 | Absence de distraction           | Personnalisé            | F84, F90                    |
+| 03 | Adapté au thème sombre           | Tous les utilisateurs   | F84, G40-G41, G43           |
+| 04 | Adapter la langue                | Personnalisé            | N/A                         |
+| 05 | Aide contextuelle                | Personnalisé            | F70-F79                     |
+| 06 | Concision des informations       | Personnalisé            | F84                         |
+| 07 | Données claires et factuelles    | Tous les utilisateurs   | F70-F79                     |
+| 08 | Explication d'utilisation        | Personnalisé            | F70-F79                     |
+| 09 | Facilité d'accès à l'information | Tous les utilisateurs   | F70-F79, F90                |
+| 10 | Facilité de compréhension        | Tous les utilisateurs   | F70-F79                     |
+| 11 | Facilité d'utilisation           | Tous les utilisateurs   | F70-F79, F84                |
+| 12 | Lecture par logiciel             | Personnalisé            | R48, H53, H54               |
+| 13 | Réduire la luminosité            | Personnalisé            | F84, H53, H54, G40-G41, G43 |
+| 14 | Rétrocompatibilité               | Tous les utilisateurs   | N/A                         |
 
-Les références CIM-10 mensionnées dans le tableau [[table:persona]] sont : les troubles du langage (R48), les troubles de déficience cognitive (F70-F79), les troubles du spectre autistique (F84), les troubles du déficit de l'attention avec ou sans hyperactivité (F90)  les troubles de la vision (H53), les déficits de la vision (H54).
+Les références CIM-10 mensionnées dans le tableau [[table:persona]] sont : les troubles du langage (R48), les troubles de déficience cognitive (F70-F79), les troubles du spectre autistique (F84), les troubles du déficit de l'attention avec ou sans hyperactivité (F90)  les troubles de la vision (H53), les déficits de la vision (H54), les affections épiléptiques (G40-G41) et migraineuses (G43).
 
-La capacité de modifier la langue par défaut vise à limiter la barrière de la langue. Dans le même ordre, la rétrocompatibilité vise à limiter la fracture numérique.
-
-Cette analyse met en lumière l'intérêt de la considération de l'accessibilité pour les populations idoines. De nombreux éléments trouvent également  leurs place dans la conception de systèmes d'intérractions humain-machines et dont la prise en compte peut bénéficier à toutes les populations d'utilisateurs.
+La capacité de modifier la langue par défaut vise à limiter la barrière de la langue. Dans le même ordre, la rétrocompatibilité vise à limiter la fracture numérique. \todo[inline]{trouver si possible des lois ou travaux apparentés d'orientation de ces considérations}
 
 * Etudes futures
 Des études complémentaires pourraient être menées sur les sujets suivants :
@@ -860,8 +858,8 @@ Des études complémentaires pourraient être menées sur les sujets suivants :
 La conception de librairies de graphiques accessibles et fonctionnant aussi bien dans un usage web que dans les PDF.
   
 * Evolution
-|    Date | Changements         |
-|---------+----------------------|
+|    Date | Changements           |
+|---------+-----------------------|
 | 2025-02 | Rédaction du document |
 
 * Glossaire
