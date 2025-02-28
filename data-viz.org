@@ -2,6 +2,7 @@
 #+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
 #+EMAIL: cyprien.pierre@eiffage.com
 #+DATE: {{{time(%Y-%m-%d)}}}
+#+LICENSE: AFL-3.0
 #+setupfile: "config.org"
 
 #+begin_abstract
@@ -312,26 +313,19 @@ Cela peut représenter un défi pour une population d'utilisateurs d'avantages o
 
 Nous sommes tout de même convaincu que la selection d'un type de graphique doit discretement filtrer les données affichés à l'utilisateurs pour s'assurer du correct emploi du graphique.
 
-La seconde direction est de filtrer les types de graphiques en fonction de l'objectif de l'utilisateur. Nous avons poursuivi notre étude dans ce sens. La figure [[fig:select-filter]] propose un premier niveau de discrimination des types de représentations en identifiant en premier lieu si le graphique doit s'actualiser en temps réel puis en orientant vers des catégories de graphiques au regards de l'objectif recherché.
+La seconde direction est de filtrer les types de graphiques en fonction de l'objectif de l'utilisateur. Nous avons poursuivi notre étude dans ce sens. La figure [[fig:select-filter]] propose une discrimination des types de représentations en identifiant l'objectif recherché par l'utilisateur.
 
-#+caption: Parcours de sélection initial
+#+caption: Parcours de sélection
 #+name: fig:select-filter
-#+attr_latex: :placement [H]
+#+attr_latex: :float multicolumn
 [[./img/select-filter.pdf]]
 
-La suite de l'étude présentera, pour chaque catégorie de graphique, un parcours de discrimination supplémentaire.
+Pour améliorer l'assistance de l'informatique à l'utilisateur dans son parcours de conception de graphique, il pourrait être envisagé d'étudier la conception d'une interface de requête en langage formel et produisant une proposition de graphique.\todo[inline]{reformuler, incompréhensible}
 
-Pour améliorer l'assistance informatique de l'informatique  à l'utilisateur dans son parcours de conception de graphique, il pourrait être envisager d'étudier la conception d'une interface de requête en langage formel et produisant une proposition de graphique.
+Un graphique conçu dans un espace partagé d'analyse de donnée peut être difficile à retrouver. Il peut également être affiché dans divers contextes tels qu'une présentation, un rapport ou encore un tableau de bord. Une étude traitant de la récupération d'information associé à une analyse sémantique des graphiques pourrait être menée pour concevoir un système adapté à la découverte de graphiques existant.
 
-Un graphique conçu dans un espace partager d'analyse de donnée peut être difficile à retrouver. Il peut également être affiché dans divers contextes tels qu'une présentation, un rapport ou encore un tableau de bord. Une étude traitant de la récupération d'information associé à une analyse sémantique des graphiques pourrait être menée pour concevoir un système adapté à la recherche d'un graphique existant.
 * Méthode de configuration
 ** Indicateur
-
-#+caption: Séléction d'un graphique d'indicateur
-#+name: fig:select-indicateur
-#+attr_latex: :placement [H]
-[[./img/select-indicateur.pdf]]
-
 *** Marqueur
 Affiche une valeur simple, plus pertinent lorsqu'associé à une tendance sur une période donnée. [cite:@mikeyiHowChooseRight2020]
 
@@ -353,12 +347,6 @@ Cette représentation est notamment pertinente lors de la réalisation d'un benc
 # Définir benchmark
 
 ** Composition
-
-#+caption: Séléction d'un graphique de composition
-#+name: fig:select-compo
-#+attr_latex: :placement [H]
-[[./img/select-composition.pdf]]
-
 *** Camembert
 Diagramme standard, difficile à lire. [cite:@alansmithLexiqueVisuel]
 Limiter à 5 (4?) entrées maximum [cite:@mikeyiHowChooseRight2020]
@@ -422,12 +410,6 @@ Affiche des nuages de mots organisés en groupes sémantiques. La taille des mot
 Il convient de filtrer les mots vides dit "stopwords" pour nettoyer la composition des nuages. [cite:@jonathanschwabishQualitative2021] Des listes de mots vides peuvent être trouvées à l'adresse <https://github.com/stopwords-iso/>.
 
 ** Classement
-
-#+caption: Séléction d'un graphique de classement
-#+name: fig:select-classement
-#+attr_latex: :placement [H]
-[[./img/select-classement.pdf]]
-
 *** Barre ordonnée
 Les catégories sont ordonnées par décroissance de leurs valeurs de quantité[cite:@jonathanschwabishComparingCategories2021] sauf si les catégories on un autre ordre logique (eg. temporel). Dans ce second cas, cet ordre doit être utilisé pour la construction du graphique. [cite:@wilkeVisualizingAmounts2019]
 
@@ -543,12 +525,6 @@ Interractivité : pouvoir explorer l'ensemble des graphiques simultanéments (eg
 [[./img/small-multiple.pdf]]
 
 ** Distribution
-
-#+caption: Séléction d'un graphique de distribution
-#+name: fig:select-distribution
-#+attr_latex: :placement [H]
-[[./img/select-distribution.pdf]]
-
 *** Courbe de densité
 La densité représente la probabilité de distribution des variables. [cite:@sosulskiGraphics2019] Pertinent lorsque le nombre de données est très grand, autrement il convient d'utiliser un histogramme. [cite:@wilkeVisualizingManyDistributions2019] En cas d'affichage de plusieurs courbe, utiliser  des remplissages transparents pour faciliter la distinctions. L'air de la courbe est usuellement égal à 1 et de ce fait, l'échelle de l'axe des ordonnées dépend de l'axe des absisses. [cite:@wilkeVisualizingManyDistributions2019]
 
@@ -615,12 +591,6 @@ Les boites à moustaches suivent les dispositions graphiques des barres ordonné
 Excellente visualisation pour suivre la fréquence d'une activité. Favorise la quantité à la qualité (exemple : github). [cite:@alansmithLexiqueVisuel]
 
 ** Evolution
-
-#+caption: Séléction d'un graphique d'évolution
-#+name: fig:select-evolution
-#+attr_latex: :placement [H]
-[[./img/select-evolution.pdf]]
-
 *** Jauge
 Les jauges sont des représentations familières et facile à lire. [cite:@jonathanschwabishComparingCategories2021] En ce sens, elles sont pertinente pour afficher des données. Cependant, il convient de s'intéresser particulièrement à leurs représentation métaphorique. Les graphiques en jauge étant un skeumorphisme, leurs utilisation est probablement plus pertinente pour l'affichage d'information pour lesquelles elles sont utilisées dans le monde physique.
 
@@ -668,12 +638,6 @@ L'utilisation de symboles comme éléments différenciants entre les séries n'e
 La plage allant de la plus petite à la plus grande valeur occupe entre 70 et 80% de l'espace vertical dans le graphique.[cite:@mikecisnerosWhatLineGraph2024]
 
 ** Correlation
-
-#+caption: Séléction d'un graphique de correlation
-#+name: fig:select-corellation
-#+attr_latex: :placement [H]
-[[./img/select-correlation.pdf]]
-
 *** Pareto
 Ce type de graphique montre la relation entre les valeurs quantitatives de catégories organisées en colonne ordonnée et la valeur cumulée affichée en ligne brisée. Le premier point de la ligne vérifiant \(\tau\geq80\%Total\) est affichée. La zone précédent ce point est mise en évidence.
 Est utilisé pour illustrer les éléments important dans un système qualité.
@@ -730,12 +694,6 @@ Utilisé pour illustrer l'usage des mots dans un texte.(voir Martin Wattenberg &
 La taille des mots représente la fréquence de leurs usages. [cite:@jonathanschwabishQualitative2021]
 
 ** Déviation
-
-#+caption: Séléction d'un graphique de déviation
-#+name: fig:select-deviation
-#+attr_latex: :placement [H]
-[[./img/select-deviation.pdf]]
-
 *** Alluvial
 
 Montre les changements sur un flux entre un état et au moins un autre. Adapté au traçage d'un processus complexe. [cite:@alansmithLexiqueVisuel]
