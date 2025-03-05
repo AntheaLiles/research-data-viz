@@ -1,2 +1,20 @@
 * Visualisation de données
 Projet de recherche visant à établir un cadre formel et une méthode de sélection et de préparation des représentations graphiques des informations issues de bases de données.
+
+* Liste des tâches
+** TODO Décrire les graphs
+** TODO Illustrer les composants
+** TODO Décrire leurs comportement
+** TODO Ecrire les validations Gherkin
+** TODO Identifier les palettes de couleurs
+** TODO Fixer les palettes de couleurs
+** TODO Logique de validation
+** [#C] NEXT Rendre les PDF accessibles
+** [#B] NEXT Rédiger des exemples contextuels
+** [#B] NEXT Illustrer les exemples
+** [#C] NEXT Fixer l'impression du glossaire et des acronymes (org-glossary)
+** NOT PLANNED Rework des définitions
+** NOT PLANNED Schéma de base de données pour la sélection des graphs
+** NOT PLANNED Fixer les tailles des images
+Refaire les exports Drawio avec ~bordure = 0~
+** WONT FIX Refaire les illustrations en TikZ

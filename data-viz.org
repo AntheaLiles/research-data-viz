@@ -329,11 +329,6 @@ Un graphique conçu dans un espace partagé d'analyse de donnée peut être diff
 *** Marqueur
 Affiche une valeur simple, plus pertinent lorsqu'associé à une tendance sur une période donnée. [cite:@mikeyiHowChooseRight2020]
 
-*** Minigraphe
-Affiche la tendance d'évolution d'une variable ou d'une catégorie. Est généralement intégré dans un tableur. Un mini-graphe ne possède pas d'axes ni d'autres détails et est composé uniquement d'une courbe et d'un point indiquant la dernière valeur du jeu de donnée. [cite:@sosulskiGraphics2019] Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise. [cite:@jonathanschwabishDistribution2021]
-
-Un mini-graphe ne possède pas d'axes ni d'autres détails.
-
 *** Tiret
 selont Schwabish : inventé par Few
 
@@ -427,6 +422,8 @@ Ce graphique est plus lisible pour un nombre limité d'entrées. [cite:@mikeyiHo
 
 L'espace entre deux barres est égal à la moitié de la largeur d'une barre (ratio 1:0.5). Les barres ont toutes la même largeur. [cite:@stephenfewComponentlevelGraphDesign2012]
 
+Les barres ne se supperposent pas.
+
 Utiliser une couleur homogène à l'ensemble des barres. Une couleur de contraste peut être utilisée pour mettre en évidence certaines catégories.
 
 Ne pas utiliser de motifs de remplissage. Les barres doivent être remplies par un solide coloré. [cite:@stephenfewComponentlevelGraphDesign2012]
@@ -445,17 +442,23 @@ Ne pas segmenter les barres. [cite:@jonathanschwabishComparingCategories2021]
 
 Ne pas ajouter d'iconographie aux barres. [cite:@tranDiscoveringAccessibleData2024]
 
+Si les labels de l'axe des échelles est affiché alors il ne faut pas labélliser directemment les barres. [cite:@Andy Kirk chap 6 data représentation]
+
+Il est possible d'intégrer un mini-graphe de barre ordonnée dans une cellule d'un tableur pour indiquer une tendance. [cite:@Andy Kirk chap 6 data représentation]
+
 *** Lollipop
 Utilisé pour afficher la position dans une liste ordonnée lorsque l'affichage de la valeur est moins important que la position. [cite:@alansmithLexiqueVisuel] Egalement très efficace comparé aux barres hordonnées lorsqu'il y a un grand nombre de catégorie dans le classement. [cite:@mikeyiHowChooseRight2020]  Si une ligne connecte le point de la valeur à laxe des ordonnées, l'axe des absisse doit commencer à 0, autrement cela n'est pas obligatoire.
 
 *** Haltères
 Utilisé pour comparer un minimum et un maximum de plusieurs catégories. [cite:@alansmithLexiqueVisuel] La relation entre le maximum et le minimum d'une catégorie est représenté par la barre reliant les deux valeurs. [cite:@mikeyiHowChooseRight2020]
 
-Peut être utilisé pour illustrer le changement d'une valeur entre deux état données. Dans ce cas, il convient de flécher le sens du changement de l'état antérieur vers l'état final.
+Peut être utilisé pour illustrer le changement d'une valeur entre deux état données. Dans ce cas, il convient de flécher le sens du changement de l'état antérieur vers l'état final. Cette représentation est appeler "diagramme fléché". [cite:@Andy Kirk chap 6 data représentation] Une variante consiste à ajuster l'épaisseur de la ligne reliant les valeurs, de fin pour l'antécédant à épais pour la valeur finale. Cette variation est surnommée "diagramme en carrote". [cite:@Andy Kirk chap 6 data représentation]
 
 Dans ces deux cas de figures, les catégories doivent êtres ordonnées de la plus grande valeur à la plus petite.
 
 Les haltères sont toujours affichés à l'horizontal.
+
+Il est possible de ne pas commencer l'axe des grandeurs à 0 suivant l'objectif du graphique. Dans ce cas, cela doit être clairement exposé au lecteur.[cite:@Andy Kirk chap 6 data représentation]
 
 *** Bosses
 Affiche l'évolution d'un classement entre différents jalons. [cite:@mikeyiHowChooseRight2020;@alansmithLexiqueVisuel]  Ce graphique n'affiche pas les valeurs sous-jacente mais uniquement le positionnement de la catégorie dans le classement. [cite:@jonathanschwabishTime2021] Si la valeur source est également à représenter, ce graphique peut se transformer en graphique en ruban, combinant les disposition du graphique en bosse avec celles du graphique de Sankey. [cite:@jonathanschwabishTime2021]
@@ -467,9 +470,11 @@ Seule la catégorie ayant sa base à 0 sera facile à comparer pour le lecteur c
 
 *** Barre jumelée
 Permet d'afficher plusieurs séries. Devient plus difficile à lire avec plus de deux séries. [cite:@alansmithLexiqueVisuel]
-Les barres d'une même catégories sont collées les unes aux autres pour souligner leurs appartenance à une même catégorie (ratio 1:0). Espacer les jeux de barres jumelées d'une largeur égale à une barre (ratio n:1).
+Les barres d'une même catégories sont collées les unes aux autres pour souligner leurs appartenance à une même catégorie (ratio 1:0). Espacer les jeux de barres jumelées d'une largeur égale à une barre (ratio n:0.5).
 
 Les barres sont colorées avec une palette de couleur de catégories. Les couleurs sont utilisées pour distinguées chaques barres dans une catégories, les couleurs doivent être homogènes pour chaque catégorie. Si les différentes valeurs affichées sont d'importances similaires, il convient d'utiliser une palette de couleurs à faibles contrastes. N'utiliser qu'une seule couleur par ensemble de données apparentées. [cite:@stephenfewComponentlevelGraphDesign2012]
+
+S'il est nécessaire d'afficher plusieurs compositions dans un diagramme en barre jumelées, il convient de considérer l'utilisation d'une matrice de graphique de barre ordonnées pour faciliter l'observation des différences.[cite:@Andy Kirk chap 6 data représentation] Dans ce cas, l'ordonnement des graphique doit être uniforme.
 
 *** Pente
 Affiche la variation des valeurs ou ratios des catégories entre deux états donnés. [cite:@alansmithLexiqueVisuel]
@@ -490,9 +495,9 @@ Représentation compacte de la valeur de variables hétérogènes pour un seul s
 
 La représentation des valeurs se fait à travers la forme globale du polygonne. Il convient de coloriser l'interrieur de celui-ci pour bien faire ressortir sa forme. [cite:@jonathanschwabishRelationship2021]
 
-Utiliser une disposition en small-multiples plutot que de surimposer plusieurs polygones de valeurs. [cite:@jonathanschwabishRelationship2021]
-
 La représentation des variables est fortement correlé à la forme du polygone plutot qu'aux valeurs des sommets. [cite:@sosulskiGraphics2019] De ce fait, pour améliorer la forme du polygonne et offrir une représentation avec le moins de distortions possibles, il convient d'homogénéiser les échelles des axes.
+
+Utiliser une disposition en matrice de graphique plutot que de surimposer plusieurs polygones de valeurs. [cite:@jonathanschwabishRelationship2021]
 
 *** Ligne de crête
 Ce graphique représente des courbes de densité séparées par un offset et est utilisé pour comparer la distribution d'une vrariable entre des catégories. [cite:@wilkeVisualizingManyDistributions2019] Parfait lorsque les schémas de distributions sont bien distincts entre les groupes. [cite:@mikeyiHowChooseRight2020] Cela évite que les courbes de densités des catégories s'entrevêchent.[cite:@jonathanschwabishDistribution2021]
@@ -637,6 +642,10 @@ L'utilisation de symboles comme éléments différenciants entre les séries n'e
 
 La plage allant de la plus petite à la plus grande valeur occupe entre 70 et 80% de l'espace vertical dans le graphique.[cite:@mikecisnerosWhatLineGraph2024]
 
+Il est possible d'intégrer un mini-graphe en ligne intégré dans un tableur pour afficher une tendance. Il possède pas d'axes ni d'autres détails et est composé uniquement d'une courbe et d'un point indiquant la dernière valeur du jeu de donnée. [cite:@sosulskiGraphics2019] Cette représentation est très macroscopique et vise à succiter un sentiment plutot que d'exposer une valeur précise. [cite:@jonathanschwabishDistribution2021]
+
+Un mini-graphe ne possède pas d'axes ni d'autres détails.
+
 ** Correlation
 *** Pareto
 Ce type de graphique montre la relation entre les valeurs quantitatives de catégories organisées en colonne ordonnée et la valeur cumulée affichée en ligne brisée. Le premier point de la ligne vérifiant \(\tau\geq80\%Total\) est affichée. La zone précédent ce point est mise en évidence.
@@ -722,6 +731,12 @@ Utilisé pour illustrer les résultats d'enquêtes impliquant un sentiment. [cit
 
 *** Cascade
 Affiche les gains et pertes entres deux états d'un système. [cite:@jonathanschwabishComparingCategories2021] Utilisé principalement pour les analyses financières. [cite:@alansmithLexiqueVisuel]
+
+Un label est apposé à chaque étape du graphique pour expliquer l'évolution.[cite:@Andy Kirk chap 6 data représentation] Une ligne en pointillé (y = x_{initial}) peut être ajoutée pour mettre en évidence l'écart entre l'état initial et l'état final. Toutes les couleurs utilisées doivent être légendées.
+
+Il conviens d'utiliser une palette de couleur binaire pour discriminer les augmentations des diminutions. Pour aider à la compréhension du mouvement, il convient de surimposer une flèche pointant vers le haut en cas d'une augmentation ou vers le bas dans le cas d'une diminution.
+
+Les cascades sont affichés en paysage avec un sens de lecture de gauche à droite. [cite:@Andy Kirk chap 6 data représentation]
 
 *** Chandelier
 Affiche des bilans quotidiens (eg. ouverture, fermeture, point haut, point bas). [cite:@alansmithLexiqueVisuel]
