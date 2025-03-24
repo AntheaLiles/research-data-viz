@@ -2,8 +2,7 @@
 #+author: Cyprien PIERRE \orcidlink{0009-0009-9040-6795}
 #+EMAIL: cyprien.pierre@eiffage.com
 #+DATE: {{{time(%Y-%m-%d)}}}
-#+LICENSE: AFL-3.0
-#+setupfile: "config.org"
+#+setupfile: "~/Projects/research-templates/lualatex.org"
 
 #+begin_abstract
 \todo[inline]{Rédiger l'abstract}
